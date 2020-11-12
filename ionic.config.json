@@ -1,0 +1,7 @@
+{
+  "name": "tato",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
