@@ -1,7 +1,0 @@
-{
-  "name": "tato",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
