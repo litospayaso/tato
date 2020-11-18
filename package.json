@@ -7,13 +7,15 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "release": "npm run build-prod && npm run replace-base-href && npm run deploy-ghpages",
+    "release": "npm run build-prod && npm run replace-base-href && npm run deploy-ghpages && npm run display-release",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build-prod": "ionic build --prod -- --base-href=\"https://litospayaso.github.io/tato/\"",
     "replace-base-href": "node ./scripts/replace.js",
-    "deploy-ghpages": "npx angular-cli-ghpages --dir=www"
+    "deploy-ghpages": "npx angular-cli-ghpages --dir=www",
+    "display-release": "node ./scripts/console.js"
+
   },
   "private": true,
   "dependencies": {
