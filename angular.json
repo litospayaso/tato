@@ -26,6 +26,11 @@
                 "output": "assets"
               },
               {
+                "glob": "**/*",
+                "input": "src/img",
+                "output": "img"
+              },
+              {
                 "glob": "**/*.svg",
                 "input": "node_modules/ionicons/dist/ionicons/svg",
                 "output": "./svg"
@@ -37,9 +42,22 @@
               },
               {
                 "input": "src/global.scss"
+              },
+              {
+                "input": "./node_modules/@chrisoakman/chessboardjs/dist/chessboard-1.0.0.css"
               }
             ],
-            "scripts": []
+            "scripts": [
+              {
+                "input": "./node_modules/jquery/dist/jquery.js"
+              },
+              {
+                "input": "./node_modules/chess.js/chess.js"
+              },
+              {
+                "input": "./node_modules/@chrisoakman/chessboardjs/dist/chessboard-1.0.0.js"
+              }
+          ]
           },
           "configurations": {
             "production": {

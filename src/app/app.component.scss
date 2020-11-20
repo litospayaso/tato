@@ -1,0 +1,105 @@
+$screen-lg-min: 992px;
+
+.lateral-panel {
+    //font-family: Baloo;
+    width: 0;
+    position: fixed;
+    height: 100vh;
+    top: 55px;
+    left: 0;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.35);
+    overflow-x: hidden;
+    z-index: 2;
+  
+
+    .lateral-panel-container {
+        background-color: white;
+        box-sizing: border-box;
+        height: 100vh;
+        width: 304px;
+    }
+}
+
+.gray-cover-panel {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.back-arrow {
+    margin-left: 16px;
+}
+
+ion-label {
+    font-family: Baloo !important;
+}
+
+.toolbar {
+    //font-family: Baloo;
+    max-height: 56px;
+}
+
+.container {
+    //font-family: Baloo;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100vw;
+    top: 57px;
+    height: calc(100vh - 57px);
+    .lateral-menu {
+        min-width: 304px;
+        -webkit-box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.75);
+
+        .selected ion-icon {
+            color: var(--ion-color-primary);
+        }
+    }
+    .outlet-container {
+        width: 100%;
+        padding: 8px;
+        overflow-y: auto;
+        //font-family: Baloo;
+
+        // &.Exercícios {
+        //   background-image: url("../assets/img/backgrounds/exercisesBackground.jpg");
+        // }
+
+        // &.Liçons, &.Livre {
+        //   background-image: url("../assets/img/backgrounds/homeBackground.jpg");
+        // }
+
+        // &.Pesquisador {
+        //     background-image: url("../assets/img/backgrounds/searchBackground.jpg");
+        //     background-size: cover;
+        // }
+        // &.Acerca {
+        //     background-image: none;
+        // }
+
+        .outlet-elem {
+            inset: 0px 0px 0px 304px;
+            @media (max-width: $screen-lg-min) {
+                inset: 0px;
+            }
+        }
+    }
+}
+
+.menu-button {
+    display: none;
+}
+
+@media (max-width: $screen-lg-min) {
+    .lateral-menu {
+        display: none;
+        background-color: black;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}

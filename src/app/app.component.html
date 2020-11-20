@@ -1,3 +1,37 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>
+        <ion-icon *ngIf="!pageBack" (click)="toogleMenu()" class="menu-button" name="menu-outline"></ion-icon>
+        <ion-icon *ngIf="pageBack" class="back-arrow" [routerLink]="[pageBack]" skipLocationChange routerDirection="root" name="arrow-back-outline"></ion-icon>
+        {{title}}
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="mySidepanel" class="lateral-panel" [ngStyle]="{'width': widthMenu}" (click)="toogleMenu()">
+    <div class="lateral-panel-container">
+      <ion-list *ngFor="let page of appPages">
+        <ion-item [routerLink]="[page.url]" skipLocationChange routerDirection="root" [ngClass]="title === page.title ? 'selected' : ''">
+          <ion-icon aria-hidden="false" [name]="page.icon"></ion-icon>
+          {{page.title}}
+        </ion-item>
+      </ion-list>
+    </div>
+  </div>
+
+  
+  <div class="container"> 
+    <div class="lateral-menu">
+      <ion-list *ngFor="let page of appPages">
+        <ion-item [routerLink]="[page.url]" skipLocationChange routerDirection="root" [ngClass]="title === page.title ? 'selected' : ''">
+          <ion-icon aria-hidden="false" [name]="page.icon"></ion-icon>
+          {{page.title}}
+        </ion-item>
+      </ion-list>
+    </div>
+    <div class="outlet-container" [ngClass]="title">
+      <ion-router-outlet class="outlet-elem"></ion-router-outlet>
+    </div>
+  </div>  
 </ion-app>
