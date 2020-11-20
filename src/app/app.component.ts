@@ -13,10 +13,10 @@ import { filter } from 'rxjs/operators';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
-  private title = '';
+  public title = '';
   public pageBack = '';
   public widthMenu = '0';
-  private appPages = [
+  public appPages = [
     {
       title: 'home',
       url: '/home',
