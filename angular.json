@@ -21,6 +21,11 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
+                "glob": "**/*.wasm",
+                "input": "./node_modules/stockfish/src",
+                "output": "."
+              },
+              {
                 "glob": "**/*",
                 "input": "src/assets",
                 "output": "assets"
@@ -50,6 +55,9 @@
             "scripts": [
               {
                 "input": "./node_modules/jquery/dist/jquery.js"
+              },
+              {
+                "input": "./node_modules/stockfish/src/stockfish.js"
               },
               {
                 "input": "./node_modules/chess.js/chess.js"
