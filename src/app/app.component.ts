@@ -57,7 +57,6 @@ export class AppComponent {
         this.pageBack = '';
       }
     });
-    console.log(`%c this.appPages`, `background: #df03fc; color: #f8fc03`, this.appPages);
     this.initializeApp();
   }
 
