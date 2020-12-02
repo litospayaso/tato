@@ -7,6 +7,9 @@ import { IonicModule } from '@ionic/angular';
 import { HomePage } from '@pages/home/home.page';
 import { TrainingPage } from '@pages/training/training.page';
 
+import { BoardComponent } from '@components/board/board.component';
+import { MovesTableComponent } from '@components/moves-table/moves-table.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -16,7 +19,9 @@ import { TrainingPage } from '@pages/training/training.page';
   ],
   declarations: [
     HomePage,
-    TrainingPage
+    TrainingPage,
+    BoardComponent,
+    MovesTableComponent
   ]
 })
 export class PagesModule {}

@@ -1,5 +1,10 @@
 $screen-lg-min: 992px;
-
+.menu-icon {
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    top: 3px;
+}
 .lateral-panel {
     //font-family: Baloo;
     width: 0;

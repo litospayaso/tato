@@ -23,12 +23,12 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'Exercises',
-      url: '/exercises',
+      title: 'Analysis',
+      url: '/analysis',
       icon: 'create'
     },
     {
-      title: 'Training',
+      title: 'Play Computer',
       url: '/training',
       icon: 'barbell-outline'
     },
@@ -77,11 +77,11 @@ export class AppComponent {
       case 'home':
         title = 'Tato';
         break;
-      case 'exercises':
-        title = 'Exercises';
+      case 'analysis':
+        title = 'Analysis';
         break;
       case 'training':
-        title = 'Training';
+        title = 'Play computer';
         break;
       default:
         break;

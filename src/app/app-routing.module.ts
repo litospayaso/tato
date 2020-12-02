@@ -12,7 +12,7 @@ const routes: Routes = [
     component: HomePage,
   },
   {
-    path: 'exercises',
+    path: 'analysis',
     component: HomePage,
   },
   {

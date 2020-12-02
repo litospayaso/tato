@@ -5,17 +5,16 @@ declare const STOCKFISH: any;
 declare const $: any;
 
 @Component( {
-  selector: 'app-training',
-  templateUrl: 'training.page.html',
-  styleUrls: ['training.page.scss'],
+  selector: 'app-analysis',
+  templateUrl: 'analysis.page.html',
+  styleUrls: ['analysis.page.scss'],
 } )
-export class TrainingPage implements AfterViewInit {
+export class AnalysisPage implements AfterViewInit {
   public board: any;
   public game: any;
   public moves: string;
   public algebraicMoves: string[] = [];
   public stockfish: any;
-  public evaluation = 0;
   public userColor = 'w';
   public turn = 'w';
 
@@ -47,7 +46,6 @@ export class TrainingPage implements AfterViewInit {
     this.stockfish.onmessage = (event) => {
       if (event && event.includes) {
         if (event.includes('Total evaluation:')) {
-          this.evaluation = Number(event.match(/(-?[0-9]+.[0-9]+)/g)[0]);
         }
         if (event.includes('bestmove ') && !event.includes('none')) {
           if (this.game.turn() !== this.userColor) {

@@ -15,7 +15,6 @@ export class TrainingPage implements AfterViewInit {
   public moves: string;
   public algebraicMoves: string[] = [];
   public stockfish: any;
-  public evaluation = 0;
   public userColor = 'w';
   public turn = 'w';
 
@@ -47,7 +46,6 @@ export class TrainingPage implements AfterViewInit {
     this.stockfish.onmessage = (event) => {
       if (event && event.includes) {
         if (event.includes('Total evaluation:')) {
-          this.evaluation = Number(event.match(/(-?[0-9]+.[0-9]+)/g)[0]);
         }
         if (event.includes('bestmove ') && !event.includes('none')) {
           if (this.game.turn() !== this.userColor) {

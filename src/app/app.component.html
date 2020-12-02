@@ -2,8 +2,8 @@
   <ion-header>
     <ion-toolbar>
       <ion-title>
-        <ion-icon *ngIf="!pageBack" (click)="toogleMenu()" class="menu-button" name="menu-outline"></ion-icon>
-        <ion-icon *ngIf="pageBack" class="back-arrow" [routerLink]="[pageBack]" skipLocationChange routerDirection="root" name="arrow-back-outline"></ion-icon>
+        <ion-icon *ngIf="!pageBack" (click)="toogleMenu()" class="menu-button" name="menu-outline" class="menu-icon"></ion-icon>
+        <ion-icon *ngIf="pageBack" class="back-arrow" [routerLink]="[pageBack]" skipLocationChange routerDirection="root" name="arrow-back-outline" class="menu-icon"></ion-icon>
         {{title}}
       </ion-title>
     </ion-toolbar>

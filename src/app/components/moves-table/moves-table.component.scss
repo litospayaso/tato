@@ -1,0 +1,13 @@
+.table-moves-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    .move-element {
+        width: 50%;
+        border:solid 1px white;
+        padding: 4px;
+        text-align: center;
+    }
+}
+  
