@@ -4,6 +4,7 @@ import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { Router, ResolveEnd } from '@angular/router';
+import { Storage } from '@ionic/storage';
 
 import { filter } from 'rxjs/operators';
 
@@ -38,9 +39,17 @@ export class AppComponent {
     private router: Router,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
+    private storage: Storage
   ) {
+    storage.get('lastRoute').then(root => {
+      if (root && root !== '/') {
+        this.router.navigate(root.split('/').filter(e => e.length > 0), {skipLocationChange: true });
+      }
+    });
     this.router.events.pipe(filter(event => event instanceof ResolveEnd)).subscribe(event => {
+
       const root: ResolveEnd = event as ResolveEnd;
+      storage.set('lastRoute', root.urlAfterRedirects);
       const routerName = root.url.split('/')[1];
       switch (routerName) {
         case 'lesson':
