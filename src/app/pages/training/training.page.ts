@@ -1,7 +1,7 @@
 import { Component, AfterViewInit } from '@angular/core';
+import {Stockfish} from '@classes/stockfish';
 declare const Chessboard: any;
 declare const Chess: any;
-declare const STOCKFISH: any;
 declare const $: any;
 
 @Component( {
@@ -14,8 +14,7 @@ export class TrainingPage implements AfterViewInit {
   public game: any;
   public moves: string;
   public algebraicMoves: string[] = [];
-  public stockfish: any;
-  public evaluation = 0;
+  public stockfish: Stockfish = new Stockfish();
   public userColor = 'w';
   public turn = 'w';
 
@@ -25,11 +24,11 @@ export class TrainingPage implements AfterViewInit {
   constructor() {
     this.game = new Chess();
     this.moves = '';
+    this.stockfish.emmiter = this.stockfishEmmiter.bind(this);
   }
 
   ngAfterViewInit() {
     this.createNewGame();
-    this.manageStockfish();
   }
 
   private createNewGame() {
@@ -42,42 +41,14 @@ export class TrainingPage implements AfterViewInit {
       onSnapEnd: this.onSnapEnd.bind(this)} );
   }
 
-  private manageStockfish() {
-    this.stockfish = STOCKFISH();
-    this.stockfish.onmessage = (event) => {
-      if (event && event.includes) {
-        if (event.includes('Total evaluation:')) {
-          this.evaluation = Number(event.match(/(-?[0-9]+.[0-9]+)/g)[0]);
-        }
-        if (event.includes('bestmove ') && !event.includes('none')) {
-          if (this.game.turn() !== this.userColor) {
-            const match = event.match(/^bestmove ([a-h][1-8])([a-h][1-8])([qrbk])?/);
-            this.makeMove(`${match[1]}${match[2]}${match[3] ? match[3] : ''}`);
-          }
-        }
+  private stockfishEmmiter(event: string) {
+    if (event === 'bestmove') {
+      if (this.game.turn() !== this.userColor) {
+        this.makeMove(this.stockfish.bestMove);
       }
-    };
-    this.stockfish.postMessage('uci');
-    // this.stockfish.postMessage('setoption name Skill Level value 20');
-    this.stockfish.postMessage('setoption name Skill Level value 5');
-    this.stockfish.postMessage('setoption name Contempt Factor value 0');
-    this.stockfish.postMessage('setoption name Skill Level value 0');
-    this.stockfish.postMessage('setoption name Skill Level Maximum Error value 10');
-    this.stockfish.postMessage('setoption name Skill Level Probability value 1');
-    this.stockfish.postMessage('setoption name King Safety value 0');
-    this.stockfish.postMessage('setoption name Skill Level value 0');
-    this.stockfish.postMessage('setoption name Skill Level Maximum Error value 10');
-    this.stockfish.postMessage('setoption name Skill Level Probability value 1');
-    this.stockfish.postMessage('ucinewgame');
-    this.stockfish.postMessage('isready');
-
-    // this.stockfish.postMessage('position startpos moves e2e4');
-    // this.stockfish.postMessage('position startpos moves e2e4');
-    // this.stockfish.postMessage('eval');
-    // this.stockfish.postMessage('go depth 1 wtime 300000 winc 2000 btime 300000 binc 2000');
-    // this.stockfish.postMessage('eval');
-
+    }
   }
+
 
   private makeMove(move: string) {
     this.clearHighlightLegalMoves();
@@ -86,10 +57,7 @@ export class TrainingPage implements AfterViewInit {
     this.board.position(this.game.fen());
     this.turn = this.game.turn();
     setTimeout(() => {
-      this.stockfish.postMessage(`position startpos moves ${this.moves}`);
-      this.stockfish.postMessage('eval');
-      this.stockfish.postMessage('go depth 2 wtime 300000 winc 2000 btime 300000 binc 2000');
-      this.stockfish.postMessage('eval');
+      this.stockfish.evalPosition(this.moves);
       this.algebraicMoves = this.game.history();
     }, 700);
   }

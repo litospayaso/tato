@@ -19,10 +19,14 @@ $screen-lg-min: 992px;
   
 
     .lateral-panel-container {
-        background-color: white;
+        background-color: #1e1e1e;
         box-sizing: border-box;
         height: 100vh;
         width: 304px;
+
+        .icon-list-element {
+            padding-right: 8px;
+        }
     }
 }
 
@@ -86,7 +90,7 @@ ion-label {
         // }
 
         .outlet-elem {
-            inset: 0px 0px 0px 304px;
+            inset: 12px;
             @media (max-width: $screen-lg-min) {
                 inset: 0px;
             }

@@ -13,7 +13,7 @@
     <div class="lateral-panel-container">
       <ion-list *ngFor="let page of appPages">
         <ion-item [routerLink]="[page.url]" skipLocationChange routerDirection="root" [ngClass]="title === page.title ? 'selected' : ''">
-          <ion-icon aria-hidden="false" [name]="page.icon"></ion-icon>
+          <ion-icon aria-hidden="false" [name]="page.icon" class="icon-list-element"></ion-icon>
           {{page.title}}
         </ion-item>
       </ion-list>
@@ -22,14 +22,14 @@
 
   
   <div class="container"> 
-    <div class="lateral-menu">
+    <!-- <div class="lateral-menu">
       <ion-list *ngFor="let page of appPages">
         <ion-item [routerLink]="[page.url]" skipLocationChange routerDirection="root" [ngClass]="title === page.title ? 'selected' : ''">
           <ion-icon aria-hidden="false" [name]="page.icon"></ion-icon>
           {{page.title}}
         </ion-item>
       </ion-list>
-    </div>
+    </div> -->
     <div class="outlet-container" [ngClass]="title">
       <ion-router-outlet class="outlet-elem"></ion-router-outlet>
     </div>

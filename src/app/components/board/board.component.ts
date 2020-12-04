@@ -39,7 +39,6 @@ export class BoardComponent implements AfterViewInit, OnChanges {
   }
 
   ngOnChanges(changes) {
-    console.log(`%c this.evaluation`, `background: #df03fc; color: #f8fc03`, this.evaluation);
     if (changes.turn) {
       this.updateStatus();
     }

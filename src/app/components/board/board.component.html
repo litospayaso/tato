@@ -1,5 +1,5 @@
 <div class="evaluation-bar">
-    <div class="evaluation-value" [style.width.%]="(evaluation+5)*10" [style.color]="evaluation < -2 ? 'white' : '#5d5d5d'">{{evaluation}}</div>
+    <div class="evaluation-value" [style.width.%]="evaluation | percentage" [style.color]="evaluation < -2 ? 'white' : '#5d5d5d'">{{evaluation}}</div>
 </div>
 <div [id]="boardId" class="board" [style.width]="width"
     [ngClass]="{'check-w': (inCheck && turn === 'w'), 'check-b': (inCheck && turn === 'b')}">

@@ -1,7 +1,7 @@
 <ion-content [fullscreen]="true">
   <div class="panel-container">
     <!-- <app-board [boardId]="boardId" [board]="board" class="panel-element"></app-board> -->
-    <app-board [boardId]="boardId" [board]="board" (resizeEmitter)="resize()" class="panel-element" [turn]="turn" [game]="game" [evaluation]="evaluation"></app-board>
+    <app-board [boardId]="boardId" [board]="board" (resizeEmitter)="resize()" class="panel-element" [turn]="turn" [game]="game" [evaluation]="stockfish.evaluation"></app-board>
     <app-moves-table [moves]="algebraicMoves" class="panel-element"></app-moves-table>
   </div>
 </ion-content>

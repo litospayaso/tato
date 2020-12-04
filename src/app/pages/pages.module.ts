@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
+import { PercentagePipe } from '@pipes/percentage.pipe';
+
 import { HomePage } from '@pages/home/home.page';
 import { TrainingPage } from '@pages/training/training.page';
 
@@ -18,6 +20,7 @@ import { MovesTableComponent } from '@components/moves-table/moves-table.compone
     IonicModule
   ],
   declarations: [
+    PercentagePipe,
     HomePage,
     TrainingPage,
     BoardComponent,
