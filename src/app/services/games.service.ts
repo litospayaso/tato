@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Storage } from '@ionic/storage';
 import { GameInterface } from '@interfaces/game.interface';
 
 @Injectable({
@@ -7,14 +8,14 @@ import { GameInterface } from '@interfaces/game.interface';
 export class GamesService {
   private allData: GameInterface[];
 
-  constructor() {
-    const data = localStorage.getItem('gamesDatabase');
-    if (data) {
-      this.allData = JSON.parse(data);
-    } else {
-      this.allData = [];
-    }
-    console.log(`%c data`, `background: #df03fc; color: #f8fc03`, data);
+  constructor(private storage: Storage) {
+    storage.get('gamesDatabase').then((data) => {
+      if (data) {
+        this.allData = JSON.parse(data);
+      } else {
+        this.allData = [];
+      }
+    });
   }
 
   public getGames(): GameInterface[] {
@@ -24,7 +25,7 @@ export class GamesService {
 
   public addGame(game: GameInterface) {
     this.allData.push(game);
-    localStorage.setItem('gamesDatabase', JSON.stringify(this.allData));
+    this.storage.set('gamesDatabase', JSON.stringify(this.allData));
   }
 
 }

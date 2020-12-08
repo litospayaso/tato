@@ -1,0 +1,19 @@
+svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+
+  marker {
+    stroke: rgb(124 16 128 / 58%); 
+    fill: rgb(124 16 128 / 58%);
+  }
+
+  line {
+    stroke:rgb(124 16 128 / 58%);
+    stroke-width:4;
+  }
+}

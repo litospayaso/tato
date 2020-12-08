@@ -19,7 +19,7 @@ $screen-lg-min: 992px;
   
 
     .lateral-panel-container {
-        background-color: #1e1e1e;
+        background-color: var(--ion-item-background, var(--ion-background-color, #fff));
         box-sizing: border-box;
         height: 100vh;
         width: 304px;

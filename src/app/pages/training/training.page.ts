@@ -1,5 +1,6 @@
 import { Component, AfterViewInit } from '@angular/core';
-import {Stockfish} from '@classes/stockfish';
+import { Stockfish } from '@classes/stockfish';
+import { GamesService } from '@services/games.service';
 declare const Chessboard: any;
 declare const Chess: any;
 declare const $: any;
@@ -21,7 +22,9 @@ export class TrainingPage implements AfterViewInit {
   public boardId = 'trainingBoard';
   public fromMove = '';
 
-  constructor() {
+  constructor(
+    private gamesService: GamesService
+  ) {
     this.game = new Chess();
     this.moves = '';
     this.stockfish.emmiter = this.stockfishEmmiter.bind(this);
@@ -44,7 +47,7 @@ export class TrainingPage implements AfterViewInit {
   private stockfishEmmiter(event: string) {
     if (event === 'bestmove') {
       if (this.game.turn() !== this.userColor) {
-        this.makeMove(this.stockfish.bestMove);
+        this.makeMove(this.stockfish.bestmove);
       }
     }
   }
@@ -60,6 +63,13 @@ export class TrainingPage implements AfterViewInit {
       this.stockfish.evalPosition(this.moves);
       this.algebraicMoves = this.game.history();
     }, 700);
+    if (this.game.in_checkmate()) {
+      this.gamesService.addGame({
+        date: new Date().toLocaleString(),
+        pgn: this.game.pgn(),
+        title: `${this.game.turn() === 'w' ? '0-1' : '1-0'} Game against Computer level 5`
+      });
+    }
   }
 
   public resize() {
@@ -137,7 +147,7 @@ export class TrainingPage implements AfterViewInit {
   // update the board position after the piece snap
   // for castling, en passant, pawn promotion
   onSnapEnd() {
-    this.board.position(this.game.fen());
+    // this.board.position(this.game.fen());
   }
 
 

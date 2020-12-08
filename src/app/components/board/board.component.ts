@@ -1,5 +1,6 @@
-import { Component, AfterViewInit, Input, Output, EventEmitter, ViewEncapsulation, OnChanges } from '@angular/core';
-import { GamesService } from '@services/games.service';
+import { Component, AfterViewInit, Input, Output, EventEmitter, ViewEncapsulation, OnChanges, ViewChild } from '@angular/core';
+import { ArrowComponent } from '../arrow/arrow.component';
+// import { GamesService } from '@services/games.service';
 
 @Component({
   selector: 'app-board',
@@ -13,13 +14,15 @@ export class BoardComponent implements AfterViewInit, OnChanges {
   @Input() board: any;
   @Input() game: any;
   @Input() turn: string;
+  @Input() bestmove: string;
   @Input() width = '100%';
   @Input() evaluation = '0';
   @Output() resizeEmitter = new EventEmitter();
+  @ViewChild('arrowElement') arrowElement: ArrowComponent;
   public inCheck = false;
 
   constructor(
-    private gamesService: GamesService
+    // private gamesService: GamesService
   ) { }
 
   ngAfterViewInit() {
@@ -33,9 +36,12 @@ export class BoardComponent implements AfterViewInit, OnChanges {
   }
 
   resizeBoard() {
-      this.width = `${document.querySelector(`#${this.boardId}`).parentElement.getBoundingClientRect().width}px`;
+    this.width = `${document.querySelector(`#${this.boardId}`).parentElement.getBoundingClientRect().width}px`;
+    if (this.board) {
       this.board.resize();
-      this.resizeEmitter.emit();
+    }
+    this.resizeEmitter.emit();
+    this.arrowElement.updateLine();
   }
 
   ngOnChanges(changes) {
@@ -54,14 +60,14 @@ export class BoardComponent implements AfterViewInit, OnChanges {
     // }
 
     // // checkmate?
-    if (this.game.in_checkmate()) {
-      this.gamesService.addGame({
-        date: new Date().toLocaleString(),
-        pgn: this.game.pgn(),
-        title: 'Game against Computer level 5'
-      });
-      console.log(`%c this.game.pgn()`, `background: #df03fc; color: #f8fc03`, this.game.pgn());
-    }
+    // if (this.game.in_checkmate()) {
+    //   this.gamesService.addGame({
+    //     date: new Date().toLocaleString(),
+    //     pgn: this.game.pgn(),
+    //     title: 'Game against Computer level 5'
+    //   });
+    //   console.log(`%c this.game.pgn()`, `background: #df03fc; color: #f8fc03`, this.game.pgn());
+    // }
 
     // // draw?
     // else if (this.game.in_draw()) {

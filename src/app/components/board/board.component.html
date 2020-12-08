@@ -1,3 +1,4 @@
+<app-arrow [bestmove]="bestmove" #arrowElement></app-arrow>
 <div class="evaluation-bar">
     <div class="evaluation-value" [style.width.%]="evaluation | percentage" [style.color]="evaluation < -2 ? 'white' : '#5d5d5d'">{{evaluation}}</div>
 </div>

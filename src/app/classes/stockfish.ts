@@ -2,7 +2,7 @@ declare const STOCKFISH: any;
 
 export class Stockfish {
   private stockfish: any;
-  public bestMove: string;
+  public bestmove: string;
   public evaluation = 0;
   public level = 5;
 
@@ -20,7 +20,7 @@ export class Stockfish {
       }
       if (event.includes('bestmove ') && !event.includes('none')) {
         const match = event.match(/^bestmove ([a-h][1-8])([a-h][1-8])([qrbk])?/);
-        this.bestMove = `${match[1]}${match[2]}${match[3] ? match[3] : ''}`;
+        this.bestmove = `${match[1]}${match[2]}${match[3] ? match[3] : ''}`;
         this.emmiter('bestmove');
       }
     }

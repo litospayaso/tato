@@ -3,8 +3,15 @@
     flex-direction: row;
     flex-wrap: wrap;
 
+    .board-container-element {
+        width: 65vmin;
+        height: 65vmin;
+        margin: 16px auto 55px auto;
+    }
     .panel-element {
-        width: 50%;
-        min-width: 480px;
+        width: 65vmin;
+        margin: 0 auto;
+        // min-width: 100%;
+        // min-width: 480px;
     }
 }
