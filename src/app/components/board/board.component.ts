@@ -16,7 +16,7 @@ export class BoardComponent implements AfterViewInit, OnChanges {
   @Input() turn: string;
   @Input() bestmove: string;
   @Input() width = '100%';
-  @Input() evaluation = '0';
+  @Input() evaluation = 0;
   @Output() resizeEmitter = new EventEmitter();
   @ViewChild('arrowElement') arrowElement: ArrowComponent;
   public inCheck = false;

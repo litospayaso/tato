@@ -41,13 +41,12 @@ export class AppComponent {
     private statusBar: StatusBar,
     private storage: Storage
   ) {
-    storage.get('lastRoute').then(root => {
-      if (root && root !== '/') {
-        this.router.navigate(root.split('/').filter(e => e.length > 0), {skipLocationChange: true });
+    storage.get('lastRoute').then(lastRoute => {
+      if (lastRoute && lastRoute !== '/' && router.url === '/') {
+        this.router.navigate(lastRoute.split('/').filter(e => e.length > 0), {skipLocationChange: true });
       }
     });
     this.router.events.pipe(filter(event => event instanceof ResolveEnd)).subscribe(event => {
-
       const root: ResolveEnd = event as ResolveEnd;
       storage.set('lastRoute', root.urlAfterRedirects);
       const routerName = root.url.split('/')[1];
