@@ -1,6 +1,6 @@
 <ion-content [fullscreen]="true">
   <div class="panel-container">
     <app-board [boardId]="boardId" [board]="board" [bestmove]="stockfish.bestmove" [showControlButtons]="true" (moveBackward)="moveBackward()" (moveForward)="moveForward()" (resizeEmitter)="resize()" class="board-container-element" [turn]="turn" [game]="game" [evaluation]="stockfish.evaluation"></app-board>
-    <app-moves-table [lines]="stockfish.lines" [moves]="algebraicMoves" [game]="game" class="panel-element"></app-moves-table>
+    <app-moves-table [lines]="stockfish.lines" [moves]="algebraicMoves" class="panel-element"></app-moves-table>
   </div>
 </ion-content>

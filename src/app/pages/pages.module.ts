@@ -10,6 +10,7 @@ import { PercentagePipe } from '@pipes/percentage.pipe';
 import { HomePage } from '@pages/home/home.page';
 import { TrainingPage } from '@pages/training/training.page';
 import { AnalysisPage } from '@pages/analysis/analysis.page';
+import { GamesPage } from '@pages/games/games.page';
 
 import { BoardComponent } from '@components/board/board.component';
 import { ArrowComponent } from '@components/arrow/arrow.component';
@@ -28,6 +29,7 @@ import { MovesTableComponent } from '@components/moves-table/moves-table.compone
     HomePage,
     TrainingPage,
     AnalysisPage,
+    GamesPage,
     BoardComponent,
     ArrowComponent,
     MovesTableComponent

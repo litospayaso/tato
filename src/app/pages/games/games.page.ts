@@ -5,11 +5,11 @@ declare const Chess: any;
 declare const $: any;
 
 @Component( {
-  selector: 'app-analysis',
-  templateUrl: 'analysis.page.html',
-  styleUrls: ['analysis.page.scss'],
+  selector: 'app-games',
+  templateUrl: 'games.page.html',
+  styleUrls: ['games.page.scss'],
 } )
-export class AnalysisPage implements AfterViewInit {
+export class GamesPage implements AfterViewInit {
   public board: any;
   public game: any;
   public moves: string;

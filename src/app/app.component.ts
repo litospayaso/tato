@@ -29,6 +29,11 @@ export class AppComponent {
       icon: 'create'
     },
     {
+      title: 'My games',
+      url: '/games',
+      icon: 'search-outline'
+    },
+    {
       title: 'Play Computer',
       url: '/training',
       icon: 'barbell-outline'
@@ -90,6 +95,9 @@ export class AppComponent {
         break;
       case 'training':
         title = 'Play computer';
+        break;
+      case 'games':
+        title = 'My games';
         break;
       default:
         break;

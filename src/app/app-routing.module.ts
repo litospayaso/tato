@@ -3,6 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { HomePage } from '@pages/home/home.page';
 import { TrainingPage } from '@pages/training/training.page';
 import { AnalysisPage } from '@pages/analysis/analysis.page';
+import { GamesPage } from '@pages/games/games.page';
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'training',
     component: TrainingPage,
+  },
+  {
+    path: 'games',
+    component: GamesPage,
   },
 ];
 

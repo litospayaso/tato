@@ -17,7 +17,10 @@ export class BoardComponent implements AfterViewInit, OnChanges {
   @Input() bestmove: string;
   @Input() width = '100%';
   @Input() evaluation = 0;
+  @Input() showControlButtons = false;
   @Output() resizeEmitter = new EventEmitter();
+  @Output() moveForward = new EventEmitter();
+  @Output() moveBackward = new EventEmitter();
   @ViewChild('arrowElement') arrowElement: ArrowComponent;
   public inCheck = false;
 
@@ -66,7 +69,6 @@ export class BoardComponent implements AfterViewInit, OnChanges {
     //     pgn: this.game.pgn(),
     //     title: 'Game against Computer level 5'
     //   });
-    //   console.log(`%c this.game.pgn()`, `background: #df03fc; color: #f8fc03`, this.game.pgn());
     // }
 
     // // draw?

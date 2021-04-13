@@ -6,7 +6,7 @@
   
   .evaluation-value {
     height: 100%;
-    background-color: #d6d6d6;
+    background-color: #f4f5f8;
     transition: width 0.5s ease-in-out;
   }
 }
@@ -45,5 +45,12 @@
     border-radius: 50%;
     background-color: black !important;
     display: block;
+  }
+}
+.control-buttons-container {
+  display: flex;
+  flex-direction: row;
+  .button-control-element {
+    width: 50%;
   }
 }

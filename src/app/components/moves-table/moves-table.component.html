@@ -1,5 +1,17 @@
-<div class="table-moves-container">
-  <div *ngFor="let move of moves;" class="move-element">
-    <span>{{move}}</span>
+<div class="table-component-container">
+  <div class="table-lines-container">
+    <div *ngFor="let line of lines;" class="line-element">
+      <div class="evaluation-element" [ngClass]="{'advance-w': (line.evaluation >= 0 ), 'advance-b': (line.evaluation < 0 )}">{{line.evaluation}}</div>
+      <div class="moves-line-element" *ngIf="line.algebraicMoves">
+        <div class="line-element">{{getCurrentMovementNumber()}}</div>
+        <div *ngFor="let move of line.algebraicMoves; let i = index" class="line-element">{{move}}</div>
+        <div class="line-element">...</div>
+      </div>
+    </div>
+  </div>
+  <div class="table-moves-container">
+    <div *ngFor="let move of moves;" class="move-element">
+      <span>{{move}}</span>
+    </div>
   </div>
 </div>

@@ -1,0 +1,129 @@
+// Iniciamos el setup
+
+uci
+setoption name Skill Level value 20
+setoption name Contempt Factor value 0
+setoption name Skill Level value 0
+setoption name Skill Level Maximum Error value 10
+setoption name Skill Level Probability value 1
+setoption name King Safety value 0
+setoption name Skill Level value 0
+setoption name Skill Level Maximum Error value 10
+setoption name Skill Level Probability value 1
+ucinewgame
+isready
+
+
+// Hay que revisar que es este objecto
+Object
+
+
+// Esta es una partida modelo: 
+
+position startpos moves e2e4
+position startpos moves e2e4
+eval
+go depth 1 wtime 300000 winc 2000 btime 300000 binc 2000
+eval
+position startpos moves e2e4 c7c5 f2f4
+position startpos moves e2e4 c7c5 f2f4
+eval
+go depth 1 wtime 300000 winc 2000 btime 300000 binc 2000
+eval
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4
+eval
+go depth 1 wtime 300000 winc 2000 btime 300000 binc 2000
+eval
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4
+eval
+go depth 1 wtime 300000 winc 2000 btime 300000 binc 2000
+eval
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4
+eval
+go depth 1 wtime 300000 winc 2000 btime 300000 binc 2000
+eval
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4
+eval
+go depth 1 wtime 300000 winc 2000 btime 300000 binc 2000
+eval
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3
+eval
+go depth 1 wtime 300000 winc 2000 btime 300000 binc 2000
+eval
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5
+eval
+go depth 1 wtime 300000 winc 2000 btime 300000 binc 2000
+eval
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6
+eval
+go depth 1 wtime 300000 winc 2000 btime 300000 binc 2000
+eval
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6 f8e7 e6f7
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6 f8e7 e6f7
+eval
+go depth 1 wtime 300000 winc 2000 btime 300000 binc 2000
+eval
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6 f8e7 e6f7 e8f8 g4g5
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6 f8e7 e6f7 e8f8 g4g5
+eval
+go depth 1 wtime 300000 winc 2000 btime 300000 binc 2000
+eval
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6 f8e7 e6f7 e8f8 g4g5 c8g4 f1e2
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6 f8e7 e6f7 e8f8 g4g5 c8g4 f1e2
+eval
+go depth 1 wtime 300000 winc 2000 btime 300000 binc 2000
+eval
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6 f8e7 e6f7 e8f8 g4g5 c8g4 f1e2 h7h5 e2g4
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6 f8e7 e6f7 e8f8 g4g5 c8g4 f1e2 h7h5 e2g4
+eval
+go depth 1 wtime 300000 winc 2000 btime 300000 binc 2000
+eval
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6 f8e7 e6f7 e8f8 g4g5 c8g4 f1e2 h7h5 e2g4 f8f7 g1f3
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6 f8e7 e6f7 e8f8 g4g5 c8g4 f1e2 h7h5 e2g4 f8f7 g1f3
+eval
+go depth 1 wtime 300000 winc 2000 btime 300000 binc 2000
+eval
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6 f8e7 e6f7 e8f8 g4g5 c8g4 f1e2 h7h5 e2g4 f8f7 g1f3 e5c4 f3d4
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6 f8e7 e6f7 e8f8 g4g5 c8g4 f1e2 h7h5 e2g4 f8f7 g1f3 e5c4 f3d4
+eval
+go depth 1 wtime 300000 winc 2000 btime 300000 binc 2000
+eval
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6 f8e7 e6f7 e8f8 g4g5 c8g4 f1e2 h7h5 e2g4 f8f7 g1f3 e5c4 f3d4 f7g6 d1f3
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6 f8e7 e6f7 e8f8 g4g5 c8g4 f1e2 h7h5 e2g4 f8f7 g1f3 e5c4 f3d4 f7g6 d1f3
+eval
+go depth 1 wtime 300000 winc 2000 btime 300000 binc 2000
+eval
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6 f8e7 e6f7 e8f8 g4g5 c8g4 f1e2 h7h5 e2g4 f8f7 g1f3 e5c4 f3d4 f7g6 d1f3 e7f6 g5f6
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6 f8e7 e6f7 e8f8 g4g5 c8g4 f1e2 h7h5 e2g4 f8f7 g1f3 e5c4 f3d4 f7g6 d1f3 e7f6 g5f6
+eval
+go depth 1 wtime 300000 winc 2000 btime 300000 binc 2000
+eval
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6 f8e7 e6f7 e8f8 g4g5 c8g4 f1e2 h7h5 e2g4 f8f7 g1f3 e5c4 f3d4 f7g6 d1f3 e7f6 g5f6 g7f6 f3f5
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6 f8e7 e6f7 e8f8 g4g5 c8g4 f1e2 h7h5 e2g4 f8f7 g1f3 e5c4 f3d4 f7g6 d1f3 e7f6 g5f6 g7f6 f3f5
+eval
+go depth 1 wtime 300000 winc 2000 btime 300000 binc 2000
+eval
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6 f8e7 e6f7 e8f8 g4g5 c8g4 f1e2 h7h5 e2g4 f8f7 g1f3 e5c4 f3d4 f7g6 d1f3 e7f6 g5f6 g7f6 f3f5 g6g7 g4h5
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6 f8e7 e6f7 e8f8 g4g5 c8g4 f1e2 h7h5 e2g4 f8f7 g1f3 e5c4 f3d4 f7g6 d1f3 e7f6 g5f6 g7f6 f3f5 g6g7 g4h5
+eval
+go depth 1 wtime 300000 winc 2000 btime 300000 binc 2000
+eval
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6 f8e7 e6f7 e8f8 g4g5 c8g4 f1e2 h7h5 e2g4 f8f7 g1f3 e5c4 f3d4 f7g6 d1f3 e7f6 g5f6 g7f6 f3f5 g6g7 g4h5 d8b6 f5g6
+position startpos moves e2e4 c7c5 f2f4 e7e6 g2g4 b8c6 h2h4 g8e7 c2c4 c6d4 a2a4 e7c6 b1c3 d7d6 f4f5 c6e5 f5e6 f8e7 e6f7 e8f8 g4g5 c8g4 f1e2 h7h5 e2g4 f8f7 g1f3 e5c4 f3d4 f7g6 d1f3 e7f6 g5f6 g7f6 f3f5 g6g7 g4h5 d8b6 f5g6
+eval
+go depth 1 wtime 300000 winc 2000 btime 300000 binc 2000
+eval
+
+// Este es un ejemplo de cambiar el nivel de la máquina:
+
+
+setoption name Skill Level value 10
+setoption name Skill Level Maximum Error value 5
+setoption name Skill Level Probability value 65

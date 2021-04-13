@@ -20,7 +20,6 @@ export class ArrowComponent implements AfterViewInit, OnChanges {
 
   ngOnChanges(changes) {
     if (changes.bestmove) {
-      console.log(`%c this.bestmove`, `background: #df03fc; color: #f8fc03`, this.bestmove);
       this.updateLine();
     }
   }
@@ -29,7 +28,6 @@ export class ArrowComponent implements AfterViewInit, OnChanges {
     if (this.bestmove) {
       const arrowElement = document.getElementById(this.arrowId);
       if (arrowElement) {
-        console.log(`%c arrowElement`, `background: #df03fc; color: #f8fc03`, arrowElement);
         const oldLine = arrowElement.querySelector('line');
         if (oldLine) {
           oldLine.remove();
