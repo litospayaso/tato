@@ -1,6 +1,5 @@
 import { Component, OnChanges, Input } from '@angular/core';
 import { LineInterface } from '@app/interfaces/line.interface';
-import { ignoreElements } from 'rxjs/operators';
 declare const Chess: any;
 
 @Component({
@@ -34,7 +33,7 @@ export class MovesTableComponent implements OnChanges {
     });
     console.log(`%c this.game.turn()`, `background: #df03fc; color: #f8fc03`, this.game.turn());
     if (this.game.turn() === 'b') {
-      this.lines = this.lines.sort((a,b) => a.evaluation - b.evaluation);
+      this.lines = this.lines.sort((a, b) => a.evaluation - b.evaluation);
     }
   }
 

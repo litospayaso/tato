@@ -13,6 +13,7 @@ import { AnalysisPage } from '@pages/analysis/analysis.page';
 import { GamesPage } from '@pages/games/games.page';
 
 import { BoardComponent } from '@components/board/board.component';
+import { LiboardComponent } from '@components/liboard/liboard.component';
 import { ArrowComponent } from '@components/arrow/arrow.component';
 import { MovesTableComponent } from '@components/moves-table/moves-table.component';
 
@@ -31,6 +32,7 @@ import { MovesTableComponent } from '@components/moves-table/moves-table.compone
     AnalysisPage,
     GamesPage,
     BoardComponent,
+    LiboardComponent,
     ArrowComponent,
     MovesTableComponent
   ]

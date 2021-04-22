@@ -32,6 +32,11 @@
               },
               {
                 "glob": "**/*",
+                "input": "src/libs/chessground/images",
+                "output": "images"
+              },
+              {
+                "glob": "**/*",
                 "input": "src/img",
                 "output": "img"
               },
@@ -44,6 +49,15 @@
             "styles": [
               {
                 "input": "src/theme/variables.scss"
+              },
+              {
+                "input": "src/libs/chessground/chessground.css"
+              },
+              {
+                "input": "src/libs/chessground/theme.css"
+              },
+              {
+                "input": "src/libs/chessground/3d.css"
               },
               {
                 "input": "src/global.scss"
@@ -61,6 +75,9 @@
               },
               {
                 "input": "./node_modules/chess.js/chess.js"
+              },
+              {
+                "input": "src/libs/chessground/chessground.js"
               },
               {
                 "input": "./node_modules/@chrisoakman/chessboardjs/dist/chessboard-1.0.0.js"

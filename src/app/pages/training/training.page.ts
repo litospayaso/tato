@@ -1,6 +1,9 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { Stockfish } from '@classes/stockfish';
 import { GamesService } from '@services/games.service';
+import {ChessInstance} from '@libs/chess.js/chessInterface';
+import openingsJSON from '@resources/bishop.json';
+import { OpeningInterface } from '@app/interfaces/opening.interface';
 declare const Chessboard: any;
 declare const Chess: any;
 declare const $: any;
@@ -12,12 +15,14 @@ declare const $: any;
 } )
 export class TrainingPage implements AfterViewInit {
   public board: any;
-  public game: any;
+  public game: ChessInstance;
   public moves: string;
   public algebraicMoves: string[] = [];
-  public stockfish: Stockfish = new Stockfish();
+  public stockfish: Stockfish = new Stockfish(20, 3, 1, 10);
   public userColor = 'w';
   public turn = 'w';
+  public openingsBook: OpeningInterface[] = openingsJSON;
+  public opening: OpeningInterface;
 
   public boardId = 'trainingBoard';
   public fromMove = '';
@@ -32,6 +37,7 @@ export class TrainingPage implements AfterViewInit {
 
   ngAfterViewInit() {
     this.createNewGame();
+    console.log(`%c openingsJSON`, `background: #df03fc; color: #f8fc03`, openingsJSON);
   }
 
   private createNewGame() {
@@ -47,7 +53,17 @@ export class TrainingPage implements AfterViewInit {
   private stockfishEmmiter(event: string) {
     if (event === 'bestmove') {
       if (this.game.turn() !== this.userColor) {
-        this.makeMove(this.stockfish.bestmove);
+        const openings = this.openingsBook.filter(e => e.movesVerbose.join(' ').trim().includes(this.moves.trim()));
+        if (openings.length > 0) {
+          this.opening = openings[Math.floor(Math.random() * openings.length)];
+          this.makeMove(this.opening.movesVerbose[this.moves.split(' ').length - 1]);
+        } else {
+          this.makeMove(
+            Math.random() < 0.9 ?
+            this.stockfish.bestmove :
+            this.stockfish.lines[Math.floor(Math.random() * this.stockfish.lines.length)].moves[0]
+          );
+        }
       }
     }
   }
@@ -67,7 +83,7 @@ export class TrainingPage implements AfterViewInit {
       this.gamesService.addGame({
         date: new Date().toLocaleString(),
         pgn: this.game.pgn(),
-        title: `${this.game.turn() === 'w' ? '0-1' : '1-0'} Game against Computer level 5`
+        title: `${this.game.turn() === 'w' ? '0-1' : '1-0'} Game against Computer level ${this.stockfish.level}; ${this.opening?.name}`
       });
     }
   }
@@ -83,8 +99,7 @@ export class TrainingPage implements AfterViewInit {
       return false;
     }
     // only pick up pieces for the side to move
-    if ((this.game.turn() === 'w' && piece.search(/^b/) !== -1) ||
-        (this.game.turn() === 'b' && piece.search(/^w/) !== -1)) {
+    if (this.game.turn() !== this.userColor || !piece.includes(this.userColor)) {
       return false;
     }
 

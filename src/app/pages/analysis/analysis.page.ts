@@ -58,6 +58,7 @@ export class AnalysisPage implements AfterViewInit {
 
   private stockfishEmmiter(event: string) {
     if (event === 'bestmove') {
+      console.log(`%c this.stockfish`, `background: #df03fc; color: #f8fc03`, this.stockfish);
       // if (this.game.turn() !== this.userColor) {
       //   this.makeMove(this.stockfish.bestmove);
       // }

@@ -10,8 +10,9 @@ export class Stockfish {
   public depth: number;
   public lines: LineInterface[] = [];
   public position: string;
+  public selfdepth: number = undefined;
 
-  constructor(level = 5, depth = 1, multiline = 0) {
+  constructor(level = 5, depth = 1, multiline = 1, selfdepth?) {
     this.level = level;
     this.multiline = multiline;
     this.depth = depth;
@@ -73,7 +74,7 @@ export class Stockfish {
     this.position = moves;
     this.stockfish.postMessage(`position startpos moves ${moves}`);
     this.stockfish.postMessage('eval');
-    this.stockfish.postMessage(`go depth ${this.depth} wtime 300000 winc 2000 btime 300000 binc 2000`);
+    this.stockfish.postMessage(`go depth ${this.depth} ${this.selfdepth ? 'seldepth ' + this.selfdepth + ' ' : ''}wtime 300000 winc 2000 btime 300000 binc 2000`);
     this.stockfish.postMessage('eval');
   }
 
