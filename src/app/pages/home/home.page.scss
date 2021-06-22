@@ -49,7 +49,7 @@
   }
   .panel-element {
       width: 55vmin;
-      margin: 30px auto;
+      margin: 60px auto;
       // min-width: 100%;
       // min-width: 480px;
   }
@@ -62,7 +62,7 @@
   background-color: #5d5d5d;
   
   .evaluation-value {
-    height: 100%;
+    height: 30px;
     background-color: #f4f5f8;
     transition: width 0.5s ease-in-out;
   }
