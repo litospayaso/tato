@@ -39,7 +39,6 @@ export class MovesTableComponent implements OnChanges {
       game.load_pgn(this.game.history().concat(line.moves).join(' '), {sloppy: true});
       line.algebraicMoves = game.history().slice(this.game.history().length);
     });
-    console.log(`%c this.game.turn()`, `background: #df03fc; color: #f8fc03`, this.game.turn());
     if (this.game.turn() === 'b') {
       this.lines = this.lines.sort((a, b) => a.evaluation - b.evaluation);
     }

@@ -117,7 +117,6 @@ export class HomePage implements AfterViewInit {
   }
   private stockfishEmmiter(event: string) {
     if (event === 'bestmove') {
-      console.log(`%c this.stockfish`, `background: #df03fc; color: #f8fc03`, this.stockfish);
       if (this.stockfish.bestmove) {
         const match = this.stockfish.bestmove.match(/^([a-h][1-8])([a-h][1-8])/);
         this.board.set({
