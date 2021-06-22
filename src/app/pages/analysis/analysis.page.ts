@@ -1,5 +1,9 @@
 import { Component, AfterViewInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { GamesService } from '@services/games.service';
 import {Stockfish} from '@classes/stockfish';
+import { GameInterface } from '@app/interfaces/game.interface';
+import { Storage } from '@ionic/storage';
 declare const Chessboard: any;
 declare const Chess: any;
 declare const $: any;
@@ -18,11 +22,21 @@ export class AnalysisPage implements AfterViewInit {
   public userColor = 'w';
   public turn = 'w';
   public boardMovesPointer: number = undefined;
+  public savedGame: GameInterface;
+  public gameId: string | number;
 
   public boardId = 'analysisBoard';
   public fromMove = '';
 
-  constructor() {
+  constructor(
+    private route: ActivatedRoute,
+    private gamesService: GamesService,
+    private storage: Storage
+  ) {
+    // tslint:disable-next-line: deprecation
+    this.route.paramMap.subscribe(() => {
+      this.gameId = this.route.snapshot.paramMap.get('id');
+    });
     this.game = new Chess();
     this.moves = '';
     this.stockfish.emmiter = this.stockfishEmmiter.bind(this);
@@ -48,12 +62,26 @@ export class AnalysisPage implements AfterViewInit {
 
   private createNewGame() {
     this.game = new Chess();
-    this.board = Chessboard( this.boardId, {
-      draggable: true,
-      position: 'start',
-      onDragStart: this.onDragStart.bind(this),
-      onDrop: this.onDrop.bind(this)
-    });
+    if (this.gameId !== undefined && this.gameId !== null) {
+      this.storage.get('gamesDatabase').then((data) => {
+        this.savedGame = JSON.parse(data)[this.gameId];
+        this.moves = this.savedGame.movesVerbose;
+        this.boardMovesPointer = this.savedGame.movesVerbose.split(' ').length;
+        this.board = Chessboard( this.boardId, {
+          draggable: true,
+          position: this.savedGame.endingPosition,
+          onDragStart: this.onDragStart.bind(this),
+          onDrop: this.onDrop.bind(this)
+        });
+      });
+    } else {
+      this.board = Chessboard( this.boardId, {
+        draggable: true,
+        position: 'start',
+        onDragStart: this.onDragStart.bind(this),
+        onDrop: this.onDrop.bind(this)
+      });
+    }
   }
 
   private stockfishEmmiter(event: string) {

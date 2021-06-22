@@ -19,6 +19,10 @@ const routes: Routes = [
     component: AnalysisPage,
   },
   {
+    path: 'analysis/:id',
+    component: AnalysisPage,
+  },
+  {
     path: 'training',
     component: TrainingPage,
   },

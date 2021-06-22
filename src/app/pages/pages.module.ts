@@ -16,6 +16,7 @@ import { BoardComponent } from '@components/board/board.component';
 import { LiboardComponent } from '@components/liboard/liboard.component';
 import { ArrowComponent } from '@components/arrow/arrow.component';
 import { MovesTableComponent } from '@components/moves-table/moves-table.component';
+import { TrainingModalComponent } from '@components/training-modal/training-modal.component';
 
 @NgModule({
   imports: [
@@ -34,6 +35,7 @@ import { MovesTableComponent } from '@components/moves-table/moves-table.compone
     BoardComponent,
     LiboardComponent,
     ArrowComponent,
+    TrainingModalComponent,
     MovesTableComponent
   ]
 })

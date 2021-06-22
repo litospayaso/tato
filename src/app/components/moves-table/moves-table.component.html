@@ -1,4 +1,5 @@
 <div class="table-component-container">
+  <ion-button *ngIf="resignButton" expand="full" (click)="resign()" color="medium">Resign</ion-button>
   <div class="table-lines-container">
     <div *ngFor="let line of lines;" class="line-element">
       <div class="evaluation-element" [ngClass]="{'advance-w': (line.evaluation >= 0 ), 'advance-b': (line.evaluation < 0 )}">{{line.evaluation}}</div>

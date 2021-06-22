@@ -1,14 +1,24 @@
 <app-arrow [bestmove]="bestmove" #arrowElement></app-arrow>
 <div class="evaluation-bar">
-    <div class="evaluation-value" [style.width.%]="evaluation | percentage"
-        [style.color]="evaluation < -2 ? 'white' : '#5d5d5d'">{{evaluation}}</div>
+  <div class="evaluation-value" [style.width.%]="evaluation | percentage"
+    [style.color]="evaluation < -2 ? 'white' : '#5d5d5d'">{{evaluation}}</div>
 </div>
-<div [id]="boardId" class="board" [style.width]="width"
+
+<div [id]="boardId + 'Arrows'">
+  <canvas id="primary_canvas" width="392" height="392"></canvas>
+  <canvas id="drawing_canvas" width="392" height="392"></canvas>
+  <div [id]="boardId" class="board" [style.width]="width"
     [ngClass]="{'check-w': (inCheck && turn === 'w'), 'check-b': (inCheck && turn === 'b')}">
+  </div>
 </div>
 <div class="control-buttons-container" *ngIf="showControlButtons">
-    <ion-button class="button-control-element" color="dark" (click)="moveBackward.emit()"><ion-icon name="chevron-back-outline"></ion-icon></ion-button>
-    <!-- <ion-button class="button-control-element" color="dark">Reset</ion-button>
+  <ion-button class="button-control-element" color="dark" (click)="moveBackward.emit()">
+    <ion-icon name="chevron-back-outline"></ion-icon>
+  </ion-button>
+  <!-- <ion-button class="button-control-element" color="dark">Reset</ion-button>
     <ion-button class="button-control-element" color="dark">Flip</ion-button> -->
-    <ion-button class="button-control-element" color="dark" (click)="moveForward.emit()"><ion-icon name="chevron-forward-outline"></ion-icon></ion-button>
+  <ion-button class="button-control-element" color="dark" (click)="getPgn()" *ngIf="savedGame"> get PGN</ion-button>
+  <ion-button class="button-control-element" color="dark" (click)="moveForward.emit()">
+    <ion-icon name="chevron-forward-outline"></ion-icon>
+  </ion-button>
 </div>

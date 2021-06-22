@@ -1,10 +1,15 @@
 import { Component, AfterViewInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { TrainingModalComponent } from '@components/training-modal/training-modal.component';
 import { Stockfish } from '@classes/stockfish';
 import { GamesService } from '@services/games.service';
 import {ChessInstance} from '@libs/chess.js/chessInterface';
-import openingsJSON from '@resources/bishop.json';
+import openingsJSON from '@resources/openings.json';
 import { OpeningInterface } from '@app/interfaces/opening.interface';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+
 declare const Chessboard: any;
+declare const ChessboardArrows: any;
 declare const Chess: any;
 declare const $: any;
 
@@ -28,16 +33,26 @@ export class TrainingPage implements AfterViewInit {
   public fromMove = '';
 
   constructor(
-    private gamesService: GamesService
+    private gamesService: GamesService,
+    public modalController: ModalController,
+    public httpClient: HttpClient
   ) {
     this.game = new Chess();
     this.moves = '';
     this.stockfish.emmiter = this.stockfishEmmiter.bind(this);
   }
 
-  ngAfterViewInit() {
-    this.createNewGame();
-    console.log(`%c openingsJSON`, `background: #df03fc; color: #f8fc03`, openingsJSON);
+  async ngAfterViewInit() {
+    const modal = await this.modalController.create({
+      component: TrainingModalComponent,
+    });
+    await modal.present();
+    await modal.onDidDismiss().then(data => {
+      this.userColor = data.data.userColor;
+      this.openingsBook = openingsJSON.filter(e => e.name.includes(data.data.opening));
+      this.createNewGame();
+    });
+    // this.createNewGame();
   }
 
   private createNewGame() {
@@ -45,9 +60,18 @@ export class TrainingPage implements AfterViewInit {
     this.board = Chessboard( this.boardId, {
       draggable: true,
       position: 'start',
+      orientation: this.userColor === 'w' ? 'white' : 'black',
       onDragStart: this.onDragStart.bind(this),
       onDrop: this.onDrop.bind(this),
       onSnapEnd: this.onSnapEnd.bind(this)} );
+
+    const arrows = new ChessboardArrows(`${this.boardId}Arrows`);
+
+    console.log(`%c arrows`, `background: #df03fc; color: #f8fc03`, arrows);
+
+    if (this.userColor === 'b') {
+      this.makeMove(this.openingsBook[Math.floor(Math.random() * this.openingsBook.length)].movesVerbose[0]);
+    }
   }
 
   private stockfishEmmiter(event: string) {
@@ -80,11 +104,9 @@ export class TrainingPage implements AfterViewInit {
       this.algebraicMoves = this.game.history();
     }, 700);
     if (this.game.in_checkmate()) {
-      this.gamesService.addGame({
-        date: new Date().toLocaleString(),
-        pgn: this.game.pgn(),
-        title: `${this.game.turn() === 'w' ? '0-1' : '1-0'} Game against Computer level ${this.stockfish.level}; ${this.opening?.name}`
-      });
+      setTimeout(() => {
+        this.endGame();
+      }, 1500);
     }
   }
 
@@ -92,6 +114,22 @@ export class TrainingPage implements AfterViewInit {
     this.clearHighlightLegalMoves();
   }
 
+  public endGame() {
+    this.gamesService.addGame({
+      date: new Date().toLocaleString(),
+      pgn: this.game.pgn(),
+      title: `${this.game.turn() === 'w' ? '0-1' : '1-0'} Game against Computer level ${this.stockfish.level}; ${this.opening?.name}`,
+      opening: this.opening.name,
+      movesVerbose: this.moves,
+      userColor: this.userColor,
+      endingPosition: this.game.fen()
+    });
+    this.ngAfterViewInit();
+  }
+
+  public onResign() {
+    this.endGame();
+  }
 
   onDragStart(source, piece, position, orientation) {
     // do not pick up pieces if the game is over

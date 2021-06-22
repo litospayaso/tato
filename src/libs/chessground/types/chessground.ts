@@ -256,6 +256,8 @@ export interface ChessgroundInterface {
   // unbinds all events
   // (important for document-wide events like scroll and mousemove)
   destroy: Unbind;
+
+  fen: FEN;
   // reconfigure the instance. Accepts all config options, except for viewOnly & drawable.visible.
   // board will be animated accordingly, if animations are enabled.
   set(config: Config): void;

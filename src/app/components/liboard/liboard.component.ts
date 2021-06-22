@@ -1,4 +1,5 @@
 import { Component, AfterViewInit, Input, Output, EventEmitter, ViewEncapsulation, OnChanges, ViewChild } from '@angular/core';
+import { GameInterface } from '@app/interfaces/game.interface';
 import { ChessgroundConstructor, Key, Color, ChessgroundInterface } from 'src/libs/chessground/types/chessground';
 // const Chessground = require('chessground').Chessground;
 // import {Chessground} from 'chessground';
@@ -14,67 +15,67 @@ declare const Chess: any;
 })
 export class LiboardComponent implements AfterViewInit, OnChanges {
 
-  // @Input() boardId: string;
-  // @Input() board: any;
-  // @Input() game: any;
-  // @Input() turn: string;
-  // @Input() bestmove: string;
-  // @Input() width = '100%';
-  // @Input() evaluation = 0;
-  @Input() showControlButtons = true;
+  @Input() boardId: string;
+  @Input() board: any;
+  @Input() game: any;
+  @Input() turn: string;
+  @Input() bestmove: string;
+  @Input() width = '100%';
+  @Input() evaluation = 0;
+  @Input() showControlButtons = false;
+  @Input() savedGame: GameInterface;
   @Output() resizeEmitter = new EventEmitter();
   @Output() moveForward = new EventEmitter();
   @Output() moveBackward = new EventEmitter();
+
   public inCheck = false;
 
   constructor(
     // private gamesService: GamesService
-  ) { }
+  ) {
+  }
 
   ngAfterViewInit() {
-
-
     const chess = new Chess();
-    const cg = Chessground(document.getElementById('board-container'), {
-      movable: {
-        color: 'white',
-        free: false,
-        dests: this.toDests(chess)
-      },
-      highlight: {
-        check: true
-      }
-    });
-    cg.set({
-      movable: {
-        events: {
-          after: this.aiPlay(cg, chess, 1000, false)
-        }
-      }
-    });
-
-    // const chess = new Chess();
-    // const cg = Chessground(document.getElementById('board-container'), {
-    //     movable: {
-    //         color: 'white',
-    //         free: false,
-    //         dests: this.toDests(chess),
-    //     },
-    //     draggable: {
-    //         showGhost: true
-    //     }
+    // const cg = Chessground(document.getElementById(this.boardId), {
+    //   movable: {
+    //     color: 'white',
+    //     free: false,
+    //     dests: this.toDests(chess)
+    //   },
+    //   highlight: {
+    //     check: true
+    //   }
     // });
     // cg.set({
-    //     movable: { events: { after: this.playOtherSide(cg, chess) } }
+    //   movable: {
+    //     events: {
+    //       after: this.aiPlay(cg, chess, 1000, false)
+    //     }
+    //   }
     // });
 
-    // const ground = Chessground(document.getElementById('board-container'), {
+
+    const cg = Chessground(document.getElementById(this.boardId), {
+        movable: {
+            color: 'white',
+            free: false,
+            dests: this.toDests(chess),
+        },
+        draggable: {
+            showGhost: true
+        }
+    });
+    cg.set({
+        movable: { events: { after: this.playOtherSide(cg, chess) } }
+    });
+
+    // const ground = Chessground(document.getElementById(this.boardId), {
     //   movable: {
     //     color: 'both',
     //     showDests: true
     //   }
     // });
-    // console.log(`%c ground`, `background: #df03fc; color: #f8fc03`, ground);
   }
 
 
@@ -95,6 +96,7 @@ export class LiboardComponent implements AfterViewInit, OnChanges {
   playOtherSide(cg: ChessgroundInterface, chess) {
     return (orig, dest) => {
       chess.move({from: orig, to: dest});
+
       cg.set({
         turnColor: this.toColor(chess),
         movable: {

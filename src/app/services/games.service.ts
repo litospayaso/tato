@@ -6,7 +6,7 @@ import { GameInterface } from '@interfaces/game.interface';
   providedIn: 'root'
 })
 export class GamesService {
-  private allData: GameInterface[];
+  private allData: GameInterface[] = [];
 
   constructor(private storage: Storage) {
     storage.get('gamesDatabase').then((data) => {

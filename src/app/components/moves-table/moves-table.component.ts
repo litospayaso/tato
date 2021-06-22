@@ -1,4 +1,5 @@
-import { Component, OnChanges, Input } from '@angular/core';
+import { Component, OnChanges, Input, Output, EventEmitter } from '@angular/core';
+import { GameInterface } from '@app/interfaces/game.interface';
 import { LineInterface } from '@app/interfaces/line.interface';
 declare const Chess: any;
 
@@ -12,9 +13,16 @@ export class MovesTableComponent implements OnChanges {
   @Input() moves: string;
   @Input() lines: LineInterface[];
   @Input() game: any;
+  @Input() savedGame: GameInterface;
+  @Input() resignButton: any = false;
+  @Output() resingEmitter = new EventEmitter();
   private updateTimer: any;
 
   constructor() { }
+
+  public resign() {
+    this.resingEmitter.emit();
+  }
 
   ngOnChanges(changes) {
     if (changes.lines) {
@@ -38,7 +46,7 @@ export class MovesTableComponent implements OnChanges {
   }
 
   getSloppyHistory() {
-    return this.game.history({verbose: true}).map(e => `${e.from}${e.to}`);
+    return this.game.history({verbose: true}).map(e => `${e.from}${e.to}${e.promotion ? e.promotion : ''}`);
   }
 
   getCurrentMovementNumber() {

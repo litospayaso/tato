@@ -1,4 +1,5 @@
 import { Component, AfterViewInit, Input, Output, EventEmitter, ViewEncapsulation, OnChanges, ViewChild } from '@angular/core';
+import { GameInterface } from '@app/interfaces/game.interface';
 import { ArrowComponent } from '../arrow/arrow.component';
 // import { GamesService } from '@services/games.service';
 
@@ -18,6 +19,7 @@ export class BoardComponent implements AfterViewInit, OnChanges {
   @Input() width = '100%';
   @Input() evaluation = 0;
   @Input() showControlButtons = false;
+  @Input() savedGame: GameInterface;
   @Output() resizeEmitter = new EventEmitter();
   @Output() moveForward = new EventEmitter();
   @Output() moveBackward = new EventEmitter();
@@ -53,6 +55,17 @@ export class BoardComponent implements AfterViewInit, OnChanges {
     }
     // this.updateStatus();
   }
+
+  getPgn() {
+    const dummy = document.createElement('textarea');
+    // dummy.style.display = 'none';
+    document.body.appendChild(dummy);
+    dummy.value = this.savedGame.pgn;
+    dummy.select();
+    document.execCommand('copy');
+    document.body.removeChild(dummy);
+  }
+
   updateStatus() {
     this.inCheck = this.game.in_check();
     // let status = '';

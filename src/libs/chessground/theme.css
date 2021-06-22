@@ -3,6 +3,7 @@
  */
 .cg-wrap {
   background-image: url('images/board/blue.svg');
+  background-repeat: no-repeat;
 }
 
 .cg-wrap piece.pawn.white {
