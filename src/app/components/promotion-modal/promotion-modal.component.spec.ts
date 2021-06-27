@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { BoardComponent } from './board.component';
+import { PromotionModalComponent } from './promotion-modal.component';
 
-describe('BoardComponent', () => {
-  let component: BoardComponent;
-  let fixture: ComponentFixture<BoardComponent>;
+describe('PromotionModalComponent', () => {
+  let component: PromotionModalComponent;
+  let fixture: ComponentFixture<PromotionModalComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BoardComponent ],
+      declarations: [ PromotionModalComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(BoardComponent);
+    fixture = TestBed.createComponent(PromotionModalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

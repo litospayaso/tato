@@ -1,10 +1,12 @@
 import { Component, AfterViewInit } from '@angular/core';
+import { PopoverController } from '@ionic/angular';
 import { ActivatedRoute } from '@angular/router';
 import { GamesService } from '@services/games.service';
 import { Stockfish } from '@classes/stockfish';
 import { GameInterface } from '@app/interfaces/game.interface';
 import { Storage } from '@ionic/storage';
 import { ChessgroundConstructor, Key, Color, ChessgroundInterface } from 'src/libs/chessground/types/chessground';
+import { PromotionModalComponent } from '@components/promotion-modal/promotion-modal.component';
 import * as uuid from 'uuid';
 import { ChessInstance } from '@libs/chess.js/chessInterface';
 declare const Chessground: ChessgroundConstructor;
@@ -32,6 +34,7 @@ export class AnalysisPage implements AfterViewInit {
   constructor(
     private route: ActivatedRoute,
     private gamesService: GamesService,
+    private popoverController: PopoverController,
     private storage: Storage
   ) {
     this.boardId = uuid.v4();
@@ -74,8 +77,20 @@ export class AnalysisPage implements AfterViewInit {
   }
 
   private makeAMove() {
-    return (orig, dest) => {
-      const move = `${orig}${dest}`;
+    return async (orig, dest) => {
+      let move = `${orig}${dest}`;
+      const origPiece = this.game.get(orig);
+      if (origPiece.type === 'p' && ((origPiece.color === 'w' && dest.includes('8')) || (origPiece.color === 'b' && dest.includes('1')))) {
+        const popover = await this.popoverController.create({
+          component: PromotionModalComponent,
+          // cssClass: 'my-custom-class',
+          translucent: false
+        });
+        await popover.present();
+        const promotion = await popover.onDidDismiss();
+        await popover.present();
+        move = move.concat(promotion.data);
+      }
       // tslint:disable-next-line:max-line-length
       const moves = this.boardMovesPointer ? this.getCurrentListMoves().slice(0, this.boardMovesPointer).join(' ').concat(` ${move}`) : this.moves.concat(` ${move}`);
       this.boardMovesPointer = undefined;

@@ -12,9 +12,8 @@ import { TrainingPage } from '@pages/training/training.page';
 import { AnalysisPage } from '@pages/analysis/analysis.page';
 import { GamesPage } from '@pages/games/games.page';
 
-import { BoardComponent } from '@components/board/board.component';
+import { PromotionModalComponent } from '@components/promotion-modal/promotion-modal.component';
 import { LiboardComponent } from '@components/liboard/liboard.component';
-import { ArrowComponent } from '@components/arrow/arrow.component';
 import { MovesTableComponent } from '@components/moves-table/moves-table.component';
 import { TrainingModalComponent } from '@components/training-modal/training-modal.component';
 
@@ -32,9 +31,8 @@ import { TrainingModalComponent } from '@components/training-modal/training-moda
     TrainingPage,
     AnalysisPage,
     GamesPage,
-    BoardComponent,
+    PromotionModalComponent,
     LiboardComponent,
-    ArrowComponent,
     TrainingModalComponent,
     MovesTableComponent
   ]
