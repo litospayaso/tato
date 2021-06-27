@@ -1,0 +1,55 @@
+.buttons-promotion-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 5px;
+  width: 100%;
+  height: 200px;
+  .button-promotion-element {
+    width: 42%;
+    height: 40%;
+  }
+  &.modal-color-w {
+    .button-promotion-element {
+      span {
+        height: 60px;
+        width: 60px;
+        background-size: contain;
+      }
+      span.q {
+        background-image: url('/assets/images/pieces/merida/wQ.svg'); 
+      }
+      span.r {
+        background-image: url('/assets/images/pieces/merida/wR.svg'); 
+      }
+      span.b {
+        background-image: url('/assets/images/pieces/merida/wB.svg'); 
+      }
+      span.n {
+        background-image: url('/assets/images/pieces/merida/wN.svg'); 
+      }
+    }
+  }
+  &.modal-color-b {
+    .button-promotion-element {
+      span {
+        height: 60px;
+        width: 60px;
+        background-size: contain;
+      }
+      span.q {
+        background-image: url('/assets/images/pieces/merida/bQ.svg'); 
+      }
+      span.r {
+        background-image: url('/assets/images/pieces/merida/bR.svg'); 
+      }
+      span.b {
+        background-image: url('/assets/images/pieces/merida/bB.svg'); 
+      }
+      span.n {
+        background-image: url('/assets/images/pieces/merida/bN.svg'); 
+      }
+    }    
+  }
+}

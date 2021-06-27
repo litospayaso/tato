@@ -83,7 +83,9 @@ export class AnalysisPage implements AfterViewInit {
       if (origPiece.type === 'p' && ((origPiece.color === 'w' && dest.includes('8')) || (origPiece.color === 'b' && dest.includes('1')))) {
         const popover = await this.popoverController.create({
           component: PromotionModalComponent,
-          // cssClass: 'my-custom-class',
+          componentProps: {
+            color: `modal-color-${origPiece.color}`
+          },
           translucent: false
         });
         await popover.present();
