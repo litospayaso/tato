@@ -1,12 +1,14 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { GamesService } from '@services/games.service';
-import {Stockfish} from '@classes/stockfish';
+import { Stockfish } from '@classes/stockfish';
 import { GameInterface } from '@app/interfaces/game.interface';
 import { Storage } from '@ionic/storage';
-declare const Chessboard: any;
+import { ChessgroundConstructor, Key, Color, ChessgroundInterface } from 'src/libs/chessground/types/chessground';
+import * as uuid from 'uuid';
+import { ChessInstance } from '@libs/chess.js/chessInterface';
+declare const Chessground: ChessgroundConstructor;
 declare const Chess: any;
-declare const $: any;
 
 @Component( {
   selector: 'app-analysis',
@@ -14,8 +16,9 @@ declare const $: any;
   styleUrls: ['analysis.page.scss'],
 } )
 export class AnalysisPage implements AfterViewInit {
-  public board: any;
-  public game: any;
+
+  public board: ChessgroundInterface;
+  public game: ChessInstance;
   public moves: string;
   public algebraicMoves: string[] = [];
   public stockfish: Stockfish = new Stockfish(20, 6, 3);
@@ -24,19 +27,15 @@ export class AnalysisPage implements AfterViewInit {
   public boardMovesPointer: number = undefined;
   public savedGame: GameInterface;
   public gameId: string | number;
-
-  public boardId = 'analysisBoard';
-  public fromMove = '';
+  public boardId: string;
 
   constructor(
     private route: ActivatedRoute,
     private gamesService: GamesService,
     private storage: Storage
   ) {
-    // tslint:disable-next-line: deprecation
-    this.route.paramMap.subscribe(() => {
-      this.gameId = this.route.snapshot.paramMap.get('id');
-    });
+    this.boardId = uuid.v4();
+
     this.game = new Chess();
     this.moves = '';
     this.stockfish.emmiter = this.stockfishEmmiter.bind(this);
@@ -45,6 +44,61 @@ export class AnalysisPage implements AfterViewInit {
 
   ngAfterViewInit() {
     this.createNewGame();
+  }
+
+  private createNewGame() {
+    this.game = new Chess();
+    this.board = Chessground(document.getElementById(this.boardId), {
+      movable: {
+        color: 'white',
+        free: false,
+        dests: this.toDests(),
+      },
+      draggable: {
+        showGhost: true
+      }
+    });
+    this.board.set({
+      movable: { events: { after: this.makeAMove() } }
+    });
+
+  }
+
+  private toDests(): Map<Key, Key[]> {
+    const dests = new Map();
+    this.game.SQUARES.forEach(s => {
+      const ms = this.game.moves({ square: s, verbose: true });
+      if (ms.length) { dests.set(s, ms.map(m => m.to)); }
+    });
+    return dests;
+  }
+
+  private makeAMove() {
+    return (orig, dest) => {
+      const move = `${orig}${dest}`;
+      // tslint:disable-next-line:max-line-length
+      const moves = this.boardMovesPointer ? this.getCurrentListMoves().slice(0, this.boardMovesPointer).join(' ').concat(` ${move}`) : this.moves.concat(` ${move}`);
+      this.boardMovesPointer = undefined;
+      this.game.move(move, { sloppy: true });
+      this.moves = this.game.history({verbose: true}).map(e => `${e.from}${e.to}${e.promotion ? e.promotion : ''}`).join(' ');
+      this.turn = this.game.turn();
+      this.stockfish.evalPosition(moves);
+      this.algebraicMoves = this.game.history();
+
+      this.board.set({
+        fen: this.game.fen(),
+        turnColor: this.toColor(),
+        movable: {
+          color: this.toColor(),
+          dests: this.toDests()
+        }
+      });
+
+    };
+  }
+
+  private toColor(): Color {
+    return (this.game.turn() === 'w') ? 'white' : 'black';
   }
 
   private handleKeyPress(event: KeyboardEvent) {
@@ -59,133 +113,17 @@ export class AnalysisPage implements AfterViewInit {
         break;
     }
   }
-
-  private createNewGame() {
-    this.game = new Chess();
-    if (this.gameId !== undefined && this.gameId !== null) {
-      this.storage.get('gamesDatabase').then((data) => {
-        this.savedGame = JSON.parse(data)[this.gameId];
-        this.moves = this.savedGame.movesVerbose;
-        this.boardMovesPointer = this.savedGame.movesVerbose.split(' ').length;
-        this.board = Chessboard( this.boardId, {
-          draggable: true,
-          position: this.savedGame.endingPosition,
-          onDragStart: this.onDragStart.bind(this),
-          onDrop: this.onDrop.bind(this)
-        });
-      });
-    } else {
-      this.board = Chessboard( this.boardId, {
-        draggable: true,
-        position: 'start',
-        onDragStart: this.onDragStart.bind(this),
-        onDrop: this.onDrop.bind(this)
-      });
-    }
-  }
-
   private stockfishEmmiter(event: string) {
     if (event === 'bestmove') {
-      console.log(`%c this.stockfish`, `background: #df03fc; color: #f8fc03`, this.stockfish);
-      // if (this.game.turn() !== this.userColor) {
-      //   this.makeMove(this.stockfish.bestmove);
-      // }
-    }
-  }
-
-
-  private makeMove(move: string) {
-    this.clearHighlightLegalMoves();
-    // tslint:disable-next-line:max-line-length
-    const moves = this.boardMovesPointer ? this.getCurrentListMoves().slice(0, this.boardMovesPointer).join(' ').concat(` ${move}`) : this.moves.concat(` ${move}`);
-    this.boardMovesPointer = undefined;
-    this.moves = moves;
-    this.game.move(move, {sloppy: true});
-    this.board.position(this.game.fen());
-    this.turn = this.game.turn();
-    this.stockfish.evalPosition(moves);
-    this.algebraicMoves = this.game.history();
-  }
-
-  private setPosition() {
-    const moves = this.getCurrentListMoves().slice(0, this.boardMovesPointer).join(' ');
-    this.clearHighlightLegalMoves();
-    this.game.load_pgn(moves, {sloppy: true});
-    this.board.position(this.game.fen());
-    this.turn = this.game.turn();
-    this.stockfish.evalPosition(moves);
-    this.algebraicMoves = this.game.history();
-  }
-
-  public resize() {
-    this.clearHighlightLegalMoves();
-  }
-
-
-  onDragStart(source, piece, position, orientation) {
-    // do not pick up pieces if the game is over
-    if (this.game.game_over()) {
-      return false;
-    }
-    // only pick up pieces for the side to move
-    if ((this.game.turn() === 'w' && piece.search(/^b/) !== -1) ||
-        (this.game.turn() === 'b' && piece.search(/^w/) !== -1)) {
-      return false;
-    }
-
-    const legalMoves = this.game.moves({
-      square: source,
-      verbose: true
-    });
-
-
-    this.highlightLegalMoves(legalMoves);
-  }
-
-  clearHighlightLegalMoves() {
-    this.fromMove = '';
-    $(`#${this.boardId} .end-move`).off();
-    $(`#${this.boardId} .end-move`).removeClass('end-move');
-    $(`#${this.boardId} .start-move`).removeClass('start-move');
-  }
-
-  highlightLegalMoves(moves) {
-    this.clearHighlightLegalMoves();
-    if (moves[0]) {
-      this.fromMove = moves[0].from;
-      $(`#${this.boardId} .square-${this.fromMove}`).addClass('start-move');
-    }
-    moves.forEach(move => {
-      $(`#${this.boardId} .square-${move.to}`).addClass('end-move');
-    });
-
-    $(`#${this.boardId} .end-move`).on('click', this.moveOnClick.bind(this));
-
-  }
-
-  moveOnClick(event) {
-    const toMove = event.target.getAttribute('data-square') ?
-      event.target.getAttribute('data-square') :
-      event.target.closest('.end-move').getAttribute('data-square');
-    this.makeMove(`${this.fromMove}${toMove}`);
-  }
-
-  onDrop(source, target, piece, newPos) {
-    // see if the move is legal
-
-    const game = new Chess();
-    game.load(this.game.fen());
-    const move = game.move({
-      from: source,
-      to: target,
-      promotion: 'q' // NOTE: always promote to a queen for example simplicity
-    });
-
-    // illegal move
-    if (move === null) {
-      return 'snapback';
-    } else {
-      this.makeMove(`${source}${target}`);
+      if (this.stockfish.bestmove) {
+        const match = this.stockfish.bestmove.match(/^([a-h][1-8])([a-h][1-8])/);
+        this.board.set({
+          drawable: { shapes: [] }
+        });
+        this.board.set({
+          drawable: { shapes: [{ orig: match[1], dest: match[2], brush: 'blue' }] }
+        });
+      }
     }
   }
 
@@ -206,4 +144,21 @@ export class AnalysisPage implements AfterViewInit {
       this.setPosition();
     }
   }
+
+  private setPosition() {
+    const moves = this.getCurrentListMoves().slice(0, this.boardMovesPointer).join(' ');
+    this.game.load_pgn(moves, { sloppy: true });
+    this.turn = this.game.turn();
+    this.stockfish.evalPosition(moves);
+    this.algebraicMoves = this.game.history();
+    this.board.set({
+      fen: this.game.fen(),
+      turnColor: this.toColor(),
+      movable: {
+        color: this.toColor(),
+        dests: this.toDests()
+      }
+  });
+  }
+
 }

@@ -1,17 +1,18 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { TrainingModalComponent } from '@components/training-modal/training-modal.component';
-import { Stockfish } from '@classes/stockfish';
+import { ActivatedRoute } from '@angular/router';
 import { GamesService } from '@services/games.service';
-import {ChessInstance} from '@libs/chess.js/chessInterface';
+import { Stockfish } from '@classes/stockfish';
+import { GameInterface } from '@app/interfaces/game.interface';
+import { Storage } from '@ionic/storage';
+import { ChessgroundConstructor, Key, Color, ChessgroundInterface } from 'src/libs/chessground/types/chessground';
+import * as uuid from 'uuid';
+import { ChessInstance } from '@libs/chess.js/chessInterface';
 import openingsJSON from '@resources/openings.json';
 import { OpeningInterface } from '@app/interfaces/opening.interface';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-
-declare const Chessboard: any;
-declare const ChessboardArrows: any;
+declare const Chessground: ChessgroundConstructor;
 declare const Chess: any;
-declare const $: any;
 
 @Component( {
   selector: 'app-training',
@@ -19,26 +20,30 @@ declare const $: any;
   styleUrls: ['training.page.scss'],
 } )
 export class TrainingPage implements AfterViewInit {
-  public board: any;
+
+  public board: ChessgroundInterface;
   public game: ChessInstance;
   public moves: string;
   public algebraicMoves: string[] = [];
-  public stockfish: Stockfish = new Stockfish(20, 3, 1, 10);
+  public stockfish: Stockfish = new Stockfish(20, 6, 3);
   public userColor = 'w';
   public turn = 'w';
+  public boardMovesPointer: number = undefined;
+  public savedGame: GameInterface;
+  public gameId: string | number;
+  public boardId: string;
   public openingsBook: OpeningInterface[] = openingsJSON;
   public opening: OpeningInterface;
 
-  public boardId = 'trainingBoard';
-  public fromMove = '';
-
   constructor(
+    private route: ActivatedRoute,
     private gamesService: GamesService,
     public modalController: ModalController,
-    public httpClient: HttpClient
+    private storage: Storage
   ) {
+    this.boardId = uuid.v4();
+
     this.game = new Chess();
-    this.moves = '';
     this.stockfish.emmiter = this.stockfishEmmiter.bind(this);
   }
 
@@ -48,70 +53,75 @@ export class TrainingPage implements AfterViewInit {
     });
     await modal.present();
     await modal.onDidDismiss().then(data => {
-      this.userColor = data.data.userColor;
-      this.openingsBook = openingsJSON.filter(e => e.name.includes(data.data.opening));
+      this.userColor = data.data ? data.data.userColor : 'w';
+      this.openingsBook = openingsJSON.filter(e => e.name.includes(data.data ? data.data.opening : 'Scandinavian Defense'));
       this.createNewGame();
     });
     // this.createNewGame();
   }
 
   private createNewGame() {
+    this.moves = '';
     this.game = new Chess();
-    this.board = Chessboard( this.boardId, {
-      draggable: true,
-      position: 'start',
+    this.board = Chessground(document.getElementById(this.boardId), {
       orientation: this.userColor === 'w' ? 'white' : 'black',
-      onDragStart: this.onDragStart.bind(this),
-      onDrop: this.onDrop.bind(this),
-      onSnapEnd: this.onSnapEnd.bind(this)} );
-
-    const arrows = new ChessboardArrows(`${this.boardId}Arrows`);
-
-    console.log(`%c arrows`, `background: #df03fc; color: #f8fc03`, arrows);
-
-    if (this.userColor === 'b') {
-      this.makeMove(this.openingsBook[Math.floor(Math.random() * this.openingsBook.length)].movesVerbose[0]);
-    }
-  }
-
-  private stockfishEmmiter(event: string) {
-    if (event === 'bestmove') {
-      if (this.game.turn() !== this.userColor) {
-        const openings = this.openingsBook.filter(e => e.movesVerbose.join(' ').trim().includes(this.moves.trim()));
-        if (openings.length > 0) {
-          this.opening = openings[Math.floor(Math.random() * openings.length)];
-          this.makeMove(this.opening.movesVerbose[this.moves.split(' ').length - 1]);
-        } else {
-          this.makeMove(
-            Math.random() < 0.9 ?
-            this.stockfish.bestmove :
-            this.stockfish.lines[Math.floor(Math.random() * this.stockfish.lines.length)].moves[0]
-          );
-        }
+      movable: {
+        color: this.userColor === 'w' ? 'white' : 'black',
+        free: false,
+        dests: this.toDests(),
+      },
+      draggable: {
+        showGhost: true
       }
+    });
+    this.board.set({
+      movable: { events: { after: this.makeAMove() } }
+    });
+    if (this.userColor === 'b') {
+      this.stockfishEmmiter('bestmove');
     }
+
   }
 
+  private toDests(): Map<Key, Key[]> {
+    const dests = new Map();
+    this.game.SQUARES.forEach(s => {
+      const ms = this.game.moves({ square: s, verbose: true });
+      if (ms.length) { dests.set(s, ms.map(m => m.to)); }
+    });
+    return dests;
+  }
 
-  private makeMove(move: string) {
-    this.clearHighlightLegalMoves();
-    this.moves = this.moves.concat(` ${move}`);
-    this.game.move(move, {sloppy: true});
-    this.board.position(this.game.fen());
-    this.turn = this.game.turn();
-    setTimeout(() => {
-      this.stockfish.evalPosition(this.moves);
+  private makeAMove() {
+    return (orig, dest) => {
+      const move = `${orig}${dest}`;
+      // tslint:disable-next-line:max-line-length
+      const moves = this.boardMovesPointer ? this.getCurrentListMoves().slice(0, this.boardMovesPointer).join(' ').concat(` ${move}`) : this.moves.concat(` ${move}`);
+      this.boardMovesPointer = undefined;
+      this.game.move(move, { sloppy: true });
+      this.moves = this.game.history({verbose: true}).map(e => `${e.from}${e.to}${e.promotion ? e.promotion : ''}`).join(' ');
+      this.turn = this.game.turn();
+      this.stockfish.evalPosition(moves);
       this.algebraicMoves = this.game.history();
-    }, 700);
-    if (this.game.in_checkmate()) {
-      setTimeout(() => {
-        this.endGame();
-      }, 1500);
-    }
+
+      this.board.set({
+        fen: this.game.fen(),
+        turnColor: this.toColor(),
+        movable: {
+          color: this.toColor(),
+          dests: this.toDests()
+        }
+      });
+      if (this.game.in_checkmate()) {
+        setTimeout(() => {
+          this.endGame();
+        }, 1500);
+      }
+    };
   }
 
-  public resize() {
-    this.clearHighlightLegalMoves();
+  public onResign() {
+    this.endGame();
   }
 
   public endGame() {
@@ -119,7 +129,7 @@ export class TrainingPage implements AfterViewInit {
       date: new Date().toLocaleString(),
       pgn: this.game.pgn(),
       title: `${this.game.turn() === 'w' ? '0-1' : '1-0'} Game against Computer level ${this.stockfish.level}; ${this.opening?.name}`,
-      opening: this.opening.name,
+      opening: this.opening?.name,
       movesVerbose: this.moves,
       userColor: this.userColor,
       endingPosition: this.game.fen()
@@ -127,81 +137,63 @@ export class TrainingPage implements AfterViewInit {
     this.ngAfterViewInit();
   }
 
-  public onResign() {
-    this.endGame();
-  }
+  private makeMove(move: string) {
+    this.game.move(move, { sloppy: true });
+    this.moves = this.game.history({verbose: true}).map(e => `${e.from}${e.to}${e.promotion ? e.promotion : ''}`).join(' ');
+    this.turn = this.game.turn();
+    this.algebraicMoves = this.game.history();
 
-  onDragStart(source, piece, position, orientation) {
-    // do not pick up pieces if the game is over
-    if (this.game.game_over()) {
-      return false;
-    }
-    // only pick up pieces for the side to move
-    if (this.game.turn() !== this.userColor || !piece.includes(this.userColor)) {
-      return false;
-    }
-
-    const legalMoves = this.game.moves({
-      square: source,
-      verbose: true
+    this.board.set({
+      fen: this.game.fen(),
+      turnColor: this.toColor(),
+      movable: {
+        color: this.toColor(),
+        dests: this.toDests()
+      }
     });
-
-
-    this.highlightLegalMoves(legalMoves);
-  }
-
-  clearHighlightLegalMoves() {
-    this.fromMove = '';
-    $(`#${this.boardId} .end-move`).off();
-    $(`#${this.boardId} .end-move`).removeClass('end-move');
-    $(`#${this.boardId} .start-move`).removeClass('start-move');
-  }
-
-  highlightLegalMoves(moves) {
-    this.clearHighlightLegalMoves();
-    if (moves[0]) {
-      this.fromMove = moves[0].from;
-      $(`#${this.boardId} .square-${this.fromMove}`).addClass('start-move');
-    }
-    moves.forEach(move => {
-      $(`#${this.boardId} .square-${move.to}`).addClass('end-move');
-    });
-
-    $(`#${this.boardId} .end-move`).on('click', this.moveOnClick.bind(this));
-
-  }
-
-  moveOnClick(event) {
-    const toMove = event.target.getAttribute('data-square') ?
-      event.target.getAttribute('data-square') :
-      event.target.closest('.end-move').getAttribute('data-square');
-    this.makeMove(`${this.fromMove}${toMove}`);
-  }
-
-  onDrop(source, target, piece, newPos) {
-    // see if the move is legal
-
-    const game = new Chess();
-    game.load(this.game.fen());
-    const move = game.move({
-      from: source,
-      to: target,
-      promotion: 'q' // NOTE: always promote to a queen for example simplicity
-    });
-
-    // illegal move
-    if (move === null) {
-      return 'snapback';
-    } else {
-      this.makeMove(`${source}${target}`);
+    if (this.game.in_checkmate()) {
+      setTimeout(() => {
+        this.endGame();
+      }, 1500);
     }
   }
 
-  // update the board position after the piece snap
-  // for castling, en passant, pawn promotion
-  onSnapEnd() {
-    // this.board.position(this.game.fen());
+  private toColor(): Color {
+    return (this.game.turn() === 'w') ? 'white' : 'black';
   }
 
+  private stockfishEmmiter(event: string) {
+    if (event === 'bestmove') {
+      if (this.stockfish.bestmove || this.moves === '') {
+        if (this.game.turn() !== this.userColor) {
+          // this.makeMove(this.stockfish.bestmove);
+          const openings = this.openingsBook.filter(e => e.movesVerbose.join(' ').trim().startsWith(this.moves.trim()));
+          if (openings.length > 0) {
+            this.opening = openings[Math.floor(Math.random() * openings.length)];
+            const index = this.moves === '' ? 0 : this.moves.split(' ').length;
+            if (this.opening.movesVerbose[index]) {
+              this.makeMove(this.opening.movesVerbose[index]);
+            } else {
+              this.makeStockfishMovement();
+            }
+          } else {
+            this.makeStockfishMovement();
+          }
+        }
+      }
+    }
+  }
+
+  private makeStockfishMovement() {
+    this.makeMove(
+      Math.random() < 0.9 ?
+      this.stockfish.bestmove :
+      this.stockfish.lines[Math.floor(Math.random() * this.stockfish.lines.length)].moves[0]
+    );
+  }
+
+  getCurrentListMoves(): string[] {
+    return this.moves.trim().split(' ').filter(e => e !== '');
+  }
 
 }

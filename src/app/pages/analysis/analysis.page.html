@@ -1,6 +1,25 @@
 <ion-content [fullscreen]="true">
   <div class="panel-container">
-    <app-board [boardId]="boardId" [board]="board" [bestmove]="stockfish.bestmove" [showControlButtons]="true" [savedGame]="savedGame" (moveBackward)="moveBackward()" (moveForward)="moveForward()" (resizeEmitter)="resize()" class="board-container-element" [turn]="turn" [game]="game" [evaluation]="stockfish.evaluation"></app-board>
-    <app-moves-table [lines]="stockfish.lines" [moves]="algebraicMoves" [game]="game" class="panel-element" [savedGame]="savedGame"></app-moves-table>
+    <div class="board-container">
+      <div class="evaluation-bar">
+        <div class="evaluation-value" [style.width.%]="stockfish.evaluation | percentage"
+          [style.color]="evaluation < -2 ? 'white' : '#5d5d5d'">{{evaluation}}</div>
+      </div>
+      <div [id]="boardId"></div>
+      <div class="control-buttons-container">
+        <ion-button class="button-control-element" color="dark" (click)="moveBackward()">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </ion-button>
+        <!-- <ion-button class="button-control-element" color="dark">Reset</ion-button>
+      <ion-button class="button-control-element" color="dark">Flip</ion-button> -->
+        <!-- <ion-button class="button-control-element" color="dark" (click)="getPgn()" *ngIf="savedGame"> get PGN</ion-button> -->
+        <ion-button class="button-control-element" color="dark" (click)="moveForward()">
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </ion-button>
+      </div>
+    </div>
+
+    <app-moves-table [lines]="stockfish.lines" [moves]="algebraicMoves" [game]="game" class="panel-element"
+      [savedGame]="savedGame"></app-moves-table>
   </div>
 </ion-content>
