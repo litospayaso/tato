@@ -61,12 +61,6 @@
               },
               {
                 "input": "src/global.scss"
-              },
-              {
-                "input": "./node_modules/@chrisoakman/chessboardjs/dist/chessboard-1.0.0.css"
-              },
-              {
-                "input": "./node_modules/chessboard-arrows/chessboard-arrows.css"
               }
             ],
             "scripts": [
@@ -81,12 +75,6 @@
               },
               {
                 "input": "src/libs/chessground/chessground.js"
-              },
-              {
-                "input": "./node_modules/@chrisoakman/chessboardjs/dist/chessboard-1.0.0.js"
-              },
-              {
-                "input": "./node_modules/chessboard-arrows/chessboard-arrows.js"
               }
           ]
           },

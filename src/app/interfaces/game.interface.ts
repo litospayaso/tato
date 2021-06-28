@@ -7,3 +7,8 @@ export interface GameInterface {
     opening: string;
     endingPosition: string;
 }
+
+export interface DefaultValuesInterface {
+  opening: string;
+  userColor: string;
+}

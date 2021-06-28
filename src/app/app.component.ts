@@ -7,6 +7,7 @@ import { Router, ResolveEnd } from '@angular/router';
 import { Storage } from '@ionic/storage';
 
 import { filter } from 'rxjs/operators';
+import { GamesService } from './services/games.service';
 
 @Component({
   selector: 'app-root',
@@ -43,9 +44,11 @@ export class AppComponent {
     private platform: Platform,
     private router: Router,
     private splashScreen: SplashScreen,
+    private gamesService: GamesService,
     private statusBar: StatusBar,
     private storage: Storage
   ) {
+    this.gamesService.reloadData();
     storage.get('lastRoute').then(lastRoute => {
       if (lastRoute && lastRoute !== '/' && router.url === '/') {
         this.router.navigate(lastRoute.split('/').filter(e => e.length > 0), {skipLocationChange: true });

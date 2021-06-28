@@ -1,4 +1,5 @@
 import { Component, AfterViewInit } from '@angular/core';
+import { PopoverController } from '@ionic/angular';
 import { ModalController } from '@ionic/angular';
 import { TrainingModalComponent } from '@components/training-modal/training-modal.component';
 import { ActivatedRoute } from '@angular/router';
@@ -7,6 +8,7 @@ import { Stockfish } from '@classes/stockfish';
 import { GameInterface } from '@app/interfaces/game.interface';
 import { Storage } from '@ionic/storage';
 import { ChessgroundConstructor, Key, Color, ChessgroundInterface } from 'src/libs/chessground/types/chessground';
+import { PromotionModalComponent } from '@components/promotion-modal/promotion-modal.component';
 import * as uuid from 'uuid';
 import { ChessInstance } from '@libs/chess.js/chessInterface';
 import openingsJSON from '@resources/openings.json';
@@ -34,25 +36,40 @@ export class TrainingPage implements AfterViewInit {
   public boardId: string;
   public openingsBook: OpeningInterface[] = openingsJSON;
   public opening: OpeningInterface;
+  public openingName = 'Scandinavian Defense';
 
   constructor(
     private route: ActivatedRoute,
     private gamesService: GamesService,
     public modalController: ModalController,
+    private popoverController: PopoverController,
     private storage: Storage
   ) {
     this.boardId = uuid.v4();
-
     this.game = new Chess();
     this.stockfish.emmiter = this.stockfishEmmiter.bind(this);
   }
 
   async ngAfterViewInit() {
+    const defaultOpeningValues = this.gamesService.getDefaultOpeningValues();
+    if (defaultOpeningValues) {
+      this.openingName = defaultOpeningValues.opening;
+      this.userColor = defaultOpeningValues.userColor;
+    }
     const modal = await this.modalController.create({
       component: TrainingModalComponent,
+      componentProps: {
+        defaultOpeningValues: {
+          opening: this.openingName,
+          userColor: this.userColor,
+        }
+      },
     });
     await modal.present();
     await modal.onDidDismiss().then(data => {
+      if (data.data) {
+        this.gamesService.setDefaultOpeningValues(data.data);
+      }
       this.userColor = data.data ? data.data.userColor : 'w';
       this.openingsBook = openingsJSON.filter(e => e.name.includes(data.data ? data.data.opening : 'Scandinavian Defense'));
       this.createNewGame();
@@ -93,8 +110,22 @@ export class TrainingPage implements AfterViewInit {
   }
 
   private makeAMove() {
-    return (orig, dest) => {
-      const move = `${orig}${dest}`;
+    return async (orig, dest) => {
+      let move = `${orig}${dest}`;
+      const origPiece = this.game.get(orig);
+      if (origPiece.type === 'p' && ((origPiece.color === 'w' && dest.includes('8')) || (origPiece.color === 'b' && dest.includes('1')))) {
+        const popover = await this.popoverController.create({
+          component: PromotionModalComponent,
+          componentProps: {
+            color: `modal-color-${origPiece.color}`
+          },
+          translucent: false
+        });
+        await popover.present();
+        const promotion = await popover.onDidDismiss();
+        await popover.present();
+        move = move.concat(promotion.data);
+      }
       // tslint:disable-next-line:max-line-length
       const moves = this.boardMovesPointer ? this.getCurrentListMoves().slice(0, this.boardMovesPointer).join(' ').concat(` ${move}`) : this.moves.concat(` ${move}`);
       this.boardMovesPointer = undefined;

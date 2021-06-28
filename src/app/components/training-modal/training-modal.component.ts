@@ -1,12 +1,14 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { DefaultValuesInterface } from '@interfaces/game.interface';
+
 
 @Component({
   selector: 'app-training-modal',
   templateUrl: './training-modal.component.html',
   styleUrls: ['./training-modal.component.scss'],
 })
-export class TrainingModalComponent  {
+export class TrainingModalComponent implements OnInit {
 
   public openingOptions = [
     'Alekhine Defense',
@@ -187,9 +189,17 @@ export class TrainingModalComponent  {
   // public opening = `Bishop's Opening`;
   public opening = `Queen's Gambit`;
   public userColor = `w`;
+  @Input() defaultOpeningValues: DefaultValuesInterface;
 
+  constructor(public modalController: ModalController) {
+  }
 
-  constructor(public modalController: ModalController) {}
+  ngOnInit() {
+    if (this.defaultOpeningValues) {
+      this.opening = this.defaultOpeningValues.opening;
+      this.userColor = this.defaultOpeningValues.userColor;
+    }
+  }
 
   public closeModal() {
     this.modalController.dismiss({
