@@ -1,0 +1,3518 @@
+[
+  {
+    "fen": "6r1/p1p2k2/1bp2r2/4P3/4N2p/P1PP2P1/1P2b2P/1RB4K w - - 0 25",
+    "moves": "e4f6 e2f3",
+    "rating": 862,
+    "gameUrl": "https://lichess.org/W0Pm8M6q#49"
+  },
+  {
+    "fen": "1R6/p4pkp/3p2p1/5b2/3b4/P4BP1/4q2P/7K w - - 0 29",
+    "moves": "f3e2 f5e4 e2f3 e4f3",
+    "rating": 732,
+    "gameUrl": "https://lichess.org/OGYUXdKr#57"
+  },
+  {
+    "fen": "r4r1k/ppp2p1p/1b6/3PP1pN/2B2p2/8/PPbB2PP/R4R1K w - - 0 21",
+    "moves": "g2g3 c2e4 f1f3 e4f3",
+    "rating": 884,
+    "gameUrl": "https://lichess.org/smd7seaA#41"
+  },
+  {
+    "fen": "8/6pk/2N4p/3PN3/8/3b4/5bPP/7K w - - 0 37",
+    "moves": "g2g3 d3e4 e5f3 e4f3",
+    "rating": 824,
+    "gameUrl": "https://lichess.org/CnpDkys2#73"
+  },
+  {
+    "fen": "rnb1kb1r/pppp2pp/8/3P1p2/4pq2/2P1B3/PP1N2PP/RN3BKR w kq - 0 12",
+    "moves": "e3f4 f8c5 f4e3 c5e3",
+    "rating": 737,
+    "gameUrl": "https://lichess.org/2ShAp6ux#23"
+  },
+  {
+    "fen": "3B3k/7p/1p1p4/1P1B1p2/2Pb1P2/7P/1r4P1/4K3 b - - 0 35",
+    "moves": "d4c5 d8f6",
+    "rating": 1056,
+    "gameUrl": "https://lichess.org/qOR0HoUI/black#70"
+  },
+  {
+    "fen": "r1b2r1k/1p5p/5Qp1/8/2B1P3/2B2P2/4N1PP/1qb1K2R b K - 0 25",
+    "moves": "f8f6 c3f6",
+    "rating": 793,
+    "gameUrl": "https://lichess.org/c4Z8wZnO/black#50"
+  },
+  {
+    "fen": "5r1k/p6p/1pb2bp1/5p2/P1B1p2P/2P1B1P1/1P3P2/3R2K1 b - - 0 27",
+    "moves": "f8d8 d1d8 f6d8 e3d4 d8f6 d4f6",
+    "rating": 812,
+    "gameUrl": "https://lichess.org/2zQbyjHg/black#54"
+  },
+  {
+    "fen": "2rR4/5ppk/7p/1Qb1Nb2/5P2/P1P3P1/1P5P/7K w - - 5 31",
+    "moves": "d8c8 f5e4 e5f3 e4f3",
+    "rating": 840,
+    "gameUrl": "https://lichess.org/nzaDfOmr#61"
+  },
+  {
+    "fen": "4r2k/ppp4p/6p1/8/2B2P1b/3KP3/PBnP2q1/R7 b - - 1 33",
+    "moves": "c2d4 b2d4 e8e5 d4e5 h4f6 e5f6",
+    "rating": 959,
+    "gameUrl": "https://lichess.org/Y4enUmGu/black#66"
+  },
+  {
+    "fen": "rkb2b1r/pp4pp/8/8/P7/2B2B2/3P1PPP/n2K3R b - - 0 24",
+    "moves": "a1b3 c3e5 f8d6 e5d6",
+    "rating": 813,
+    "gameUrl": "https://lichess.org/nKaWoSB7/black#48"
+  },
+  {
+    "fen": "4rR1k/p6p/1bp3p1/1p6/8/1B4BP/Pn4P1/7K b - - 2 36",
+    "moves": "e8f8 g3e5 f8f6 e5f6",
+    "rating": 719,
+    "gameUrl": "https://lichess.org/ORigdG8k/black#72"
+  },
+  {
+    "fen": "2r1kb2/3b4/p3p3/1pp2pB1/3p4/2Pr1B2/PP3KP1/R4R2 b - - 1 24",
+    "moves": "d4c3 f3h5",
+    "rating": 1020,
+    "gameUrl": "https://lichess.org/ZxUSrkeZ/black#48"
+  },
+  {
+    "fen": "2r1q2k/7p/6p1/Q5B1/2B4P/1Pb2N2/P4PP1/6K1 b - - 2 31",
+    "moves": "c3a5 g5f6",
+    "rating": 1112,
+    "gameUrl": "https://lichess.org/tBBYp1Jd/black#62"
+  },
+  {
+    "fen": "7k/1p2p2p/6p1/p1n2b1r/2B1p3/P1P1PPB1/1P5N/6K1 b - - 0 30",
+    "moves": "e4f3 g3e5",
+    "rating": 935,
+    "gameUrl": "https://lichess.org/MfDtsFpq/black#60"
+  },
+  {
+    "fen": "r6r/p1k1b1pp/1pp5/3pP3/3Pp1b1/4P3/PP1B2PP/2R1KB1R w K - 1 18",
+    "moves": "h2h3 e7h4 g2g3 h4g3",
+    "rating": 923,
+    "gameUrl": "https://lichess.org/ahdUFgCu#35"
+  },
+  {
+    "fen": "7k/pp5p/4B3/2B1bKp1/8/1P2P3/6r1/8 b - - 3 29",
+    "moves": "e5b8 c5d4 b8e5 d4e5",
+    "rating": 793,
+    "gameUrl": "https://lichess.org/RlmrXS2U/black#58"
+  },
+  {
+    "fen": "r5k1/pb5p/1pqPp1p1/2p1P3/2Pb4/3B1r2/P2BQ1PP/1R5K w - - 0 22",
+    "moves": "g2f3 c6f3 e2f3 b7f3",
+    "rating": 876,
+    "gameUrl": "https://lichess.org/ob8dm4kS#43"
+  },
+  {
+    "fen": "7k/8/3N3p/3b4/3b4/5p2/P3p1PP/4B2K w - - 0 40",
+    "moves": "g2f3 d5f3",
+    "rating": 760,
+    "gameUrl": "https://lichess.org/LcMIi8aj#79"
+  },
+  {
+    "fen": "rnbk3r/pp2n1pp/5p2/1B1pp3/7N/1PBP4/P1P2PPP/R3K2R b KQ - 1 16",
+    "moves": "a7a6 c3a5 b7b6 a5b6",
+    "rating": 1045,
+    "gameUrl": "https://lichess.org/c4q3vS0J/black#32"
+  },
+  {
+    "fen": "r3r2k/pb2b2p/2p3p1/q7/2B1n3/2P1B1Q1/P1P3P1/R4RK1 b - - 5 22",
+    "moves": "e4g3 e3d4 a5e5 d4e5 e7f6 e5f6",
+    "rating": 950,
+    "gameUrl": "https://lichess.org/RCsjPXZP/black#44"
+  },
+  {
+    "fen": "6k1/pp4pp/1np1p3/2b1P1B1/2P3b1/1P3r2/P3N1PP/3R3K w - - 0 23",
+    "moves": "g2f3 g4f3",
+    "rating": 695,
+    "gameUrl": "https://lichess.org/0YJaInbd#45"
+  },
+  {
+    "fen": "3b1n1k/p5pp/1p6/3B1p2/PP2pP2/4B1P1/5K1P/8 b - - 4 37",
+    "moves": "g7g6 e3d4 d8f6 d4f6",
+    "rating": 783,
+    "gameUrl": "https://lichess.org/QQa7aUTk/black#74"
+  },
+  {
+    "fen": "r1b4k/p1pqQ2p/2np1rp1/1p4B1/3P2P1/1BP2P2/PP5P/R3R1K1 b - - 0 21",
+    "moves": "c6e7 g5f6",
+    "rating": 888,
+    "gameUrl": "https://lichess.org/zhatXS1Q/black#42"
+  },
+  {
+    "fen": "5b1k/7p/p4B2/1pn1p3/3pB3/3P2P1/1P5P/6K1 b - - 1 43",
+    "moves": "h8g8 e4d5 c5e6 d5e6",
+    "rating": 946,
+    "gameUrl": "https://lichess.org/EoWpR9lr/black#86"
+  },
+  {
+    "fen": "4bk2/pR5p/6p1/2p2p2/2Pb1P2/1P1N2P1/P3B2P/7K w - - 0 37",
+    "moves": "b7h7 e8c6 e2f3 c6f3",
+    "rating": 766,
+    "gameUrl": "https://lichess.org/2SqVweSB#73"
+  },
+  {
+    "fen": "r4rk1/1b3ppp/p7/1pp1P3/3b1P2/3B1q2/PPQB2PP/R6K w - - 0 20",
+    "moves": "g2f3 b7f3",
+    "rating": 919,
+    "gameUrl": "https://lichess.org/cm8pZAz5#39"
+  },
+  {
+    "fen": "4r2k/2R2B1p/6p1/1p2b1B1/p7/3r2PP/P6K/8 b - - 0 40",
+    "moves": "e5c7 g5f6",
+    "rating": 1011,
+    "gameUrl": "https://lichess.org/ZPR396EK/black#80"
+  },
+  {
+    "fen": "3rr2k/R3n2p/3p2p1/8/2BbP3/1P3P2/P2B2PP/5R1K b - - 8 24",
+    "moves": "d4a7 d2c3 a7d4 c3d4",
+    "rating": 923,
+    "gameUrl": "https://lichess.org/stkHsIvC/black#48"
+  },
+  {
+    "fen": "5R2/p5pk/1b5p/4N3/8/BP4P1/P6P/1b5K w - - 5 38",
+    "moves": "e5d7 b1e4 f8f3 e4f3",
+    "rating": 639,
+    "gameUrl": "https://lichess.org/Qud3JiD8#75"
+  },
+  {
+    "fen": "1r6/b1p2p1k/B6p/p3P3/1P3Bb1/2P3P1/7P/RN1R3K w - - 1 32",
+    "moves": "d1d7 g4f3",
+    "rating": 959,
+    "gameUrl": "https://lichess.org/UpOFS84D#63"
+  },
+  {
+    "fen": "r3kb1r/1bqn2p1/p2ppn1p/1p2P2Q/7B/2N5/PPP1BPPP/2KR3R b kq - 1 13",
+    "moves": "f6h5 e2h5 g7g6 h5g6",
+    "rating": 823,
+    "gameUrl": "https://lichess.org/nt8oel4g/black#26"
+  },
+  {
+    "fen": "5r1k/pp5p/6p1/3BQp2/3b4/PP1K4/1B3qP1/3R4 b - - 0 30",
+    "moves": "d4e5 b2e5 f8f6 e5f6",
+    "rating": 871,
+    "gameUrl": "https://lichess.org/Pv6NW26v/black#60"
+  },
+  {
+    "fen": "4r2k/pp2r2p/2b3p1/6B1/1P2p3/P2nN2P/B4PP1/5RK1 b - - 0 32",
+    "moves": "e7e5 g5f6",
+    "rating": 783,
+    "gameUrl": "https://lichess.org/y4vd0w3W/black#64"
+  },
+  {
+    "fen": "4N1k1/5p1p/2B3p1/8/p1bb4/6P1/7P/4R2K w - - 0 29",
+    "moves": "c6a4 c4d5 e1e4 d5e4",
+    "rating": 852,
+    "gameUrl": "https://lichess.org/hEv7lZvS#57"
+  },
+  {
+    "fen": "3r3k/4Q2p/p4bp1/3B4/1p6/6BP/P5P1/7K b - - 0 36",
+    "moves": "f6e7 g3e5 e7f6 e5f6",
+    "rating": 783,
+    "gameUrl": "https://lichess.org/czG9an2Y/black#72"
+  },
+  {
+    "fen": "r1b2r1k/ppp3pp/2pb3Q/5p1q/8/1B1PB3/PPP2PPP/RN3RK1 b - - 3 16",
+    "moves": "g7h6 e3d4 d6e5 d4e5 f8f6 e5f6",
+    "rating": 862,
+    "gameUrl": "https://lichess.org/WG8QTHnB/black#32"
+  },
+  {
+    "fen": "8/1p3k2/p1b2ppp/2b1p3/4P2N/1P3P1P/P5P1/1R1rBK2 w - - 6 34",
+    "moves": "b1d1 c6b5 d1d3 b5d3",
+    "rating": 848,
+    "gameUrl": "https://lichess.org/UZjHhbH8#67"
+  },
+  {
+    "fen": "3Q4/2p3kp/p5p1/1p6/3P4/P1P1br2/1P2b1PP/R1B4K w - - 0 25",
+    "moves": "g2f3 e2f3",
+    "rating": 768,
+    "gameUrl": "https://lichess.org/karDSkjQ#49"
+  },
+  {
+    "fen": "2k3r1/p1ppq1r1/1p5Q/2b1P3/5N2/3B4/bPPB3P/2KR1R2 w - - 0 22",
+    "moves": "b2b3 c5a3",
+    "rating": 965,
+    "gameUrl": "https://lichess.org/XMvVKqUw#43"
+  },
+  {
+    "fen": "r6k/pp4pb/1q3R1p/3B2n1/1P4P1/2Q1P2P/PB6/6K1 b - - 0 25",
+    "moves": "g7f6 c3f6 b6f6 b2f6",
+    "rating": 998,
+    "gameUrl": "https://lichess.org/vKkgI5Lx/black#50"
+  },
+  {
+    "fen": "4k3/5Rpp/p3r3/1p1B4/1Ppp4/P2bb1P1/7P/4R2K w - - 0 31",
+    "moves": "d5e6 d3e4 f7f3 e4f3",
+    "rating": 839,
+    "gameUrl": "https://lichess.org/XfDvNqEE#61"
+  },
+  {
+    "fen": "7k/p3b2p/6n1/1p1B4/2p2p2/2P2P1K/Pr6/6B1 b - - 0 40",
+    "moves": "b2a2 g1d4 g6e5 d4e5 e7f6 e5f6",
+    "rating": 965,
+    "gameUrl": "https://lichess.org/aHQbGr8x/black#80"
+  },
+  {
+    "fen": "7k/1p5p/3bB1p1/n2P1p2/r7/5PP1/R4B1P/6K1 b - - 2 32",
+    "moves": "a4a2 f2d4 d6e5 d4e5",
+    "rating": 870,
+    "gameUrl": "https://lichess.org/soV6Qcnt/black#64"
+  },
+  {
+    "fen": "r2n3k/1p2B2p/p4pp1/3B1b2/8/5N2/P1R2PPP/6K1 b - - 2 27",
+    "moves": "f5c2 e7f6",
+    "rating": 821,
+    "gameUrl": "https://lichess.org/RGaD4zYu/black#54"
+  },
+  {
+    "fen": "6k1/pB3p1p/3b1n2/1b2r3/3P1pp1/2B5/PP4PP/R5KR w - - 0 23",
+    "moves": "d4e5 d6c5 c3d4 c5d4",
+    "rating": 831,
+    "gameUrl": "https://lichess.org/YO7RU40D#45"
+  },
+  {
+    "fen": "2k5/5p1p/N2b1Bp1/2p1rbP1/p6P/8/P4P2/K1R3R1 w - - 0 37",
+    "moves": "f6e5 d6e5 c1c3 e5c3",
+    "rating": 600,
+    "gameUrl": "https://lichess.org/flG23Oju#73"
+  },
+  {
+    "fen": "3r2k1/p4ppp/1p2b3/2b1P3/2p2P2/2B2BP1/PP5P/R2r3K w - - 0 22",
+    "moves": "a1d1 d8d1 f3d1 e6d5 d1f3 d5f3",
+    "rating": 923,
+    "gameUrl": "https://lichess.org/o6Y1zM4h#43"
+  },
+  {
+    "fen": "rnb5/p1pp4/p7/6k1/5p2/1P1Q4/5b1P/R1B4K w - - 3 31",
+    "moves": "d3h7 c8b7 h7e4 b7e4",
+    "rating": 903,
+    "gameUrl": "https://lichess.org/iXnAGzoj#61"
+  },
+  {
+    "fen": "2krr3/ppp3pp/3b4/8/5N2/3P4/bPPB1PPP/2KR3R w - - 0 19",
+    "moves": "b2b3 d6a3",
+    "rating": 977,
+    "gameUrl": "https://lichess.org/pDm4y7Rn#37"
+  },
+  {
+    "fen": "r6k/pp2R2p/6p1/3B4/8/b4PBb/P1P2P1P/6K1 b - - 0 21",
+    "moves": "a3e7 g3e5 e7f6 e5f6",
+    "rating": 792,
+    "gameUrl": "https://lichess.org/KBUWm4wz/black#42"
+  },
+  {
+    "fen": "7k/pp4pp/1np5/5b2/1P1P3P/PB3PB1/3K4/8 b - - 0 31",
+    "moves": "g7g6 g3e5",
+    "rating": 675,
+    "gameUrl": "https://lichess.org/buMJPG7k/black#62"
+  },
+  {
+    "fen": "rn1qkb1r/pbppn3/1p2p1pp/4P1BQ/8/8/PPP1BPPP/RN2K1NR b KQkq - 1 8",
+    "moves": "g6h5 e2h5 e7g6 h5g6",
+    "rating": 891,
+    "gameUrl": "https://lichess.org/7rDTUYge/black#16"
+  },
+  {
+    "fen": "4r1k1/5p2/7p/1B4p1/1p4P1/1Pb2b1P/P7/1KBR4 w - - 4 33",
+    "moves": "d1f1 f3e4 b5d3 e4d3",
+    "rating": 900,
+    "gameUrl": "https://lichess.org/rRwsuPWT#65"
+  },
+  {
+    "fen": "6k1/p5p1/p3b1Bp/2b1P3/2p5/6P1/7P/2rR3K w - - 0 30",
+    "moves": "d1c1 e6d5 g6e4 d5e4",
+    "rating": 794,
+    "gameUrl": "https://lichess.org/FFSnfTqz#59"
+  },
+  {
+    "fen": "1r3r1k/4bB1p/q2p4/2pP3p/2PQP3/7P/1B4P1/5RK1 b - - 0 30",
+    "moves": "c5d4 b2d4 e7f6 d4f6",
+    "rating": 893,
+    "gameUrl": "https://lichess.org/fTkYZcXW/black#60"
+  },
+  {
+    "fen": "6k1/1p3pp1/1N2p2p/1P6/P2P4/3b1BP1/4pb1P/2R4K w - - 0 30",
+    "moves": "f3e2 d3e4 e2f3 e4f3",
+    "rating": 1158,
+    "gameUrl": "https://lichess.org/cdVW81xi#59"
+  },
+  {
+    "fen": "7k/p6p/1p2B1p1/2b5/4b3/3p2P1/PPPB3P/5K2 b - - 1 28",
+    "moves": "d3c2 d2c3 c5d4 c3d4",
+    "rating": 931,
+    "gameUrl": "https://lichess.org/WOw2CT7u/black#56"
+  },
+  {
+    "fen": "r4r1k/p1p3p1/7p/3Qqp2/2P3b1/2N3P1/PPP2b1P/R1B4K w - - 0 20",
+    "moves": "d5e5 g4f3",
+    "rating": 1070,
+    "gameUrl": "https://lichess.org/iHIg5kvi#39"
+  },
+  {
+    "fen": "Q4b1r/p1pk2p1/bp4p1/4p3/5P1q/5N2/PPP3PP/R1B3KR w - - 0 16",
+    "moves": "f3h4 f8c5 c1e3 c5e3",
+    "rating": 893,
+    "gameUrl": "https://lichess.org/Iawsttd8#31"
+  },
+  {
+    "fen": "3r3k/1b5p/2p2bp1/p7/2B3P1/2P2pBn/PP3P2/R3K3 b - - 2 32",
+    "moves": "f6g5 g3e5 g5f6 e5f6",
+    "rating": 787,
+    "gameUrl": "https://lichess.org/viTWU5pw/black#64"
+  },
+  {
+    "fen": "7k/p3r2p/3p2p1/2pB2B1/8/3P4/P5KP/8 b - - 1 34",
+    "moves": "e7e5 g5f6",
+    "rating": 726,
+    "gameUrl": "https://lichess.org/1H9qty3k/black#68"
+  },
+  {
+    "fen": "7k/pp3B1p/3p4/1P3pB1/2p3PP/P4K2/4rb2/4r3 b - - 4 42",
+    "moves": "f2c5 g5f6",
+    "rating": 793,
+    "gameUrl": "https://lichess.org/G3eJKSZM/black#84"
+  },
+  {
+    "fen": "8/r4pk1/p1Qp2p1/1ppP1bNp/2Pbq2P/1P6/P6P/2R2R1K w - - 8 29",
+    "moves": "g5e4 f5e4 f1f3 e4f3",
+    "rating": 691,
+    "gameUrl": "https://lichess.org/0xqgZc8n#57"
+  },
+  {
+    "fen": "r4rk1/1p3ppp/p1p1p3/3pP2b/1P2PP2/P5P1/1BP2b1P/RN2R2K w - - 0 21",
+    "moves": "e1f1 h5f3",
+    "rating": 847,
+    "gameUrl": "https://lichess.org/IutFKTsH#41"
+  },
+  {
+    "fen": "2r4k/7p/p2B2p1/n1pB1p2/1r1R4/6PP/P4P2/2R3K1 b - - 0 28",
+    "moves": "b4d4 d6e5",
+    "rating": 894,
+    "gameUrl": "https://lichess.org/hWG8BIav/black#56"
+  },
+  {
+    "fen": "r2r3k/6pp/pqp2Qb1/5p2/1PB1p3/P3P2P/1B4P1/2R2RK1 b - - 0 30",
+    "moves": "g7f6 b2f6",
+    "rating": 789,
+    "gameUrl": "https://lichess.org/VdPwBBT8/black#60"
+  },
+  {
+    "fen": "r1Nr3k/pp5p/6p1/2p2p2/P1B1PB1b/3P4/1Pn3PP/5RK1 b - - 2 19",
+    "moves": "a8c8 f4e5 h4f6 e5f6",
+    "rating": 848,
+    "gameUrl": "https://lichess.org/lHQXwzCU/black#38"
+  },
+  {
+    "fen": "r4bkr/pp4pp/3q2n1/2P3B1/B2Pp3/5Q2/PP3PPP/R5K1 b - - 0 20",
+    "moves": "e4f3 a4b3 d6d5 b3d5",
+    "rating": 998,
+    "gameUrl": "https://lichess.org/2PWKlkG8/black#40"
+  },
+  {
+    "fen": "r5k1/2N2ppp/p7/1p3b2/2pp1P2/4b1P1/PPP1B2P/R6K w - - 4 27",
+    "moves": "c7a8 f5e4 e2f3 e4f3",
+    "rating": 901,
+    "gameUrl": "https://lichess.org/sdw420hC#53"
+  },
+  {
+    "fen": "3b3k/p6p/6p1/2B5/2B5/3p4/PPb3PP/6K1 b - - 0 26",
+    "moves": "d3d2 c5d4 d8f6 d4f6",
+    "rating": 936,
+    "gameUrl": "https://lichess.org/hBvOc45j/black#52"
+  },
+  {
+    "fen": "rn5k/p3pB1p/2p3p1/5b2/1B3P2/8/Pb4PP/2R4K b - - 1 23",
+    "moves": "b2c1 b4c3 e7e5 c3e5",
+    "rating": 938,
+    "gameUrl": "https://lichess.org/SD3s3C35/black#46"
+  },
+  {
+    "fen": "r1b1qr1k/bpp1n1pp/p6Q/P7/2B1pn2/1N5P/1PPB2P1/R2R3K b - - 1 21",
+    "moves": "g7h6 d2c3 a7d4 c3d4 f8f6 d4f6",
+    "rating": 931,
+    "gameUrl": "https://lichess.org/dFWFqATJ/black#42"
+  },
+  {
+    "fen": "3rk2r/ppp1b1p1/2n3bp/4p3/3pPp2/P2P4/1PPBP1PP/R2QKB1R w KQk - 2 14",
+    "moves": "h2h3 e7h4 g2g3 h4g3",
+    "rating": 975,
+    "gameUrl": "https://lichess.org/LRWDHBRi#27"
+  },
+  {
+    "fen": "r3kbnr/1p1b2pp/pq2p3/2ppP1B1/8/1P6/P1P1BPPP/RN1Q1RK1 b kq - 2 11",
+    "moves": "h7h6 e2h5 g7g6 h5g6",
+    "rating": 926,
+    "gameUrl": "https://lichess.org/EhtF0aVy/black#22"
+  },
+  {
+    "fen": "8/p4k2/2p2rpp/3p4/5P2/2P3P1/PP2bb1P/R1BR3K w - - 3 28",
+    "moves": "d1d2 e2f3",
+    "rating": 890,
+    "gameUrl": "https://lichess.org/iSN2kVR9#55"
+  },
+  {
+    "fen": "r1bk3r/pppp1B1p/5bpB/4R3/8/2P5/PPP2PPP/R5K1 b - - 0 14",
+    "moves": "f6e5 h6g5 e5f6 g5f6",
+    "rating": 926,
+    "gameUrl": "https://lichess.org/NsYukSzB/black#28"
+  },
+  {
+    "fen": "3r2k1/pb5p/1p3ppB/2p5/3b4/P2P1qP1/1P4BP/1R2Q2K w - - 0 24",
+    "moves": "g2f3 b7f3",
+    "rating": 848,
+    "gameUrl": "https://lichess.org/2Fuuy9r4#47"
+  },
+  {
+    "fen": "2k5/1pp2pp1/p1p2b1p/8/6b1/2NP1N2/PPPK1PPP/4r3 w - - 0 18",
+    "moves": "f3e1 f6g5 f2f4 g5f4",
+    "rating": 995,
+    "gameUrl": "https://lichess.org/9x6l9sbQ#35"
+  },
+  {
+    "fen": "r4r1k/1ppb3p/p7/6N1/2B2B2/1N3nP1/PP3bK1/R7 b - - 0 26",
+    "moves": "f3g5 f4e5 f8f6 e5f6",
+    "rating": 1034,
+    "gameUrl": "https://lichess.org/DduX2jQa/black#52"
+  },
+  {
+    "fen": "r4rk1/1b3ppp/p2p4/2b2P1n/1p6/3P1q1P/BPP1N2B/R2Q1R1K w - - 0 21",
+    "moves": "f1f3 b7f3",
+    "rating": 905,
+    "gameUrl": "https://lichess.org/J4Z2Dxub#41"
+  },
+  {
+    "fen": "4r2k/5Q2/pp3n2/2pP1b2/2Pb4/7P/PP4PB/5R1K w - - 3 29",
+    "moves": "g2g4 f5e4 f1f3 e4f3",
+    "rating": 822,
+    "gameUrl": "https://lichess.org/5ihFFOD9#57"
+  },
+  {
+    "fen": "5k2/p4ppp/4p3/2p5/b1P2P2/2P5/P2B1bPP/1N5K w - - 1 25",
+    "moves": "g2g3 a4c6",
+    "rating": 1030,
+    "gameUrl": "https://lichess.org/EXl0tomQ#49"
+  },
+  {
+    "fen": "3R4/5p1k/bp4pp/p7/4BP2/PP2b1P1/1Br4P/7K w - - 0 28",
+    "moves": "e4c2 a6b7 d8d5 b7d5 c2e4 d5e4",
+    "rating": 971,
+    "gameUrl": "https://lichess.org/Z9QCxkI5#55"
+  },
+  {
+    "fen": "6k1/p4p1p/2p3p1/5b2/5b2/1BP3qP/PP2Q1P1/3r2BK w - - 0 30",
+    "moves": "e2d1 g3h3 g2h3 f5e4 d1f3 e4f3",
+    "rating": 2038,
+    "gameUrl": "https://lichess.org/RBsZVgFq#59"
+  },
+  {
+    "fen": "2rR3k/r1P4p/pp1B1bp1/3B4/5P2/4K1P1/P6P/8 b - - 2 28",
+    "moves": "f6d8 d6e5 d8f6 e5f6",
+    "rating": 902,
+    "gameUrl": "https://lichess.org/jfLP9XBP/black#56"
+  },
+  {
+    "fen": "r2r3k/p3pB1p/1p4p1/n1P5/5Bb1/5R2/P2p2PP/3R2K1 b - - 4 24",
+    "moves": "d8f8 f4e5",
+    "rating": 957,
+    "gameUrl": "https://lichess.org/ruJdfkUP/black#48"
+  },
+  {
+    "fen": "6k1/4B3/8/pPP2b2/P4p2/2R1b2p/6PP/5R1K w - - 0 36",
+    "moves": "g2h3 f5e4 f1f3 e4f3",
+    "rating": 933,
+    "gameUrl": "https://lichess.org/XZ73nKG3#71"
+  },
+  {
+    "fen": "1R6/5pkp/1pBpb1p1/1rb5/8/6P1/7P/4R2K w - - 2 31",
+    "moves": "c6b5 e6d5 e1e4 d5e4",
+    "rating": 980,
+    "gameUrl": "https://lichess.org/JCNxJGfn#61"
+  },
+  {
+    "fen": "rn1qkbnr/3bp3/5p2/p7/3P1Ppp/3BP3/PP3BPP/R2QK1NR b KQkq - 2 13",
+    "moves": "b8c6 d3g6",
+    "rating": 888,
+    "gameUrl": "https://lichess.org/NVlbnTyF/black#26"
+  },
+  {
+    "fen": "2kr1bnr/Bppb2q1/3p3p/3Pnp2/2B2Q2/2N5/PPP3PP/R4RK1 b - - 0 16",
+    "moves": "b7b6 c4a6",
+    "rating": 932,
+    "gameUrl": "https://lichess.org/Um5pFSXW/black#32"
+  },
+  {
+    "fen": "rn1qk1nr/pp2bppp/2p1p1b1/3p4/3N2P1/2PP4/PP1BPP1P/RN1QKB1R w KQkq - 1 7",
+    "moves": "f2f4 e7h4",
+    "rating": 886,
+    "gameUrl": "https://lichess.org/dVeWBuy5#13"
+  },
+  {
+    "fen": "7k/2B1b2p/6p1/2p5/2n5/PB6/3p1PPP/6K1 b - - 3 33",
+    "moves": "c4a3 c7e5 e7f6 e5f6",
+    "rating": 742,
+    "gameUrl": "https://lichess.org/fPxCWb66/black#66"
+  },
+  {
+    "fen": "3r2k1/pp3pp1/2p1p2p/2b1Pb2/2P2P2/1P3BP1/PB5P/3q1R1K w - - 0 22",
+    "moves": "f1d1 d8d1 f3d1 f5e4 d1f3 e4f3",
+    "rating": 886,
+    "gameUrl": "https://lichess.org/MGKpjvqB#43"
+  },
+  {
+    "fen": "8/1pN1Rp1p/p2p2pk/n1b2b2/5P2/1B4P1/P6P/7K w - - 6 29",
+    "moves": "e7f7 f5e4",
+    "rating": 862,
+    "gameUrl": "https://lichess.org/dE0kEM08#57"
+  },
+  {
+    "fen": "rnb1Q2k/pp5p/6p1/2B1q3/2B5/8/P1P2PPP/5RK1 b - - 0 19",
+    "moves": "e5e8 c5d4 e8e5 d4e5",
+    "rating": 818,
+    "gameUrl": "https://lichess.org/XowrrnG7/black#38"
+  },
+  {
+    "fen": "3qr2k/6bp/p2BB1p1/2ppQ2b/7r/1P2R3/P1P5/2K1R3 b - - 1 29",
+    "moves": "g7e5 d6e5 d8f6 e5f6",
+    "rating": 1055,
+    "gameUrl": "https://lichess.org/qhvJQbCp/black#58"
+  },
+  {
+    "fen": "rn3r1k/p6p/2p3p1/5b2/8/1Bb3B1/P1PN2PP/5RK1 b - - 9 20",
+    "moves": "c3d2 g3e5 f8f6 e5f6",
+    "rating": 908,
+    "gameUrl": "https://lichess.org/nuYEOpgB/black#40"
+  },
+  {
+    "fen": "6k1/1b3rp1/pbp1Q3/8/3q1P2/1P4P1/P4R1P/2R3KB w - - 4 40",
+    "moves": "h1c6 d4f2 g1h1 f2f3 c6f3 b7f3",
+    "rating": 1916,
+    "gameUrl": "https://lichess.org/O3AhZaGO#79"
+  },
+  {
+    "fen": "7k/p3b2p/1pbQ2p1/5p2/4p3/1BP1B2P/PP3PP1/6K1 b - - 0 27",
+    "moves": "e7d6 e3d4 d6e5 d4e5",
+    "rating": 866,
+    "gameUrl": "https://lichess.org/GZgGAnP2/black#54"
+  },
+  {
+    "fen": "5r2/Q3bkpp/4n3/4P3/8/8/PPpNb1PP/R1B3KR w - - 0 19",
+    "moves": "a7a4 e7c5 a4d4 c5d4",
+    "rating": 1021,
+    "gameUrl": "https://lichess.org/gd7kLF4B#37"
+  },
+  {
+    "fen": "2b2rk1/p1N2ppp/1pnp4/4P1b1/2P5/8/PP2P1PP/RK3B1R w - - 0 17",
+    "moves": "e5d6 c8f5 e2e4 f5e4 f1d3 e4d3",
+    "rating": 883,
+    "gameUrl": "https://lichess.org/LlEwnP7o#33"
+  },
+  {
+    "fen": "r5k1/1b4p1/pbq1p2p/1p2n3/3P4/1N1B1P2/PP1BQ2P/R6K w - - 0 25",
+    "moves": "d4e5 c6f3 e2f3 b7f3",
+    "rating": 1022,
+    "gameUrl": "https://lichess.org/pcQNUlir#49"
+  },
+  {
+    "fen": "7k/1pp1bB1p/p3p3/3p1b2/8/2P3K1/r7/6B1 b - - 1 37",
+    "moves": "a2a3 g1d4 e6e5 d4e5 e7f6 e5f6",
+    "rating": 992,
+    "gameUrl": "https://lichess.org/ipDHw34X/black#74"
+  },
+  {
+    "fen": "5r1k/p1p4p/1p4p1/8/3P4/PB2p2P/1P4PB/6K1 b - - 0 30",
+    "moves": "e3e2 h2e5 f8f6 e5f6",
+    "rating": 1002,
+    "gameUrl": "https://lichess.org/GAih8GyZ/black#60"
+  },
+  {
+    "fen": "4r1k1/pp6/2p1n2p/4B2b/5P2/P1N1b1P1/7P/R4R1K w - - 0 35",
+    "moves": "f1e1 h5f3",
+    "rating": 874,
+    "gameUrl": "https://lichess.org/DdEFi4r3#69"
+  },
+  {
+    "fen": "r2qkbnr/3bp3/pnp2p2/1p1p3p/3P2p1/2P1P1BP/PPBN1PPN/R1Q1R1K1 b kq - 1 16",
+    "moves": "g4h3 c2g6",
+    "rating": 1058,
+    "gameUrl": "https://lichess.org/fahhjlUl/black#32"
+  },
+  {
+    "fen": "r5k1/3b1ppp/pb2p2B/4PP2/8/6P1/PP5P/RN3R1K w - - 0 20",
+    "moves": "f5e6 d7c6 f1f3 c6f3",
+    "rating": 886,
+    "gameUrl": "https://lichess.org/IyyK5EvN#39"
+  },
+  {
+    "fen": "6k1/1p1r2pp/8/Q2b4/3bB3/8/1P5P/4Rr1K w - - 3 34",
+    "moves": "e1f1 d5e4 f1f3 e4f3",
+    "rating": 970,
+    "gameUrl": "https://lichess.org/kApDQFTP#67"
+  },
+  {
+    "fen": "1r5k/p4B1p/b1pN2p1/8/3p2pB/2bP4/P4PKP/4R3 b - - 0 30",
+    "moves": "c3e1 h4f6",
+    "rating": 887,
+    "gameUrl": "https://lichess.org/bzhnfNh8/black#60"
+  },
+  {
+    "fen": "r4rk1/pp3ppb/n2p3p/2pP4/2Pb2P1/P4PB1/1P2B2P/R1K3NR w - - 5 22",
+    "moves": "e2d1 d4e3",
+    "rating": 1051,
+    "gameUrl": "https://lichess.org/TG9SHzyE#43"
+  },
+  {
+    "fen": "6k1/7p/3p2p1/1QbP2P1/p3B3/Pb6/1P5P/7K w - - 0 43",
+    "moves": "e4d3 b3d5 d3e4 d5e4",
+    "rating": 842,
+    "gameUrl": "https://lichess.org/Fz2W8TlD#85"
+  },
+  {
+    "fen": "4N2k/8/1p2b1P1/p1b4p/4P3/1P4P1/P1P4P/4R2K w - - 1 30",
+    "moves": "e4e5 e6d5 e1e4 d5e4",
+    "rating": 831,
+    "gameUrl": "https://lichess.org/TpEldzwE#59"
+  },
+  {
+    "fen": "r1b1kb1r/2qn1pp1/p2p3p/1p1Qp3/4P2B/1N6/PPP1BPPP/R3K2R b KQkq - 0 12",
+    "moves": "c8b7 d5e6 f7e6 e2h5 g7g6 h5g6",
+    "rating": 2141,
+    "gameUrl": "https://lichess.org/IBSI7VtI/black#24"
+  },
+  {
+    "fen": "4kb2/3b1p2/2n1pBN1/3pP3/3P4/p1PB1P2/Pr6/3K3R b - - 0 30",
+    "moves": "f7g6 d3g6",
+    "rating": 1035,
+    "gameUrl": "https://lichess.org/o5Ky1ivb/black#60"
+  },
+  {
+    "fen": "r4rk1/pbp3p1/1p2p1Q1/2b5/4nP2/2Pq2P1/PP4BP/R1B1R2K w - - 0 18",
+    "moves": "g2e4 d3f3 e4f3 b7f3",
+    "rating": 2155,
+    "gameUrl": "https://lichess.org/qhGK7OEd#35"
+  },
+  {
+    "fen": "5r1k/1ppn3p/p4p2/6p1/2B1q3/P1Q5/1BP2PPP/6K1 b - - 1 33",
+    "moves": "f8e8 c3f6 d7f6 b2f6",
+    "rating": 1020,
+    "gameUrl": "https://lichess.org/DY858hx8/black#66"
+  },
+  {
+    "fen": "7k/pb5p/1p3qp1/3pP3/1P6/P2Bb1P1/1BP4P/7K w - - 0 28",
+    "moves": "e5f6 d5d4 d3e4 b7e4",
+    "rating": 1022,
+    "gameUrl": "https://lichess.org/QJvICpFT#55"
+  },
+  {
+    "fen": "N5k1/p4ppp/2p5/7n/BPb5/P4P2/1bP3PP/3Rr1KR w - - 5 24",
+    "moves": "d1e1 b2d4 e1e3 d4e3",
+    "rating": 880,
+    "gameUrl": "https://lichess.org/eYulFndB#47"
+  },
+  {
+    "fen": "r7/pp4k1/1b1R1pp1/5b2/2B5/8/PP4PP/5R1K w - - 1 29",
+    "moves": "g2g4 f5e4 f1f3 e4f3",
+    "rating": 943,
+    "gameUrl": "https://lichess.org/HnF5KmW3#57"
+  },
+  {
+    "fen": "5bk1/7p/bp2RBp1/p2B1p2/3n3P/PP4P1/5PKN/2r5 b - - 1 29",
+    "moves": "a6b7 e6c6 d4e6 d5e6",
+    "rating": 1923,
+    "gameUrl": "https://lichess.org/NA5LUlLn/black#58"
+  },
+  {
+    "fen": "3r2k1/pp1q1ppp/5n2/4n1Q1/5Bb1/1NP3P1/PP3bBP/R6K w - - 0 20",
+    "moves": "f4e5 d7d1 a1d1 d8d1 g2f1 g4f3",
+    "rating": 1845,
+    "gameUrl": "https://lichess.org/mb7RpCra#39"
+  },
+  {
+    "fen": "4N1k1/r7/1p1p4/p1nPp3/1b2P3/1P1b2B1/P5B1/K6R w - - 3 34",
+    "moves": "e8d6 b4c3",
+    "rating": 1030,
+    "gameUrl": "https://lichess.org/dcBgSndk#67"
+  },
+  {
+    "fen": "r1r4k/pp5p/1q1B2p1/4Qp2/n1B1p3/2b1P2P/PP1R1P2/2K4R b - - 1 21",
+    "moves": "c3e5 d6e5 b6f6 e5f6",
+    "rating": 810,
+    "gameUrl": "https://lichess.org/10dVpJvh/black#42"
+  },
+  {
+    "fen": "4r3/pp3B1k/1bb3pp/8/2Q2Bp1/3P2Nq/PPP4P/R6K w - - 3 26",
+    "moves": "f7d5 e8e2 g3e2 h3f3 d5f3 c6f3",
+    "rating": 2176,
+    "gameUrl": "https://lichess.org/cTjkVmfl#51"
+  },
+  {
+    "fen": "b5rk/b1p2p1p/p7/N2B2P1/PP6/6P1/4p2P/R2R3K w - - 0 33",
+    "moves": "d1e1 a8d5",
+    "rating": 897,
+    "gameUrl": "https://lichess.org/hCAISe3T#65"
+  },
+  {
+    "fen": "rn5k/pp5p/4B1p1/q1pP2B1/3bN3/8/PP3r1P/R2Q3K b - - 4 20",
+    "moves": "f2b2 d1d4 c5d4 g5f6",
+    "rating": 1618,
+    "gameUrl": "https://lichess.org/GB66HxuX/black#40"
+  },
+  {
+    "fen": "rn1q3k/pb2b2p/1p2B1p1/8/Pp3B2/2PQ1P2/5P1P/R3K2R b KQ - 0 20",
+    "moves": "d8d3 f4e5 e7f6 e5f6",
+    "rating": 1002,
+    "gameUrl": "https://lichess.org/BvKoFpdn/black#40"
+  },
+  {
+    "fen": "r4rk1/1pp3pp/1p6/1N1P1b2/7q/PQ2p1P1/1P2Bb1P/R4R1K w - - 0 21",
+    "moves": "g3h4 f5e4 e2f3 e4f3",
+    "rating": 969,
+    "gameUrl": "https://lichess.org/4vl4tSYk#41"
+  },
+  {
+    "fen": "r1b2bkr/1pp3pp/p7/4p3/4N3/8/PPnPBPPP/R1BK3R b - - 1 13",
+    "moves": "c2a1 e2c4 c8e6 c4e6",
+    "rating": 941,
+    "gameUrl": "https://lichess.org/O6jrQbP5/black#26"
+  },
+  {
+    "fen": "r4rk1/1p1R1pbp/2p3p1/p6b/2Q2B2/1BP1PP1q/PP3P2/2KR4 b - - 3 20",
+    "moves": "b7b5 c4f7 f8f7 b3f7 g8h8 d7d8 a8d8 d1d8 g7f8 f4e5",
+    "rating": 2522,
+    "gameUrl": "https://lichess.org/yRU45J7O/black#40"
+  },
+  {
+    "fen": "5r1k/pp1n3p/1q4p1/8/2Bb1QP1/8/PP3R1B/R4K2 b - - 0 28",
+    "moves": "d4f2 f4f8 d7f8 h2e5 b6f6 e5f6",
+    "rating": 1813,
+    "gameUrl": "https://lichess.org/ZJE8Troq/black#56"
+  },
+  {
+    "fen": "r3k1nr/pp2bppp/3p4/2p1P3/5Pb1/2N5/PPPB2PP/R3KB1R w KQkq - 1 12",
+    "moves": "h2h3 e7h4 g2g3 h4g3",
+    "rating": 954,
+    "gameUrl": "https://lichess.org/4pdBeHtI#23"
+  },
+  {
+    "fen": "6k1/1p5p/p1bN2p1/2p5/2Pb4/5r2/PP4PP/1R5K w - - 0 31",
+    "moves": "g2f3 c6f3",
+    "rating": 689,
+    "gameUrl": "https://lichess.org/E1ME2oZ8#61"
+  },
+  {
+    "fen": "8/1b2r3/1P3Qpk/2pPp3/3b2p1/6P1/7P/5R1K w - - 7 47",
+    "moves": "f6e7 b7d5 f1f3 d5f3",
+    "rating": 829,
+    "gameUrl": "https://lichess.org/ivDzN8uU#93"
+  },
+  {
+    "fen": "3R4/p1p3kp/8/2b2bP1/8/2N5/PP2r2P/7K w - - 8 42",
+    "moves": "c3e2 f5e4",
+    "rating": 921,
+    "gameUrl": "https://lichess.org/3zCBw4BS#83"
+  },
+  {
+    "fen": "1r4k1/5p1p/pr1p2p1/q2Bb3/2P5/P1R3PP/KB1R1Q2/8 b - - 1 31",
+    "moves": "e5c3 f2f7 g8h8 f7f6 c3f6 b2f6",
+    "rating": 1969,
+    "gameUrl": "https://lichess.org/wQptHOX6/black#62"
+  },
+  {
+    "fen": "rnb4k/ppp3pp/3P4/2nN4/4r3/3B2P1/PPPP1b1P/R1BK3R w - - 4 17",
+    "moves": "d3e4 c8g4 e4f3 g4f3",
+    "rating": 1053,
+    "gameUrl": "https://lichess.org/4CDIrpnz#33"
+  },
+  {
+    "fen": "1r2kb1r/pbB1pppp/B7/8/3P4/8/PP3P1P/R3K1R1 b Qk - 0 14",
+    "moves": "b8c8 a6b5 b7c6 b5c6",
+    "rating": 1060,
+    "gameUrl": "https://lichess.org/dnRTjsu9/black#28"
+  },
+  {
+    "fen": "7k/p7/1p1B4/3P1b2/3b4/6r1/P4P1P/5R1K w - - 0 34",
+    "moves": "f2g3 f5e4 f1f3 e4f3",
+    "rating": 788,
+    "gameUrl": "https://lichess.org/pVLuY67s#67"
+  },
+  {
+    "fen": "1r5k/7p/6p1/p1p2p2/2BRpP1B/8/P1K3PP/8 b - - 0 43",
+    "moves": "c5d4 h4f6",
+    "rating": 734,
+    "gameUrl": "https://lichess.org/rrpkovo0/black#86"
+  },
+  {
+    "fen": "r3k2r/pp2bppp/1q1p4/3Pn2b/8/5N1P/PPQN1PP1/R3KB1R w KQkq - 1 14",
+    "moves": "f3e5 b6e3 f2e3 e7h4 g2g3 h4g3",
+    "rating": 2467,
+    "gameUrl": "https://lichess.org/5JhTTlDw#27"
+  },
+  {
+    "fen": "r6k/pp5p/6b1/2p1rpBp/2Bp4/8/PPP2PP1/2KR4 b - - 0 27",
+    "moves": "a8e8 g5f6",
+    "rating": 843,
+    "gameUrl": "https://lichess.org/n5Wpjpx8/black#54"
+  },
+  {
+    "fen": "8/1n6/p1b1ppk1/1p4pp/1B1K4/3B2P1/7P/8 b - - 5 57",
+    "moves": "g6h6 b4f8",
+    "rating": 868,
+    "gameUrl": "https://lichess.org/ZZS9sNfl/black#114"
+  },
+  {
+    "fen": "5r1k/2B1PB1p/1p3b2/p2p1p2/Pn6/8/5PP1/3R2K1 b - - 0 35",
+    "moves": "f6e7 c7e5 e7f6 e5f6",
+    "rating": 962,
+    "gameUrl": "https://lichess.org/XtcQfYW9/black#70"
+  },
+  {
+    "fen": "3R4/1p3k1p/p1b2p2/8/8/5rP1/5bBP/5R1K w - - 0 37",
+    "moves": "g2f3 c6f3",
+    "rating": 658,
+    "gameUrl": "https://lichess.org/MYDIY8WD#73"
+  },
+  {
+    "fen": "r1br3k/ppp4p/6p1/3B1p2/2P5/1Pb1P3/P4PPP/1RB1R1K1 b - - 3 18",
+    "moves": "c3e1 c1b2 e1c3 b2c3",
+    "rating": 1061,
+    "gameUrl": "https://lichess.org/ewFNM1xI/black#36"
+  },
+  {
+    "fen": "5r1k/7p/6p1/R7/4p1bP/1BP1B3/Pb1K4/8 b - - 0 30",
+    "moves": "f8c8 e3d4",
+    "rating": 992,
+    "gameUrl": "https://lichess.org/G9PLuzdG/black#60"
+  },
+  {
+    "fen": "rkb2b1r/pp4pp/5p2/3Pp3/2BR4/4B3/PPP2PPP/5RK1 b - - 0 14",
+    "moves": "e5d4 e3f4 f8d6 f4d6",
+    "rating": 987,
+    "gameUrl": "https://lichess.org/DMFfuWsl/black#28"
+  },
+  {
+    "fen": "r3kb1r/1bqn2p1/p2ppn1p/1p2P2Q/5P1B/2N5/PPP1B1PP/R3K2R b KQkq - 1 13",
+    "moves": "f6h5 e2h5 g7g6 h5g6",
+    "rating": 895,
+    "gameUrl": "https://lichess.org/LBK9Tcyq/black#26"
+  },
+  {
+    "fen": "4r2k/6bp/3pBRp1/pbp2PB1/8/1P5P/6P1/7K b - - 0 32",
+    "moves": "g7f6 g5f6",
+    "rating": 600,
+    "gameUrl": "https://lichess.org/zNOa5yU2/black#64"
+  },
+  {
+    "fen": "8/7R/2p5/3bNPk1/4p3/8/1B3b1P/7K w - - 1 39",
+    "moves": "b2c1 e4e3 e5f3 d5f3",
+    "rating": 1610,
+    "gameUrl": "https://lichess.org/9zmfHJiG#77"
+  },
+  {
+    "fen": "5rk1/1p3p1p/p2p2p1/5b2/P2b4/1Br3P1/1PP4P/2R2R1K w - - 0 20",
+    "moves": "b2c3 f5e4 f1f3 e4f3",
+    "rating": 959,
+    "gameUrl": "https://lichess.org/fPGpUj6Z#39"
+  },
+  {
+    "fen": "2q1k2r/pp1nbp2/2n3p1/7p/4PB1P/6P1/bPPQB3/2KR2NR w - - 0 17",
+    "moves": "b2b3 e7a3",
+    "rating": 1030,
+    "gameUrl": "https://lichess.org/dCgWMGKR#33"
+  },
+  {
+    "fen": "rkb2R2/pp4b1/2p3B1/6Bp/2P4P/8/PP4P1/2K4n b - - 0 20",
+    "moves": "g7f8 g5f4 f8d6 f4d6",
+    "rating": 977,
+    "gameUrl": "https://lichess.org/MJA2YUdI/black#40"
+  },
+  {
+    "fen": "8/b3k1pp/b3p3/1p3p2/5P2/2P2BP1/PP5P/R2R3K w - - 0 26",
+    "moves": "f3e2 a6b7 d1d5 b7d5 e2f3 d5f3",
+    "rating": 1041,
+    "gameUrl": "https://lichess.org/2i1xQZPc#51"
+  },
+  {
+    "fen": "8/3bk2p/3p2p1/1P3pN1/8/4b3/2B3PP/R3B1K1 w - - 0 33",
+    "moves": "g1f1 d7b5 c2d3 b5d3",
+    "rating": 997,
+    "gameUrl": "https://lichess.org/ydiPyrNz#65"
+  },
+  {
+    "fen": "6k1/bb4p1/p1qB1p2/1p5Q/8/2P2n2/PP4PP/3R3K w - - 8 30",
+    "moves": "g2f3 c6f3 h5f3 b7f3",
+    "rating": 901,
+    "gameUrl": "https://lichess.org/BNpoT6OI#59"
+  },
+  {
+    "fen": "3rr2k/ppp4p/4B1p1/2qRP1B1/5P2/1P4P1/P5KP/Q7 b - - 0 25",
+    "moves": "d8d5 g5f6",
+    "rating": 1062,
+    "gameUrl": "https://lichess.org/OszAjLCn/black#50"
+  },
+  {
+    "fen": "r4k1r/pb3ppp/2B2n2/4pqB1/Q1Pb4/2N3P1/PP3P1P/R2R2K1 w - - 1 16",
+    "moves": "g5f6 f5f2 g1h1 f2f3 c6f3 b7f3",
+    "rating": 2008,
+    "gameUrl": "https://lichess.org/dByM65lZ#31"
+  },
+  {
+    "fen": "5rk1/5p2/5p1p/1pbr1b2/2p2P2/1PN3P1/P6P/3R1R1K w - - 0 25",
+    "moves": "c3d5 f5e4 f1f3 e4f3",
+    "rating": 982,
+    "gameUrl": "https://lichess.org/Aq6pSsjD#49"
+  },
+  {
+    "fen": "r3k1nr/ppp1bppp/2n5/4p3/6bq/1P2P1PP/PBPPN3/R2QKBNR w KQkq - 1 9",
+    "moves": "g3h4 e7h4 e2g3 h4g3",
+    "rating": 1044,
+    "gameUrl": "https://lichess.org/cHfQfCBz#17"
+  },
+  {
+    "fen": "2b2k2/p4ppp/1b6/3B4/8/1P1P2P1/PB5P/7K w - - 2 25",
+    "moves": "d5c4 c8b7 c4d5 b7d5",
+    "rating": 895,
+    "gameUrl": "https://lichess.org/E7CZiXxl#49"
+  },
+  {
+    "fen": "4R2k/2pb3p/1p1p4/3B2p1/1BP2pP1/3PbP1P/6K1/8 b - - 0 32",
+    "moves": "d7e8 b4c3 e3d4 c3d4",
+    "rating": 973,
+    "gameUrl": "https://lichess.org/hfRU4H3H/black#64"
+  },
+  {
+    "fen": "r7/p1p2kpp/5p2/8/3P1Nb1/2P3P1/PP1Brb1P/RN5K w - - 5 20",
+    "moves": "f4e2 g4f3",
+    "rating": 1047,
+    "gameUrl": "https://lichess.org/FwGd7vWg#39"
+  },
+  {
+    "fen": "3b3k/pb5p/1p4n1/8/8/1BP1B3/PP3PP1/6K1 b - - 1 32",
+    "moves": "g6h4 e3d4 d8f6 d4f6",
+    "rating": 844,
+    "gameUrl": "https://lichess.org/4PP3AlnO/black#64"
+  },
+  {
+    "fen": "1kb5/p7/1p3p1r/2p1p3/2P1BP2/4K1B1/PP4P1/8 b - - 0 28",
+    "moves": "e5f4 g3f4",
+    "rating": 986,
+    "gameUrl": "https://lichess.org/WbostkKY/black#56"
+  },
+  {
+    "fen": "r3kb1r/2pb2pp/ppn1p3/3pP1B1/3P4/2PB3P/PP4P1/RN2R1K1 b kq - 0 15",
+    "moves": "h7h6 d3g6",
+    "rating": 903,
+    "gameUrl": "https://lichess.org/LTnXYzjD/black#30"
+  },
+  {
+    "fen": "r3kb1r/pp1b2pp/1q2p3/2ppPnB1/8/2P5/PPQ1BPPP/RN3RK1 b kq - 4 12",
+    "moves": "h7h6 e2h5 g7g6 h5g6",
+    "rating": 1137,
+    "gameUrl": "https://lichess.org/BQaQgSz3/black#24"
+  },
+  {
+    "fen": "r1b4k/pp2q2p/2p3p1/8/4p2P/1B2P3/P2B1PP1/R5K1 b - - 0 22",
+    "moves": "e7h4 d2c3 h4f6 c3f6",
+    "rating": 931,
+    "gameUrl": "https://lichess.org/ZtxDlrtI/black#44"
+  },
+  {
+    "fen": "2kr2r1/Bppbqp2/Q2b1n1p/3Pp1p1/4P3/P1N5/1PP1BP1P/1K1R2R1 b - - 0 17",
+    "moves": "b7a6 e2a6",
+    "rating": 835,
+    "gameUrl": "https://lichess.org/oVT3qYsS/black#34"
+  },
+  {
+    "fen": "r3r2k/pp2b2p/n1p1BNp1/8/6P1/7P/PB1R1P2/5RK1 b - - 0 24",
+    "moves": "e7f6 b2f6",
+    "rating": 815,
+    "gameUrl": "https://lichess.org/gaQGRIX3/black#48"
+  },
+  {
+    "fen": "4Q2k/3q3p/2p3p1/2B5/P1Bp3n/7P/2PP1PPK/8 b - - 0 35",
+    "moves": "d7e8 c5d4 e8e5 d4e5",
+    "rating": 917,
+    "gameUrl": "https://lichess.org/1UySi3jC/black#70"
+  },
+  {
+    "fen": "7k/5B1p/p3P1p1/1p3b2/8/2P1b1P1/PP5P/3R3K w - - 1 32",
+    "moves": "e6e7 f5e4",
+    "rating": 999,
+    "gameUrl": "https://lichess.org/n7BtFx6r#63"
+  },
+  {
+    "fen": "7k/2B1b2p/3nB3/1P4p1/2p2p2/2Pb4/3K1P1P/8 b - - 0 35",
+    "moves": "d6b5 c7e5 e7f6 e5f6",
+    "rating": 923,
+    "gameUrl": "https://lichess.org/SvaucPNF/black#70"
+  },
+  {
+    "fen": "6k1/b4q1p/p5p1/1p2Q1B1/1P3P2/P5R1/7P/3b3K w - - 0 41",
+    "moves": "g3d3 f7b7 e5d5 b7d5 d3d5 d1f3",
+    "rating": 1778,
+    "gameUrl": "https://lichess.org/ovVxzVR6#81"
+  },
+  {
+    "fen": "rnbr4/1pp2Qp1/p1k5/8/4B3/B7/P1P3PP/b6K b - - 2 23",
+    "moves": "c6b6 f7b3 b6a7 b3b7 c8b7 a3c5",
+    "rating": 2386,
+    "gameUrl": "https://lichess.org/GN12UP04/black#46"
+  },
+  {
+    "fen": "2r3k1/1BB2ppp/4bn2/1p6/8/6P1/PP2Pb1P/R6K w - - 0 21",
+    "moves": "b7c8 e6d5 e2e4 d5e4",
+    "rating": 1026,
+    "gameUrl": "https://lichess.org/2smB4w6M#41"
+  },
+  {
+    "fen": "r1b1kbnr/pppp2pp/2n5/5pB1/3Pp3/2P5/PP1NBPPP/RN3RK1 b kq - 1 9",
+    "moves": "h7h6 e2h5 g7g6 h5g6",
+    "rating": 996,
+    "gameUrl": "https://lichess.org/E1B9KVcN/black#18"
+  },
+  {
+    "fen": "6k1/1b4p1/p1q1p2p/p1p1P3/2Pp2Q1/PP1P1rN1/R4bPP/7K w - - 0 28",
+    "moves": "g2f3 c6f3 g4f3 b7f3",
+    "rating": 982,
+    "gameUrl": "https://lichess.org/n2dS8WY5#55"
+  },
+  {
+    "fen": "r4r1k/pp5p/2n3p1/3B4/1P6/2P3KP/PB6/8 b - - 2 26",
+    "moves": "a8d8 c3c4 c6e5 b2e5 f8f6 e5f6",
+    "rating": 1068,
+    "gameUrl": "https://lichess.org/STSfGUUi/black#52"
+  },
+  {
+    "fen": "2kr2nr/B1pqb3/pp5p/2PP1pp1/1n2pP2/8/PP2Q2P/1K1R1BR1 b - - 0 19",
+    "moves": "e7c5 e2a6 b4a6 f1a6",
+    "rating": 1050,
+    "gameUrl": "https://lichess.org/DnCvofkk/black#38"
+  },
+  {
+    "fen": "1r2b2k/7p/6p1/1p1Bbp2/1B2P3/6QP/8/3R2K1 b - - 0 37",
+    "moves": "e5g3 b4c3 g3e5 c3e5",
+    "rating": 1023,
+    "gameUrl": "https://lichess.org/tfwWNtxG/black#74"
+  },
+  {
+    "fen": "r3kb1r/3n2pp/b1p1p3/2P2pB1/p1NPp3/P3P3/4BPPP/R4RK1 b k - 5 17",
+    "moves": "h7h6 e2h5 g7g6 h5g6",
+    "rating": 1389,
+    "gameUrl": "https://lichess.org/vhG9xgRI/black#34"
+  },
+  {
+    "fen": "r4rk1/1pp2p1p/p6p/3pP3/3P1p1q/1N1bb1P1/PP5P/R3QR1K w - - 0 20",
+    "moves": "g3h4 d3e4 f1f3 e4f3",
+    "rating": 1063,
+    "gameUrl": "https://lichess.org/6LtMC2Hp#39"
+  },
+  {
+    "fen": "5r1k/7p/6p1/2BB4/2P5/4p1P1/r2R3P/7K b - - 0 34",
+    "moves": "e3d2 c5d4 f8f6 d4f6",
+    "rating": 1027,
+    "gameUrl": "https://lichess.org/kkQBg5lk/black#68"
+  },
+  {
+    "fen": "6k1/2b2ppp/2P5/8/4bP2/4B1P1/P2r3P/5BK1 w - - 0 32",
+    "moves": "e3d2 c7b6 d2e3 b6e3",
+    "rating": 933,
+    "gameUrl": "https://lichess.org/eVaphbHT#63"
+  },
+  {
+    "fen": "2q3k1/pp6/3Q2pp/2pP3b/2Pb4/1P6/P5KP/4R1N1 w - - 1 35",
+    "moves": "d6e7 c8g4 g2h1 g4f3 g1f3 h5f3",
+    "rating": 1750,
+    "gameUrl": "https://lichess.org/VRf4qvg8#69"
+  },
+  {
+    "fen": "r1b2r1k/pppp3p/2n2Q2/7q/2B1P3/8/PB3PPP/R4RK1 b - - 0 18",
+    "moves": "f8f6 b2f6",
+    "rating": 777,
+    "gameUrl": "https://lichess.org/y6ia7ZVV/black#36"
+  },
+  {
+    "fen": "7k/pp4bp/8/4p3/2P1b2P/4B3/PP6/2KB4 w - - 0 25",
+    "moves": "e3a7 g7h6 a7e3 h6e3",
+    "rating": 867,
+    "gameUrl": "https://lichess.org/ulyQD7D7#49"
+  },
+  {
+    "fen": "r2bk3/pRn2p2/2b1p1p1/3pPnP1/2PP4/B7/4NK2/3B4 b q - 0 31",
+    "moves": "c6b7 d1a4 c7b5 a4b5 b7c6 b5c6",
+    "rating": 946,
+    "gameUrl": "https://lichess.org/gm5vJ3SA/black#62"
+  },
+  {
+    "fen": "r4rk1/ppp2ppp/3p3n/6q1/4PPbQ/BBP3P1/P4b1P/RN5K w - - 0 18",
+    "moves": "f4g5 g4f3",
+    "rating": 969,
+    "gameUrl": "https://lichess.org/TYB0b8ej#35"
+  },
+  {
+    "fen": "k2r3r/pp4pp/n1Q5/2b4q/5B1P/6P1/PPP1NPB1/R4RK1 b - - 0 26",
+    "moves": "b7c6 g2c6",
+    "rating": 914,
+    "gameUrl": "https://lichess.org/dsAQCc9H/black#52"
+  },
+  {
+    "fen": "4b3/1p2P1k1/1b2P3/1p1P1p2/2B5/P5P1/7P/7K w - - 0 38",
+    "moves": "d5d6 e8c6 c4d5 c6d5",
+    "rating": 1018,
+    "gameUrl": "https://lichess.org/ZyjueLRq#75"
+  },
+  {
+    "fen": "7B/p1k2p2/1b2b2p/8/7p/7r/PP4PP/5R1K w - - 0 25",
+    "moves": "g2h3 e6d5 f1f3 d5f3",
+    "rating": 843,
+    "gameUrl": "https://lichess.org/VOPeMHjm#49"
+  },
+  {
+    "fen": "2kr3r/Bppn1pp1/7p/4p3/2B1P3/P1K2P2/P5PP/R7 b - - 0 17",
+    "moves": "b7b6 c4a6",
+    "rating": 925,
+    "gameUrl": "https://lichess.org/qcdggXRp/black#34"
+  },
+  {
+    "fen": "r6k/1p5p/1p2B1p1/8/8/2P1B3/2PK2P1/5r2 b - - 3 27",
+    "moves": "a8e8 e3d4 f1f6 d4f6",
+    "rating": 846,
+    "gameUrl": "https://lichess.org/4yizTbA6/black#54"
+  },
+  {
+    "fen": "r6k/pb2Q2p/1p3bpn/2p2p2/2B2B2/2N2P1P/PPP5/6K1 b - - 1 24",
+    "moves": "f6e7 f4e5 e7f6 e5f6",
+    "rating": 1000,
+    "gameUrl": "https://lichess.org/ZVviuQDD/black#48"
+  },
+  {
+    "fen": "8/2k2p1p/p1p2p2/N1P2b2/Np6/1P2b1P1/1P5P/4Rr1K w - - 6 34",
+    "moves": "e1f1 f5e4 f1f3 e4f3",
+    "rating": 767,
+    "gameUrl": "https://lichess.org/V9qdKd6t#67"
+  },
+  {
+    "fen": "4r2k/ppQ4p/3p4/1P1b4/3b1pN1/3n1P2/P5BP/7K w - - 1 38",
+    "moves": "c7d6 e8e1 g2f1 d5f3",
+    "rating": 1716,
+    "gameUrl": "https://lichess.org/rnbnB5eF#75"
+  },
+  {
+    "fen": "6k1/3qr2p/2B2ppQ/2p2b2/1pPb1B2/1P4P1/7P/5R1K w - - 2 33",
+    "moves": "c6d7 f5e4 f1f3 e4f3",
+    "rating": 1063,
+    "gameUrl": "https://lichess.org/4ufLIlb9#65"
+  },
+  {
+    "fen": "3r2k1/pbp3p1/2q4p/2b1p3/8/2N2r2/PPP3PP/R1B1QR1K w - - 0 17",
+    "moves": "g2f3 c6f3 f1f3 b7f3",
+    "rating": 960,
+    "gameUrl": "https://lichess.org/9PdOBeDz#33"
+  },
+  {
+    "fen": "r4rk1/5ppp/p1N1p3/4Pb2/5P2/4b3/PP4PP/RN1R3K w - - 1 17",
+    "moves": "g2g3 f5e4",
+    "rating": 820,
+    "gameUrl": "https://lichess.org/UBo2zDtN#33"
+  },
+  {
+    "fen": "r3kb1r/pp1bn1p1/1q2p2p/2p1P3/2Pp3B/1P6/P3BPPP/RN1Q1RK1 b kq - 1 13",
+    "moves": "e7f5 e2h5 g7g6 h5g6",
+    "rating": 946,
+    "gameUrl": "https://lichess.org/MaUoUe0X/black#26"
+  },
+  {
+    "fen": "7k/p3r1pp/8/2b1Bp2/5Pb1/1QP3Pq/PP1N3P/5RK1 w - - 2 24",
+    "moves": "g1h1 h3f1 d2f1 g4f3",
+    "rating": 1630,
+    "gameUrl": "https://lichess.org/xnwxhIii#47"
+  },
+  {
+    "fen": "rnb2bnr/4q3/2p1Np1k/1p4pp/pB1P4/4P3/PPB1NPPP/R1Q1K2R b KQ - 0 17",
+    "moves": "e7e6 b4f8",
+    "rating": 917,
+    "gameUrl": "https://lichess.org/ltSBDY5x/black#34"
+  },
+  {
+    "fen": "2b3k1/5pp1/1bP1p2p/pN2P3/5P2/3P2P1/4B2P/7K w - - 2 40",
+    "moves": "c6c7 c8b7 e2f3 b7f3",
+    "rating": 1065,
+    "gameUrl": "https://lichess.org/GlsWqO47#79"
+  },
+  {
+    "fen": "7k/pp5p/6p1/8/1BBb4/1P4PP/8/1r2N2K b - - 0 42",
+    "moves": "d4f2 b4c3 f2d4 c3d4",
+    "rating": 966,
+    "gameUrl": "https://lichess.org/DNQXm4dm/black#84"
+  },
+  {
+    "fen": "2r1kb1r/1pqn1pp1/p1n1N1p1/3pP1B1/3p4/2P5/PPB2PPP/R2Q1RK1 b k - 0 15",
+    "moves": "f7e6 c2g6",
+    "rating": 1038,
+    "gameUrl": "https://lichess.org/UZ7jvNAs/black#30"
+  },
+  {
+    "fen": "6k1/pb5p/1p4p1/1P1p1p2/8/3P1BP1/3Brb1P/1R5K w - - 0 28",
+    "moves": "f3e2 d5d4 e2f3 b7f3",
+    "rating": 1061,
+    "gameUrl": "https://lichess.org/pd56zIZ6#55"
+  },
+  {
+    "fen": "7k/4R2p/pB3bp1/P7/6P1/1BP2b2/1P5r/1K6 b - - 0 33",
+    "moves": "f6e7 b6d4 e7f6 d4f6",
+    "rating": 779,
+    "gameUrl": "https://lichess.org/epFdDdrY/black#66"
+  },
+  {
+    "fen": "2kr2r1/1p5p/1p2b3/2b1B3/8/6P1/PP2B2P/2R1R2K w - - 3 26",
+    "moves": "b2b4 e6d5 e2f3 d5f3",
+    "rating": 889,
+    "gameUrl": "https://lichess.org/fGYIVVMJ#51"
+  },
+  {
+    "fen": "3q1bkr/p1pb2pp/8/n7/2NP1B2/2P5/Pr3PPP/RN2KB1R b KQ - 1 15",
+    "moves": "a5c4 f1c4 d7e6 c4e6",
+    "rating": 913,
+    "gameUrl": "https://lichess.org/iWxpJ7fo/black#30"
+  },
+  {
+    "fen": "8/5pkp/6p1/8/8/3p1P2/PPbB1bPP/K1R5 w - - 7 39",
+    "moves": "b2b3 f2d4 d2c3 d4c3",
+    "rating": 814,
+    "gameUrl": "https://lichess.org/2bzatOrZ#77"
+  },
+  {
+    "fen": "r1bq1bkr/ppp3pp/8/n2Qp3/2B5/3P4/PPP2PPP/RNB1K2R b KQ - 0 9",
+    "moves": "d8d5 c4d5 c8e6 d5e6",
+    "rating": 600,
+    "gameUrl": "https://lichess.org/SSrHoaNv/black#18"
+  },
+  {
+    "fen": "7r/pkp4p/2b2p2/2b5/8/1N3q2/PP4PP/R2R3K w - - 0 27",
+    "moves": "g2f3 c6f3",
+    "rating": 788,
+    "gameUrl": "https://lichess.org/GXJ9Xt4c#53"
+  },
+  {
+    "fen": "r2qk3/ppp2p2/3b4/3pn2p/6b1/1PN3P1/PBPPP2P/R2QKB1R w KQq - 2 12",
+    "moves": "h2h3 e5d3 e2d3 d6g3",
+    "rating": 1848,
+    "gameUrl": "https://lichess.org/GlKdRfJL#23"
+  },
+  {
+    "fen": "r6k/7p/8/pP4p1/P1B1p3/4P1P1/5K1P/3rB3 b - - 0 40",
+    "moves": "a8c8 e1c3 d1d4 c3d4",
+    "rating": 1049,
+    "gameUrl": "https://lichess.org/LiFbHwUl/black#80"
+  },
+  {
+    "fen": "1k2r2r/pbpp1ppp/1p6/2b1P1B1/4nP2/P5PN/1PP3BP/RN3R1K w - - 1 16",
+    "moves": "g2e4 b7e4 f1f3 e4f3",
+    "rating": 860,
+    "gameUrl": "https://lichess.org/pxYPaPuO#31"
+  },
+  {
+    "fen": "7k/R6p/6p1/8/2Bb1P2/3p2K1/3Bb1P1/8 b - - 0 43",
+    "moves": "d4a7 d2c3 a7d4 c3d4",
+    "rating": 856,
+    "gameUrl": "https://lichess.org/EvMWvVoE/black#86"
+  },
+  {
+    "fen": "r6r/ppk1bp1p/2p3pn/2n1P3/2P1NPb1/P1N5/1P1B3P/R3KB1R w KQ - 3 16",
+    "moves": "e4c5 e7h4",
+    "rating": 1430,
+    "gameUrl": "https://lichess.org/9YMdgHVp#31"
+  },
+  {
+    "fen": "Q1r2k1r/3q3p/1p3Pp1/2p4b/2B1P3/2PPb3/PP4KP/RN3R2 w - - 3 23",
+    "moves": "a8d5 d7g4 g2h1 g4f3 f1f3 h5f3",
+    "rating": 1658,
+    "gameUrl": "https://lichess.org/bVJ8UKea#45"
+  },
+  {
+    "fen": "3r3k/pp2RBbp/1nb3p1/2p3B1/3r4/2P4P/PP4P1/2K1R3 b - - 0 22",
+    "moves": "d4d7 e7e8 d8e8 e1e8 g7f8 g5f6",
+    "rating": 1813,
+    "gameUrl": "https://lichess.org/9NzC5DCT/black#44"
+  },
+  {
+    "fen": "3r1r1k/p1p4p/b1p1BQ2/7q/2P4P/PP4P1/1BK5/R7 b - - 0 24",
+    "moves": "f8f6 b2f6",
+    "rating": 981,
+    "gameUrl": "https://lichess.org/KdgVKRP0/black#48"
+  },
+  {
+    "fen": "7r/p1Q2p2/1p2b1k1/2b2p2/5P2/3B3q/PPP3PB/3R3K w - - 0 28",
+    "moves": "g2h3 e6d5 d3e4 d5e4",
+    "rating": 1028,
+    "gameUrl": "https://lichess.org/pxPDHPuP#55"
+  },
+  {
+    "fen": "r2qr2k/1p1b3p/p2P1Q2/3B4/8/2B5/PP4PP/R5K1 b - - 0 23",
+    "moves": "d8f6 c3f6",
+    "rating": 930,
+    "gameUrl": "https://lichess.org/dZLXytmj/black#46"
+  },
+  {
+    "fen": "2kr3r/Bppq1ppp/3b1n2/8/6b1/P1NB4/1PPK1QPP/4R2R b - - 0 15",
+    "moves": "b7b6 d3a6",
+    "rating": 1228,
+    "gameUrl": "https://lichess.org/OPZjwvhv/black#30"
+  },
+  {
+    "fen": "Q7/p4R1p/1k1p2p1/1pp2b2/3b4/1B6/PPKBq1PP/R7 w - - 7 29",
+    "moves": "c2c1 e2f1 b3d1 f1c4 d2c3 d4e3",
+    "rating": 2214,
+    "gameUrl": "https://lichess.org/Covos1ge#57"
+  },
+  {
+    "fen": "4rk1r/1b3p2/p1p4p/5Pp1/6P1/4b1Bq/PPP4P/R2QR1NK w - - 0 27",
+    "moves": "g1h3 c6c5 d1d5 b7d5",
+    "rating": 1039,
+    "gameUrl": "https://lichess.org/Fb5h4IRk#53"
+  },
+  {
+    "fen": "b6k/7p/p5p1/5pB1/2BNp3/2P4P/1r4PK/8 b - - 2 40",
+    "moves": "b2b1 g5f6",
+    "rating": 819,
+    "gameUrl": "https://lichess.org/4yHIHxAv/black#80"
+  },
+  {
+    "fen": "r2b1rk1/pp3ppp/2p5/8/6b1/4P3/PPPN2PP/R3KB1R w KQ - 1 15",
+    "moves": "h2h3 d8h4 g2g3 h4g3",
+    "rating": 907,
+    "gameUrl": "https://lichess.org/V07W0Eqa#29"
+  },
+  {
+    "fen": "4r3/5pkp/1p4p1/5b2/8/1BP1b1P1/PP3N1P/3R3K w - - 1 32",
+    "moves": "f2d3 f5e4",
+    "rating": 1047,
+    "gameUrl": "https://lichess.org/SNfFa4p0#63"
+  },
+  {
+    "fen": "r1bb3k/pppn3p/6p1/3B4/5B2/2N5/PPP3PP/R5K1 b - - 7 17",
+    "moves": "d7b6 f4e5 d8f6 e5f6",
+    "rating": 966,
+    "gameUrl": "https://lichess.org/Cpka9V9M/black#34"
+  },
+  {
+    "fen": "rr4k1/2Q2p1p/6p1/3q4/2Bbp1b1/8/P4PPP/B3R1K1 b - - 1 30",
+    "moves": "d5c5 c7f7 g8h8 f7f6 d4f6 a1f6",
+    "rating": 2005,
+    "gameUrl": "https://lichess.org/Q9YxuQC3/black#60"
+  },
+  {
+    "fen": "3k1b1r/pB4pp/4p3/8/8/8/PP1BbPPP/6KR w - - 0 22",
+    "moves": "f2f3 f8c5 d2e3 c5e3",
+    "rating": 805,
+    "gameUrl": "https://lichess.org/P1gN9LlT#43"
+  },
+  {
+    "fen": "7k/1p2b2p/pB4p1/1n3p2/2B5/P4bP1/1PP1N2P/4K3 b - - 1 33",
+    "moves": "b5d6 b6d4 e7f6 d4f6",
+    "rating": 1063,
+    "gameUrl": "https://lichess.org/jEZVRU5E/black#66"
+  },
+  {
+    "fen": "rnb4k/pp2pB1p/6p1/2B2p2/1P6/2b5/P1PQ1PPP/5RK1 b - - 0 18",
+    "moves": "c3d2 c5d4 e7e5 d4e5",
+    "rating": 957,
+    "gameUrl": "https://lichess.org/XWAxi2Wp/black#36"
+  },
+  {
+    "fen": "6k1/1p3ppp/p1p5/b2bP3/5P2/P3B1P1/1P5P/2r2BK1 w - - 0 33",
+    "moves": "e3c1 a5b6 c1e3 b6e3",
+    "rating": 850,
+    "gameUrl": "https://lichess.org/ZMqizU2S#65"
+  },
+  {
+    "fen": "k1rr4/p3pq2/1p6/1Q2Bp1p/BnP2P1P/3P1P2/P5p1/4R1K1 b - - 6 33",
+    "moves": "b4d3 b5c6 c8c6 a4c6",
+    "rating": 1223,
+    "gameUrl": "https://lichess.org/KTjQaQE1/black#66"
+  },
+  {
+    "fen": "2R2bk1/7p/p1q2Bp1/3p4/5P2/1B4P1/P6P/6K1 b - - 4 38",
+    "moves": "c6c8 b3d5 c8e6 d5e6",
+    "rating": 663,
+    "gameUrl": "https://lichess.org/PAZAfTYs/black#76"
+  },
+  {
+    "fen": "2r3k1/5pb1/p2p1B2/6PQ/4b3/q1P2p2/P6P/K2R2R1 w - - 3 34",
+    "moves": "g5g6 a3c3 f6c3 g7c3",
+    "rating": 1733,
+    "gameUrl": "https://lichess.org/DtJuwX98#67"
+  },
+  {
+    "fen": "1r1q1bnr/Q1Nn1ppp/4p1k1/3p2B1/3P3P/8/PPb1PPP1/R3KBNR w KQ - 3 12",
+    "moves": "g5d8 f8b4",
+    "rating": 1037,
+    "gameUrl": "https://lichess.org/egz5IinY#23"
+  },
+  {
+    "fen": "5rk1/3rbppp/1p6/1Nnn4/4pPb1/1P6/PBPP2PP/R3KBNR w KQ - 3 17",
+    "moves": "h2h3 e7h4 g2g3 h4g3",
+    "rating": 1252,
+    "gameUrl": "https://lichess.org/HaeBkD3Q#33"
+  },
+  {
+    "fen": "8/p6k/1p1n2p1/1b3pB1/1P1b4/6P1/B6P/5R1K w - - 1 31",
+    "moves": "f1d1 b5c6 a2d5 c6d5",
+    "rating": 1026,
+    "gameUrl": "https://lichess.org/N7qtS9wb#61"
+  },
+  {
+    "fen": "r1b1kb1r/pp1n1pp1/2p1P2p/3p4/7B/2N5/PPP1BPPP/R3K2R b KQkq - 0 14",
+    "moves": "f7e6 e2h5 g7g6 h5g6",
+    "rating": 992,
+    "gameUrl": "https://lichess.org/ZVMyftFs/black#28"
+  },
+  {
+    "fen": "r4rk1/2pq1p2/p2b1p1p/1p6/4P3/2PP3P/bPBNQ1P1/2KR3R w - - 0 21",
+    "moves": "b2b3 d6a3",
+    "rating": 926,
+    "gameUrl": "https://lichess.org/tzamhPdS#41"
+  },
+  {
+    "fen": "7k/ppp3pp/3q1P2/8/2B4n/1PQ1Pn1P/PB3P2/5K2 b - - 2 27",
+    "moves": "g7f6 c3f6 d6f6 b2f6",
+    "rating": 781,
+    "gameUrl": "https://lichess.org/1DUmogxR/black#54"
+  },
+  {
+    "fen": "r2qk2r/ppp1bppp/8/2nP4/4QPb1/7P/PPPP2P1/R1B1KBNR w KQkq - 1 10",
+    "moves": "e4c4 e7h4 g2g3 h4g3",
+    "rating": 1176,
+    "gameUrl": "https://lichess.org/ElisMEIp#19"
+  },
+  {
+    "fen": "rn1qk3/p2pbp1B/1p2p1QB/4P3/1n1P4/5b2/PP3PPP/R4RK1 b q - 0 16",
+    "moves": "f7g6 h7g6",
+    "rating": 817,
+    "gameUrl": "https://lichess.org/KCaYfOEU/black#32"
+  },
+  {
+    "fen": "rn5r/pp2kppp/2b1p3/8/1b1P4/8/PP2NPPP/R1BK1B1R w - - 4 14",
+    "moves": "a2a3 c6a4 b2b3 a4b3",
+    "rating": 1052,
+    "gameUrl": "https://lichess.org/04eAOBTp#27"
+  },
+  {
+    "fen": "3b3k/6pp/8/p7/4b3/PB4BP/6P1/7K b - - 1 34",
+    "moves": "g7g6 g3e5 d8f6 e5f6",
+    "rating": 632,
+    "gameUrl": "https://lichess.org/vf0jv3N1/black#68"
+  },
+  {
+    "fen": "rn5k/pbp1b2p/1p2B3/3P4/8/4B1P1/PPP4P/R3K3 b Q - 0 22",
+    "moves": "b8a6 e3d4 e7f6 d4f6",
+    "rating": 939,
+    "gameUrl": "https://lichess.org/CicAa5fv/black#44"
+  },
+  {
+    "fen": "r1b1kbnr/pp1n1pp1/1qp4p/3p4/3Pp2B/2P1P3/PP2BPPP/RNQ1K1NR b KQkq - 1 8",
+    "moves": "f7f5 e2h5 g7g6 h5g6",
+    "rating": 810,
+    "gameUrl": "https://lichess.org/2D0Jos3h/black#16"
+  },
+  {
+    "fen": "r3r2k/1b1pR2p/p1nB2p1/1p4p1/8/1BP3N1/P5PP/4R1K1 b - - 0 26",
+    "moves": "c6e7 d6e5",
+    "rating": 1096,
+    "gameUrl": "https://lichess.org/cr4XbmXC/black#52"
+  },
+  {
+    "fen": "4r1k1/5p2/r1p1bn2/p1P1q3/Pp1P2pQ/3Pb1P1/1B2B2P/R3R2K w - - 0 34",
+    "moves": "d4e5 e6d5 e2f3 d5f3",
+    "rating": 919,
+    "gameUrl": "https://lichess.org/WE0ymNEE#67"
+  },
+  {
+    "fen": "8/5pp1/1pp1k3/p1bb2p1/P7/2P2PBP/1PB3P1/5K2 w - - 1 37",
+    "moves": "g3e1 d5c4 c2d3 c4d3",
+    "rating": 1014,
+    "gameUrl": "https://lichess.org/zc7VsKYj#73"
+  },
+  {
+    "fen": "2r4r/1p2kppb/p3p2p/3pP3/5PP1/2P4P/PP2Bb1B/R3R2K w - - 1 21",
+    "moves": "e1f1 h7e4 e2f3 e4f3",
+    "rating": 1012,
+    "gameUrl": "https://lichess.org/EJKfZdT0#41"
+  },
+  {
+    "fen": "4R3/p1R4p/6pk/2b2b2/2P5/3N2P1/PP5P/7K w - - 3 32",
+    "moves": "d3e5 f5e4 e5f3 e4f3",
+    "rating": 912,
+    "gameUrl": "https://lichess.org/LbFZw5Yo#63"
+  },
+  {
+    "fen": "rnq4k/pb1p3p/1p1P2p1/2p1bpB1/2B5/2N5/PP2QPPP/R5K1 b - - 1 18",
+    "moves": "b8c6 e2e5 c6e5 g5f6",
+    "rating": 1494,
+    "gameUrl": "https://lichess.org/VGK953X3/black#36"
+  },
+  {
+    "fen": "r2qr2k/pp5p/1bp1Bn2/4Q1pb/5p2/1P3N1P/PBP3P1/R3K2R b KQ - 4 19",
+    "moves": "h5f3 e5f6 d8f6 b2f6",
+    "rating": 1210,
+    "gameUrl": "https://lichess.org/lIp2atjz/black#38"
+  },
+  {
+    "fen": "7k/7p/6p1/B1bB1p2/5P2/7n/6PP/5K2 b - - 4 37",
+    "moves": "h3f4 a5c3 c5d4 c3d4",
+    "rating": 979,
+    "gameUrl": "https://lichess.org/Mzm2omhB/black#74"
+  },
+  {
+    "fen": "r3q2k/ppp4p/3pB1p1/3PbRB1/2P1Q3/6P1/PP4KP/8 b - - 0 23",
+    "moves": "g6f5 e4e5 d6e5 g5f6",
+    "rating": 1650,
+    "gameUrl": "https://lichess.org/ZlSKr2s0/black#46"
+  },
+  {
+    "fen": "2kr3r/Bppn1pp1/5np1/8/2B5/2q4P/P1P1QPP1/R4RK1 b - - 0 18",
+    "moves": "b7b6 c4a6",
+    "rating": 979,
+    "gameUrl": "https://lichess.org/KCf1pSar/black#36"
+  },
+  {
+    "fen": "7k/pp2B2p/2p3pq/1n4P1/3b4/1B1Q4/P1PK4/8 b - - 0 30",
+    "moves": "h6h1 d3d4 b5d4 e7f6",
+    "rating": 1738,
+    "gameUrl": "https://lichess.org/qPe0R7Hs/black#60"
+  },
+  {
+    "fen": "r1b1r2k/ppp4p/8/4npB1/6P1/1B4n1/P1P1R1P1/4K2R b - - 5 25",
+    "moves": "g3h1 g5f6",
+    "rating": 944,
+    "gameUrl": "https://lichess.org/XOs811EE/black#50"
+  },
+  {
+    "fen": "8/p7/5p2/4pk2/6b1/3P2P1/PPP2b1P/R3R2K w - - 0 27",
+    "moves": "e1f1 g4f3",
+    "rating": 869,
+    "gameUrl": "https://lichess.org/D7ffheoq#53"
+  },
+  {
+    "fen": "rnbqkb2/ppppp3/1n3p1r/4P1Np/3P4/3B2B1/PPP2PPP/RN1QK2R b KQq - 0 8",
+    "moves": "f6g5 d1h5 h6h5 d3g6",
+    "rating": 1725,
+    "gameUrl": "https://lichess.org/nq79toPN/black#16"
+  },
+  {
+    "fen": "r4rk1/pb3ppp/1p6/2bqp3/8/P2B1n2/1PPQN1PP/R1B2R1K w - - 0 17",
+    "moves": "g2f3 d5f3 f1f3 b7f3",
+    "rating": 1054,
+    "gameUrl": "https://lichess.org/mbiZcxXN#33"
+  },
+  {
+    "fen": "r1Q4k/p4Bbp/1p4p1/8/P2P2P1/4Pb1q/5P1B/2R2RK1 b - - 2 26",
+    "moves": "a8c8 c1c8 g7f8 h2e5",
+    "rating": 1918,
+    "gameUrl": "https://lichess.org/KYrQtkJn/black#52"
+  },
+  {
+    "fen": "r5k1/p1q2ppp/8/3p1N2/5P2/1Q2rNP1/PP1Bbb1P/R6K w - - 6 23",
+    "moves": "d2e3 e2f3",
+    "rating": 1143,
+    "gameUrl": "https://lichess.org/DvvGn6v5#45"
+  },
+  {
+    "fen": "r3r2k/2p4p/p5p1/1p3pq1/1P6/PBb2P2/2Q1nB1P/3R1R1K b - - 0 24",
+    "moves": "g5h5 c2c3 e2c3 f2d4 e8e5 d4e5",
+    "rating": 1573,
+    "gameUrl": "https://lichess.org/hF11S8To/black#48"
+  },
+  {
+    "fen": "5k2/5rp1/b3B3/4Bp2/5P1p/1PRPb1P1/P3P2P/7K w - - 1 33",
+    "moves": "e6f7 a6b7 c3c6 b7c6 f7d5 c6d5",
+    "rating": 1065,
+    "gameUrl": "https://lichess.org/qFDZMTDa#65"
+  },
+  {
+    "fen": "r1bq1bkr/pp4pp/2n5/3Qp3/2Bp4/8/PPP2PPP/RNB2RK1 b - - 0 10",
+    "moves": "d8d5 c4d5 c8e6 d5e6",
+    "rating": 823,
+    "gameUrl": "https://lichess.org/i7IBYHli/black#20"
+  },
+  {
+    "fen": "5k2/p4p1p/2b2Q2/3qPP2/6P1/4bN2/P6P/R4R1K w - - 3 24",
+    "moves": "a1d1 d5f3 f1f3 c6f3",
+    "rating": 1282,
+    "gameUrl": "https://lichess.org/khrnp3zy#47"
+  },
+  {
+    "fen": "r2r3k/pp1P1B1p/4Q1p1/2q5/b2b4/7P/PB4P1/2R4K b - - 1 31",
+    "moves": "c5e5 e6e5 d4e5 b2e5",
+    "rating": 1525,
+    "gameUrl": "https://lichess.org/vYOVsQs9/black#62"
+  },
+  {
+    "fen": "r1bq3k/pp3B1p/6p1/8/5B2/6P1/PQ2rP1P/R4RK1 b - - 0 18",
+    "moves": "e2b2 f4e5 d8f6 e5f6",
+    "rating": 1046,
+    "gameUrl": "https://lichess.org/vHLed5wH/black#36"
+  },
+  {
+    "fen": "r3r2k/p2bn1pp/2nb1N2/8/2B1P2N/1P6/1B4PP/R4RK1 b - - 0 19",
+    "moves": "g7f6 b2f6",
+    "rating": 1250,
+    "gameUrl": "https://lichess.org/6EBOCk3j/black#38"
+  },
+  {
+    "fen": "1r5k/2b2B1p/1P4p1/8/p2Bp3/6P1/Pn2PP1P/6K1 b - - 1 31",
+    "moves": "c7e5 d4e5",
+    "rating": 639,
+    "gameUrl": "https://lichess.org/LxctpjJ2/black#62"
+  },
+  {
+    "fen": "6k1/2N3p1/p6p/1pb5/4b3/5r2/PP4PP/R2R3K w - - 0 28",
+    "moves": "g2f3 e4f3",
+    "rating": 637,
+    "gameUrl": "https://lichess.org/ZJINy0UT#55"
+  },
+  {
+    "fen": "2k4r/ppp2ppp/1bp5/4Pb2/2N2P2/2P2BP1/PP5P/R1Br3K w - - 5 21",
+    "moves": "f3d1 f5e4 d1f3 e4f3",
+    "rating": 884,
+    "gameUrl": "https://lichess.org/9HEWw1a0#41"
+  },
+  {
+    "fen": "6k1/p5pp/1bp1b3/4P3/PP6/3p2P1/1B5P/5B1K w - - 0 31",
+    "moves": "f1d3 e6d5 d3e4 d5e4",
+    "rating": 882,
+    "gameUrl": "https://lichess.org/5G5wHKsN#61"
+  },
+  {
+    "fen": "4n1kr/r2RB1pp/p3pp2/8/2B1Pb2/2P5/PP3PPP/1K5R b - - 0 20",
+    "moves": "a7d7 c4e6",
+    "rating": 771,
+    "gameUrl": "https://lichess.org/iVVZCVtJ/black#40"
+  },
+  {
+    "fen": "7k/p1Pb2p1/7p/1pb5/6N1/1BP4P/PP5P/4Rr1K w - - 1 29",
+    "moves": "e1f1 d7c6 b3d5 c6d5 f1f3 d5f3",
+    "rating": 911,
+    "gameUrl": "https://lichess.org/5Cmu3mSe#57"
+  },
+  {
+    "fen": "r3r2k/6bp/6p1/8/p2R3P/P7/BPq2BP1/3R2K1 b - - 1 31",
+    "moves": "g7d4 f2d4 e8e5 d4e5",
+    "rating": 1036,
+    "gameUrl": "https://lichess.org/IUl4yEOE/black#62"
+  },
+  {
+    "fen": "r2qr2k/1p2n2p/p2P2p1/2p2b2/3bNp1B/1B1Q1P2/PP4PP/R4R1K b - - 0 23",
+    "moves": "f5e4 d3d4 c5d4 h4f6",
+    "rating": 1725,
+    "gameUrl": "https://lichess.org/RiqhcXcF/black#46"
+  },
+  {
+    "fen": "r3rbk1/pp3p1p/5BP1/4P1Q1/1qp1B1P1/8/PPK2P2/8 b - - 0 29",
+    "moves": "f7g6 e4d5 e8e6 d5e6",
+    "rating": 1334,
+    "gameUrl": "https://lichess.org/A8xaMVwG/black#58"
+  },
+  {
+    "fen": "5rk1/pB1qQ2p/6p1/2pp4/3b1Bb1/3P2P1/P1P4P/4R2K w - - 4 23",
+    "moves": "e7d7 g4f3",
+    "rating": 1061,
+    "gameUrl": "https://lichess.org/BqZbABZ8#45"
+  },
+  {
+    "fen": "4r1k1/5p1p/2BB2p1/p7/3b4/1b4P1/7P/2R2R1K w - - 1 26",
+    "moves": "c6e8 b3d5 f1f3 d5f3",
+    "rating": 928,
+    "gameUrl": "https://lichess.org/Le7MQkZp#51"
+  },
+  {
+    "fen": "rnb2bk1/pp5p/8/3q1p2/8/3B4/PBK2P1P/6NR b - - 1 17",
+    "moves": "d5h1 d3c4 h1d5 c4d5 c8e6 d5e6",
+    "rating": 985,
+    "gameUrl": "https://lichess.org/MyPdce1q/black#34"
+  },
+  {
+    "fen": "8/pb2k3/1p2p3/1P3p1p/P1N5/2b3P1/5P1P/5BK1 w - - 0 35",
+    "moves": "f2f4 c3d4 c4e3 d4e3",
+    "rating": 806,
+    "gameUrl": "https://lichess.org/tr7tvWgf#69"
+  },
+  {
+    "fen": "2r4k/p6p/8/4R3/4n3/PB2r2P/P5KB/b7 b - - 1 31",
+    "moves": "a1e5 h2e5 e4f6 e5f6",
+    "rating": 700,
+    "gameUrl": "https://lichess.org/fS027NAa/black#62"
+  },
+  {
+    "fen": "2b3r1/2p5/1p4kp/p1bBBp2/5P2/1P6/P1P4P/R3R2K w - - 1 27",
+    "moves": "d5g8 c8b7 g8d5 b7d5 e1e4 d5e4",
+    "rating": 1187,
+    "gameUrl": "https://lichess.org/pgaeqPFK#53"
+  },
+  {
+    "fen": "2r4k/R5p1/7p/4P3/2bpB3/1N2b1P1/1PP4P/7K w - - 2 27",
+    "moves": "e4f5 c4d5 f5e4 d5e4",
+    "rating": 970,
+    "gameUrl": "https://lichess.org/I0xZ0o3p#53"
+  },
+  {
+    "fen": "8/pp3R2/8/kb4N1/7P/3n2BK/3R2P1/5rb1 w - - 3 42",
+    "moves": "f7f1 b5d7 g5e6 d7e6 f1f5 e6f5",
+    "rating": 1568,
+    "gameUrl": "https://lichess.org/iWC45uoh#83"
+  },
+  {
+    "fen": "8/5p1p/3p3k/8/p1b5/2B2BP1/PP2rb1P/5R1K w - - 0 35",
+    "moves": "f3e2 c4d5 e2f3 d5f3",
+    "rating": 1063,
+    "gameUrl": "https://lichess.org/P6mlzG0l#69"
+  },
+  {
+    "fen": "5bk1/7p/8/8/8/1p2qBPP/1B3pK1/8 b - - 4 44",
+    "moves": "e3e1 f3d5 e1e6 d5e6",
+    "rating": 1048,
+    "gameUrl": "https://lichess.org/MWzUmMdZ/black#88"
+  },
+  {
+    "fen": "r3k2r/pp2nppp/3p1b2/8/3N1Pb1/1P1P4/PB1P2PP/R3KB1R w KQkq - 3 14",
+    "moves": "h2h3 f6h4 g2g3 h4g3",
+    "rating": 1263,
+    "gameUrl": "https://lichess.org/iuPlL3uK#27"
+  },
+  {
+    "fen": "6k1/pb3pp1/1p5p/2b5/8/3Q1q2/PP1B3P/3R3K w - - 0 23",
+    "moves": "d3f3 b7f3",
+    "rating": 833,
+    "gameUrl": "https://lichess.org/xDp53pFQ#45"
+  },
+  {
+    "fen": "r3k2r/pp1b1ppp/4p3/8/1b1P4/8/PP2BPPP/R1BK3R w kq - 3 13",
+    "moves": "a2a3 d7a4 b2b3 a4b3",
+    "rating": 1018,
+    "gameUrl": "https://lichess.org/td9gkCNK#25"
+  },
+  {
+    "fen": "6k1/p5pp/2p5/2bp3p/6PB/2N5/PPb1r2P/2R4K w - - 1 27",
+    "moves": "c3e2 c2e4",
+    "rating": 812,
+    "gameUrl": "https://lichess.org/3h2UZC5o#53"
+  },
+  {
+    "fen": "r6k/pb4pp/1p4n1/2b5/8/1BP2q1Q/P1PBN2P/4R2K w - - 0 27",
+    "moves": "h3f3 b7f3",
+    "rating": 831,
+    "gameUrl": "https://lichess.org/VPTSBbTP#53"
+  },
+  {
+    "fen": "r1bq1bkr/ppp3pp/2n5/3Qp3/2B5/8/PPPP1PPP/RNB1K2R b KQ - 0 8",
+    "moves": "d8d5 c4d5 c8e6 d5e6",
+    "rating": 680,
+    "gameUrl": "https://lichess.org/zE24RvMB/black#16"
+  },
+  {
+    "fen": "5r1k/ppbb3p/8/2p2N1Q/3P2P1/P1P4P/1P6/R4RBK w - - 2 37",
+    "moves": "f1e1 d7c6 d4d5 c6d5 e1e4 d5e4",
+    "rating": 1062,
+    "gameUrl": "https://lichess.org/9rDZ1HT1#73"
+  },
+  {
+    "fen": "1n3r1k/rpp4p/3p2p1/p2Bp3/2P5/1PQ1P3/PBKN3P/4q3 b - - 6 26",
+    "moves": "c7c6 c3e5 d6e5 b2e5 f8f6 e5f6",
+    "rating": 1159,
+    "gameUrl": "https://lichess.org/PKqLZJgh/black#52"
+  },
+  {
+    "fen": "k2r4/pp3ppr/2Q5/5q2/PPp2B2/2P4P/6B1/5R1K b - - 0 31",
+    "moves": "b7c6 g2c6",
+    "rating": 873,
+    "gameUrl": "https://lichess.org/jvbjSAyx/black#62"
+  },
+  {
+    "fen": "r3k2r/ppp2Rpb/8/4p1Bp/2qb2P1/8/PPP1Q2P/R6K w kq - 0 22",
+    "moves": "e2c4 h7e4 f7f3 e4f3",
+    "rating": 910,
+    "gameUrl": "https://lichess.org/6fEGVc7i#43"
+  },
+  {
+    "fen": "6k1/1b4pp/p3p3/5p2/Np1b1Q2/1P1B1q2/P6P/7K w - - 0 32",
+    "moves": "f4f3 b7f3",
+    "rating": 645,
+    "gameUrl": "https://lichess.org/Wy97EOuk#63"
+  },
+  {
+    "fen": "8/2q2kpp/1P2p3/2b5/2Ppb3/6P1/7P/B4BK1 w - - 0 28",
+    "moves": "b6c7 d4d3 a1d4 c5d4",
+    "rating": 1033,
+    "gameUrl": "https://lichess.org/lV0Rrmi1#55"
+  },
+  {
+    "fen": "r3kb1r/ppqn1ppp/2p1p3/6B1/3PQ3/5B2/PPP2PPP/R4RK1 b kq - 0 12",
+    "moves": "h7h6 e4e6 f7e6 f3h5 g7g6 h5g6",
+    "rating": 1625,
+    "gameUrl": "https://lichess.org/ISUT7FYC/black#24"
+  },
+  {
+    "fen": "b7/6k1/4q1p1/1pb1p3/4P1Q1/3p2P1/1P5P/5R1K w - - 0 35",
+    "moves": "g4e6 a8e4 f1f3 e4f3",
+    "rating": 829,
+    "gameUrl": "https://lichess.org/rhFJs6UW#69"
+  },
+  {
+    "fen": "7k/pb2q2p/1p3bp1/2p2p2/2B2B2/PP2P2P/5PP1/3Q2K1 b - - 0 28",
+    "moves": "e7d8 d1d8 f6d8 f4e5 d8f6 e5f6",
+    "rating": 905,
+    "gameUrl": "https://lichess.org/jHE7rBRz/black#56"
+  },
+  {
+    "fen": "8/4k3/1p2P1R1/2b5/P3B3/1b4P1/2p4P/7K w - - 1 49",
+    "moves": "e4c2 b3d5 c2e4 d5e4",
+    "rating": 1226,
+    "gameUrl": "https://lichess.org/eymQannh#97"
+  },
+  {
+    "fen": "8/p1Q5/5Pbk/8/7p/4b3/PP5P/5RK1 w - - 1 40",
+    "moves": "g1h1 g6e4 f1f3 e4f3",
+    "rating": 800,
+    "gameUrl": "https://lichess.org/BZYPKsIn#79"
+  },
+  {
+    "fen": "b7/3pkp1p/2q1p3/1N3p2/1pP2N2/1P2bP2/2Q1r2P/5R1K w - - 0 24",
+    "moves": "f4e2 c6f3 f1f3 a8f3",
+    "rating": 929,
+    "gameUrl": "https://lichess.org/poLo0Xr1#47"
+  },
+  {
+    "fen": "1Q6/3bk1pp/p3p3/8/3p2P1/1P1Pb2N/P1P4P/4R2K w - - 2 34",
+    "moves": "e1f1 d7c6 f1f3 c6f3",
+    "rating": 897,
+    "gameUrl": "https://lichess.org/PW27Zxpn#67"
+  },
+  {
+    "fen": "8/1P6/p1bPp1k1/2p5/3bN3/8/7P/7K w - - 1 42",
+    "moves": "b7b8q c6e4",
+    "rating": 655,
+    "gameUrl": "https://lichess.org/wmZuaMX9#83"
+  },
+  {
+    "fen": "6k1/pp5p/2p1b1p1/4Pp2/8/1PB5/P1P2bPP/3B3K w - - 0 25",
+    "moves": "g2g3 e6d5 d1f3 d5f3",
+    "rating": 898,
+    "gameUrl": "https://lichess.org/bes1cgWE#49"
+  },
+  {
+    "fen": "6k1/pb3p1p/8/8/3Pr3/2N1b1B1/PP5P/R2Q3K w - - 2 29",
+    "moves": "c3e4 b7e4 d1f3 e4f3",
+    "rating": 714,
+    "gameUrl": "https://lichess.org/UP2towon#57"
+  },
+  {
+    "fen": "r4r1k/bpp1R2p/p3B1p1/P4n2/5B2/2P5/1P3PPP/5RK1 b - - 12 24",
+    "moves": "f5e7 f4e5 f8f6 e5f6",
+    "rating": 946,
+    "gameUrl": "https://lichess.org/YDfl1Mfq/black#48"
+  },
+  {
+    "fen": "5knr/p4pbp/bp1q2p1/4P1N1/4P3/8/PPP3PP/RNB3KR w - - 0 16",
+    "moves": "e5d6 g7d4 c1e3 d4e3",
+    "rating": 1047,
+    "gameUrl": "https://lichess.org/Ns9HN6S1#31"
+  },
+  {
+    "fen": "r6k/3R3p/5bp1/1p3p2/1P3B2/nB6/2P3PP/6K1 b - - 0 36",
+    "moves": "a8d8 d7d8 f6d8 f4e5 d8f6 e5f6",
+    "rating": 1351,
+    "gameUrl": "https://lichess.org/JaByB6ex/black#72"
+  },
+  {
+    "fen": "1Q3b1k/7p/b4rp1/8/3Bp3/3n4/B4PPP/3q1NK1 b - - 5 36",
+    "moves": "d3e5 b8f8 f6f8 d4e5 f8f6 e5f6",
+    "rating": 1753,
+    "gameUrl": "https://lichess.org/pclU8GCH/black#72"
+  },
+  {
+    "fen": "3Q1bk1/1b3pp1/5n2/1P6/3N4/P4P1P/4q2P/6BK w - - 0 34",
+    "moves": "d4e2 b7f3",
+    "rating": 698,
+    "gameUrl": "https://lichess.org/D3uZKZGn#67"
+  },
+  {
+    "fen": "r6k/pbp4p/3p1p2/1p6/7r/1BB2R2/PPP4P/6K1 b - - 0 32",
+    "moves": "b7f3 c3f6",
+    "rating": 674,
+    "gameUrl": "https://lichess.org/yoDDdYyl/black#64"
+  },
+  {
+    "fen": "3k1bN1/p4p2/4p2p/4B1p1/b2P4/8/4PPPP/1Rr1KB1R w K - 1 27",
+    "moves": "b1c1 f8b4 c1c3 b4c3",
+    "rating": 1040,
+    "gameUrl": "https://lichess.org/zSmOnqLX#53"
+  },
+  {
+    "fen": "3r3k/p3RB1p/5bp1/2p5/5B2/5P2/PP2KP1P/8 b - - 0 24",
+    "moves": "f6e7 f4e5 e7f6 e5f6",
+    "rating": 817,
+    "gameUrl": "https://lichess.org/kFzYWoh1/black#48"
+  },
+  {
+    "fen": "5k1N/3p2pp/p1n1b3/1pb3B1/5P2/2P5/PP4PP/R3R2K w - - 3 22",
+    "moves": "g2g4 e6d5 e1e4 d5e4",
+    "rating": 942,
+    "gameUrl": "https://lichess.org/eoRCrPm5#43"
+  },
+  {
+    "fen": "5bk1/1p1Q3p/p1b3p1/8/4B3/2B2P2/3K2PP/8 b - - 0 40",
+    "moves": "c6d7 e4d5 d7e6 d5e6",
+    "rating": 840,
+    "gameUrl": "https://lichess.org/zc0nZiCp/black#80"
+  },
+  {
+    "fen": "8/8/6p1/4Kb1p/5B1b/7k/4B3/8 b - - 23 56",
+    "moves": "f5g4 e2f1",
+    "rating": 1372,
+    "gameUrl": "https://lichess.org/jFY4sVmX/black#112"
+  },
+  {
+    "fen": "2r4k/pp1R3p/3p2p1/3B2B1/8/6Pb/PPPK3P/8 b - - 0 32",
+    "moves": "h3d7 g5f6",
+    "rating": 857,
+    "gameUrl": "https://lichess.org/IV7D6Kgk/black#64"
+  },
+  {
+    "fen": "5r1k/1p2RB1p/p1bB1bp1/P1p5/2P3P1/7P/1P4P1/7K b - - 0 31",
+    "moves": "f6e7 d6e5 e7f6 e5f6",
+    "rating": 1141,
+    "gameUrl": "https://lichess.org/mxgQ0GDy/black#62"
+  },
+  {
+    "fen": "rn2kbnr/pppb2p1/4p2p/5p2/3P3B/2N2q2/PPPQBP1P/2KR3R b kq - 1 12",
+    "moves": "f3h3 e2h5 g7g6 h5g6",
+    "rating": 978,
+    "gameUrl": "https://lichess.org/X98yO3dv/black#24"
+  },
+  {
+    "fen": "6k1/1bR4p/p5p1/Pp1q4/1P1b4/5rQ1/6BP/3N3K w - - 0 34",
+    "moves": "g2f3 d5f3 g3f3 b7f3",
+    "rating": 826,
+    "gameUrl": "https://lichess.org/rSeub47d#67"
+  },
+  {
+    "fen": "4rk1r/pR3ppp/2Q5/3N1P1b/5B2/6P1/4NbBP/q6K w - - 1 25",
+    "moves": "e2c1 e8e1 g2f1 h5f3",
+    "rating": 1813,
+    "gameUrl": "https://lichess.org/wSxYebcN#49"
+  },
+  {
+    "fen": "8/kp2R1Q1/pbp2p1p/5B1P/q5P1/1P3b2/KBP5/3r4 w - - 0 34",
+    "moves": "b3a4 f3d5 c2c4 d5c4 a2a3 b6c5",
+    "rating": 1509,
+    "gameUrl": "https://lichess.org/xri0xtf9#67"
+  },
+  {
+    "fen": "5r1k/pN2B2p/1n4p1/5p2/3n1P2/1B5P/Pb3KP1/3R4 b - - 2 23",
+    "moves": "f8b8 e7f6",
+    "rating": 1001,
+    "gameUrl": "https://lichess.org/WWBGhlKG/black#46"
+  },
+  {
+    "fen": "r2qkb1r/pbppp3/1pn2p2/6p1/3PP3/5QB1/PPP1BP1P/RN1K3R b kq - 2 14",
+    "moves": "c6d4 f3h5 h8h5 e2h5",
+    "rating": 1132,
+    "gameUrl": "https://lichess.org/i74PthSz/black#28"
+  },
+  {
+    "fen": "rkb2b1r/pp2pppp/2n2n2/8/3Np3/2P1B3/PP3PPP/2KR1BNR b - - 9 10",
+    "moves": "c6d4 e3f4 e7e5 f4e5 f8d6 e5d6",
+    "rating": 1226,
+    "gameUrl": "https://lichess.org/oG2iO08i/black#20"
+  },
+  {
+    "fen": "r1nq1bkr/p2b2pp/2p2p2/1p1Q4/2nP3N/P1N3P1/1PPB1PBP/R3R1K1 b - - 0 16",
+    "moves": "c6d5 g2d5 d7e6 d5e6",
+    "rating": 1113,
+    "gameUrl": "https://lichess.org/ZewH0e55/black#32"
+  },
+  {
+    "fen": "5k2/p6B/b4p2/2b3p1/8/6P1/7P/4R2K w - - 0 31",
+    "moves": "e1c1 a6b7 h7e4 b7e4",
+    "rating": 998,
+    "gameUrl": "https://lichess.org/hJhqD0TB#61"
+  },
+  {
+    "fen": "6k1/1b5p/2q4p/p2Np3/2Pb4/1P4P1/P6P/R2RQ2K w - - 1 33",
+    "moves": "a1b1 c6d5 c4d5 b7d5 e1e4 d5e4",
+    "rating": 1121,
+    "gameUrl": "https://lichess.org/xF581zEG#65"
+  },
+  {
+    "fen": "7k/4RBbp/p1p3p1/6P1/5PR1/2N1Bq1b/PPP4K/8 b - - 0 27",
+    "moves": "f3g4 e7e8 g7f8 e3d4",
+    "rating": 1541,
+    "gameUrl": "https://lichess.org/CKjpiMf8/black#54"
+  },
+  {
+    "fen": "r4rk1/ppp1bppp/2n5/8/5Nb1/3P4/PPPB2PP/R3KBNR w KQ - 2 11",
+    "moves": "h2h3 e7h4 g2g3 h4g3",
+    "rating": 1132,
+    "gameUrl": "https://lichess.org/IRLuaX0U#21"
+  },
+  {
+    "fen": "3k1b2/pp3Bpp/8/3p2N1/8/3P4/PP2b1PP/RNB3KR w - - 1 22",
+    "moves": "g5h7 f8c5 d3d4 c5d4 c1e3 d4e3",
+    "rating": 963,
+    "gameUrl": "https://lichess.org/SRa0kMCG#43"
+  },
+  {
+    "fen": "6k1/pp3ppp/1b6/4P3/2b2P2/1N3BP1/PP5P/3q3K w - - 0 28",
+    "moves": "f3d1 c4d5 d1f3 d5f3",
+    "rating": 919,
+    "gameUrl": "https://lichess.org/Jr1Hx7GE#55"
+  },
+  {
+    "fen": "2kr3r/ppp3pp/1b6/1N6/P3PBb1/6P1/1P5P/R3R2K w - - 1 21",
+    "moves": "a4a5 g4f3",
+    "rating": 1064,
+    "gameUrl": "https://lichess.org/febBCkrb#41"
+  },
+  {
+    "fen": "1r2r2k/pp5p/6p1/3B4/4RP2/BP4P1/P3p2P/7K b - - 1 31",
+    "moves": "e8e4 a3b2 e4e5 b2e5",
+    "rating": 1328,
+    "gameUrl": "https://lichess.org/HSlxWmlQ/black#62"
+  },
+  {
+    "fen": "Q7/4kp2/pbp4p/3p1b2/4q3/2N5/PPP4P/5R1K w - - 1 23",
+    "moves": "c3e4 f5e4 f1f3 e4f3",
+    "rating": 669,
+    "gameUrl": "https://lichess.org/lFXB0bEr#45"
+  },
+  {
+    "fen": "rkb2bq1/p4p1r/1p6/1n3P1p/P2B4/2Q2B1P/1PP3P1/R4RK1 b - - 0 27",
+    "moves": "b5c3 d4e5 f8d6 e5d6",
+    "rating": 1062,
+    "gameUrl": "https://lichess.org/7srgrXBn/black#54"
+  },
+  {
+    "fen": "6R1/7k/pb4p1/1b1B2Pp/5P2/8/7P/7K w - - 7 46",
+    "moves": "d5f7 b5c6 f7d5 c6d5",
+    "rating": 814,
+    "gameUrl": "https://lichess.org/ukgrTlGQ#91"
+  },
+  {
+    "fen": "rnb1kb1r/pp3ppp/2p5/8/2P2q2/4PN2/PP1B2PP/R2Q1BKR w kq - 0 13",
+    "moves": "e3f4 f8c5 f3d4 c5d4 d2e3 d4e3",
+    "rating": 884,
+    "gameUrl": "https://lichess.org/toDHbL4c#25"
+  },
+  {
+    "fen": "5B2/1p1B3p/k5p1/P2P1n2/1P3Pb1/8/4Nb1P/2R4K w - - 3 38",
+    "moves": "f8c5 g4f3",
+    "rating": 1163,
+    "gameUrl": "https://lichess.org/LQacKvJ4#75"
+  },
+  {
+    "fen": "r4r1k/pp1b3p/3p4/3B1p2/1P3P1N/P1b1B1PP/4p2K/4R3 b - - 5 28",
+    "moves": "c3e1 e3d4 f8f6 d4f6",
+    "rating": 1001,
+    "gameUrl": "https://lichess.org/TD6Gf8pf/black#56"
+  },
+  {
+    "fen": "6k1/p6p/bp4r1/2b4Q/8/3p2P1/PPP4P/5N1K w - - 0 27",
+    "moves": "c2d3 a6b7 h5d5 b7d5",
+    "rating": 1054,
+    "gameUrl": "https://lichess.org/fU23SjHH#53"
+  },
+  {
+    "fen": "r3kbnr/ppB1pppp/8/8/2B5/5P2/PPn1KPPP/RN5R b kq - 2 9",
+    "moves": "c2a1 c4b5",
+    "rating": 1211,
+    "gameUrl": "https://lichess.org/gaD4cnNI/black#18"
+  },
+  {
+    "fen": "8/8/2p3P1/ppBp4/k2Pb2K/8/4B3/8 b - - 0 57",
+    "moves": "e4g6 e2d1 g6c2 d1c2",
+    "rating": 1408,
+    "gameUrl": "https://lichess.org/vqhnHaAq/black#114"
+  },
+  {
+    "fen": "4r2k/p1p2R2/1bp5/7N/5Bp1/2P3P1/PP2b2P/3R3K w - - 3 30",
+    "moves": "h5f6 e2f3",
+    "rating": 1051,
+    "gameUrl": "https://lichess.org/AhsSDUdV#59"
+  },
+  {
+    "fen": "k3b3/pp3p2/4p3/8/5B1p/P3K3/5PrP/1B6 b - - 1 46",
+    "moves": "b7b5 b1e4 e8c6 e4c6",
+    "rating": 1065,
+    "gameUrl": "https://lichess.org/d0eqPrJY/black#92"
+  },
+  {
+    "fen": "6k1/5p1p/1p1p2p1/1PpP1b2/2Pb1P2/5BP1/4q2P/5N1K w - - 0 36",
+    "moves": "f3e2 f5e4 e2f3 e4f3",
+    "rating": 674,
+    "gameUrl": "https://lichess.org/uWWR0Bn9#71"
+  },
+  {
+    "fen": "B7/4kppp/4p3/1bp1P3/1PRb1P2/8/6PP/4BK2 w - - 1 30",
+    "moves": "b4c5 b5c4",
+    "rating": 883,
+    "gameUrl": "https://lichess.org/6pQfGOPS#59"
+  },
+  {
+    "fen": "8/1R6/p1p2k2/1p6/3b1P2/8/PPb3PP/5R1K w - - 2 29",
+    "moves": "g2g4 c2e4 f1f3 e4f3",
+    "rating": 871,
+    "gameUrl": "https://lichess.org/Kmm2LKSc#57"
+  },
+  {
+    "fen": "r1b4k/ppp4p/n4bp1/8/2B2B2/8/P1P2PPP/3R2K1 b - - 5 17",
+    "moves": "b7b6 d1d8 f6d8 f4e5 d8f6 e5f6",
+    "rating": 1339,
+    "gameUrl": "https://lichess.org/Kz3CvuMS/black#34"
+  },
+  {
+    "fen": "5Q1k/4b2p/3p2p1/3Pp1B1/1p1q2B1/6P1/1P5P/2R4K b - - 0 31",
+    "moves": "e7f8 g5f6 h8g8 g4e6",
+    "rating": 1373,
+    "gameUrl": "https://lichess.org/l3f8fvmM/black#62"
+  },
+  {
+    "fen": "r3k1r1/pp2bp2/1np5/8/4PPb1/2N5/PP1P2PP/R1B1KBNR w KQq - 0 17",
+    "moves": "h2h3 e7h4 g2g3 h4g3",
+    "rating": 1156,
+    "gameUrl": "https://lichess.org/zgQS2SCH#33"
+  },
+  {
+    "fen": "r2qk2r/4bppp/p7/1p1pp1Pn/4P2P/PP1BBN2/b1PQ1P2/2KR3R w kq - 0 18",
+    "moves": "f3e5 e7a3",
+    "rating": 1134,
+    "gameUrl": "https://lichess.org/jdDEwo95#35"
+  },
+  {
+    "fen": "r4r1k/2p1n2p/1p4p1/1N3p1q/2B5/1Pb1B3/P1PR1P2/3R1K2 b - - 6 24",
+    "moves": "c3d2 e3d4 f8f6 d4f6",
+    "rating": 1222,
+    "gameUrl": "https://lichess.org/bURc3809/black#48"
+  },
+  {
+    "fen": "2b4r/3k2pp/p3p3/1p3p2/3b1P2/N5P1/PPPBB2P/R6K w - - 1 24",
+    "moves": "c2c3 c8b7 e2f3 b7f3",
+    "rating": 1099,
+    "gameUrl": "https://lichess.org/oCkiGVk5#47"
+  },
+  {
+    "fen": "r3kbr1/1p1q2p1/p1p2pPp/4pN1P/3pP3/n2P2Q1/bPPBBP2/2KR3R w q - 2 21",
+    "moves": "b2a3 f8a3",
+    "rating": 1059,
+    "gameUrl": "https://lichess.org/xB2kp0xh#41"
+  },
+  {
+    "fen": "2b4k/B3b2p/p2p2p1/1p1Bp3/1P3P2/8/P4KPP/8 b - - 0 28",
+    "moves": "e5f4 a7d4 e7f6 d4f6",
+    "rating": 940,
+    "gameUrl": "https://lichess.org/5t9oCjv1/black#56"
+  },
+  {
+    "fen": "6k1/7p/3pp1p1/3b2P1/3bNP2/1r3Q2/7P/2R4K w - - 3 40",
+    "moves": "f3b3 d5e4 b3f3 e4f3",
+    "rating": 1082,
+    "gameUrl": "https://lichess.org/L5wdABuf#79"
+  },
+  {
+    "fen": "8/p3p1kb/7p/8/3b2q1/P4P2/7P/3R1R1K w - - 0 42",
+    "moves": "f3g4 h7e4 f1f3 e4f3",
+    "rating": 762,
+    "gameUrl": "https://lichess.org/0kOdFL4Z#83"
+  },
+  {
+    "fen": "5r2/1k3pBp/3b4/3P1b2/8/1P3P2/P5PP/K2R3R w - - 1 30",
+    "moves": "g7f8 d6e5 d1d4 e5d4",
+    "rating": 1062,
+    "gameUrl": "https://lichess.org/vbr6twYP#59"
+  },
+  {
+    "fen": "3r2k1/pb3ppp/4p3/8/3b4/1B1N1q2/PPPB2PP/R6K w - - 0 23",
+    "moves": "g2f3 b7f3",
+    "rating": 1025,
+    "gameUrl": "https://lichess.org/qL6qMwIR#45"
+  },
+  {
+    "fen": "rn3r1k/6pp/p4R2/1p5q/3Q4/1BB2b1P/1P3PP1/R5K1 b - - 0 22",
+    "moves": "g7f6 d4f6 f8f6 c3f6",
+    "rating": 1073,
+    "gameUrl": "https://lichess.org/MFHsCiZY/black#44"
+  },
+  {
+    "fen": "r3kb1r/pp1n2pp/3p4/3Pp1B1/3pPpB1/3P4/PP3PPP/R4RK1 b kq - 1 14",
+    "moves": "h7h6 g4h5 g7g6 h5g6",
+    "rating": 1190,
+    "gameUrl": "https://lichess.org/sQFXRM3j/black#28"
+  },
+  {
+    "fen": "5q1k/Q5pp/1p6/4Pb2/1P3B2/2P2BP1/P4b1P/3q3K w - - 0 27",
+    "moves": "f3d1 f5e4 d1f3 e4f3",
+    "rating": 786,
+    "gameUrl": "https://lichess.org/BVGdpDwq#53"
+  },
+  {
+    "fen": "1r5k/pp2R2p/5bp1/2P2p2/2B1p3/4P3/P4PPP/4BK2 b - - 6 23",
+    "moves": "f6e7 e1c3 e7f6 c3f6",
+    "rating": 936,
+    "gameUrl": "https://lichess.org/C0ibZ7m0/black#46"
+  },
+  {
+    "fen": "r3rnk1/pp4b1/3p1q2/2p4R/2P5/1PN1PN2/P1bB1QP1/K2R4 w - - 1 23",
+    "moves": "d1h1 f6c3 d2c3 g7c3",
+    "rating": 1052,
+    "gameUrl": "https://lichess.org/alg6051J#45"
+  },
+  {
+    "fen": "Q4rk1/p2b1pp1/4p2p/1pb1P3/2p5/2Pp2P1/PP5P/RNB2R1K w - - 0 17",
+    "moves": "a8a7 d7c6 f1f3 c6f3",
+    "rating": 1243,
+    "gameUrl": "https://lichess.org/hU4oiB37#33"
+  },
+  {
+    "fen": "r1b2r1k/6pp/pp3R2/2q1Qp2/P1B1p3/1P2P1P1/1B3P1P/4K2R b K - 0 23",
+    "moves": "g7f6 e5f6 f8f6 b2f6",
+    "rating": 1185,
+    "gameUrl": "https://lichess.org/wuf1qO8C/black#46"
+  },
+  {
+    "fen": "rn1q1rk1/pp1nbppp/2p5/3pN2b/5P2/2N1P2P/PPQP2P1/R1B1KB1R w KQ - 1 11",
+    "moves": "e5d7 e7h4 g2g3 h4g3",
+    "rating": 1151,
+    "gameUrl": "https://lichess.org/t7w2DP8i#21"
+  },
+  {
+    "fen": "2kr3r/Bppbnppp/3p4/8/1P2PP2/3B2P1/P1P2K2/R6R b - - 0 16",
+    "moves": "b7b6 d3a6",
+    "rating": 811,
+    "gameUrl": "https://lichess.org/vURx2Oo9/black#32"
+  },
+  {
+    "fen": "2b4k/6pp/p3q3/1pbB1N1Q/2p2P2/P5P1/1P5P/7K w - - 0 35",
+    "moves": "d5e6 c8b7 e6d5 b7d5 h5f3 d5f3",
+    "rating": 1140,
+    "gameUrl": "https://lichess.org/m0Jg5qOq#69"
+  },
+  {
+    "fen": "7k/7p/3b2p1/BPn2p2/2B5/1P2N1PP/5P1K/1q6 b - - 0 37",
+    "moves": "c5b3 a5c3 b3d4 c3d4 d6e5 d4e5",
+    "rating": 1266,
+    "gameUrl": "https://lichess.org/MXev9ZIh/black#74"
+  },
+  {
+    "fen": "2kr3r/ppp5/2pb1p2/6pp/4P3/3P1PP1/bPPBN1P1/2KR3R w - - 0 17",
+    "moves": "b2b3 d6a3",
+    "rating": 826,
+    "gameUrl": "https://lichess.org/9S2oViMU#33"
+  },
+  {
+    "fen": "r2q1r1k/pp1bpB1p/5Np1/2p1Q3/P7/1P6/3P1PPP/B4RK1 b - - 0 18",
+    "moves": "e7f6 e5f6 d8f6 a1f6",
+    "rating": 954,
+    "gameUrl": "https://lichess.org/QD3ZSzcZ/black#36"
+  },
+  {
+    "fen": "2k5/ppp2p2/5B2/2br4/6b1/2N3P1/PPP4P/4R2K w - - 0 25",
+    "moves": "c3d5 g4f3",
+    "rating": 876,
+    "gameUrl": "https://lichess.org/HXtMSk6X#49"
+  },
+  {
+    "fen": "2q2r1k/p1rp3p/1pn2pp1/3B1n2/2P2P2/1PQ1R3/1B3P1P/1R4K1 b - - 3 28",
+    "moves": "f5e3 c3f6 f8f6 b2f6",
+    "rating": 1175,
+    "gameUrl": "https://lichess.org/PUc87Dmk/black#56"
+  },
+  {
+    "fen": "1Nb4r/p1k2ppp/4pn2/1pb5/2p5/2N3P1/PP2PPBP/R1B3K1 b - - 0 14",
+    "moves": "c7b8 c1f4 e6e5 f4e5 c5d6 e5d6",
+    "rating": 823,
+    "gameUrl": "https://lichess.org/08lYnQQ7/black#28"
+  },
+  {
+    "fen": "r2r4/pB3pkp/2n3b1/8/3b2N1/6P1/PP5P/R2Q3K w - - 1 22",
+    "moves": "b7a8 g6e4 d1f3 e4f3",
+    "rating": 1101,
+    "gameUrl": "https://lichess.org/Yl0UxpoI#43"
+  },
+  {
+    "fen": "r3kb1r/pp1b2pp/4p3/4PpB1/P1Pp4/8/4BPPP/R4RK1 b kq - 2 15",
+    "moves": "h7h6 e2h5 g7g6 h5g6",
+    "rating": 916,
+    "gameUrl": "https://lichess.org/AENeh0TI/black#30"
+  },
+  {
+    "fen": "r3kbnr/pbB1pppp/1p6/8/8/8/PPnK1PPP/RN3BNR b kq - 1 9",
+    "moves": "c2a1 f1b5 b7c6 b5c6",
+    "rating": 1049,
+    "gameUrl": "https://lichess.org/JCEDuRyp/black#18"
+  },
+  {
+    "fen": "2r5/pp3k2/3p2pB/1BpN4/3bP1b1/3P1p2/PPn3PP/1R5K w - - 3 23",
+    "moves": "g2f3 g4f3",
+    "rating": 720,
+    "gameUrl": "https://lichess.org/5BOfVSjj#45"
+  },
+  {
+    "fen": "4b2k/ppB4p/2R1B1p1/5p2/4p2P/bP2P1P1/3r1P2/6K1 b - - 0 31",
+    "moves": "e8c6 c7e5",
+    "rating": 848,
+    "gameUrl": "https://lichess.org/MAea9G8W/black#62"
+  },
+  {
+    "fen": "r4r1k/7p/p5p1/2P5/8/1B2B2q/P1N3R1/b5K1 b - - 1 34",
+    "moves": "a1d4 e3d4 f8f6 d4f6",
+    "rating": 767,
+    "gameUrl": "https://lichess.org/nekNxI0z/black#68"
+  },
+  {
+    "fen": "5rk1/pp3p1p/1bp3p1/8/1PB2Pb1/P1Q3P1/1B5P/4r2K w - - 0 26",
+    "moves": "c3e1 g4f3",
+    "rating": 879,
+    "gameUrl": "https://lichess.org/DlOKSNeA#51"
+  },
+  {
+    "fen": "r2qk2r/p1ppp2p/np4pB/8/2PbQ3/P2B4/1P3PPP/R3K2R b KQkq - 1 12",
+    "moves": "d4b2 e4g6 h7g6 d3g6",
+    "rating": 1229,
+    "gameUrl": "https://lichess.org/QQIBuPZK/black#24"
+  },
+  {
+    "fen": "r1bqkbnr/pp1np3/2p2p2/3p2p1/3P3p/2NBP2P/PPP2PPB/R2QK1NR b KQkq - 1 8",
+    "moves": "h8h6 d1h5 h6h5 d3g6",
+    "rating": 1444,
+    "gameUrl": "https://lichess.org/cck8smjH/black#16"
+  },
+  {
+    "fen": "2b2k2/p1p2P1p/6p1/1p6/N1Bb2P1/3N4/PP5P/7K w - - 0 29",
+    "moves": "c4b5 c8b7 b5c6 b7c6",
+    "rating": 1093,
+    "gameUrl": "https://lichess.org/bvtu9J9p#57"
+  },
+  {
+    "fen": "r3kb1r/1bqn1pp1/p3p2p/1p6/2pPp2B/P1P1P3/1PQNBPPP/R3K2R b KQkq - 1 14",
+    "moves": "f7f5 e2h5 g7g6 h5g6",
+    "rating": 1022,
+    "gameUrl": "https://lichess.org/TxldkU2V/black#28"
+  },
+  {
+    "fen": "7k/7p/5bp1/2PB4/3p4/3P2P1/1r3B2/5K2 b - - 0 40",
+    "moves": "f6g5 f2d4 g5f6 d4f6",
+    "rating": 916,
+    "gameUrl": "https://lichess.org/2Ukws6vc/black#80"
+  },
+  {
+    "fen": "3r4/p6k/1p5p/5b2/5P2/2B1bp2/PP5P/5Q1K w - - 0 39",
+    "moves": "f1f3 d8d1 f3d1 f5e4 d1f3 e4f3",
+    "rating": 1204,
+    "gameUrl": "https://lichess.org/bFz1BrS2#77"
+  },
+  {
+    "fen": "2b1q2k/rpBp2bp/pN1Q2pn/4R3/2B5/7P/PP3PP1/6K1 b - - 0 21",
+    "moves": "g7e5 d6e5 e8e5 c7e5",
+    "rating": 1332,
+    "gameUrl": "https://lichess.org/O9Z4Ltae/black#42"
+  },
+  {
+    "fen": "2k5/ppp2ppp/3b1n2/B7/2P5/1P3N2/P1bN1PPP/K3rB1R w - - 3 21",
+    "moves": "f3e1 d6e5 a5c3 e5c3",
+    "rating": 1072,
+    "gameUrl": "https://lichess.org/URLTrml0#41"
+  },
+  {
+    "fen": "4rr1k/6bp/p5p1/1p1Bp1Q1/2P4B/P1R2P1q/1P3P2/6K1 b - - 1 30",
+    "moves": "g7f6 g5f6 f8f6 h4f6",
+    "rating": 1195,
+    "gameUrl": "https://lichess.org/SMPmd2Dj/black#60"
+  },
+  {
+    "fen": "r1bqk1nr/ppp3pp/5p2/2bp4/3npP2/2P5/PP1NP1PP/RNBQ1BKR w kq - 1 8",
+    "moves": "c3d4 c5d4 e2e3 d4e3",
+    "rating": 758,
+    "gameUrl": "https://lichess.org/N2VFwJfU#15"
+  },
+  {
+    "fen": "r3k2r/pp2bppp/8/2pp4/5Pb1/3P4/PPPB2PP/R3KB1R w KQkq - 2 13",
+    "moves": "h2h3 e7h4 g2g3 h4g3",
+    "rating": 921,
+    "gameUrl": "https://lichess.org/HNqPQ4p0#25"
+  },
+  {
+    "fen": "rnb1k2r/ppppb1pp/8/8/8/8/PPPP2PP/RNB2BKR w kq - 0 9",
+    "moves": "b1c3 e7c5 d2d4 c5d4 c1e3 d4e3",
+    "rating": 955,
+    "gameUrl": "https://lichess.org/aMw6eUM2#17"
+  },
+  {
+    "fen": "8/4ppkp/1Np3p1/p4P2/3bP1P1/3b4/PPR4P/3B3K w - - 3 34",
+    "moves": "c2c6 d3e4 d1f3 e4f3",
+    "rating": 1062,
+    "gameUrl": "https://lichess.org/IMJep6rZ#67"
+  },
+  {
+    "fen": "2rqr1k1/5ppp/Nb6/7b/1BP1p3/P2Q2P1/7P/2R1R2K w - - 0 29",
+    "moves": "d3d8 h5f3",
+    "rating": 1154,
+    "gameUrl": "https://lichess.org/RjSVolZ6#57"
+  },
+  {
+    "fen": "r4r1k/pp5p/2n5/2pBQ3/P1P2B2/3q2P1/7P/R5K1 b - - 1 24",
+    "moves": "c6e5 f4e5 f8f6 e5f6",
+    "rating": 701,
+    "gameUrl": "https://lichess.org/hxmjZD0u/black#48"
+  },
+  {
+    "fen": "k7/p2n3p/1p1B2p1/3bPr2/8/3Bb2P/R5P1/7K b - - 1 32",
+    "moves": "d5a2 d3e4 a2d5 e4d5",
+    "rating": 1061,
+    "gameUrl": "https://lichess.org/Vq7lDXfQ/black#64"
+  },
+  {
+    "fen": "2r2rk1/pp4pp/3b1p2/3P4/1nP3b1/N7/PP1N2PP/R3KB1R w KQ - 0 17",
+    "moves": "h2h3 d6g3",
+    "rating": 1392,
+    "gameUrl": "https://lichess.org/NoMC1sAM#33"
+  },
+  {
+    "fen": "N7/pp4pk/3p2pp/4p3/2BnP2q/P2P2P1/1PP2b1P/R1Bb3K w - - 0 18",
+    "moves": "g3h4 d1f3",
+    "rating": 1062,
+    "gameUrl": "https://lichess.org/k8nEDllB#35"
+  },
+  {
+    "fen": "2r2R1k/7p/1p4p1/3B4/1P1pPB2/3P2P1/P1r1q2P/R5K1 b - - 0 35",
+    "moves": "c8f8 f4e5 f8f6 e5f6",
+    "rating": 876,
+    "gameUrl": "https://lichess.org/Nm2BbRfK/black#70"
+  },
+  {
+    "fen": "3R1r1k/1p5p/p5p1/1b3pB1/4p3/b3P1P1/B4P1P/6K1 b - - 1 27",
+    "moves": "f8d8 g5f6",
+    "rating": 1102,
+    "gameUrl": "https://lichess.org/M1MEifxK/black#54"
+  },
+  {
+    "fen": "rn2k2r/ppp1bppp/8/3P4/5Pb1/8/PPPB2PP/R3KBNR w KQkq - 0 10",
+    "moves": "h2h3 e7h4 g2g3 h4g3",
+    "rating": 1017,
+    "gameUrl": "https://lichess.org/eZfJiIae#19"
+  },
+  {
+    "fen": "2r4k/p6p/6p1/8/4P1P1/1Bp1B1bP/P2p4/6K1 b - - 1 36",
+    "moves": "c3c2 e3d4 g3e5 d4e5",
+    "rating": 1062,
+    "gameUrl": "https://lichess.org/YMpe2JdP/black#72"
+  },
+  {
+    "fen": "4Rr1k/2pq3p/p1nb2n1/1p1B2Q1/3P2PB/7P/PPP2P2/R5K1 b - - 0 21",
+    "moves": "d7e8 g5f6 f8f6 h4f6",
+    "rating": 1401,
+    "gameUrl": "https://lichess.org/KisWqsjk/black#42"
+  },
+  {
+    "fen": "2k4r/ppp2p1p/5pb1/4b3/2P5/5P2/PP2BBPP/2Kr3R w - - 0 19",
+    "moves": "e2d1 e5f4 f2e3 f4e3",
+    "rating": 1095,
+    "gameUrl": "https://lichess.org/pq9ZkU2T#37"
+  },
+  {
+    "fen": "r1r2bk1/1p3p1p/n3RBp1/2p5/8/1BPP3P/1P3PP1/R5K1 b - - 0 25",
+    "moves": "f7e6 b3e6",
+    "rating": 729,
+    "gameUrl": "https://lichess.org/9LoRV8Wz/black#50"
+  },
+  {
+    "fen": "8/p2b1pkp/3P2p1/2p5/2Pb1P2/3B2P1/P6P/1R5K w - - 0 33",
+    "moves": "b1b7 d7c6 d3e4 c6e4",
+    "rating": 1233,
+    "gameUrl": "https://lichess.org/Qok5AMo8#65"
+  },
+  {
+    "fen": "5k2/5pp1/4p2p/2b5/P3PP2/1Pp5/2B1b1PP/2B4K w - - 1 48",
+    "moves": "g2g3 e2f3",
+    "rating": 839,
+    "gameUrl": "https://lichess.org/KWSZV4uj#95"
+  },
+  {
+    "fen": "r2q1r1k/3pn2p/p1b1B1p1/1p6/4p1Q1/P1b1B3/1PP2PPP/3RR1K1 b - - 1 19",
+    "moves": "c3e1 e3d4 f8f6 d4f6",
+    "rating": 1101,
+    "gameUrl": "https://lichess.org/414B39Sw/black#38"
+  },
+  {
+    "fen": "6k1/6p1/pn3q1p/2pP1b1Q/2PbRB2/1P6/B6P/4R2K w - - 1 33",
+    "moves": "f4e5 f5e4 h5f3 e4f3",
+    "rating": 1651,
+    "gameUrl": "https://lichess.org/2WmH4dvb#65"
+  },
+  {
+    "fen": "r3r1k1/2q1P2p/p2p2p1/1p2bpB1/4p3/1BPn2QP/P4PP1/2R1R1K1 b - - 0 26",
+    "moves": "g8h8 g3e5 d3e5 g5f6",
+    "rating": 1610,
+    "gameUrl": "https://lichess.org/xDYlrilJ/black#52"
+  },
+  {
+    "fen": "r4kr1/1p3ppp/8/q7/B1P1n3/1P5P/P2Q1PP1/R1B2RK1 b - - 0 21",
+    "moves": "e4d2 c1a3 a5c5 a3c5",
+    "rating": 1440,
+    "gameUrl": "https://lichess.org/cm7YPCPS/black#42"
+  },
+  {
+    "fen": "r3k3/ppp1b3/8/4P3/2b1p3/2N5/PP1P2PP/R1B3KR w - - 5 20",
+    "moves": "b2b3 e7c5 d2d4 c5d4 c1e3 d4e3",
+    "rating": 906,
+    "gameUrl": "https://lichess.org/eFVOvlnU#39"
+  },
+  {
+    "fen": "8/p3k3/2b1r3/3p1Q2/5B2/8/5bPP/R6K w - - 11 35",
+    "moves": "g2g3 d5d4 f5d5 c6d5",
+    "rating": 1358,
+    "gameUrl": "https://lichess.org/G5GPbn0H#69"
+  },
+  {
+    "fen": "3k4/p5p1/B4p2/8/6b1/1P2b3/PB5P/7K w - - 0 32",
+    "moves": "a6c4 g4f3",
+    "rating": 750,
+    "gameUrl": "https://lichess.org/wGswr8cZ#63"
+  },
+  {
+    "fen": "3R4/p1p3kp/1pb1p1p1/4p3/n3P3/2N1bP2/6PP/4BK2 w - - 0 32",
+    "moves": "c3a4 c6b5 d8d3 b5d3",
+    "rating": 1089,
+    "gameUrl": "https://lichess.org/97QC0yd8#63"
+  },
+  {
+    "fen": "2kr3r/B1pn1ppp/1p6/3npb2/3P4/P7/2PNBPPP/R4RK1 b - - 0 15",
+    "moves": "e5d4 e2a6",
+    "rating": 1027,
+    "gameUrl": "https://lichess.org/nkf6apb3/black#30"
+  },
+  {
+    "fen": "r4rk1/p3nppp/8/q3b3/2NpP1P1/1P4NP/P1b2Q2/K2R3R w - - 4 28",
+    "moves": "c4a5 d4d3 f2d4 e5d4",
+    "rating": 1073,
+    "gameUrl": "https://lichess.org/OmcT4ZnV#55"
+  },
+  {
+    "fen": "4rNk1/pb6/1pqp2PQ/2pN4/2Pb4/8/PPP4P/R1B2RK1 w - - 1 22",
+    "moves": "g1h1 c6d5 c4d5 b7d5 f1f3 d5f3",
+    "rating": 1091,
+    "gameUrl": "https://lichess.org/YHzJALcn#43"
+  },
+  {
+    "fen": "3r3k/pb1Qnp1p/1b3p2/4pP2/2p1P2N/2P3P1/PP4BP/7K w - - 2 27",
+    "moves": "d7e7 d8d1 g2f1 b7e4 h4f3 e4f3",
+    "rating": 1524,
+    "gameUrl": "https://lichess.org/ZKSVH0Bu#53"
+  },
+  {
+    "fen": "r3k2r/1b3pp1/p3p2P/P2pP2Q/2p2P2/2q5/1P3b1P/R1B2R1K w kq - 0 22",
+    "moves": "b2c3 d5d4 h5f3 b7f3",
+    "rating": 1187,
+    "gameUrl": "https://lichess.org/65g31PHe#43"
+  },
+  {
+    "fen": "8/3k3p/R2b4/8/6PP/3b3K/5P2/8 w - - 3 46",
+    "moves": "a6a5 d3f1",
+    "rating": 1269,
+    "gameUrl": "https://lichess.org/awJrKLlc#91"
+  },
+  {
+    "fen": "3r3k/pp6/2n3p1/2b2pN1/5N2/3P4/bPPB2P1/2KR4 w - - 0 23",
+    "moves": "b2b3 c5a3",
+    "rating": 1093,
+    "gameUrl": "https://lichess.org/ZslyjyzV#45"
+  },
+  {
+    "fen": "4r1k1/pbp4p/1p2R1p1/2b5/2Q4N/5qP1/P2B3P/2R4K w - - 0 26",
+    "moves": "h4f3 b7f3",
+    "rating": 1066,
+    "gameUrl": "https://lichess.org/KoeWmzUx#51"
+  },
+  {
+    "fen": "r3r1k1/1b1p1ppp/ppq1p1n1/2b5/P3PP2/2PB2P1/1P2N2P/R1BQ1R1K w - - 1 16",
+    "moves": "b2b4 c6e4 d3e4 b7e4 f1f3 e4f3",
+    "rating": 1088,
+    "gameUrl": "https://lichess.org/24I4TmdY#31"
+  },
+  {
+    "fen": "r2Q3k/p2R1Bbp/b1p3p1/8/N3pB2/2P5/PP2q1PP/6K1 b - - 2 25",
+    "moves": "a8d8 d7d8 g7f8 f4e5",
+    "rating": 1507,
+    "gameUrl": "https://lichess.org/LgzcF6Ui/black#50"
+  },
+  {
+    "fen": "r3r1k1/ppp2ppp/2n5/2b1pP1b/6q1/P1PP2P1/1BP1N1BP/R2Q1R1K w - - 1 16",
+    "moves": "g2f3 g4f3 f1f3 h5f3",
+    "rating": 1125,
+    "gameUrl": "https://lichess.org/G6YhvBXk#31"
+  },
+  {
+    "fen": "7k/7p/2q5/5p2/pBB4P/1P6/5K2/8 b - - 0 50",
+    "moves": "a4b3 b4c3 c6f6 c3f6",
+    "rating": 1195,
+    "gameUrl": "https://lichess.org/lFw2ddFX/black#100"
+  },
+  {
+    "fen": "r6k/1p5p/P1p3p1/3p4/4N1P1/3P1r1q/B1PB1P2/R5K1 b - - 0 26",
+    "moves": "d5e4 d2c3 f3f6 c3f6",
+    "rating": 1097,
+    "gameUrl": "https://lichess.org/F4tdIBVk/black#52"
+  },
+  {
+    "fen": "rn1r1k2/ppp3R1/1b5p/3bP2Q/4N3/2P3P1/PP5P/R1B4K w - - 2 20",
+    "moves": "c1h6 d5e4 h5f3 e4f3",
+    "rating": 794,
+    "gameUrl": "https://lichess.org/V4AEWNcw#39"
+  },
+  {
+    "fen": "rnbr3k/4nBpp/5R2/1Np3B1/8/8/PPP3PP/R5K1 b - - 0 17",
+    "moves": "g7f6 g5f6",
+    "rating": 665,
+    "gameUrl": "https://lichess.org/VsMBfLym/black#34"
+  },
+  {
+    "fen": "3r3k/p1b4p/6p1/8/7K/BB3P1P/P1P2P2/8 b - - 1 28",
+    "moves": "c7d6 a3b2 d6e5 b2e5",
+    "rating": 1083,
+    "gameUrl": "https://lichess.org/e3J4CTfy/black#56"
+  },
+  {
+    "fen": "r1b1kb1r/p2p2pp/2p1p3/6B1/4Q3/3B4/P1P1KPPP/7q b kq - 1 16",
+    "moves": "h1h2 e4g6 h7g6 d3g6",
+    "rating": 1594,
+    "gameUrl": "https://lichess.org/2NvQEOAM/black#32"
+  },
+  {
+    "fen": "r5kr/4B1bp/pP4p1/5n2/1P5P/N1p2B2/5PP1/6K1 b - - 0 34",
+    "moves": "f5d4 f3d5 d4e6 d5e6",
+    "rating": 1152,
+    "gameUrl": "https://lichess.org/yGxvQE4o/black#68"
+  },
+  {
+    "fen": "4r1k1/pp1q1ppp/8/3Q1b2/3b1P2/1B4P1/PP5P/2R2R1K w - - 6 26",
+    "moves": "d5d7 f5e4 f1f3 e4f3",
+    "rating": 1068,
+    "gameUrl": "https://lichess.org/vclFIHdV#51"
+  },
+  {
+    "fen": "r2q1bkr/pppn2pp/8/3bP3/3P4/5Q2/PPP3PP/R1B1KB1R b KQ - 1 11",
+    "moves": "d5f3 f1c4 f3d5 c4d5",
+    "rating": 1107,
+    "gameUrl": "https://lichess.org/Aiupw2JG/black#22"
+  },
+  {
+    "fen": "4r1k1/6pp/5pB1/p1bP4/2P1P3/6P1/P3b2P/4R2K w - - 0 28",
+    "moves": "g6e8 e2f3",
+    "rating": 859,
+    "gameUrl": "https://lichess.org/j2i7czW2#55"
+  },
+  {
+    "fen": "rkb2bnr/pp2N1pp/2n5/2P2p2/4p3/4B3/PPP2PPP/2KR1BNR b - - 0 9",
+    "moves": "g8e7 e3f4 c6e5 f4e5",
+    "rating": 1111,
+    "gameUrl": "https://lichess.org/23l7Bye4/black#18"
+  },
+  {
+    "fen": "r1b1Rr1k/pp5p/2p3p1/8/3b4/1B2B3/P1P3PP/6K1 b - - 3 24",
+    "moves": "f8e8 e3d4 e8e5 d4e5",
+    "rating": 788,
+    "gameUrl": "https://lichess.org/WmrreaNV/black#48"
+  },
+  {
+    "fen": "r6k/2R4p/p5p1/1p1Bb3/bB2PP2/6K1/6PP/8 b - - 0 30",
+    "moves": "e5c7 b4c3 c7e5 c3e5",
+    "rating": 1136,
+    "gameUrl": "https://lichess.org/dGwoy8Eh/black#60"
+  },
+  {
+    "fen": "rn3rk1/ppp1bppp/8/3P4/5Pb1/8/PPPN2PP/R1B1KB1R w KQ - 1 11",
+    "moves": "h2h3 e7h4 g2g3 h4g3",
+    "rating": 1085,
+    "gameUrl": "https://lichess.org/qKQ0cCo2#21"
+  },
+  {
+    "fen": "rnb2rk1/ppp2ppp/3b4/8/2P5/2N2N2/PP2P1PP/R1B2BKR w - - 3 11",
+    "moves": "e2e4 d6c5 f3d4 c5d4 c1e3 d4e3",
+    "rating": 1146,
+    "gameUrl": "https://lichess.org/0CKC7gZa#21"
+  },
+  {
+    "fen": "r4k1r/5P1p/p1b3p1/2pq1nB1/3b2P1/1PpP1N2/P1P4P/1R2QR1K w - - 1 19",
+    "moves": "g4f5 d5f3 f1f3 c6f3",
+    "rating": 1063,
+    "gameUrl": "https://lichess.org/TkJMKMd1#37"
+  },
+  {
+    "fen": "r3kb1r/pppb2pp/2n5/5pB1/3Np3/2P5/P1P2PPP/R2BR1K1 b kq - 3 12",
+    "moves": "h7h6 d1h5 g7g6 h5g6",
+    "rating": 1258,
+    "gameUrl": "https://lichess.org/uDpIxjOI/black#24"
+  },
+  {
+    "fen": "2r4k/2q2B1p/3p2p1/4p1Bn/4P3/1Q3P1P/6PK/8 b - - 2 37",
+    "moves": "h5f4 g5f6",
+    "rating": 1027,
+    "gameUrl": "https://lichess.org/DeqrtdVk/black#74"
+  },
+  {
+    "fen": "1r2k2r/3n3p/p1Q3p1/2b2b2/8/2N3P1/PP1P3P/R1B2R1K w k - 1 21",
+    "moves": "c3d5 f5e4 f1f3 e4f3",
+    "rating": 1061,
+    "gameUrl": "https://lichess.org/lMrWD7FW#41"
+  },
+  {
+    "fen": "1rr4k/6pp/5Qb1/3B4/P7/1q4P1/2p1PP1P/B4RK1 b - - 0 31",
+    "moves": "g7f6 a1f6",
+    "rating": 1099,
+    "gameUrl": "https://lichess.org/Q4kzv87Y/black#62"
+  },
+  {
+    "fen": "6k1/5p2/1PR1b1pp/8/3bB3/8/7P/1r5K w - - 0 41",
+    "moves": "e4b1 e6d5 b1e4 d5e4",
+    "rating": 1113,
+    "gameUrl": "https://lichess.org/miFvYI7G#81"
+  },
+  {
+    "fen": "N7/pp4pp/2k1P1b1/2b5/2P3P1/8/PP5P/R3Rr1K w - - 1 25",
+    "moves": "e1f1 g6e4 f1f3 e4f3",
+    "rating": 871,
+    "gameUrl": "https://lichess.org/gHYiypbP#49"
+  },
+  {
+    "fen": "7k/7p/2n3p1/1pBB4/1P6/r1Nn4/7P/6K1 b - - 1 33",
+    "moves": "c6b4 c5d4 d3e5 d4e5",
+    "rating": 1062,
+    "gameUrl": "https://lichess.org/EZPuyywu/black#66"
+  },
+  {
+    "fen": "2kr4/ppp2p1p/2nb4/3Nq3/2P3b1/1P6/P2PPPPP/R2QKBNR w KQ - 1 10",
+    "moves": "f2f3 e5g3 h2g3 d6g3",
+    "rating": 1548,
+    "gameUrl": "https://lichess.org/wQ412Cz7#19"
+  },
+  {
+    "fen": "7k/p6p/4B1p1/8/2P1p3/3p4/PP1BbK1b/8 b - - 0 32",
+    "moves": "h2d6 d2c3 d6e5 c3e5",
+    "rating": 1057,
+    "gameUrl": "https://lichess.org/23GQipPd/black#64"
+  },
+  {
+    "fen": "7k/p5p1/1n4qp/1b6/3bB3/2B3P1/P6P/1N5K w - - 0 31",
+    "moves": "e4g6 b5c6 g6e4 c6e4",
+    "rating": 1128,
+    "gameUrl": "https://lichess.org/xhBKlHVz#61"
+  },
+  {
+    "fen": "r6k/1b3B1p/8/2bR4/p6P/6P1/1p1B3K/8 b - - 0 37",
+    "moves": "b7d5 d2c3 c5d4 c3d4",
+    "rating": 1286,
+    "gameUrl": "https://lichess.org/UIDdHDSj/black#74"
+  },
+  {
+    "fen": "5r1k/pp2P2p/2p5/8/2BPQ1pq/2P3bb/PP5B/R6K b - - 0 29",
+    "moves": "f8e8 e4e5 g3e5 h2e5 h4f6 e5f6",
+    "rating": 1477,
+    "gameUrl": "https://lichess.org/g1uXskLd/black#58"
+  },
+  {
+    "fen": "r3r2k/ppp3pp/5Rb1/8/2B5/P1B5/6PP/2R4K b - - 0 26",
+    "moves": "g7f6 c3f6",
+    "rating": 816,
+    "gameUrl": "https://lichess.org/pIrLG7t5/black#52"
+  },
+  {
+    "fen": "7k/pR4p1/2p4p/8/1PPb4/P4BP1/4r2P/1b5K w - - 0 28",
+    "moves": "f3e2 b1e4 e2f3 e4f3",
+    "rating": 829,
+    "gameUrl": "https://lichess.org/PvtZoq5M#55"
+  },
+  {
+    "fen": "5rk1/pp3ppp/3P4/8/r3P3/1QPpb2q/PP2b1P1/R3R1BK w - - 0 24",
+    "moves": "g2h3 e2f3 h1h2 e3f4",
+    "rating": 1181,
+    "gameUrl": "https://lichess.org/W5KKClPp#47"
+  },
+  {
+    "fen": "r2q3k/1bp1n1pp/p2nBQ2/1p6/1P2P3/P4N2/1B3PPP/R4RK1 b - - 0 20",
+    "moves": "g7f6 b2f6",
+    "rating": 706,
+    "gameUrl": "https://lichess.org/XdtEEcy2/black#40"
+  },
+  {
+    "fen": "R3rbk1/3B3p/5B2/3p1pp1/3P4/2nKPP2/7P/8 b - - 5 39",
+    "moves": "e8a8 d7e6",
+    "rating": 868,
+    "gameUrl": "https://lichess.org/nVnMhV0R/black#78"
+  },
+  {
+    "fen": "3q1rk1/5pp1/1p5p/1P1BP3/3b1P2/2Nb2P1/R2B3P/R6K w - - 1 31",
+    "moves": "a2a8 d8d5 c3d5 d3e4",
+    "rating": 1583,
+    "gameUrl": "https://lichess.org/Xm2zaHik#61"
+  },
+  {
+    "fen": "r2q1r1k/pp2n1bp/6p1/2p1p1Q1/3pP2B/P6P/BPP2PP1/R4RK1 b - - 1 17",
+    "moves": "g7f6 g5f6 f8f6 h4f6",
+    "rating": 1127,
+    "gameUrl": "https://lichess.org/F7pw3IoO/black#34"
+  },
+  {
+    "fen": "2bk1r2/rp2b1pp/4pn2/PB1pp3/8/2P1B3/5PPP/RN3RK1 b - - 1 20",
+    "moves": "a7a8 e3b6",
+    "rating": 868,
+    "gameUrl": "https://lichess.org/HFEmKHHz/black#40"
+  },
+  {
+    "fen": "r4rk1/pp3pp1/1b5p/5b2/5P2/1Q4P1/PP2q2P/R1NR3K w - - 0 25",
+    "moves": "c1e2 f5e4 b3f3 e4f3",
+    "rating": 854,
+    "gameUrl": "https://lichess.org/uFBUwkoC#49"
+  },
+  {
+    "fen": "7k/p6p/5bpn/2B2pN1/1P3P2/1B1P2KP/P1P3P1/1r3r2 b - - 4 25",
+    "moves": "f6g5 c5d4 g5f6 d4f6",
+    "rating": 1152,
+    "gameUrl": "https://lichess.org/14orqT0u/black#50"
+  },
+  {
+    "fen": "r2q1bkr/pppnp1pp/8/3p2P1/3PQ3/3B3P/PPP2P2/RNB1K2R b KQ - 0 12",
+    "moves": "d5e4 d3c4 e7e6 c4e6",
+    "rating": 1115,
+    "gameUrl": "https://lichess.org/eKmDQsmm/black#24"
+  },
+  {
+    "fen": "3r2k1/p4p1p/1p3K2/2p1B3/2B2P2/2P4b/P6P/r7 b - - 3 35",
+    "moves": "d8c8 c4f7 g8h8 f6g5",
+    "rating": 1293,
+    "gameUrl": "https://lichess.org/FuNlU507/black#70"
+  },
+  {
+    "fen": "r3r3/pp4pk/1bp3bp/8/2B2Bq1/2Pp1P2/PP5P/R1Q2R1K w - - 0 28",
+    "moves": "f3g4 g6e4 f1f3 e4f3",
+    "rating": 1160,
+    "gameUrl": "https://lichess.org/H87LaOYX#55"
+  },
+  {
+    "fen": "1k1r4/pbp2N1p/2q2n2/2b2Q2/8/5p2/PPPB2PP/RN2R2K w - - 0 18",
+    "moves": "g2f3 c6f3 f5f3 b7f3",
+    "rating": 1265,
+    "gameUrl": "https://lichess.org/XfwQeAGh#35"
+  },
+  {
+    "fen": "r1b2r1k/p6p/1p6/1Pp5/1nBRp1p1/8/PBP2P1P/4K2R b K - 0 21",
+    "moves": "c5d4 b2d4 f8f6 d4f6",
+    "rating": 758,
+    "gameUrl": "https://lichess.org/FqeokEW7/black#42"
+  },
+  {
+    "fen": "r4r1k/p1p4p/8/1p4p1/6b1/1B1PB3/PPP2R1P/7K b - - 0 22",
+    "moves": "f8f2 e3d4 f2f6 d4f6",
+    "rating": 1123,
+    "gameUrl": "https://lichess.org/XNy5AqCg/black#44"
+  },
+  {
+    "fen": "6k1/p4ppp/Q7/1P6/2b5/P4BP1/2r2b1P/3r3K w - - 0 31",
+    "moves": "f3d1 c4d5 d1f3 d5f3",
+    "rating": 1182,
+    "gameUrl": "https://lichess.org/BAxhtnij#61"
+  },
+  {
+    "fen": "2k1r2r/1b1n4/2q1p2p/pRb5/P7/3B1p2/2NBQ1PP/1R5K w - - 0 30",
+    "moves": "g2f3 c6f3 e2f3 b7f3",
+    "rating": 1120,
+    "gameUrl": "https://lichess.org/pS9j7NIZ#59"
+  },
+  {
+    "fen": "6k1/3b1r1p/5p2/1pb5/5PpQ/7r/6PP/1R1R3K w - - 6 32",
+    "moves": "g2h3 d7c6 d1d5 c6d5",
+    "rating": 1106,
+    "gameUrl": "https://lichess.org/1qEcgbY2#63"
+  },
+  {
+    "fen": "r2qkb1r/pp1npb1p/2p5/4PQ2/3P4/3BB3/PP3PPP/R4RK1 b kq - 0 15",
+    "moves": "f7g6 f5g6 h7g6 d3g6",
+    "rating": 1163,
+    "gameUrl": "https://lichess.org/wPhH0f19/black#30"
+  },
+  {
+    "fen": "r2q3k/1b1p3p/2n3p1/1pPB1p2/1P1Q1B2/8/6PP/4R1K1 b - - 0 29",
+    "moves": "c6d4 f4e5 d8f6 e5f6",
+    "rating": 1114,
+    "gameUrl": "https://lichess.org/km58Kk8I/black#58"
+  },
+  {
+    "fen": "5rk1/1b1p2pp/ppq5/2b5/P5Q1/2N2rB1/1PP3PP/R3R2K w - - 0 21",
+    "moves": "g2f3 c6f3 g4f3 b7f3",
+    "rating": 1385,
+    "gameUrl": "https://lichess.org/FLfYvCcR#41"
+  },
+  {
+    "fen": "rkb4r/pp3ppp/4p3/4p3/1bBN4/3RB3/PP3PPP/2K4R b - - 0 16",
+    "moves": "e5d4 e3f4 e6e5 f4e5 b4d6 e5d6",
+    "rating": 1156,
+    "gameUrl": "https://lichess.org/TUIOKTKg/black#32"
+  },
+  {
+    "fen": "r5k1/ppp2p1p/5p2/3p1N2/2b2P2/2P3P1/PP2rbBP/R1R4K w - - 10 25",
+    "moves": "g2d5 c4d5",
+    "rating": 1015,
+    "gameUrl": "https://lichess.org/N5DNipkG#49"
+  },
+  {
+    "fen": "4r1k1/5p1p/2b1p1n1/2pp2B1/6Pq/P2B4/1rPQ1b1P/3R1R1K w - - 0 26",
+    "moves": "g5h4 d5d4 d3e4 c6e4",
+    "rating": 1269,
+    "gameUrl": "https://lichess.org/EANSycDO#51"
+  },
+  {
+    "fen": "r4r1k/p1p4p/1p3pp1/3BQb2/3B2P1/3q4/P6P/5RK1 b - - 0 22",
+    "moves": "a8e8 e5f6 f8f6 d4f6",
+    "rating": 1315,
+    "gameUrl": "https://lichess.org/pgPpYcDJ/black#44"
+  },
+  {
+    "fen": "3b2bk/8/1p5p/6pP/4B3/6P1/4KP2/4B3 b - - 0 34",
+    "moves": "b6b5 e1c3 d8f6 c3f6",
+    "rating": 874,
+    "gameUrl": "https://lichess.org/bQFpBm1b/black#68"
+  },
+  {
+    "fen": "7R/1b3p2/6p1/2bP3p/5Bk1/P5P1/3r3P/4R2K w - - 9 41",
+    "moves": "f4d2 b7d5 e1e4 d5e4",
+    "rating": 1058,
+    "gameUrl": "https://lichess.org/xPO6T4lc#81"
+  },
+  {
+    "fen": "r3r1k1/ppp1bppp/8/4P3/5Pb1/1P6/P1PN2PP/R3KB1R w KQ - 1 14",
+    "moves": "h2h3 e7h4 g2g3 h4g3",
+    "rating": 1195,
+    "gameUrl": "https://lichess.org/oZDsQkWr#27"
+  },
+  {
+    "fen": "8/2B5/5k2/2p3p1/2Pb2P1/1P1b1B2/P3p2P/4R2K w - - 2 36",
+    "moves": "f3e2 d3e4 e2f3 e4f3",
+    "rating": 1219,
+    "gameUrl": "https://lichess.org/pAmVor0i#71"
+  },
+  {
+    "fen": "B3k2r/1R3ppp/p3p3/1b1pb3/8/8/2PB1PPP/6KR w k - 0 21",
+    "moves": "f2f4 e5d4 d2e3 d4e3",
+    "rating": 1055,
+    "gameUrl": "https://lichess.org/I7C1v59Q#41"
+  },
+  {
+    "fen": "7k/1b2NB1p/5bp1/1p6/p7/P4PB1/1P4PP/2n2K2 b - - 0 32",
+    "moves": "f6e7 g3e5 e7f6 e5f6",
+    "rating": 769,
+    "gameUrl": "https://lichess.org/sT6nDvGQ/black#64"
+  },
+  {
+    "fen": "8/4B3/5p2/k3b2p/ppB5/2n2P2/2K5/8 b - - 3 43",
+    "moves": "h5h4 e7d8 e5c7 d8c7",
+    "rating": 1216,
+    "gameUrl": "https://lichess.org/eIAcncUv/black#86"
+  },
+  {
+    "fen": "4k3/3p1pb1/p3pq2/5p2/4bPpP/1Nr3P1/PP1Q4/K3R3 w - - 0 30",
+    "moves": "b2c3 f6c3 d2c3 g7c3",
+    "rating": 1038,
+    "gameUrl": "https://lichess.org/8cY7NwsT#59"
+  },
+  {
+    "fen": "rq2k2r/1p2bpp1/p1p1p2p/2PpP3/5Pb1/1Q2P3/PP1N2PP/2R1KB1R w Kkq - 1 16",
+    "moves": "h2h3 e7h4 g2g3 h4g3",
+    "rating": 1101,
+    "gameUrl": "https://lichess.org/09KFDwSZ#31"
+  },
+  {
+    "fen": "8/5p1k/BP2p3/5bPP/1P5K/2b1B3/8/8 w - - 1 48",
+    "moves": "b4b5 c3e1 e3f2 e1f2",
+    "rating": 1254,
+    "gameUrl": "https://lichess.org/djxCiKvj#95"
+  },
+  {
+    "fen": "5bk1/1p5p/p1pqnBp1/8/1P5P/6PB/P4P1K/3Q4 b - - 1 38",
+    "moves": "d6d1 h3e6",
+    "rating": 733,
+    "gameUrl": "https://lichess.org/vtDqNWdN/black#76"
+  },
+  {
+    "fen": "5rk1/1bp2p2/1pq4p/p1b3B1/2Q5/5PP1/PP5P/3R1R1K w - - 0 23",
+    "moves": "g5c1 c6f3 f1f3 b7f3",
+    "rating": 1099,
+    "gameUrl": "https://lichess.org/R30t9Q5D#45"
+  },
+  {
+    "fen": "R7/3k3p/5Pp1/2bB4/8/1p1b4/1B5P/7K w - - 0 39",
+    "moves": "d5b3 d3e4",
+    "rating": 793,
+    "gameUrl": "https://lichess.org/Xpa1ZbSx#77"
+  },
+  {
+    "fen": "r4r1k/ppp4p/5p2/4R1p1/2B2p2/2B5/PPP2K1P/8 b - - 0 22",
+    "moves": "f6e5 c3e5 f8f6 e5f6",
+    "rating": 647,
+    "gameUrl": "https://lichess.org/UJlyDuLd/black#44"
+  },
+  {
+    "fen": "2r4k/pp5p/2q2Qp1/8/2B5/2B2P1P/1P4P1/2K5 b - - 0 37",
+    "moves": "c6f6 c3f6",
+    "rating": 725,
+    "gameUrl": "https://lichess.org/iXGmhgqJ/black#74"
+  },
+  {
+    "fen": "5r1k/7p/1p4p1/2bB4/p1P2B2/5PKP/5P2/8 b - - 1 29",
+    "moves": "a4a3 f4e5 f8f6 e5f6",
+    "rating": 904,
+    "gameUrl": "https://lichess.org/Ws5FEXqD/black#58"
+  },
+  {
+    "fen": "7k/p1p1b1pp/1p6/n2B4/8/6P1/P4P1P/2B3K1 b - - 1 27",
+    "moves": "g7g6 c1b2 e7f6 b2f6",
+    "rating": 1130,
+    "gameUrl": "https://lichess.org/JO6WDBRf/black#54"
+  },
+  {
+    "fen": "r1q1r2k/4P2p/p1p2bp1/PpB2p2/1P2p3/5P2/B1P1Q1PP/5RK1 b - - 0 24",
+    "moves": "f6e7 c5d4 e7f6 d4f6",
+    "rating": 1159,
+    "gameUrl": "https://lichess.org/U7m0JsAw/black#48"
+  },
+  {
+    "fen": "2r4k/7p/p5pb/1pp1p3/6P1/P2P1r1P/BPPQpP1B/1R4K1 b - - 0 30",
+    "moves": "h6d2 h2e5 f3f6 e5f6",
+    "rating": 889,
+    "gameUrl": "https://lichess.org/kC2ThwX5/black#60"
+  },
+  {
+    "fen": "r3k1nQ/pbpp1p1p/1p6/1Bb5/4q3/5PP1/PPP4P/RNB2RK1 w q - 1 12",
+    "moves": "g1h1 e4f3 f1f3 b7f3",
+    "rating": 1048,
+    "gameUrl": "https://lichess.org/M2Vv5ynh#23"
+  },
+  {
+    "fen": "r1bq1r1k/1p1pn2p/p1n5/4Qpp1/2B5/2N3B1/PPP2PPP/R3K2R b KQ - 3 14",
+    "moves": "c6e5 g3e5 f8f6 e5f6",
+    "rating": 912,
+    "gameUrl": "https://lichess.org/0Ybyr9Wq/black#28"
+  },
+  {
+    "fen": "4r2k/1b4pp/pq1p1Q2/1p2n1B1/8/1BPN1P2/PP1N2PP/R4K2 b - - 0 22",
+    "moves": "g7f6 g5f6",
+    "rating": 856,
+    "gameUrl": "https://lichess.org/RIev8VQb/black#44"
+  },
+  {
+    "fen": "8/7p/2kb2b1/pp6/3Q4/1P5P/P5P1/K7 w - - 0 34",
+    "moves": "d4a7 d6e5 a7d4 e5d4",
+    "rating": 860,
+    "gameUrl": "https://lichess.org/Ui24P9KX#67"
+  },
+  {
+    "fen": "7k/5B1p/3b4/p3p3/b4P2/P2PB2P/1rr2P2/R5K1 b - - 0 33",
+    "moves": "e5f4 e3d4 d6e5 d4e5",
+    "rating": 983,
+    "gameUrl": "https://lichess.org/We5F9W0l/black#66"
+  },
+  {
+    "fen": "3rr2k/1p5b/p6p/P7/5p2/BB5P/P3p1P1/4K3 b - - 0 38",
+    "moves": "h7g8 a3b2 h8h7 b3c2 d8d3 c2d3 e8e4 d3e4",
+    "rating": 1231,
+    "gameUrl": "https://lichess.org/BYUnJiuR/black#76"
+  },
+  {
+    "fen": "1k3r2/8/pnp5/1p1pP3/3P2B1/BPP5/P1bb4/K6R w - - 8 42",
+    "moves": "a3f8 d2c3",
+    "rating": 908,
+    "gameUrl": "https://lichess.org/EFc5DUPF#83"
+  },
+  {
+    "fen": "5k2/1pp3pp/p1p5/3b4/3b4/5N1q/PP4PP/R1B4K w - - 2 26",
+    "moves": "g2h3 d5f3",
+    "rating": 800,
+    "gameUrl": "https://lichess.org/goLVC9CT#51"
+  },
+  {
+    "fen": "8/p1k2ppp/1b4b1/4P3/8/1P3BP1/PB5P/3r3K w - - 0 28",
+    "moves": "f3d1 g6e4 d1f3 e4f3",
+    "rating": 725,
+    "gameUrl": "https://lichess.org/8gMRLfVM#55"
+  },
+  {
+    "fen": "5rk1/p1p3pp/2p5/3b1P1Q/3br3/8/PPPBR2P/R6K w - - 0 24",
+    "moves": "e2e4 d5e4 h5f3 e4f3",
+    "rating": 714,
+    "gameUrl": "https://lichess.org/AiCHGZtD#47"
+  },
+  {
+    "fen": "r3r2k/1pp1P1pp/5R2/6B1/b1B5/p6P/P5P1/1K5R b - - 0 29",
+    "moves": "g7f6 g5f6",
+    "rating": 680,
+    "gameUrl": "https://lichess.org/qWvmkqKr/black#58"
+  },
+  {
+    "fen": "r1b4k/1pp2B1p/1p1p1q2/3Q2B1/4r3/8/PP2n1PP/R6K b - - 1 22",
+    "moves": "f6e5 d5e5 e4e5 g5f6",
+    "rating": 1472,
+    "gameUrl": "https://lichess.org/qhXXVY4J/black#44"
+  },
+  {
+    "fen": "8/1b6/3kpN2/1P4P1/3b4/3P1p2/6PP/1R5K w - - 0 40",
+    "moves": "g2f3 b7f3",
+    "rating": 828,
+    "gameUrl": "https://lichess.org/OTXDUkFd#79"
+  },
+  {
+    "fen": "5bk1/2p2p1p/1p2P1p1/3P4/1pNB1P2/4K2B/1P5P/r7 b - - 0 30",
+    "moves": "f7e6 h3e6",
+    "rating": 957,
+    "gameUrl": "https://lichess.org/VsuWNazm/black#60"
+  },
+  {
+    "fen": "r4r1k/2p4p/1p1pB3/p2P4/2Pb4/P7/1R3P1P/2B3K1 b - - 1 36",
+    "moves": "d4b2 c1b2 f8f6 b2f6",
+    "rating": 682,
+    "gameUrl": "https://lichess.org/9MYMETJ0/black#72"
+  },
+  {
+    "fen": "r4r2/b1p2pkp/p2p1p2/1p2p2b/4PPqB/1BPP4/PP4PP/R1Q2R1K w - - 1 18",
+    "moves": "g2g3 g4f3 f1f3 h5f3",
+    "rating": 1273,
+    "gameUrl": "https://lichess.org/LOAWoypN#35"
+  },
+  {
+    "fen": "1r1q3k/1pn4p/p1bB2p1/4pp2/3QP3/P6P/BP3PP1/3R2K1 b - - 0 26",
+    "moves": "e5d4 d6e5 d8f6 e5f6",
+    "rating": 1154,
+    "gameUrl": "https://lichess.org/ixApagcQ/black#52"
+  },
+  {
+    "fen": "8/1bp3pk/p6p/1p6/4rP2/P4P2/1PP2b1P/R1BQ3K w - - 0 23",
+    "moves": "f3e4 b7e4 d1f3 e4f3",
+    "rating": 623,
+    "gameUrl": "https://lichess.org/ZvclllMN#45"
+  },
+  {
+    "fen": "2b2n2/r1kn4/p1B5/1pp1P1Q1/3b4/3P2P1/PPP4P/5R1K w - - 1 25",
+    "moves": "c6d7 c8b7 d7c6 b7c6 f1f3 c6f3",
+    "rating": 1473,
+    "gameUrl": "https://lichess.org/oqeAsOFJ#49"
+  },
+  {
+    "fen": "2n5/p2b4/2n1p1k1/2BpP1pp/3P4/P1KB4/2N3PP/8 b - - 5 35",
+    "moves": "g6h6 c5f8",
+    "rating": 852,
+    "gameUrl": "https://lichess.org/E1vuittT/black#70"
+  },
+  {
+    "fen": "r3kb1r/ppp1qppp/8/3Q4/8/1P3P1P/PBb1PP2/R3KB1R w KQkq - 0 11",
+    "moves": "d5b7 e7b4 b7b4 f8b4 b2c3 b4c3",
+    "rating": 1295,
+    "gameUrl": "https://lichess.org/Higtvby0#21"
+  },
+  {
+    "fen": "3r1r1k/pp5p/2n3p1/1bp5/3RPB2/P4PP1/BP4KP/R7 b - - 0 24",
+    "moves": "c6d4 f4e5 f8f6 e5f6",
+    "rating": 924,
+    "gameUrl": "https://lichess.org/ikOWDX1i/black#48"
+  },
+  {
+    "fen": "r4rk1/1p3ppp/2p3n1/1pb5/5Pb1/1PNB2P1/PBP4P/R3R2K w - - 6 19",
+    "moves": "c3e4 g4f3",
+    "rating": 888,
+    "gameUrl": "https://lichess.org/M94nDjz3#37"
+  },
+  {
+    "fen": "N2bk2r/p4pp1/2b1p3/3pP2p/5P2/B2B4/P1P3PP/R6K b k - 1 20",
+    "moves": "c6a8 d3b5 a8c6 b5c6",
+    "rating": 784,
+    "gameUrl": "https://lichess.org/hkcRsua9/black#40"
+  },
+  {
+    "fen": "Q7/6pk/4p2p/2b1Pp1b/1pP2P2/1P3qP1/4N2P/4R2K w - - 3 36",
+    "moves": "a8f3 h5f3",
+    "rating": 691,
+    "gameUrl": "https://lichess.org/zuJMkloy#71"
+  },
+  {
+    "fen": "7k/p1p4p/2n1B1p1/8/8/2Bb4/P5PP/6K1 b - - 0 28",
+    "moves": "c6d4 c3d4",
+    "rating": 606,
+    "gameUrl": "https://lichess.org/rfuUrV5I/black#56"
+  },
+  {
+    "fen": "7k/7p/2KBB1p1/2P5/3b2P1/8/2r4P/8 b - - 2 43",
+    "moves": "d4g1 d6e5",
+    "rating": 808,
+    "gameUrl": "https://lichess.org/1I1jLVU0/black#86"
+  },
+  {
+    "fen": "r3k2r/pppnbppp/6n1/3P4/6b1/2NP4/PPPB2PP/R3KBNR w KQkq - 0 11",
+    "moves": "h2h3 e7h4 g2g3 h4g3",
+    "rating": 1109,
+    "gameUrl": "https://lichess.org/CpySWZCL#21"
+  },
+  {
+    "fen": "r4r1k/p6p/2P3p1/2P2b2/1PBb4/1KB4P/P5Pp/2R3q1 b - - 3 31",
+    "moves": "g1c1 c3d4 f8f6 d4f6",
+    "rating": 814,
+    "gameUrl": "https://lichess.org/mPgPwDF0/black#62"
+  },
+  {
+    "fen": "rnb2bkr/ppp3pp/8/4p3/8/8/PPPP1P1P/R1BQKBq1 b Q - 1 11",
+    "moves": "g1h2 f1c4 c8e6 c4e6",
+    "rating": 832,
+    "gameUrl": "https://lichess.org/ApUGcXhs/black#22"
+  },
+  {
+    "fen": "r6k/7p/p5p1/2R1r3/PpBn4/7P/1B4P1/6K1 b - - 0 38",
+    "moves": "e5c5 b2d4 c5e5 d4e5",
+    "rating": 884,
+    "gameUrl": "https://lichess.org/8esIBJyE/black#76"
+  },
+  {
+    "fen": "r6k/pp2p2p/4B1p1/1PP5/3b4/6BP/P2r1PP1/4R1K1 b - - 2 29",
+    "moves": "d4c5 g3e5",
+    "rating": 932,
+    "gameUrl": "https://lichess.org/wBqm5AvD/black#58"
+  },
+  {
+    "fen": "r5kr/pp1n2pp/2pB4/2Pp1Pp1/1P1PR3/P7/4B2P/R5K1 b - - 0 28",
+    "moves": "d5e4 e2c4",
+    "rating": 865,
+    "gameUrl": "https://lichess.org/HXfJNHHG/black#56"
+  },
+  {
+    "fen": "5r1k/pp4p1/6Bp/1b6/5P2/4b1P1/PP5P/R2R3K w - - 1 27",
+    "moves": "g6d3 b5c6 d3e4 c6e4",
+    "rating": 1203,
+    "gameUrl": "https://lichess.org/UgNYakXu#53"
+  },
+  {
+    "fen": "1r3bk1/2p2p1p/3pR1p1/3B4/pPp5/2B2N2/P4PPP/6K1 b - - 0 27",
+    "moves": "f7e6 d5e6",
+    "rating": 818,
+    "gameUrl": "https://lichess.org/MlHStZGA/black#54"
+  },
+  {
+    "fen": "r5k1/pp3ppp/2b5/1qb2P2/2Q1N3/6P1/PP5P/R1B2R1K w - - 1 21",
+    "moves": "c4b5 c6e4 f1f3 e4f3",
+    "rating": 1188,
+    "gameUrl": "https://lichess.org/Lds6lSGR#41"
+  },
+  {
+    "fen": "7k/p1p4p/3p2b1/8/2Pb4/1P3BP1/P2B3P/3q3K w - - 0 35",
+    "moves": "f3d1 g6e4 d1f3 e4f3",
+    "rating": 859,
+    "gameUrl": "https://lichess.org/ZJg9cX0o#69"
+  },
+  {
+    "fen": "2rr3k/1bbRBB1p/p1p1pp2/1p6/5P2/8/PPP3PP/5RK1 b - - 9 22",
+    "moves": "d8d7 e7f6",
+    "rating": 993,
+    "gameUrl": "https://lichess.org/psXK0OD2/black#44"
+  },
+  {
+    "fen": "4nbk1/1p5p/p2p1Bp1/P2P2P1/6B1/4r2R/2P3KP/8 b - - 1 33",
+    "moves": "e3h3 g4e6",
+    "rating": 1205,
+    "gameUrl": "https://lichess.org/qok8mUkh/black#66"
+  },
+  {
+    "fen": "3q2k1/6r1/3pP2Q/2p3B1/bpPb4/6P1/7P/5R1K w - - 1 34",
+    "moves": "g5d8 a4c6 f1f3 c6f3",
+    "rating": 1207,
+    "gameUrl": "https://lichess.org/j0tkUPD2#67"
+  },
+  {
+    "fen": "k1Rr1b1r/p4pp1/p5p1/8/4pBP1/PB5P/1P3P2/1K6 b - - 0 30",
+    "moves": "d8c8 b3d5 c8c6 d5c6",
+    "rating": 927,
+    "gameUrl": "https://lichess.org/Wr1QPFYB/black#60"
+  },
+  {
+    "fen": "7k/3b1B1p/6p1/8/3b4/1P6/7P/5R1K w - - 0 33",
+    "moves": "f1d1 d7c6 f7d5 c6d5",
+    "rating": 873,
+    "gameUrl": "https://lichess.org/9uWKmz0Z#65"
+  },
+  {
+    "fen": "r1bq1bkr/ppp3pp/2n5/3Qp3/2B5/8/PPPP1PPP/RNB2RK1 b - - 0 9",
+    "moves": "d8d5 c4d5 c8e6 d5e6",
+    "rating": 668,
+    "gameUrl": "https://lichess.org/5Nfpn5ud/black#18"
+  },
+  {
+    "fen": "2bk1bnr/B3pppp/8/1B6/4P3/8/1PnK1PPP/6NR b - - 2 17",
+    "moves": "c2b4 a7b6",
+    "rating": 760,
+    "gameUrl": "https://lichess.org/BhjW0gEr/black#34"
+  },
+  {
+    "fen": "2kr1b1r/Bppnpppp/p7/3P4/2B5/2N4P/PP3PP1/R5K1 b - - 0 16",
+    "moves": "b7b6 c4a6",
+    "rating": 796,
+    "gameUrl": "https://lichess.org/cQloMf83/black#32"
+  },
+  {
+    "fen": "3k4/p1r4p/8/Q1b5/2pNP3/2Pp1q2/PP2b2P/RN2R2K w - - 2 28",
+    "moves": "d4f3 e2f3",
+    "rating": 874,
+    "gameUrl": "https://lichess.org/rgveOzp8#55"
+  },
+  {
+    "fen": "2kr1n1R/Bpbqn1p1/2pp1pb1/4p3/1PB1P3/P2P1r2/2PQNP2/2K4R b - - 0 21",
+    "moves": "b7b6 c4a6",
+    "rating": 1087,
+    "gameUrl": "https://lichess.org/ppBmpgA8/black#42"
+  },
+  {
+    "fen": "3r2k1/pB3ppp/8/B1b5/5Pb1/5nP1/PP5P/4R2K w - - 3 24",
+    "moves": "b7f3 g4f3",
+    "rating": 841,
+    "gameUrl": "https://lichess.org/RKcE1o9D#47"
+  },
+  {
+    "fen": "8/b2b4/P2P4/3B2k1/2p5/2P5/7B/7K w - - 3 58",
+    "moves": "d5c4 d7c6 c4d5 c6d5",
+    "rating": 947,
+    "gameUrl": "https://lichess.org/zmvL7rRB#115"
+  },
+  {
+    "fen": "6k1/p5pp/1p2p1b1/2b1P3/8/1PB2BP1/P6P/3r3K w - - 0 25",
+    "moves": "f3d1 g6e4 d1f3 e4f3",
+    "rating": 1063,
+    "gameUrl": "https://lichess.org/psfwStDw#49"
+  },
+  {
+    "fen": "r4k2/2RR1p2/1p2ppbp/p3p3/2P5/P7/1P2BbPP/7K w - - 2 25",
+    "moves": "g2g3 g6e4 e2f3 e4f3",
+    "rating": 944,
+    "gameUrl": "https://lichess.org/t6T78he2#49"
+  },
+  {
+    "fen": "6rk/2p2Bpp/pb1p1p2/1p1P1q2/1P3Pb1/P1B3P1/3PQ2P/4R2K w - - 7 28",
+    "moves": "e2e8 g4f3",
+    "rating": 1295,
+    "gameUrl": "https://lichess.org/Zq7s1Dql#55"
+  },
+  {
+    "fen": "2b4k/2r4p/p2p2p1/1p1Bn1B1/4P3/8/PPP3PP/5NK1 b - - 0 24",
+    "moves": "c7c2 g5f6",
+    "rating": 924,
+    "gameUrl": "https://lichess.org/NpwHYDdU/black#48"
+  },
+  {
+    "fen": "5rk1/pp5p/n3b1pb/4p3/8/5P1N/PPP3PP/RK1N1B1R w - - 1 17",
+    "moves": "c2c3 e6f5 f1d3 f5d3",
+    "rating": 1035,
+    "gameUrl": "https://lichess.org/cr9kR0wz#33"
+  },
+  {
+    "fen": "8/2R3pp/1k3p2/pbp5/3b2P1/1Br3B1/P6P/3R3K w - - 4 31",
+    "moves": "c7g7 b5c6 b3d5 c6d5",
+    "rating": 1158,
+    "gameUrl": "https://lichess.org/bBC9WGiM#61"
+  },
+  {
+    "fen": "6k1/p4pp1/1b4bp/4P3/1P3B2/P4BP1/7P/3r3K w - - 0 29",
+    "moves": "f3d1 g6e4 d1f3 e4f3",
+    "rating": 986,
+    "gameUrl": "https://lichess.org/TM0KotxB#57"
+  },
+  {
+    "fen": "r4q1k/ppb4p/8/1b1Bp3/8/1PQ5/PBP2P1r/R2K4 b - - 3 33",
+    "moves": "f8f2 c3e5 c7e5 b2e5 f2f6 e5f6",
+    "rating": 1369,
+    "gameUrl": "https://lichess.org/uuTEjyax/black#66"
+  },
+  {
+    "fen": "r1bq1bkr/pp4pp/2n5/2pQp3/2B5/3P4/PPP2PPP/RNB1K2R b KQ - 0 9",
+    "moves": "d8d5 c4d5 c8e6 d5e6",
+    "rating": 1295,
+    "gameUrl": "https://lichess.org/WtQSV8gL/black#18"
+  },
+  {
+    "fen": "r3qr1k/4n2p/p1pb1p2/1p4Q1/4PP1n/P1N1B3/BPP2P1P/R5RK b - - 0 19",
+    "moves": "f6g5 e3d4 d6e5 d4e5 f8f6 e5f6",
+    "rating": 1405,
+    "gameUrl": "https://lichess.org/wTh78Npa/black#38"
+  },
+  {
+    "fen": "r4r1k/p6p/1p4p1/1P1B1p2/3p1B2/P5P1/1n5P/R4K2 b - - 1 27",
+    "moves": "a8d8 f4e5 f8f6 e5f6",
+    "rating": 1204,
+    "gameUrl": "https://lichess.org/pE0aKc49/black#54"
+  },
+  {
+    "fen": "2k1B3/p7/1b2b3/7p/P6B/2P3N1/7P/7K w - - 1 37",
+    "moves": "e8h5 e6d5 g3e4 d5e4 h5f3 e4f3",
+    "rating": 1107,
+    "gameUrl": "https://lichess.org/bV6zICzX#73"
+  },
+  {
+    "fen": "2rr3k/pp4bp/3B2p1/4N3/8/1B2p1P1/PP5P/1R3K2 b - - 4 34",
+    "moves": "g7e5 d6e5",
+    "rating": 693,
+    "gameUrl": "https://lichess.org/rcjbrYZ8/black#68"
+  },
+  {
+    "fen": "2kr2nr/B1pqbp2/pp1pb2p/4p3/3PP3/P7/1PPNBPP1/R2QK2R b KQ - 0 15",
+    "moves": "e5d4 e2a6",
+    "rating": 953,
+    "gameUrl": "https://lichess.org/0kACvBDU/black#30"
+  },
+  {
+    "fen": "rn2qbkr/pp4pp/2p1Q3/3B4/8/8/PPPP1PPP/RNB1K2R b KQ - 0 11",
+    "moves": "e8e6 d5e6",
+    "rating": 874,
+    "gameUrl": "https://lichess.org/1vBU5344/black#22"
+  },
+  {
+    "fen": "r1bk4/pppp1B2/7B/4PR2/3P3r/3K2p1/PPn1N1P1/R3q3 b - - 1 23",
+    "moves": "c2a1 h6g5",
+    "rating": 1241,
+    "gameUrl": "https://lichess.org/90RmMh1j/black#46"
+  },
+  {
+    "fen": "B6k/R5p1/5n1p/3p4/1b1P1B2/8/P1b3PP/K7 w - - 1 39",
+    "moves": "f4e5 b4c3",
+    "rating": 764,
+    "gameUrl": "https://lichess.org/PwfeZNIt#77"
+  },
+  {
+    "fen": "rn2kb1r/ppp2ppp/8/3q4/3P4/5Q2/PPb1PPPP/R3KBNR w KQkq - 0 10",
+    "moves": "f3d5 f8b4",
+    "rating": 968,
+    "gameUrl": "https://lichess.org/NS3t9CVp#19"
+  },
+  {
+    "fen": "r1br3k/ppp4p/6p1/2b3B1/2B1p3/8/2P3PP/1R3R1K b - - 1 20",
+    "moves": "d8e8 g5f6",
+    "rating": 896,
+    "gameUrl": "https://lichess.org/j8IOBrxT/black#40"
+  },
+  {
+    "fen": "5k2/1p3pp1/p4n1p/8/B4Bb1/1q4P1/PPP2b1P/R6K w - - 0 29",
+    "moves": "a4b3 g4f3",
+    "rating": 1067,
+    "gameUrl": "https://lichess.org/AY5iJavH#57"
+  },
+  {
+    "fen": "r6r/1p2Qpkp/6p1/1p1PPb2/1B6/4b3/P5PP/5R1K w - - 5 27",
+    "moves": "g2g4 f5e4 f1f3 e4f3",
+    "rating": 1354,
+    "gameUrl": "https://lichess.org/38CDoa5R#53"
+  },
+  {
+    "fen": "r4rk1/ppp2ppp/8/2bP4/2q3b1/2NQ2P1/4N2P/4R2K w - - 0 21",
+    "moves": "d3c4 g4f3",
+    "rating": 1218,
+    "gameUrl": "https://lichess.org/ceYcScRr#41"
+  }
+]
