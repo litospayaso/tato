@@ -39,6 +39,11 @@ export class AppComponent {
       url: '/training',
       icon: 'barbell-outline'
     },
+    {
+      title: 'Puzzles',
+      url: '/puzzles',
+      icon: 'extension-puzzle-outline'
+    },
   ];
   constructor(
     private platform: Platform,

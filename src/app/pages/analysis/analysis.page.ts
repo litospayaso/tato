@@ -46,7 +46,9 @@ export class AnalysisPage implements AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.createNewGame();
+    setTimeout(() => {
+      this.createNewGame();
+    }, 200);
   }
 
   private createNewGame() {

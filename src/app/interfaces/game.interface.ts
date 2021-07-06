@@ -12,3 +12,11 @@ export interface DefaultValuesInterface {
   opening: string;
   userColor: string;
 }
+
+export interface PuzzleInterface {
+  fen: string;
+  moves: string;
+  movesArray?: string[];
+  rating: number;
+  gameUrl: string;
+}

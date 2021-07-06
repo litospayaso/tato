@@ -4,6 +4,7 @@ import { HomePage } from '@pages/home/home.page';
 import { TrainingPage } from '@pages/training/training.page';
 import { AnalysisPage } from '@pages/analysis/analysis.page';
 import { GamesPage } from '@pages/games/games.page';
+import { PuzzlesPage } from '@pages/puzzles/puzzles.page';
 
 const routes: Routes = [
   {
@@ -29,6 +30,10 @@ const routes: Routes = [
   {
     path: 'games',
     component: GamesPage,
+  },
+  {
+    path: 'puzzles',
+    component: PuzzlesPage,
   },
 ];
 
