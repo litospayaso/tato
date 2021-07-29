@@ -44,6 +44,11 @@ export class AppComponent {
       url: '/puzzles',
       icon: 'extension-puzzle-outline'
     },
+    {
+      title: 'Endings',
+      url: '/endings',
+      icon: 'rocket-outline'
+    },
   ];
   constructor(
     private platform: Platform,
@@ -106,6 +111,12 @@ export class AppComponent {
         break;
       case 'games':
         title = 'My games';
+        break;
+      case 'puzzles':
+        title = 'Puzzles';
+        break;
+      case 'endings':
+        title = 'Endings';
         break;
       default:
         break;

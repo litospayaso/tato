@@ -1,3 +1,15 @@
 <ion-content [fullscreen]="true">
-Games Page!!
+  <div class="games-container">
+    <div *ngFor="let game of allGames" [value]="game" class="game-element">
+      <div class="game-fen"></div>
+      <div class="game-description">
+        <div class="game-title">
+          {{game.title}}
+        </div>
+        <div class="game-gameOpening">
+          {{game.opening}}
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>

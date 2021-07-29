@@ -78,6 +78,13 @@ export class Stockfish {
     this.stockfish.postMessage('eval');
   }
 
+  public evalFen(fen: string) {
+    this.stockfish.postMessage(`position fen ${fen}`);
+    this.stockfish.postMessage('eval');
+    this.stockfish.postMessage(`go depth ${this.depth} ${this.selfdepth ? 'seldepth ' + this.selfdepth + ' ' : ''}wtime 300000 winc 2000 btime 300000 binc 2000`);
+    this.stockfish.postMessage('eval');
+  }
+
   public emmiter(event: string) {
   }
 

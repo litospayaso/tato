@@ -1,0 +1,21 @@
+.games-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  .game-element {
+    height: 100px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    .game-fen {
+      height: 80px;
+      width: 80px;
+    }
+    .game-description {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

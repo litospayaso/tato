@@ -8,6 +8,7 @@ import { DefaultValuesInterface, GameInterface } from '@interfaces/game.interfac
 export class GamesService {
   private allData: GameInterface[] = [];
   private defaultOpeningValues: DefaultValuesInterface = {} as DefaultValuesInterface;
+  private userRating = 1300;
 
   constructor(private storage: Storage) {
     this.reloadData();
@@ -24,6 +25,11 @@ export class GamesService {
     this.storage.get('defaultOpeningValues').then((data) => {
       if (data) {
         this.defaultOpeningValues = JSON.parse(data);
+      }
+    });
+    this.storage.get('userRating').then((data) => {
+      if (data) {
+        this.userRating = Number(data);
       }
     });
   }
@@ -46,6 +52,15 @@ export class GamesService {
   public setDefaultOpeningValues(defaultOpeningValues: DefaultValuesInterface) {
     this.defaultOpeningValues = defaultOpeningValues;
     this.storage.set('defaultOpeningValues', JSON.stringify(this.defaultOpeningValues));
+  }
+
+  public setUserRating(rating: number) {
+    this.userRating = rating;
+    this.storage.set('userRating', rating);
+  }
+
+  public getUserRating() {
+    return this.userRating;
   }
 
 }

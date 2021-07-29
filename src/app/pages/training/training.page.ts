@@ -138,12 +138,13 @@ export class TrainingPage implements AfterViewInit {
       this.board.set({
         fen: this.game.fen(),
         turnColor: this.toColor(),
+        check: this.game.in_check() ? (this.userColor === 'w' ? 'black' : 'white') : false,
         movable: {
           color: this.toColor(),
           dests: this.toDests()
         }
       });
-      if (this.game.in_checkmate()) {
+      if (this.game.in_checkmate() || this.game.in_draw() || this.game.in_stalemate() || this.game.in_threefold_repetition()) {
         setTimeout(() => {
           this.endGame();
         }, 1500);
@@ -156,10 +157,11 @@ export class TrainingPage implements AfterViewInit {
   }
 
   public endGame() {
+    const gameResult = this.game.in_checkmate() ? (this.game.turn() === 'w' ? '0-1' : '1-0') : '1/2 - 1/2';
     this.gamesService.addGame({
       date: new Date().toLocaleString(),
       pgn: this.game.pgn(),
-      title: `${this.game.turn() === 'w' ? '0-1' : '1-0'} Game against Computer level ${this.stockfish.level}; ${this.opening?.name}`,
+      title: `${gameResult} Game against Computer level ${this.stockfish.level}; ${this.opening?.name}`,
       opening: this.opening?.name,
       movesVerbose: this.moves,
       userColor: this.userColor,
@@ -176,13 +178,14 @@ export class TrainingPage implements AfterViewInit {
 
     this.board.set({
       fen: this.game.fen(),
+      check: this.game.in_check() ? (this.userColor === 'w' ? 'white' : 'black') : false,
       turnColor: this.toColor(),
       movable: {
         color: this.toColor(),
         dests: this.toDests()
       }
     });
-    if (this.game.in_checkmate()) {
+    if (this.game.in_checkmate() || this.game.in_draw() || this.game.in_stalemate() || this.game.in_threefold_repetition()) {
       setTimeout(() => {
         this.endGame();
       }, 1500);

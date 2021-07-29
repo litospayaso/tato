@@ -2,8 +2,12 @@ import { Component, AfterViewInit, Type } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
 import { PuzzleInterface } from '@app/interfaces/game.interface';
 import { ChessgroundConstructor, Key, Color, ChessgroundInterface } from 'src/libs/chessground/types/chessground';
+import { GamesService } from '@services/games.service';
+import { RequestService } from '@services/request.service';
 import { ChessInstance } from '@libs/chess.js/chessInterface';
 import { PromotionModalComponent } from '@components/promotion-modal/promotion-modal.component';
+import { ModalController } from '@ionic/angular';
+import { PuzzlesModalComponent } from '@components/puzzles-modal/puzzles-modal.component';
 import * as uuid from 'uuid';
 declare const Chessground: ChessgroundConstructor;
 declare const Chess: any;
@@ -22,26 +26,43 @@ export class PuzzlesPage implements AfterViewInit {
   public board: ChessgroundInterface;
   public game: ChessInstance;
   public boardId: string;
+  public userRating: number;
+  public allPuzzles: PuzzleInterface[];
+  public puzzlesToMakeANewRequest = 10;
+  public failed = false;
+  public theme = 'all';
 
   constructor(
-    private popoverController: PopoverController
+    private popoverController: PopoverController,
+    private requestService: RequestService,
+    public modalController: ModalController,
+    private gameService: GamesService
   ) { }
 
   ngAfterViewInit() {
     this.boardId = uuid.v4();
-    // this.game = new Chess();
-    this.currentPuzzle =   {
-      fen: '1k1r3r/2q5/pp1n2p1/8/1Q6/3R2P1/PPP2P1P/3R2K1 b - - 4 29',
-      moves: 'c7c5 b4c5 b6c5 d3d6 d8d6 d1d6',
-      rating: 1553,
-      gameUrl: 'https://lichess.org/ceS0QvtT/black#58'
-    };
-    setTimeout(() => {
-      this.initPosition();
-    }, 200);
+    this.userRating = this.gameService.getUserRating();
+    this.setPuzzleData();
+  }
+
+  public setPuzzleData(){
+    if (this.theme === 'all') {
+      this.requestService.getPuzzlesFromRating(this.userRating).subscribe(data => {
+        this.allPuzzles = data;
+        this.currentPuzzle = this.allPuzzles.splice(Math.floor(Math.random() * this.allPuzzles.length), 1)[0];
+        this.initPosition();
+      });
+    } else {
+      this.requestService.getPuzzlesFromTheme(this.theme).subscribe(data => {
+        this.allPuzzles = data.filter(e => e.rating < this.userRating + 500 && e.rating > this.userRating - 500);
+        this.currentPuzzle = this.allPuzzles.splice(Math.floor(Math.random() * this.allPuzzles.length), 1)[0];
+        this.initPosition();
+      });
+    }
   }
 
   public initPosition() {
+    this.failed = false;
     this.currentPuzzle.movesArray = this.currentPuzzle.moves.trim().split(' ');
     this.currentPuzzlePointer = 0;
     this.game = new Chess(this.currentPuzzle.fen);
@@ -95,6 +116,7 @@ export class PuzzlesPage implements AfterViewInit {
         }
       } else {
         // Wrong move
+        this.failed = true;
         setTimeout(() => {
           this.board.set({
             turnColor: this.userColor,
@@ -142,6 +164,55 @@ export class PuzzlesPage implements AfterViewInit {
   }
 
   public puzzleSolved() {
-    console.log(`%c congrats`, `background: #df03fc; color: #f8fc03`);
+    this.userRating = this.getNewRating(this.userRating, this.currentPuzzle.rating, this.failed ? 0 : 1);
+    this.gameService.setUserRating(this.userRating);
+    this.currentPuzzle = this.allPuzzles.splice(Math.floor(Math.random() * this.allPuzzles.length), 1)[0];
+    setTimeout(() => {
+      this.initPosition();
+    }, 1000);
+  }
+
+  public nextPuzzle() {
+    if (this.failed) {
+      this.userRating = this.getNewRating(this.userRating, this.currentPuzzle.rating, this.failed ? 0 : 1);
+      this.gameService.setUserRating(this.userRating);
+    }
+    this.currentPuzzle = this.allPuzzles.splice(Math.floor(Math.random() * this.allPuzzles.length), 1)[0];
+    this.initPosition();
+  }
+
+  public getNewRating(myRating: number, opponentRating: number, myGameResult: number) {
+    if ([0, 0.5, 1].indexOf(myGameResult) === -1) {
+      return null;
+    }
+    const myChanceToWin = 1 / ( 1 + Math.pow(10, (opponentRating - myRating) / 400));
+    return myRating + (Math.round(32 * (myGameResult - myChanceToWin)));
+  }
+
+  public showSolution(){
+    this.failed = true;
+    const match = this.currentPuzzle.movesArray[this.currentPuzzlePointer].match(/^([a-h][1-8])([a-h][1-8])/);
+    this.board.set({
+      drawable: { shapes: [] }
+    });
+    this.board.set({
+      drawable: { shapes: [{ orig: match[1], dest: match[2], brush: 'blue' }] }
+    });
+  }
+
+  public async openSettings() {
+    const modal = await this.modalController.create({
+      component: PuzzlesModalComponent,
+      componentProps: {
+        theme: this.theme
+      },
+    });
+    await modal.present();
+    await modal.onDidDismiss().then(data => {
+      if (data.data) {
+        this.theme = data.data.theme;
+        this.setPuzzleData();
+      }
+    });
   }
 }

@@ -5,6 +5,7 @@ import { TrainingPage } from '@pages/training/training.page';
 import { AnalysisPage } from '@pages/analysis/analysis.page';
 import { GamesPage } from '@pages/games/games.page';
 import { PuzzlesPage } from '@pages/puzzles/puzzles.page';
+import { EndingsPage } from '@pages/endings/endings.page';
 
 const routes: Routes = [
   {
@@ -34,6 +35,10 @@ const routes: Routes = [
   {
     path: 'puzzles',
     component: PuzzlesPage,
+  },
+  {
+    path: 'endings',
+    component: EndingsPage,
   },
 ];
 
