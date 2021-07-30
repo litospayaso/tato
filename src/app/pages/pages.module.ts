@@ -19,6 +19,7 @@ import { LiboardComponent } from '@components/liboard/liboard.component';
 import { MovesTableComponent } from '@components/moves-table/moves-table.component';
 import { TrainingModalComponent } from '@components/training-modal/training-modal.component';
 import { PuzzlesModalComponent } from '@components/puzzles-modal/puzzles-modal.component';
+import { EndingsModalComponent } from '@components/endings-modal/endings-modal.component';
 
 @NgModule({
   imports: [
@@ -40,6 +41,7 @@ import { PuzzlesModalComponent } from '@components/puzzles-modal/puzzles-modal.c
     LiboardComponent,
     TrainingModalComponent,
     PuzzlesModalComponent,
+    EndingsModalComponent,
     MovesTableComponent
   ]
 })

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
-import { DefaultValuesInterface, GameInterface } from '@interfaces/game.interface';
+import { DefaultValuesInterface, DefaultEndingsValuesInterface, GameInterface } from '@interfaces/game.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +8,7 @@ import { DefaultValuesInterface, GameInterface } from '@interfaces/game.interfac
 export class GamesService {
   private allData: GameInterface[] = [];
   private defaultOpeningValues: DefaultValuesInterface = {} as DefaultValuesInterface;
+  private defaultEndingsValues: DefaultEndingsValuesInterface = {} as DefaultEndingsValuesInterface;
   private userRating = 1300;
 
   constructor(private storage: Storage) {
@@ -25,6 +26,11 @@ export class GamesService {
     this.storage.get('defaultOpeningValues').then((data) => {
       if (data) {
         this.defaultOpeningValues = JSON.parse(data);
+      }
+    });
+    this.storage.get('defaultEndingsValues').then((data) => {
+      if (data) {
+        this.defaultEndingsValues = JSON.parse(data);
       }
     });
     this.storage.get('userRating').then((data) => {
@@ -49,9 +55,19 @@ export class GamesService {
     return result;
   }
 
+  public getDefaultEndingsValues(): DefaultEndingsValuesInterface {
+    const result = JSON.parse(JSON.stringify(this.defaultEndingsValues));
+    return result;
+  }
+
   public setDefaultOpeningValues(defaultOpeningValues: DefaultValuesInterface) {
     this.defaultOpeningValues = defaultOpeningValues;
     this.storage.set('defaultOpeningValues', JSON.stringify(this.defaultOpeningValues));
+  }
+
+  public setDefaultEndingValues(defaultEndingsValues: DefaultEndingsValuesInterface) {
+    this.defaultEndingsValues = defaultEndingsValues;
+    this.storage.set('defaultEndingsValues', JSON.stringify(this.defaultEndingsValues));
   }
 
   public setUserRating(rating: number) {

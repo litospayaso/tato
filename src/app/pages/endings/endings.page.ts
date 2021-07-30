@@ -1,4 +1,5 @@
 import { Component, AfterViewInit, Type } from '@angular/core';
+import { EndingsModalComponent } from '@components/endings-modal/endings-modal.component';
 import { PopoverController } from '@ionic/angular';
 import { EndingInterface } from '@app/interfaces/ending.interface';
 import { ChessgroundConstructor, Key, Color, ChessgroundInterface } from 'src/libs/chessground/types/chessground';
@@ -34,7 +35,8 @@ export class EndingsPage implements AfterViewInit {
   public puzzlesToMakeANewRequest = 10;
   public failed = false;
   public theme = 'all';
-  public stockfish: Stockfish = new Stockfish(20, 1, 1);
+  public dificulty = 'Medium';
+  public stockfish: Stockfish = new Stockfish(20, 12, 3);
 
   constructor(
     private popoverController: PopoverController,
@@ -45,41 +47,49 @@ export class EndingsPage implements AfterViewInit {
     this.stockfish.emmiter = this.stockfishEmmiter.bind(this);
    }
 
-  ngAfterViewInit() {
+  async ngAfterViewInit() {
     this.boardId = uuid.v4();
     this.userRating = this.gameService.getUserRating();
-    this.setEndingData();
+    const defaultEndingsValues = this.gameService.getDefaultEndingsValues();
+    if (defaultEndingsValues) {
+      this.dificulty = defaultEndingsValues.dificulty;
+      this.theme = defaultEndingsValues.theme;
+    }
+    const modal = await this.modalController.create({
+      component: EndingsModalComponent,
+      componentProps: {
+        defaultEndingsValues: {
+          theme: this.theme,
+          dificulty: this.dificulty,
+        }
+      },
+    });
+    await modal.present();
+    await modal.onDidDismiss().then(data => {
+      console.log(`%c data`, `background: #df03fc; color: #f8fc03`, data);
+      if (data.data) {
+        this.gameService.setDefaultEndingValues(data.data);
+      }
+      this.theme = data.data.theme;
+      this.dificulty = data.data.dificulty;
+      this.setEndingData();
+    });
   }
 
   public setEndingData(){
-    this.allEndings = [{
-        fen: '1r1q1r2/p4p1k/bp1p2p1/3Bp3/4PP2/2PP2BP/PP4P1/R3K2R w KQ - 1 21',
-        theme: ''
-      }, {
-        fen: '6k1/2R2p1p/1p2p1p1/4P3/2Pp1P1P/3B1K2/r5P1/8 b - - 2 35',
-        theme: ''
-      }, {
-        fen: '1r3rk1/1p1b1p1p/p2p2p1/7P/P1PpPP1q/2N5/1P2B1P1/R1B2RK1 w - - 0 19',
-        theme: ''
-      },
-    ];
-    this.currentEnding = this.allEndings.splice(Math.floor(Math.random() * this.allEndings.length), 1)[0];
-    setTimeout(() => {
-      this.initPosition();
-    }, 1000);
-    // if (this.theme === 'all') {
-    //   this.requestService.getPuzzlesFromRating(this.userRating).subscribe(data => {
-    //     this.allPuzzles = data;
-    //     this.currentPuzzle = this.allPuzzles.splice(Math.floor(Math.random() * this.allPuzzles.length), 1)[0];
-    //     this.initPosition();
-    //   });
-    // } else {
-    //   this.requestService.getPuzzlesFromTheme(this.theme).subscribe(data => {
-    //     this.allPuzzles = data.filter(e => e.rating < this.userRating + 500 && e.rating > this.userRating - 500);
-    //     this.currentPuzzle = this.allPuzzles.splice(Math.floor(Math.random() * this.allPuzzles.length), 1)[0];
-    //     this.initPosition();
-    //   });
-    // }
+    if (this.theme === 'all') {
+      this.requestService.getEndingsFromTheme(this.dificulty).subscribe(data => {
+        this.allEndings = data;
+        this.currentEnding = this.allEndings.splice(Math.floor(Math.random() * this.allEndings.length), 1)[0];
+        this.initPosition();
+      });
+    } else {
+      this.requestService.getEndingsFromTheme(this.theme).subscribe(data => {
+        this.allEndings = data.filter(e => e.theme.includes(this.dificulty));
+        this.currentEnding = this.allEndings.splice(Math.floor(Math.random() * this.allEndings.length), 1)[0];
+        this.initPosition();
+      });
+    }
   }
 
   public initPosition() {

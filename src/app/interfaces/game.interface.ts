@@ -13,6 +13,11 @@ export interface DefaultValuesInterface {
   userColor: string;
 }
 
+export interface DefaultEndingsValuesInterface {
+  dificulty: string;
+  theme: string;
+}
+
 export interface PuzzleInterface {
   fen: string;
   moves: string;

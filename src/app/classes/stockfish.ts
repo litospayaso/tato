@@ -59,7 +59,7 @@ export class Stockfish {
     this.stockfish.postMessage('setoption name Skill Level value 0');
     this.stockfish.postMessage('setoption name Skill Level Maximum Error value 10');
     this.stockfish.postMessage('setoption name Skill Level Probability value 1');
-    this.stockfish.postMessage('setoption name King Safety value 0');
+    // this.stockfish.postMessage('setoption name King Safety value 0');
     this.stockfish.postMessage('setoption name Skill Level value 0');
     this.stockfish.postMessage('setoption name Skill Level Maximum Error value 10');
     this.stockfish.postMessage('setoption name Skill Level Probability value 1');

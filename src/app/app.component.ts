@@ -35,7 +35,7 @@ export class AppComponent {
       icon: 'search-outline'
     },
     {
-      title: 'Play Computer',
+      title: 'Opening',
       url: '/training',
       icon: 'barbell-outline'
     },
@@ -107,7 +107,7 @@ export class AppComponent {
         title = 'Analysis';
         break;
       case 'training':
-        title = 'Play computer';
+        title = 'Opening';
         break;
       case 'games':
         title = 'My games';
