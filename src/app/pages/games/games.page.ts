@@ -12,7 +12,7 @@ declare const Chessground: ChessgroundConstructor;
 } )
 export class GamesPage implements AfterViewInit {
 
-  private allGames: GameInterface[];
+  public allGames: GameInterface[];
   constructor(private gamesService: GamesService) {}
 
   ngAfterViewInit() {

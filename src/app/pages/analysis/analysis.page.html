@@ -3,7 +3,7 @@
     <div class="board-container">
       <div class="evaluation-bar">
         <div class="evaluation-value" [style.width.%]="stockfish.evaluation | percentage"
-          [style.color]="evaluation < -2 ? 'white' : '#5d5d5d'">{{evaluation}}</div>
+          [style.color]="stockfish.evaluation < -2 ? 'white' : '#5d5d5d'">{{stockfish.evaluation}}</div>
       </div>
       <div [id]="boardId"></div>
       <div class="control-buttons-container">
