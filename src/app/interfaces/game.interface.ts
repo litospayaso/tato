@@ -1,11 +1,14 @@
 export interface GameInterface {
+    id: string;
     date: string;
     pgn: string;
-    title: string;
     movesVerbose: string;
     userColor: string;
-    opening: string;
+    opening?: string;
+    initPosition?: string;
     endingPosition: string;
+    gameResult: string;
+    theme?: string;
 }
 
 export interface DefaultValuesInterface {

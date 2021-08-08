@@ -45,6 +45,11 @@ export class GamesService {
     return result;
   }
 
+  public getGameById(id: string): GameInterface {
+    const result = JSON.parse(JSON.stringify(this.allData))  as GameInterface[];
+    return result.find(e => e.id === id);
+  }
+
   public addGame(game: GameInterface) {
     this.allData.push(game);
     this.storage.set('gamesDatabase', JSON.stringify(this.allData));

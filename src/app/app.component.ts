@@ -40,7 +40,7 @@ export class AppComponent {
       icon: 'barbell-outline'
     },
     {
-      title: 'Puzzles',
+      title: 'Tactics',
       url: '/puzzles',
       icon: 'extension-puzzle-outline'
     },
@@ -48,6 +48,11 @@ export class AppComponent {
       title: 'Endings',
       url: '/endings',
       icon: 'rocket-outline'
+    },
+    {
+      title: 'Settings',
+      url: '/settings',
+      icon: 'settings-outline'
     },
   ];
   constructor(
@@ -66,7 +71,8 @@ export class AppComponent {
     });
     this.router.events.pipe(filter(event => event instanceof ResolveEnd)).subscribe(event => {
       const root: ResolveEnd = event as ResolveEnd;
-      storage.set('lastRoute', root.urlAfterRedirects);
+      const rootToSave = root.urlAfterRedirects === '/settings' || root.urlAfterRedirects === '/about' ? '/home' : root.urlAfterRedirects;
+      storage.set('lastRoute', rootToSave);
       const routerName = root.url.split('/')[1];
       switch (routerName) {
         case 'lesson':
@@ -113,10 +119,13 @@ export class AppComponent {
         title = 'My games';
         break;
       case 'puzzles':
-        title = 'Puzzles';
+        title = 'Tactics';
         break;
       case 'endings':
         title = 'Endings';
+        break;
+      case 'settings':
+        title = 'Settings';
         break;
       default:
         break;

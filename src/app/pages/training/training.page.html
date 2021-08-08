@@ -1,9 +1,9 @@
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" style="max-height: calc(100vh - 58px);">
   <div class="panel-container">
     <div class="board-container">
       <div [id]="boardId"></div>
       <div class="control-buttons-container">
-        <ion-button class="button-control-element" color="dark" (click)="onResign()">
+        <ion-button class="button-control-element" color="medium" (click)="onResign()">
           Resign
         </ion-button>
       </div>

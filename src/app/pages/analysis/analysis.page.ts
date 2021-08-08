@@ -43,6 +43,22 @@ export class AnalysisPage implements AfterViewInit {
     this.moves = '';
     this.stockfish.emmiter = this.stockfishEmmiter.bind(this);
     document.onkeydown = this.handleKeyPress.bind(this);
+    this.route.params.subscribe(params => {
+      const id = params.id;
+      if (id) {
+        if (gamesService.getGameById(id)) {
+          const game = gamesService.getGameById(id);
+          this.moves = game.movesVerbose;
+          this.boardMovesPointer = 0;
+          this.userColor = game.userColor;
+          if (this.board) {
+            this.board.set({
+              orientation: this.userColor === 'w' ? 'white' : 'black',
+            });
+          }
+        }
+      }
+   });
   }
 
   ngAfterViewInit() {
@@ -54,6 +70,7 @@ export class AnalysisPage implements AfterViewInit {
   private createNewGame() {
     this.game = new Chess();
     this.board = Chessground(document.getElementById(this.boardId), {
+      orientation: this.userColor === 'w' ? 'white' : 'black',
       movable: {
         color: 'white',
         free: false,
@@ -66,7 +83,6 @@ export class AnalysisPage implements AfterViewInit {
     this.board.set({
       movable: { events: { after: this.makeAMove() } }
     });
-
   }
 
   private toDests(): Map<Key, Key[]> {

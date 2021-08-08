@@ -66,7 +66,6 @@ export class EndingsPage implements AfterViewInit {
     });
     await modal.present();
     await modal.onDidDismiss().then(data => {
-      console.log(`%c data`, `background: #df03fc; color: #f8fc03`, data);
       if (data.data) {
         this.gameService.setDefaultEndingValues(data.data);
       }
@@ -140,6 +139,9 @@ export class EndingsPage implements AfterViewInit {
       this.moves = moves;
       // this.moves = this.game.history({verbose: true}).map(e => `${e.from}${e.to}${e.promotion ? e.promotion : ''}`).join(' ');
       this.game.move(move, { sloppy: true });
+      this.board.set({
+        check: this.game.in_check() ? (this.userColor === 'white' ? 'black' : 'white') : false,
+      });
       this.turn = this.game.turn();
       if (this.game.in_checkmate() || this.game.in_draw() || this.game.in_stalemate() || this.game.in_threefold_repetition()) {
         setTimeout(() => {
@@ -217,15 +219,18 @@ export class EndingsPage implements AfterViewInit {
   public endGame() {
     const gameResult = this.game.in_checkmate() ? (this.game.turn() === 'w' ? '0-1' : '1-0') : '1/2 - 1/2';
     console.log(`%c gameResult`, `background: #df03fc; color: #f8fc03`, gameResult);
-    // this.gamesService.addGame({
-    //   date: new Date().toLocaleString(),
-    //   pgn: this.game.pgn(),
-    //   title: `${gameResult} Game against Computer level ${this.stockfish.level}; ${this.opening?.name}`,
-    //   opening: this.opening?.name,
-    //   movesVerbose: this.moves,
-    //   userColor: this.userColor,
-    //   endingPosition: this.game.fen()
-    // });
-    this.ngAfterViewInit();
+    this.gameService.addGame({
+      id: uuid.v4(),
+      date: new Date().toLocaleString(),
+      pgn: this.game.pgn(),
+      initPosition: this.currentEnding.fen,
+      movesVerbose: this.moves,
+      userColor: this.userColor,
+      endingPosition: this.game.fen(),
+      theme: this.currentEnding.theme,
+      gameResult
+    });
+    this.currentEnding = this.allEndings.splice(Math.floor(Math.random() * this.allEndings.length), 1)[0];
+    this.initPosition();
   }
 }

@@ -159,13 +159,14 @@ export class TrainingPage implements AfterViewInit {
   public endGame() {
     const gameResult = this.game.in_checkmate() ? (this.game.turn() === 'w' ? '0-1' : '1-0') : '1/2 - 1/2';
     this.gamesService.addGame({
+      id: uuid.v4(),
       date: new Date().toLocaleString(),
       pgn: this.game.pgn(),
-      title: `${gameResult} Game against Computer level ${this.stockfish.level}; ${this.opening?.name}`,
       opening: this.opening?.name,
       movesVerbose: this.moves,
       userColor: this.userColor,
-      endingPosition: this.game.fen()
+      endingPosition: this.game.fen(),
+      gameResult
     });
     this.ngAfterViewInit();
   }

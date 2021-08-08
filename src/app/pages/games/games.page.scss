@@ -4,18 +4,28 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   .game-element {
-    height: 100px;
+    border: solid 1px grey;
+    border-radius: 5px;
     width: 100%;
-    max-width: 400px;
+    max-width: 550px;
     display: flex;
     flex-direction: row;
+    padding: 16px;
+    margin: 25px;
+    -webkit-box-shadow: 3px 3px 3px 0px #989aa2;
+    -moz-box-shadow: 3px 3px 3px 0px #989aa2;
+    box-shadow: 3px 3px 3px 0px #989aa2;
+    cursor: pointer;
     .game-fen {
-      height: 80px;
-      width: 80px;
+      height: 210px;
+      width: 210px;
+      min-width: 210px;
+      min-height: 210px;
     }
     .game-description {
       display: flex;
       flex-direction: column;
+      padding-left: 16px;
     }
   }
 }

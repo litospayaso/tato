@@ -6,6 +6,7 @@ import { AnalysisPage } from '@pages/analysis/analysis.page';
 import { GamesPage } from '@pages/games/games.page';
 import { PuzzlesPage } from '@pages/puzzles/puzzles.page';
 import { EndingsPage } from '@pages/endings/endings.page';
+import { SettingsPage } from '@pages/settings/settings.page';
 
 const routes: Routes = [
   {
@@ -39,6 +40,10 @@ const routes: Routes = [
   {
     path: 'endings',
     component: EndingsPage,
+  },
+  {
+    path: 'settings',
+    component: SettingsPage,
   },
 ];
 

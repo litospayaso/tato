@@ -13,6 +13,7 @@ import { AnalysisPage } from '@pages/analysis/analysis.page';
 import { GamesPage } from '@pages/games/games.page';
 import { PuzzlesPage } from '@pages/puzzles/puzzles.page';
 import { EndingsPage } from '@pages/endings/endings.page';
+import { SettingsPage } from '@pages/settings/settings.page';
 
 import { PromotionModalComponent } from '@components/promotion-modal/promotion-modal.component';
 import { LiboardComponent } from '@components/liboard/liboard.component';
@@ -37,6 +38,7 @@ import { EndingsModalComponent } from '@components/endings-modal/endings-modal.c
     GamesPage,
     PuzzlesPage,
     EndingsPage,
+    SettingsPage,
     PromotionModalComponent,
     LiboardComponent,
     TrainingModalComponent,

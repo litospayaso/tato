@@ -195,7 +195,7 @@ export class TrainingModalComponent implements OnInit {
   }
 
   ngOnInit() {
-    if (this.defaultOpeningValues) {
+    if (this.defaultOpeningValues && this.defaultOpeningValues.opening && this.defaultOpeningValues.userColor) {
       this.opening = this.defaultOpeningValues.opening;
       this.userColor = this.defaultOpeningValues.userColor;
     }
