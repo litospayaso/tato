@@ -33,25 +33,44 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
+  @media (max-width: 660px) {
+    flex-direction: column;
+  }
   .board-container {
     display: flex;
     flex-direction: column;
     width: 65vmin;
     height: 65vmin;
-    margin: 16px auto 55px auto;
+    margin: 10px;
+
+    @media (max-width: 660px) {
+      width: 100vmin;
+      height: 100vmin;
+      margin: 0 0 85px 0;
+    }
   }
 
   .board-container-element {
       width: 55vmin;
       height: 55vmin;
-      margin: 16px auto 85px auto;
+      // margin: 16px auto 85px auto;
   }
   .panel-element {
-      width: 55vmin;
-      margin: 60px auto;
+      width: calc(100vw - 68vmin - 55px);
+      margin: 20px auto;
+      overflow-y: auto;
+      max-height: calc(100vh - 135px);
+      // max-width: 100%;
+      // margin: 60px auto;
       // min-width: 100%;
       // min-width: 480px;
+
+      @media (max-width: 660px) {
+        width: 100%;
+        padding: 0 5px;
+        max-height: calc(100vh - 100vmin - 185px);
+        overflow-y: auto;
+      }
   }
 }
 
