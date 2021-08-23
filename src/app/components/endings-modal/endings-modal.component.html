@@ -9,5 +9,7 @@
       <ion-select-option *ngFor="let option of themes" [value]="option">{{option}}</ion-select-option>
     </ion-select>
   </ion-item>
-  <ion-button expand="full" (click)="closeModal()" class="close-modal-button" color="medium">start</ion-button>
+  <div class="buttons-container">
+    <ion-button expand="full" (click)="closeModal()" class="close-modal-button" color="medium">start</ion-button>
+  </div>
 </div>

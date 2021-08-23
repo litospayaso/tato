@@ -6,7 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { Router, ResolveEnd } from '@angular/router';
 import { Storage } from '@ionic/storage';
 
-import { filter } from 'rxjs/operators';
+import { filter, last } from 'rxjs/operators';
 import { GamesService } from './services/games.service';
 
 @Component({
@@ -75,7 +75,12 @@ export class AppComponent {
       storage.set('lastRoute', rootToSave);
       const routerName = root.url.split('/')[1];
       switch (routerName) {
-        case 'lesson':
+        case 'analysis':
+          if (rootToSave.split('/').length > 2) {
+            this.pageBack = '/games';
+          }
+          break;
+        case 'settings':
           this.pageBack = '/home';
           break;
         default:
@@ -83,11 +88,6 @@ export class AppComponent {
           break;
       }
       this.setTitle(routerName);
-      if (root.url.split('/').length > 2) {
-        this.pageBack = routerName === 'evaluation' ? '/exercises' : '/home';
-      } else {
-        this.pageBack = '';
-      }
     });
     this.initializeApp();
   }

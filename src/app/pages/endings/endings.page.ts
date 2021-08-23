@@ -84,7 +84,7 @@ export class EndingsPage implements AfterViewInit {
       });
     } else {
       this.requestService.getEndingsFromTheme(this.theme).subscribe(data => {
-        this.allEndings = data.filter(e => e.theme.includes(this.dificulty));
+        this.allEndings = this.theme !== 'draw' ? data.filter(e => e.theme.includes(this.dificulty)) : data;
         this.currentEnding = this.allEndings.splice(Math.floor(Math.random() * this.allEndings.length), 1)[0];
         this.initPosition();
       });
