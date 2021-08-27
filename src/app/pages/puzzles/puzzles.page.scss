@@ -1,25 +1,55 @@
-
 .panel-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  
+  @media (max-width: 660px) {
+    flex-direction: column;
+  }
   .board-container {
     display: flex;
     flex-direction: column;
-    width: 70vmin;
-    height: 70vmin;
-    margin: 16px auto 55px auto;
+    width: 65vmin;
+    height: 65vmin;
+    margin: 10px;
+
+    @media (max-width: 660px) {
+      width: 100vmin;
+      height: 100vmin;
+      margin: 0 0 30px 0;
+    }
   }
 
-  .panel-element {
+  .board-container-element {
     width: 55vmin;
-    margin: 10px auto;
+    height: 55vmin;
+    // margin: 16px auto 85px auto;
+  }
+  .panel-element {
+    width: calc(100vw - 68vmin - 55px);
+    margin: 20px auto;
+    overflow-y: auto;
+    max-height: calc(100vh - 135px);
+    // max-width: 100%;
+    // margin: 60px auto;
     // min-width: 100%;
     // min-width: 480px;
+
+    @media (max-width: 660px) {
+      width: 100%;
+      padding: 15px 10px 0 10px;
+      max-height: calc(100vh - 100vmin - 182px);
+      overflow-y: auto;
+    }
     .level-bar {
       display: flex;
       flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      @media (min-width: 660px) {
+        padding-top: 15px;
+      }
+  
       div.white {
         position: relative;
         top: -20px;
@@ -27,7 +57,7 @@
         height: 40px;
         width: 40px;
         background-size: contain;
-        background-image: url('/assets/images/pieces/merida/wK.svg'); 
+        background-image: url("/assets/images/pieces/merida/wK.svg");
       }
       div.black {
         position: relative;
@@ -36,7 +66,7 @@
         height: 40px;
         width: 40px;
         background-size: contain;
-        background-image: url('/assets/images/pieces/merida/bK.svg'); 
+        background-image: url("/assets/images/pieces/merida/bK.svg");
       }
     }
     .button-control-element {
@@ -44,3 +74,49 @@
     }
   }
 }
+
+// .panel-container {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+
+//   .board-container {
+//     display: flex;
+//     flex-direction: column;
+//     width: 70vmin;
+//     height: 70vmin;
+//     margin: 16px auto 55px auto;
+//   }
+
+//   .panel-element {
+//     width: 55vmin;
+//     margin: 10px auto;
+//     // min-width: 100%;
+//     // min-width: 480px;
+//     .level-bar {
+//       display: flex;
+//       flex-direction: row;
+//       div.white {
+//         position: relative;
+//         top: -20px;
+//         margin: 0 8px;
+//         height: 40px;
+//         width: 40px;
+//         background-size: contain;
+//         background-image: url('/assets/images/pieces/merida/wK.svg');
+//       }
+//       div.black {
+//         position: relative;
+//         top: -20px;
+//         margin: 0 8px;
+//         height: 40px;
+//         width: 40px;
+//         background-size: contain;
+//         background-image: url('/assets/images/pieces/merida/bK.svg');
+//       }
+//     }
+//     .button-control-element {
+//       width: 32%;
+//     }
+//   }
+// }
