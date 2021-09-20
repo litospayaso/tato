@@ -10,6 +10,7 @@
     </ion-select>
   </ion-item>
   <div class="buttons-container">
+    <ion-button expand="full" [routerLink]="'/home'" (click)="cancel()" skipLocationChange routerDirection="root" class="close-modal-button" color="medium">cancel</ion-button>
     <ion-button expand="full" (click)="closeModal()" class="close-modal-button" color="medium">start</ion-button>
   </div>
 </div>

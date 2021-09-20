@@ -1,0 +1,35 @@
+.games-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  .game-element {
+    border: solid 1px grey;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    margin: 25px;
+    -webkit-box-shadow: 3px 3px 3px 0px #989aa2;
+    -moz-box-shadow: 3px 3px 3px 0px #989aa2;
+    box-shadow: 3px 3px 3px 0px #989aa2;
+    cursor: pointer;
+    .game-fen {
+      height: 70px;
+      width: 70px;
+      min-width: 70px;
+      min-height: 70px;
+      .icon-list-element {
+        height: 50px;
+        width: 50px;
+      }
+    }
+    .game-description {
+      display: flex;
+      flex-direction: column;
+      padding-left: 16px;
+    }
+  }
+}

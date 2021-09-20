@@ -7,6 +7,7 @@ import { GameInterface } from '@app/interfaces/game.interface';
 import { Storage } from '@ionic/storage';
 import { ChessgroundConstructor, Key, Color, ChessgroundInterface } from 'src/libs/chessground/types/chessground';
 import { PromotionModalComponent } from '@components/promotion-modal/promotion-modal.component';
+import { ToastController } from '@ionic/angular';
 import * as uuid from 'uuid';
 import { ChessInstance } from '@libs/chess.js/chessInterface';
 declare const Chessground: ChessgroundConstructor;
@@ -35,6 +36,7 @@ export class AnalysisPage implements AfterViewInit {
     private route: ActivatedRoute,
     private gamesService: GamesService,
     private popoverController: PopoverController,
+    public toastController: ToastController,
     private storage: Storage
   ) {
     this.boardId = uuid.v4();
@@ -48,6 +50,7 @@ export class AnalysisPage implements AfterViewInit {
       if (id) {
         if (gamesService.getGameById(id)) {
           const game = gamesService.getGameById(id);
+          this.savedGame = game;
           this.moves = game.movesVerbose;
           this.boardMovesPointer = 0;
           this.userColor = game.userColor;
@@ -196,4 +199,17 @@ export class AnalysisPage implements AfterViewInit {
   });
   }
 
+  public async getPgn() {
+    const dummy = document.createElement('textarea');
+    document.body.appendChild(dummy);
+    dummy.value = this.savedGame.pgn;
+    dummy.select();
+    document.execCommand('copy');
+    document.body.removeChild(dummy);
+    const toast = await this.toastController.create({
+      header: 'Copied!',
+      duration: 1000,
+    });
+    await toast.present();
+  }
 }

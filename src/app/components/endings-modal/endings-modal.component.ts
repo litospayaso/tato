@@ -40,4 +40,8 @@ export class EndingsModalComponent implements OnInit {
     });
   }
 
+  public cancel() {
+    this.modalController.dismiss();
+  }
+
 }

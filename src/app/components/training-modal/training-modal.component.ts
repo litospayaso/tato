@@ -207,4 +207,7 @@ export class TrainingModalComponent implements OnInit {
       userColor: this.userColor
     });
   }
+  public cancel() {
+    this.modalController.dismiss();
+  }
 }

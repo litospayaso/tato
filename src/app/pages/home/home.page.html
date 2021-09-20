@@ -1,3 +1,16 @@
 <ion-content [fullscreen]="true">
-Home page
+
+  <div class="games-container">
+    <div *ngFor="let page of appPages; let i = index" class="game-element" skipLocationChange routerDirection="root" [routerLink]="[page.url]">
+      <div class="game-fen" [id]="i">
+        <ion-icon aria-hidden="false" [name]="page.icon" class="icon-list-element"></ion-icon>
+      </div>
+      <div class="game-description">
+        <div class="game-title">
+          {{page.title}}
+        </div>
+      </div>
+    </div>
+  </div>
+
 </ion-content>

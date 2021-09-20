@@ -49,11 +49,11 @@ export class AppComponent {
       url: '/endings',
       icon: 'rocket-outline'
     },
-    {
-      title: 'Settings',
-      url: '/settings',
-      icon: 'settings-outline'
-    },
+    // {
+    //   title: 'Settings',
+    //   url: '/settings',
+    //   icon: 'settings-outline'
+    // },
   ];
   constructor(
     private platform: Platform,
