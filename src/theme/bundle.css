@@ -3,6 +3,7 @@
 * VISMA
 */
 /*ROOT 1rem*/
+@import url("https://d1azc1qln24ryf.cloudfront.net/143631/TIconography/style-cf.css");
 h1, .h1, .visma .h1,
 h4,
 .h4,
@@ -26932,6 +26933,16 @@ span.link-secondary a::after,
 
 .progress {
   min-width: 320px;
+}
+
+:host-context(.talentech) h1, :host-context(.talentech) .h1, :host-context(.talentech) h2, :host-context(.talentech) .h2, :host-context(.talentech) h3, :host-context(.talentech) .h3, :host-context(.talentech) h4, :host-context(.talentech) .h4, :host-context(.talentech) h5, :host-context(.talentech) .h5, :host-context(.talentech) h6, :host-context(.talentech) .h6 {
+  font-family: Telegraf;
+  color: #26253e;
+}
+
+:host-context(.visma) h1, :host-context(.visma) .h1, :host-context(.visma) h2, :host-context(.visma) .h2, :host-context(.visma) h3, :host-context(.visma) .h3, :host-context(.visma) h4, :host-context(.visma) .h4, :host-context(.visma) h5, :host-context(.visma) .h5, :host-context(.visma) h6, :host-context(.visma) .h6 {
+  font-family: "Ubuntu";
+  color: #2D6385;
 }
 
 /*# sourceMappingURL=bundle.css.map */
