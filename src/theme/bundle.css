@@ -24795,6 +24795,16 @@ T logo
 .visma label {
   font-weight: 500;
 }
+.visma label.form-label {
+  font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  line-height: 1.5;
+  color: #212529;
+  text-transform: none;
+}
 .visma input[type=radio] + label,
 .visma input[type=checkbox] + label {
   font-weight: 400;
@@ -26960,57 +26970,116 @@ span.link-secondary a::after,
 :host-context(.visma) h5,
 :host-context(.visma) .h5,
 :host-context(.visma) h6,
-:host-context(.visma) .h6 {
+:host-context(.visma) .h6,
+.visma h1,
+.visma .h1,
+.visma h2,
+.visma .h2,
+.visma h3,
+.visma .h3,
+.visma h4,
+.visma .h4,
+.visma h5,
+.visma .h5,
+.visma h6,
+.visma .h6 {
   font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
   color: #2D6385;
 }
-:host-context(.visma) .talentech-toast {
+:host-context(.visma) .talentech-toast,
+.visma .talentech-toast {
   border-radius: 4px;
 }
-:host-context(.visma) .talentech-toast.toast-primary {
+:host-context(.visma) .talentech-toast.toast-primary,
+.visma .talentech-toast.toast-primary {
   background-color: #EBF7FF;
   border: 1px solid #0089D9;
   box-shadow: 0px 2px 2px rgba(21, 21, 23, 0.24), 0px 0px 2px rgba(21, 21, 23, 0.24);
   color: #26253e;
 }
-:host-context(.visma) .talentech-toast.toast-primary .toast-header {
+:host-context(.visma) .talentech-toast.toast-primary .toast-header,
+.visma .talentech-toast.toast-primary .toast-header {
   color: #26253e;
 }
-:host-context(.visma) .talentech-toast.toast-secondary {
+:host-context(.visma) .talentech-toast.toast-secondary,
+.visma .talentech-toast.toast-secondary {
   background-color: #E6E6EA;
   border: 1px solid #8d8d98;
   color: #60606c;
   box-shadow: 0px 2px 2px rgba(21, 21, 23, 0.24), 0px 0px 2px rgba(21, 21, 23, 0.24);
 }
-:host-context(.visma) .talentech-toast.toast-secondary .toast-header {
+:host-context(.visma) .talentech-toast.toast-secondary .toast-header,
+.visma .talentech-toast.toast-secondary .toast-header {
   color: #60606c;
 }
-:host-context(.visma) .talentech-toast.toast-success {
+:host-context(.visma) .talentech-toast.toast-success,
+.visma .talentech-toast.toast-success {
   background-color: #F6FAF0;
   border: 1px solid #68A611;
   color: #26253e;
   box-shadow: 0px 2px 2px rgba(21, 21, 23, 0.24), 0px 0px 2px rgba(21, 21, 23, 0.24);
 }
-:host-context(.visma) .talentech-toast.toast-success .toast-header {
+:host-context(.visma) .talentech-toast.toast-success .toast-header,
+.visma .talentech-toast.toast-success .toast-header {
   color: #26253e;
 }
-:host-context(.visma) .talentech-toast.toast-danger {
+:host-context(.visma) .talentech-toast.toast-danger,
+.visma .talentech-toast.toast-danger {
   background-color: #FFEBEB;
   border: 1px solid #D93644;
   color: #26253e;
   box-shadow: 0px 2px 2px rgba(21, 21, 23, 0.24), 0px 0px 2px rgba(21, 21, 23, 0.24);
 }
-:host-context(.visma) .talentech-toast.toast-danger .toast-header {
+:host-context(.visma) .talentech-toast.toast-danger .toast-header,
+.visma .talentech-toast.toast-danger .toast-header {
   color: #26253e;
 }
-:host-context(.visma) .talentech-toast.toast-warning {
+:host-context(.visma) .talentech-toast.toast-warning,
+.visma .talentech-toast.toast-warning {
   background-color: #FFF4E5;
   border: 1px solid #F28D00;
   color: #26253e;
   box-shadow: 0px 2px 2px rgba(21, 21, 23, 0.24), 0px 0px 2px rgba(21, 21, 23, 0.24);
 }
-:host-context(.visma) .talentech-toast.toast-warning .toast-header {
+:host-context(.visma) .talentech-toast.toast-warning .toast-header,
+.visma .talentech-toast.toast-warning .toast-header {
   color: #26253e;
+}
+:host-context(.visma) .talentech-toast button.btn-close,
+.visma .talentech-toast button.btn-close {
+  background: none;
+}
+:host-context(.visma) .talentech-toast button.btn-close:hover::after,
+.visma .talentech-toast button.btn-close:hover::after {
+  opacity: 1;
+}
+:host-context(.visma) .talentech-toast button.btn-close::after,
+.visma .talentech-toast button.btn-close::after {
+  content: "×";
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  background: none;
+  position: relative;
+  top: -8px;
+  opacity: 0.5;
+}
+:host-context(.visma) label,
+.visma label {
+  font-weight: 500;
+}
+:host-context(.visma) label.form-label,
+.visma label.form-label {
+  font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  line-height: 1.5;
+  color: #212529;
+  text-transform: none;
 }
 
 /*# sourceMappingURL=bundle.css.map */
