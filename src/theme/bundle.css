@@ -27081,5 +27081,12 @@ span.link-secondary a::after,
   color: #212529;
   text-transform: none;
 }
+:host-context(.visma) .table-container .table-header-container .table-header-item,
+.visma .table-container .table-header-container .table-header-item {
+  text-transform: none;
+  font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+  color: #2D6385;
+  font-size: 16px;
+}
 
 /*# sourceMappingURL=bundle.css.map */
