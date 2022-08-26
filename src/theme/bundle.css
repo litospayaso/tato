@@ -26945,7 +26945,29 @@ span.link-secondary a::after,
   min-width: 320px;
 }
 
-:host-context(.talentech) h1, :host-context(.talentech) .h1,
+:host-context(body) h1, :host-context(body) .visma .h1, .visma :host-context(body) .h1, :host-context(body) .h1,
+:host-context(body) h2,
+:host-context(body) .visma .h2,
+.visma :host-context(body) .h2,
+:host-context(body) .h2,
+:host-context(body) h3,
+:host-context(body) .visma .h3,
+.visma :host-context(body) .h3,
+:host-context(body) .h3,
+:host-context(body) h4,
+:host-context(body) .visma .h4,
+.visma :host-context(body) .h4,
+:host-context(body) .h4,
+:host-context(body) h5,
+:host-context(body) .visma .h5,
+.visma :host-context(body) .h5,
+:host-context(body) .h5,
+:host-context(body) h6,
+:host-context(body) .visma .h6,
+.visma :host-context(body) .h6,
+:host-context(body) .h6,
+:host-context(.talentech) h1,
+:host-context(.talentech) .h1,
 :host-context(.talentech) h2,
 :host-context(.talentech) .h2,
 :host-context(.talentech) h3,
@@ -26958,6 +26980,14 @@ span.link-secondary a::after,
 :host-context(.talentech) .h6 {
   font-family: Telegraf;
   color: #26253e;
+}
+:host-context(body) .talentech-progress .bar-background,
+:host-context(.talentech) .talentech-progress .bar-background {
+  background-color: #e6e6ea;
+}
+:host-context(body) .talentech-progress .bar-background .bar-progress,
+:host-context(.talentech) .talentech-progress .bar-background .bar-progress {
+  background-color: #26253e;
 }
 
 :host-context(.visma) h1, :host-context(.visma) .h1,
@@ -27086,7 +27116,11 @@ span.link-secondary a::after,
   text-transform: none;
   font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
   color: #2D6385;
-  font-size: 16px;
+  font-size: 15px;
+}
+:host-context(.visma) .talentech-progress .bar-progress,
+.visma .talentech-progress .bar-progress {
+  background-color: #1E5677;
 }
 
 /*# sourceMappingURL=bundle.css.map */
