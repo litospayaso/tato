@@ -23500,6 +23500,56 @@ T logo
   opacity: 0.5;
 }
 
+.round-button {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  color: #60606c;
+  border-radius: 50%;
+}
+
+.round-button:hover {
+  border: solid 1px #26253e;
+}
+
+.round-button.selected,
+.round-button.selected:hover,
+.round-button.contained.selected,
+.round-button.contained.selected:hover {
+  height: 40px;
+  width: 40px;
+  background: #26253e;
+  border: solid 1px #26253e;
+  color: white;
+  border-radius: 50%;
+}
+
+.contained .round-button {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border: 1px solid #60606c;
+  color: #60606c;
+  border-radius: 50%;
+}
+.contained .round-button:hover {
+  height: 40px;
+  width: 40px;
+  background-color: #efeff3;
+  border: 1px solid #26253e;
+  color: #60606c;
+  border-radius: 50%;
+}
+.contained .round-button:disabled {
+  height: 40px;
+  width: 40px;
+  background-color: #d6d6dc;
+  border: 1px solid #757581;
+  color: #60606c;
+  border-radius: 50%;
+}
+
 .btn-outline-secondary {
   background-color: #ffffff;
   outline: 1px solid #60606c;
@@ -23539,6 +23589,56 @@ T logo
 .btn-outline-secondary:disabled, .btn-outline-secondary.disabled {
   background-color: #ffffff;
   opacity: 0.5;
+}
+
+.round-button {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  color: #60606c;
+  border-radius: 50%;
+}
+
+.round-button:hover {
+  border: solid 1px #26253e;
+}
+
+.round-button.selected,
+.round-button.selected:hover,
+.round-button.contained.selected,
+.round-button.contained.selected:hover {
+  height: 40px;
+  width: 40px;
+  background: #26253e;
+  border: solid 1px #26253e;
+  color: white;
+  border-radius: 50%;
+}
+
+.contained .round-button {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border: 1px solid #60606c;
+  color: #60606c;
+  border-radius: 50%;
+}
+.contained .round-button:hover {
+  height: 40px;
+  width: 40px;
+  background-color: #efeff3;
+  border: 1px solid #26253e;
+  color: #60606c;
+  border-radius: 50%;
+}
+.contained .round-button:disabled {
+  height: 40px;
+  width: 40px;
+  background-color: #d6d6dc;
+  border: 1px solid #757581;
+  color: #60606c;
+  border-radius: 50%;
 }
 
 .btn-outline-success {
@@ -23582,6 +23682,56 @@ T logo
   opacity: 0.5;
 }
 
+.round-button {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  color: #60606c;
+  border-radius: 50%;
+}
+
+.round-button:hover {
+  border: solid 1px #26253e;
+}
+
+.round-button.selected,
+.round-button.selected:hover,
+.round-button.contained.selected,
+.round-button.contained.selected:hover {
+  height: 40px;
+  width: 40px;
+  background: #26253e;
+  border: solid 1px #26253e;
+  color: white;
+  border-radius: 50%;
+}
+
+.contained .round-button {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border: 1px solid #60606c;
+  color: #60606c;
+  border-radius: 50%;
+}
+.contained .round-button:hover {
+  height: 40px;
+  width: 40px;
+  background-color: #efeff3;
+  border: 1px solid #26253e;
+  color: #60606c;
+  border-radius: 50%;
+}
+.contained .round-button:disabled {
+  height: 40px;
+  width: 40px;
+  background-color: #d6d6dc;
+  border: 1px solid #757581;
+  color: #60606c;
+  border-radius: 50%;
+}
+
 .btn-outline-danger {
   background-color: #ffffff;
   outline: 1px solid #ca4b46;
@@ -23621,6 +23771,56 @@ T logo
 .btn-outline-danger:disabled, .btn-outline-danger.disabled {
   background-color: #ffffff;
   opacity: 0.5;
+}
+
+.round-button {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  color: #60606c;
+  border-radius: 50%;
+}
+
+.round-button:hover {
+  border: solid 1px #26253e;
+}
+
+.round-button.selected,
+.round-button.selected:hover,
+.round-button.contained.selected,
+.round-button.contained.selected:hover {
+  height: 40px;
+  width: 40px;
+  background: #26253e;
+  border: solid 1px #26253e;
+  color: white;
+  border-radius: 50%;
+}
+
+.contained .round-button {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border: 1px solid #60606c;
+  color: #60606c;
+  border-radius: 50%;
+}
+.contained .round-button:hover {
+  height: 40px;
+  width: 40px;
+  background-color: #efeff3;
+  border: 1px solid #26253e;
+  color: #60606c;
+  border-radius: 50%;
+}
+.contained .round-button:disabled {
+  height: 40px;
+  width: 40px;
+  background-color: #d6d6dc;
+  border: 1px solid #757581;
+  color: #60606c;
+  border-radius: 50%;
 }
 
 .btn-outline-warning {
@@ -23664,6 +23864,56 @@ T logo
   opacity: 0.5;
 }
 
+.round-button {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  color: #60606c;
+  border-radius: 50%;
+}
+
+.round-button:hover {
+  border: solid 1px #26253e;
+}
+
+.round-button.selected,
+.round-button.selected:hover,
+.round-button.contained.selected,
+.round-button.contained.selected:hover {
+  height: 40px;
+  width: 40px;
+  background: #26253e;
+  border: solid 1px #26253e;
+  color: white;
+  border-radius: 50%;
+}
+
+.contained .round-button {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border: 1px solid #60606c;
+  color: #60606c;
+  border-radius: 50%;
+}
+.contained .round-button:hover {
+  height: 40px;
+  width: 40px;
+  background-color: #efeff3;
+  border: 1px solid #26253e;
+  color: #60606c;
+  border-radius: 50%;
+}
+.contained .round-button:disabled {
+  height: 40px;
+  width: 40px;
+  background-color: #d6d6dc;
+  border: 1px solid #757581;
+  color: #60606c;
+  border-radius: 50%;
+}
+
 .btn-outline-info {
   background-color: #ffffff;
   outline: 1px solid #3c7ba4;
@@ -23703,6 +23953,56 @@ T logo
 .btn-outline-info:disabled, .btn-outline-info.disabled {
   background-color: #ffffff;
   opacity: 0.5;
+}
+
+.round-button {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  color: #60606c;
+  border-radius: 50%;
+}
+
+.round-button:hover {
+  border: solid 1px #26253e;
+}
+
+.round-button.selected,
+.round-button.selected:hover,
+.round-button.contained.selected,
+.round-button.contained.selected:hover {
+  height: 40px;
+  width: 40px;
+  background: #26253e;
+  border: solid 1px #26253e;
+  color: white;
+  border-radius: 50%;
+}
+
+.contained .round-button {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border: 1px solid #60606c;
+  color: #60606c;
+  border-radius: 50%;
+}
+.contained .round-button:hover {
+  height: 40px;
+  width: 40px;
+  background-color: #efeff3;
+  border: 1px solid #26253e;
+  color: #60606c;
+  border-radius: 50%;
+}
+.contained .round-button:disabled {
+  height: 40px;
+  width: 40px;
+  background-color: #d6d6dc;
+  border: 1px solid #757581;
+  color: #60606c;
+  border-radius: 50%;
 }
 
 .btn-outline-light {
@@ -23746,6 +24046,56 @@ T logo
   opacity: 0.5;
 }
 
+.round-button {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  color: #60606c;
+  border-radius: 50%;
+}
+
+.round-button:hover {
+  border: solid 1px #26253e;
+}
+
+.round-button.selected,
+.round-button.selected:hover,
+.round-button.contained.selected,
+.round-button.contained.selected:hover {
+  height: 40px;
+  width: 40px;
+  background: #26253e;
+  border: solid 1px #26253e;
+  color: white;
+  border-radius: 50%;
+}
+
+.contained .round-button {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border: 1px solid #60606c;
+  color: #60606c;
+  border-radius: 50%;
+}
+.contained .round-button:hover {
+  height: 40px;
+  width: 40px;
+  background-color: #efeff3;
+  border: 1px solid #26253e;
+  color: #60606c;
+  border-radius: 50%;
+}
+.contained .round-button:disabled {
+  height: 40px;
+  width: 40px;
+  background-color: #d6d6dc;
+  border: 1px solid #757581;
+  color: #60606c;
+  border-radius: 50%;
+}
+
 .btn-outline-dark {
   background-color: #ffffff;
   outline: 1px solid #26253e;
@@ -23787,6 +24137,56 @@ T logo
   opacity: 0.5;
 }
 
+.round-button {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  color: #60606c;
+  border-radius: 50%;
+}
+
+.round-button:hover {
+  border: solid 1px #26253e;
+}
+
+.round-button.selected,
+.round-button.selected:hover,
+.round-button.contained.selected,
+.round-button.contained.selected:hover {
+  height: 40px;
+  width: 40px;
+  background: #26253e;
+  border: solid 1px #26253e;
+  color: white;
+  border-radius: 50%;
+}
+
+.contained .round-button {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border: 1px solid #60606c;
+  color: #60606c;
+  border-radius: 50%;
+}
+.contained .round-button:hover {
+  height: 40px;
+  width: 40px;
+  background-color: #efeff3;
+  border: 1px solid #26253e;
+  color: #60606c;
+  border-radius: 50%;
+}
+.contained .round-button:disabled {
+  height: 40px;
+  width: 40px;
+  background-color: #d6d6dc;
+  border: 1px solid #757581;
+  color: #60606c;
+  border-radius: 50%;
+}
+
 .visma {
   /*slight hack for buttons bottom right padding ok-cancel style*/
   /*talentech – – – talentech – – – talentech – – – talentech – – –*/
@@ -23822,7 +24222,9 @@ T logo
 .visma .btn:not([disabled]) {
   cursor: pointer;
 }
-.visma .btn-outline-primary:not([disabled]):not(.disabled).active, .visma .btn-outline-primary:not([disabled]):not(.disabled):active, .visma .show > .btn-outline-primary.dropdown-toggle {
+.visma .btn-outline-primary:not([disabled]):not(.disabled).active,
+.visma .btn-outline-primary:not([disabled]):not(.disabled):active,
+.visma .show > .btn-outline-primary.dropdown-toggle {
   box-shadow: none;
 }
 .visma .btn-rounded {
@@ -24073,11 +24475,14 @@ T logo
 .visma table .btn {
   text-decoration: none;
 }
-.visma .btn:active, .visma .btn.active,
-.visma .btn-tt:active, .visma .btn-tt.active {
+.visma .btn:active,
+.visma .btn.active,
+.visma .btn-tt:active,
+.visma .btn-tt.active {
   box-shadow: none !important;
 }
-.visma .btn, .visma .btn-tt {
+.visma .btn,
+.visma .btn-tt {
   font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
   text-transform: none;
   font-size: 14px !important;
@@ -24087,13 +24492,15 @@ T logo
   padding-right: 20px;
   border-radius: 4px;
 }
-.visma .btn-lg, .visma .btn-group-lg > .btn, .visma .btn-tt-lg {
+.visma .btn-lg, .visma .btn-group-lg > .btn,
+.visma .btn-tt-lg {
   font-size: 16px !important;
   line-height: 24px !important;
   padding-left: 24px;
   padding-right: 24px;
 }
-.visma .btn-sm, .visma .btn-group-sm > .btn, .visma .btn-tt-sm {
+.visma .btn-sm, .visma .btn-group-sm > .btn,
+.visma .btn-tt-sm {
   font-size: 14px !important;
   line-height: 20px !important;
   padding-left: 16px;
@@ -24107,313 +24514,385 @@ T logo
 .visma .btn:disabled:hover {
   cursor: not-allowed;
 }
-.visma .btn-primary, .visma .btn-tt-primary {
+.visma .btn-primary,
+.visma .btn-tt-primary {
   background-color: #2D6385;
   border: 1px solid #2D6385;
   color: #ffffff;
   background-image: none;
 }
-.visma .btn-primary:hover, .visma .btn-tt-primary:hover {
+.visma .btn-primary:hover,
+.visma .btn-tt-primary:hover {
   background-color: #427491;
   border: 1px solid #427491;
   color: #ffffff;
   background-image: none;
 }
-.visma .btn-primary:focus, .visma .btn-tt-primary:focus {
+.visma .btn-primary:focus,
+.visma .btn-tt-primary:focus {
   background-color: #1E5677;
   border: 1px solid #1E5677;
   color: #ffffff;
   box-shadow: 0 0 0 0.2rem #C5D3E0;
   background-image: none;
 }
-.visma .btn-primary:active, .visma .btn-primary.active, .visma .btn-tt-primary:active, .visma .btn-tt-primary.active {
+.visma .btn-primary:active, .visma .btn-primary.active,
+.visma .btn-tt-primary:active,
+.visma .btn-tt-primary.active {
   background: #1E5677 !important;
   border: 1px solid #1E5677 !important;
   background-image: none;
 }
-.visma .btn-primary:disabled, .visma .btn-tt-primary:disabled {
+.visma .btn-primary:disabled,
+.visma .btn-tt-primary:disabled {
   background-color: #C5D3E0;
   border: 1px solid #C5D3E0;
   color: #1E5677;
   background-image: none;
 }
-.visma .btn-secondary, .visma .btn-tt-secondary {
+.visma .btn-secondary,
+.visma .btn-tt-secondary {
   background-color: #C5D3E0;
   border: 1px solid #C5D3E0;
   color: #1E5677;
 }
-.visma .btn-secondary:hover, .visma .btn-tt-secondary:hover {
+.visma .btn-secondary:hover,
+.visma .btn-tt-secondary:hover {
   background-color: #427491;
   border: 1px solid #427491;
   color: #F0F2F5;
 }
-.visma .btn-secondary:focus, .visma .btn-tt-secondary:focus {
+.visma .btn-secondary:focus,
+.visma .btn-tt-secondary:focus {
   background-color: #C5D3E0;
   border: 1px solid #C5D3E0;
   color: #26253e;
   box-shadow: 0 0 0 0.2rem #C5D3E0;
 }
-.visma .btn-secondary:active, .visma .btn-secondary.active, .visma .btn-tt-secondary:active, .visma .btn-tt-secondary.active {
+.visma .btn-secondary:active, .visma .btn-secondary.active,
+.visma .btn-tt-secondary:active,
+.visma .btn-tt-secondary.active {
   background: #C5D3E0 !important;
   border: 1px solid #C5D3E0 !important;
 }
-.visma .btn-secondary:disabled, .visma .btn-tt-secondary:disabled {
+.visma .btn-secondary:disabled,
+.visma .btn-tt-secondary:disabled {
   background-color: #D6D6DC;
   border: 1px solid #D6D6DC;
   color: #26253e;
 }
-.visma .btn-success, .visma .btn-tt-success {
+.visma .btn-success,
+.visma .btn-tt-success {
   background-color: #68A611;
   border-color: #68A611;
   color: #FCFCFC;
 }
-.visma .btn-success:hover, .visma .btn-tt-success:hover {
+.visma .btn-success:hover,
+.visma .btn-tt-success:hover {
   background-color: #B5D982;
   border: 1px solid #B5D982;
   color: #FCFCFC;
 }
-.visma .btn-success:focus, .visma .btn-tt-success:focus {
+.visma .btn-success:focus,
+.visma .btn-tt-success:focus {
   background-color: #68A611;
   border: 1px solid #68A611;
   color: #FCFCFC;
   box-shadow: 0 0 0 0.2rem #F6FAF0;
 }
-.visma .btn-success:active, .visma .btn-success.active, .visma .btn-tt-success:active, .visma .btn-tt-success.active {
+.visma .btn-success:active, .visma .btn-success.active,
+.visma .btn-tt-success:active,
+.visma .btn-tt-success.active {
   background: #B5D982 !important;
   border: 1px solid #B5D982 !important;
 }
-.visma .btn-success:disabled, .visma .btn-tt-success:disabled {
+.visma .btn-success:disabled,
+.visma .btn-tt-success:disabled {
   background-color: #68A611;
   border: 1px solid #68A611;
   color: #FCFCFC;
 }
-.visma .btn-danger, .visma .btn-tt-danger {
+.visma .btn-danger,
+.visma .btn-tt-danger {
   background-color: #D93644;
   border-color: #D93644;
   color: #FCFCFC;
 }
-.visma .btn-danger:hover, .visma .btn-tt-danger:hover {
+.visma .btn-danger:hover,
+.visma .btn-tt-danger:hover {
   background-color: #FFA6A9;
   border: 1px solid #FFA6A9;
   color: #FCFCFC;
 }
-.visma .btn-danger:focus, .visma .btn-tt-danger:focus {
+.visma .btn-danger:focus,
+.visma .btn-tt-danger:focus {
   background-color: #D93644;
   border: 1px solid #D93644;
   color: #FCFCFC;
   box-shadow: 0 0 0 0.2rem #FFEBEB;
 }
-.visma .btn-danger:active, .visma .btn-danger.active, .visma .btn-tt-danger:active, .visma .btn-tt-danger.active {
+.visma .btn-danger:active, .visma .btn-danger.active,
+.visma .btn-tt-danger:active,
+.visma .btn-tt-danger.active {
   background: #FFA6A9 !important;
   border: 1px solid #FFA6A9 !important;
 }
-.visma .btn-danger:disabled, .visma .btn-tt-danger:disabled {
+.visma .btn-danger:disabled,
+.visma .btn-tt-danger:disabled {
   background-color: #D93644;
   border: 1px solid #D93644;
   color: #FCFCFC;
 }
-.visma .btn-warning, .visma .btn-tt-warning {
+.visma .btn-warning,
+.visma .btn-tt-warning {
   background-color: #F28D00;
   border-color: #F28D00;
   color: #FCFCFC;
 }
-.visma .btn-warning:hover, .visma .btn-tt-warning:hover {
+.visma .btn-warning:hover,
+.visma .btn-tt-warning:hover {
   background-color: #FFC573;
   border: 1px solid #FFC573;
   color: #FCFCFC;
 }
-.visma .btn-warning:focus, .visma .btn-tt-warning:focus {
+.visma .btn-warning:focus,
+.visma .btn-tt-warning:focus {
   background-color: #F28D00;
   border: 1px solid #F28D00;
   color: #FCFCFC;
   box-shadow: 0 0 0 0.2rem #FFF4E5;
 }
-.visma .btn-warning:active, .visma .btn-warning.active, .visma .btn-tt-warning:active, .visma .btn-tt-warning.active {
+.visma .btn-warning:active, .visma .btn-warning.active,
+.visma .btn-tt-warning:active,
+.visma .btn-tt-warning.active {
   background: #FFC573 !important;
   border: 1px solid #FFC573 !important;
 }
-.visma .btn-warning:disabled, .visma .btn-tt-warning:disabled {
+.visma .btn-warning:disabled,
+.visma .btn-tt-warning:disabled {
   background-color: #F28D00;
   border: 1px solid #F28D00;
   color: #FCFCFC;
 }
-.visma .btn-info, .visma .btn-tt-info {
+.visma .btn-info,
+.visma .btn-tt-info {
   background-color: #d6d6e4;
   border: 1px solid #d6d6e4;
   color: #282828;
 }
-.visma .btn-info:hover, .visma .btn-tt-info:hover {
+.visma .btn-info:hover,
+.visma .btn-tt-info:hover {
   background-color: #B7B7C0;
   border: 1px solid #B7B7C0;
   color: #282828;
 }
-.visma .btn-info:focus, .visma .btn-tt-info:focus {
+.visma .btn-info:focus,
+.visma .btn-tt-info:focus {
   background-color: #D6D6DC;
   border: 1px solid #D6D6DC;
   color: #26253e;
   box-shadow: 0 0 0 0.2rem #c7c7dc;
 }
-.visma .btn-info:active, .visma .btn-info.active, .visma .btn-tt-info:active, .visma .btn-tt-info.active {
+.visma .btn-info:active, .visma .btn-info.active,
+.visma .btn-tt-info:active,
+.visma .btn-tt-info.active {
   background: #8d8d98 !important;
   border: 1px solid #8d8d98 !important;
 }
-.visma .btn-info:disabled, .visma .btn-tt-info:disabled {
+.visma .btn-info:disabled,
+.visma .btn-tt-info:disabled {
   background-color: #D6D6DC;
   border: 1px solid #D6D6DC;
   color: #26253e;
 }
-.visma .btn-outline-primary, .visma .btn-tt-primary-outline {
+.visma .btn-outline-primary,
+.visma .btn-tt-primary-outline {
   background-color: #FCFCFC;
   border: 1px solid #2D6385;
   color: #2D6385;
 }
-.visma .btn-outline-primary:hover, .visma .btn-tt-primary-outline:hover {
+.visma .btn-outline-primary:hover,
+.visma .btn-tt-primary-outline:hover {
   background-color: #2D6385;
   border: 1px solid #2D6385;
   color: #FCFCFC;
 }
-.visma .btn-outline-primary:focus, .visma .btn-tt-primary-outline:focus {
+.visma .btn-outline-primary:focus,
+.visma .btn-tt-primary-outline:focus {
   background-color: #FCFCFC;
   border: 1px solid #2D6385;
   color: #2D6385;
   box-shadow: 0 0 0 0.2rem #C5D3E0;
 }
-.visma .btn-outline-primary:active, .visma .btn-outline-primary.active, .visma .btn-tt-primary-outline:active, .visma .btn-tt-primary-outline.active {
+.visma .btn-outline-primary:active, .visma .btn-outline-primary.active,
+.visma .btn-tt-primary-outline:active,
+.visma .btn-tt-primary-outline.active {
   background: #2D6385 !important;
   border: 1px solid #2D6385 !important;
   color: #FCFCFC !important;
 }
-.visma .btn-outline-primary:disabled, .visma .btn-tt-primary-outline:disabled {
+.visma .btn-outline-primary:disabled,
+.visma .btn-tt-primary-outline:disabled {
   background-color: #FCFCFC;
   border: 1px solid #2D6385;
   color: #2D6385;
 }
-.visma .btn-outline-secondary, .visma .btn-tt-secondary-outline {
+.visma .btn-outline-secondary,
+.visma .btn-tt-secondary-outline {
   background-color: #FCFCFC;
   border: 1px solid #427491;
   color: #2D6385;
 }
-.visma .btn-outline-secondary:hover, .visma .btn-tt-secondary-outline:hover {
+.visma .btn-outline-secondary:hover,
+.visma .btn-tt-secondary-outline:hover {
   background-color: #F0F2F5;
   border: 1px solid #427491;
   color: #2D6385;
 }
-.visma .btn-outline-secondary:focus, .visma .btn-tt-secondary-outline:focus {
+.visma .btn-outline-secondary:focus,
+.visma .btn-tt-secondary-outline:focus {
   background-color: #F0F2F5;
   border: 1px solid #8d8d98;
   color: #26253e;
   box-shadow: 0 0 0 0.2rem #C5D3E0;
 }
-.visma .btn-outline-secondary:active, .visma .btn-outline-secondary.active, .visma .btn-tt-secondary-outline:active, .visma .btn-tt-secondary-outline.active {
+.visma .btn-outline-secondary:active, .visma .btn-outline-secondary.active,
+.visma .btn-tt-secondary-outline:active,
+.visma .btn-tt-secondary-outline.active {
   background: #E6E6EA !important;
   border: 1px solid #8d8d98 !important;
   color: #26253e !important;
 }
-.visma .btn-outline-secondary:disabled, .visma .btn-tt-secondary-outline:disabled {
+.visma .btn-outline-secondary:disabled,
+.visma .btn-tt-secondary-outline:disabled {
   background-color: #FCFCFC;
   border: 1px solid #8d8d98;
   color: #2D6385;
 }
-.visma .btn-outline-success, .visma .btn-tt-success-outline {
+.visma .btn-outline-success,
+.visma .btn-tt-success-outline {
   background-color: #FCFCFC;
   border: 1px solid #68A611;
   color: #68A611;
 }
-.visma .btn-outline-success:hover, .visma .btn-tt-success-outline:hover {
+.visma .btn-outline-success:hover,
+.visma .btn-tt-success-outline:hover {
   background-color: #68A611;
   border: 1px solid #68A611;
   color: #FCFCFC;
 }
-.visma .btn-outline-success:focus, .visma .btn-tt-success-outline:focus {
+.visma .btn-outline-success:focus,
+.visma .btn-tt-success-outline:focus {
   background-color: #FCFCFC;
   border: 1px solid #68A611;
   color: #68A611;
   box-shadow: 0 0 0 0.2rem #F6FAF0;
 }
-.visma .btn-outline-success:active, .visma .btn-outline-success.active, .visma .btn-tt-success-outline:active, .visma .btn-tt-success-outline.active {
+.visma .btn-outline-success:active, .visma .btn-outline-success.active,
+.visma .btn-tt-success-outline:active,
+.visma .btn-tt-success-outline.active {
   background: #F6FAF0 !important;
   border: 1px solid #F6FAF0 !important;
   color: #FCFCFC !important;
 }
-.visma .btn-outline-success:disabled, .visma .btn-tt-success-outline:disabled {
+.visma .btn-outline-success:disabled,
+.visma .btn-tt-success-outline:disabled {
   background-color: #FCFCFC;
   border: 1px solid #68A611;
   color: #68A611;
 }
-.visma .btn-outline-danger, .visma .btn-tt-danger-outline {
+.visma .btn-outline-danger,
+.visma .btn-tt-danger-outline {
   background-color: #FCFCFC;
   border: 1px solid #D93644;
   color: #D93644;
 }
-.visma .btn-outline-danger:hover, .visma .btn-tt-danger-outline:hover {
+.visma .btn-outline-danger:hover,
+.visma .btn-tt-danger-outline:hover {
   background-color: #D93644;
   border: 1px solid #D93644;
   color: #FCFCFC;
 }
-.visma .btn-outline-danger:focus, .visma .btn-tt-danger-outline:focus {
+.visma .btn-outline-danger:focus,
+.visma .btn-tt-danger-outline:focus {
   background-color: #FCFCFC;
   border: 1px solid #D93644;
   color: #68A611;
   box-shadow: 0 0 0 0.2rem #FFEBEB;
 }
-.visma .btn-outline-danger:active, .visma .btn-outline-danger.active, .visma .btn-tt-danger-outline:active, .visma .btn-tt-danger-outline.active {
+.visma .btn-outline-danger:active, .visma .btn-outline-danger.active,
+.visma .btn-tt-danger-outline:active,
+.visma .btn-tt-danger-outline.active {
   background: #FFEBEB !important;
   border: 1px solid #FFEBEB !important;
   color: #FCFCFC !important;
 }
-.visma .btn-outline-danger:disabled, .visma .btn-tt-danger-outline:disabled {
+.visma .btn-outline-danger:disabled,
+.visma .btn-tt-danger-outline:disabled {
   background-color: #FCFCFC;
   border: 1px solid #D93644;
   color: #D93644;
 }
-.visma .btn-outline-warning, .visma .btn-tt-warning-outline {
+.visma .btn-outline-warning,
+.visma .btn-tt-warning-outline {
   background-color: #FCFCFC;
   border: 1px solid #F28D00;
   color: #F28D00;
 }
-.visma .btn-outline-warning:hover, .visma .btn-tt-warning-outline:hover {
+.visma .btn-outline-warning:hover,
+.visma .btn-tt-warning-outline:hover {
   background-color: #F28D00;
   border: 1px solid #F28D00;
   color: #FCFCFC;
 }
-.visma .btn-outline-warning:focus, .visma .btn-tt-warning-outline:focus {
+.visma .btn-outline-warning:focus,
+.visma .btn-tt-warning-outline:focus {
   background-color: #FCFCFC;
   border: 1px solid #F28D00;
   color: #F28D00;
   box-shadow: 0 0 0 0.2rem #FFF4E5;
 }
-.visma .btn-outline-warning:active, .visma .btn-outline-warning.active, .visma .btn-tt-warning-outline:active, .visma .btn-tt-warning-outline.active {
+.visma .btn-outline-warning:active, .visma .btn-outline-warning.active,
+.visma .btn-tt-warning-outline:active,
+.visma .btn-tt-warning-outline.active {
   background: #FFF4E5 !important;
   border: 1px solid #FFF4E5 !important;
   color: #FCFCFC !important;
 }
-.visma .btn-outline-warning:disabled, .visma .btn-tt-warning-outline:disabled {
+.visma .btn-outline-warning:disabled,
+.visma .btn-tt-warning-outline:disabled {
   background-color: #FCFCFC;
   border: 1px solid #F28D00;
   color: #F28D00;
 }
-.visma .btn-outline-info, .visma .btn-tt-info-outline {
+.visma .btn-outline-info,
+.visma .btn-tt-info-outline {
   background-color: #FCFCFC;
   border: 1px solid #8d8d98;
   color: #282828;
 }
-.visma .btn-outline-info:hover, .visma .btn-tt-info-outline:hover {
+.visma .btn-outline-info:hover,
+.visma .btn-tt-info-outline:hover {
   background-color: #f1f1f3;
   border: 1px solid #8d8d98;
   color: #26253e;
 }
-.visma .btn-outline-info:focus, .visma .btn-tt-info-outline:focus {
+.visma .btn-outline-info:focus,
+.visma .btn-tt-info-outline:focus {
   background-color: #FCFCFC;
   border: 1px solid #8d8d98;
   color: #26253e;
   box-shadow: 0 0 0 0.2rem #c7c7dc;
 }
-.visma .btn-outline-info:active, .visma .btn-outline-info.active, .visma .btn-tt-info-outline:active, .visma .btn-tt-info-outline.active {
+.visma .btn-outline-info:active, .visma .btn-outline-info.active,
+.visma .btn-tt-info-outline:active,
+.visma .btn-tt-info-outline.active {
   background: #E6E6EA !important;
   border: 1px solid #8d8d98 !important;
   color: #26253e !important;
 }
-.visma .btn-outline-info:disabled, .visma .btn-tt-info-outline:disabled {
+.visma .btn-outline-info:disabled,
+.visma .btn-tt-info-outline:disabled {
   background-color: #FCFCFC;
   border: 1px solid #8d8d98;
   color: #26253e;
@@ -24433,6 +24912,52 @@ T logo
 }
 .visma .btn {
   text-decoration: none;
+}
+.visma .round-button {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  color: #2D6385;
+  border-radius: 50%;
+}
+.visma .round-button:hover {
+  border: solid 1px #2D6385;
+}
+.visma .round-button.selected,
+.visma .round-button.selected:hover,
+.visma .round-button.contained.selected,
+.visma .round-button.contained.selected:hover {
+  height: 40px;
+  width: 40px;
+  background: #2D6385;
+  border: solid 1px #2D6385;
+  color: white;
+  border-radius: 50%;
+}
+.visma .contained .round-button {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border: 1px solid #2D6385;
+  color: #2D6385;
+  border-radius: 50%;
+}
+.visma .contained .round-button:hover {
+  height: 40px;
+  width: 40px;
+  background-color: #efeff3;
+  border: 1px solid #2D6385;
+  color: #2D6385;
+  border-radius: 50%;
+}
+.visma .contained .round-button:disabled {
+  height: 40px;
+  width: 40px;
+  background-color: #d6d6dc;
+  border: 1px solid #757581;
+  color: #2D6385;
+  border-radius: 50%;
 }
 
 .alert {
@@ -26983,6 +27508,10 @@ span.link-secondary a::after,
 :host-context(body.talentech) .talentech-progress .bar-background .bar-progress {
   background-color: #26253e;
 }
+:host-context(body) .pagination-container .text-container,
+:host-context(body.talentech) .pagination-container .text-container {
+  color: #26253e;
+}
 
 :host-context(body.visma) h1, :host-context(body.visma) .h1,
 :host-context(body.visma) h2,
@@ -27115,6 +27644,10 @@ span.link-secondary a::after,
 :host-context(body.visma) .talentech-progress .bar-progress,
 .visma .talentech-progress .bar-progress {
   background-color: #1E5677;
+}
+:host-context(body.visma) .pagination-container .text-container,
+.visma .pagination-container .text-container {
+  color: #2D6385;
 }
 
 /*# sourceMappingURL=bundle.css.map */
