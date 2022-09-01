@@ -24220,7 +24220,7 @@ T logo
   border-radius: 50%;
 }
 .visma .round-button:hover {
-  border: solid 1px #26253e;
+  border: solid 1px #2D6385;
 }
 .visma .round-button.selected,
 .visma .round-button.selected:hover,
@@ -24228,8 +24228,8 @@ T logo
 .visma .round-button.contained.selected:hover {
   height: 40px;
   width: 40px;
-  background: #26253e;
-  border: solid 1px #26253e;
+  background: #2D6385;
+  border: solid 1px #2D6385;
   color: white;
   border-radius: 50%;
 }
@@ -24958,6 +24958,53 @@ T logo
 }
 .visma .btn {
   text-decoration: none;
+}
+
+:host-context(body.visma) .round-button {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  color: #60606c;
+  border-radius: 50%;
+}
+:host-context(body.visma) .round-button:hover {
+  border: solid 1px #2D6385;
+}
+:host-context(body.visma) .round-button.selected,
+:host-context(body.visma) .round-button.selected:hover,
+:host-context(body.visma) .round-button.contained.selected,
+:host-context(body.visma) .round-button.contained.selected:hover {
+  height: 40px;
+  width: 40px;
+  background: #2D6385;
+  border: solid 1px #2D6385;
+  color: white;
+  border-radius: 50%;
+}
+:host-context(body.visma) .contained.round-button {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border: 1px solid #2D6385;
+  color: #2D6385;
+  border-radius: 50%;
+}
+:host-context(body.visma) .contained.round-button:hover {
+  height: 40px;
+  width: 40px;
+  background-color: #efeff3;
+  border: 1px solid #2D6385;
+  color: #2D6385;
+  border-radius: 50%;
+}
+:host-context(body.visma) .contained.round-button:disabled {
+  height: 40px;
+  width: 40px;
+  background-color: #d6d6dc;
+  border: 1px solid #757581;
+  color: #2D6385;
+  border-radius: 50%;
 }
 
 .alert {
