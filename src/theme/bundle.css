@@ -27025,6 +27025,79 @@ h1.page-header-title:only-child, .page-header-title.h1:only-child {
   background: #26253e;
 }
 
+body .styled-select-talentech,
+body.talentech .styled-select-talentech,
+:host-context(body) .styled-select-talentech,
+:host-context(body.talentech) .styled-select-talentech {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+}
+body .styled-select-talentech .selected-option,
+body.talentech .styled-select-talentech .selected-option,
+:host-context(body) .styled-select-talentech .selected-option,
+:host-context(body.talentech) .styled-select-talentech .selected-option {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  cursor: pointer;
+}
+body .styled-select-talentech .select-options,
+body.talentech .styled-select-talentech .select-options,
+:host-context(body) .styled-select-talentech .select-options,
+:host-context(body.talentech) .styled-select-talentech .select-options {
+  display: none;
+}
+body .styled-select-talentech .select-options.show,
+body.talentech .styled-select-talentech .select-options.show,
+:host-context(body) .styled-select-talentech .select-options.show,
+:host-context(body.talentech) .styled-select-talentech .select-options.show {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 0px;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 1px 2px rgba(21, 21, 23, 0.3), 0px 2px 6px rgba(21, 21, 23, 0.15);
+  border-radius: 4px;
+  max-height: 448px;
+  overflow-y: auto;
+}
+body .styled-select-talentech .select-options.show .select-option,
+body.talentech .styled-select-talentech .select-options.show .select-option,
+:host-context(body) .styled-select-talentech .select-options.show .select-option,
+:host-context(body.talentech) .styled-select-talentech .select-options.show .select-option {
+  padding: 8px 18px 8px 14px;
+  background-color: white;
+  border-left: solid 4px white;
+  width: 100%;
+  cursor: pointer;
+}
+body .styled-select-talentech .select-options.show .select-option.selected,
+body .styled-select-talentech .select-options.show .select-option:hover,
+body.talentech .styled-select-talentech .select-options.show .select-option.selected,
+body.talentech .styled-select-talentech .select-options.show .select-option:hover,
+:host-context(body) .styled-select-talentech .select-options.show .select-option.selected,
+:host-context(body) .styled-select-talentech .select-options.show .select-option:hover,
+:host-context(body.talentech) .styled-select-talentech .select-options.show .select-option.selected,
+:host-context(body.talentech) .styled-select-talentech .select-options.show .select-option:hover {
+  border-left: solid 4px #26253e;
+  background-color: #EFEFF3;
+}
+
+body.visma .styled-select-talentech,
+:host-context(body.visma) .styled-select-talentech {
+  color: #2D6385;
+}
+body.visma .styled-select-talentech .select-options.show .select-option.selected,
+body.visma .styled-select-talentech .select-options.show .select-option:hover,
+:host-context(body.visma) .styled-select-talentech .select-options.show .select-option.selected,
+:host-context(body.visma) .styled-select-talentech .select-options.show .select-option:hover {
+  border-left: solid 4px #FFA526;
+}
+
 p a,
 span a,
 .breadcrumb a {
@@ -27559,6 +27632,18 @@ span.link-secondary a::after,
 :host-context(body.talentech) .pagination-container .text-container {
   color: #26253e;
 }
+:host-context(body) .date-picker-talentech .dates .days .day,
+:host-context(body.talentech) .date-picker-talentech .dates .days .day {
+  color: #60606c;
+}
+:host-context(body) .date-picker-talentech .dates .days .day.weekday,
+:host-context(body.talentech) .date-picker-talentech .dates .days .day.weekday {
+  text-transform: uppercase;
+}
+:host-context(body) .date-picker-talentech .dates .days .day.selected,
+:host-context(body.talentech) .date-picker-talentech .dates .days .day.selected {
+  background-color: #26253e;
+}
 
 :host-context(body.visma) h1, :host-context(body.visma) .h1,
 :host-context(body.visma) h2,
@@ -27695,6 +27780,18 @@ span.link-secondary a::after,
 :host-context(body.visma) .pagination-container .text-container,
 .visma .pagination-container .text-container {
   color: #2D6385;
+}
+:host-context(body.visma) .date-picker-talentech .dates .days .day,
+.visma .date-picker-talentech .dates .days .day {
+  color: #2D6385;
+}
+:host-context(body.visma) .date-picker-talentech .dates .days .day.weekday,
+.visma .date-picker-talentech .dates .days .day.weekday {
+  text-transform: none;
+}
+:host-context(body.visma) .date-picker-talentech .dates .days .day.selected,
+.visma .date-picker-talentech .dates .days .day.selected {
+  background-color: #2D6385;
 }
 
 /*# sourceMappingURL=bundle.css.map */
