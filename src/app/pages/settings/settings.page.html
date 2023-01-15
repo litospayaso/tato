@@ -1,3 +1,5 @@
 <ion-content [fullscreen]="true">
-Home page
+  <ion-select [(ngModel)]="language" okText="Select" >
+    <ion-select-option *ngFor="let lan of languages" [value]="option">{{option}}</ion-select-option>
+  </ion-select>
 </ion-content>

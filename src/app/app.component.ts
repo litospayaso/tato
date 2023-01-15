@@ -9,6 +9,8 @@ import { Storage } from '@ionic/storage';
 import { filter, last } from 'rxjs/operators';
 import { GamesService } from './services/games.service';
 
+import appPages from '@resources/appPages.json';
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -18,43 +20,7 @@ export class AppComponent {
   public title = '';
   public pageBack = '';
   public widthMenu = '0';
-  public appPages = [
-    {
-      title: 'home',
-      url: '/home',
-      icon: 'home'
-    },
-    {
-      title: 'Analysis',
-      url: '/analysis',
-      icon: 'create'
-    },
-    {
-      title: 'My games',
-      url: '/games',
-      icon: 'search-outline'
-    },
-    {
-      title: 'Opening',
-      url: '/training',
-      icon: 'barbell-outline'
-    },
-    {
-      title: 'Tactics',
-      url: '/puzzles',
-      icon: 'extension-puzzle-outline'
-    },
-    {
-      title: 'Endings',
-      url: '/endings',
-      icon: 'rocket-outline'
-    },
-    // {
-    //   title: 'Settings',
-    //   url: '/settings',
-    //   icon: 'settings-outline'
-    // },
-  ];
+  public appPages = appPages;
   constructor(
     private platform: Platform,
     private router: Router,
@@ -87,7 +53,7 @@ export class AppComponent {
           this.pageBack = '';
           break;
       }
-      this.setTitle(routerName);
+      this.title = routerName;
     });
     this.initializeApp();
   }
@@ -103,33 +69,4 @@ export class AppComponent {
     this.widthMenu = this.widthMenu === '0' ? '100vw' : '0';
   }
 
-  setTitle(root: string) {
-    let title = 'Tato';
-    switch (root) {
-      case 'home':
-        title = 'Tato';
-        break;
-      case 'analysis':
-        title = 'Analysis';
-        break;
-      case 'training':
-        title = 'Opening';
-        break;
-      case 'games':
-        title = 'My games';
-        break;
-      case 'puzzles':
-        title = 'Tactics';
-        break;
-      case 'endings':
-        title = 'Endings';
-        break;
-      case 'settings':
-        title = 'Settings';
-        break;
-      default:
-        break;
-    }
-    this.title = title;
-  }
 }

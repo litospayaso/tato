@@ -5,6 +5,8 @@ import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { IonicStorageModule } from '@ionic/storage';
 
+import { AppModule } from '@app/app.module';
+
 import { PercentagePipe } from '@pipes/percentage.pipe';
 
 import { HomePage } from '@pages/home/home.page';
@@ -22,12 +24,15 @@ import { TrainingModalComponent } from '@components/training-modal/training-moda
 import { PuzzlesModalComponent } from '@components/puzzles-modal/puzzles-modal.component';
 import { EndingsModalComponent } from '@components/endings-modal/endings-modal.component';
 
+import { SharedModule } from '@shared/shared.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     RouterModule,
     IonicModule,
+    SharedModule,
     IonicStorageModule.forRoot(),
   ],
   declarations: [

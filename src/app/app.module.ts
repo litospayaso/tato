@@ -12,11 +12,20 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { PagesModule } from '@pages/pages.module';
+import { SharedModule } from '@shared/shared.module';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), IonicStorageModule.forRoot(), AppRoutingModule, PagesModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    SharedModule,
+    IonicModule.forRoot(),
+    IonicStorageModule.forRoot(),
+    AppRoutingModule,
+    PagesModule,
+    HttpClientModule
+  ],
   providers: [
     StatusBar,
     SplashScreen,
@@ -24,4 +33,4 @@ import { PagesModule } from '@pages/pages.module';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

@@ -15,11 +15,11 @@ export class EndingsModalComponent implements OnInit {
   public theme = `all`;
   public dificultyValue = 3;
   public dificultyValues = [
-    {value: 'veryEasy', text: 'Very easy'},
-    {value: 'Easy', text: 'Easy'},
-    {value: 'Medium', text: 'Medium'},
-    {value: 'Hard', text: 'Hard'},
-    {value: 'veryHard', text: 'Very hard'},
+    'veryEasy',
+    'Easy',
+    'Medium',
+    'Hard',
+    'veryHard'
   ];
   @Input() defaultEndingsValues: DefaultEndingsValuesInterface;
 
@@ -29,14 +29,14 @@ export class EndingsModalComponent implements OnInit {
   ngOnInit() {
     if (this.defaultEndingsValues && this.defaultEndingsValues.theme && this.defaultEndingsValues.dificulty) {
       this.theme = this.defaultEndingsValues.theme;
-      this.dificultyValue = this.dificultyValues.indexOf(this.dificultyValues.find(e => e.value === this.defaultEndingsValues.dificulty));
+      this.dificultyValue = this.dificultyValues.indexOf(this.defaultEndingsValues.dificulty);
     }
   }
 
   public closeModal() {
     this.modalController.dismiss({
       theme: this.theme,
-      dificulty: this.dificultyValues[this.dificultyValue].value
+      dificulty: this.dificultyValues[this.dificultyValue]
     });
   }
 

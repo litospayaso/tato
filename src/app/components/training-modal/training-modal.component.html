@@ -1,19 +1,15 @@
 <div class="modal-container">
+
+  
   <ion-item>
-    <ion-label>Opening</ion-label>
-    <ion-select [(ngModel)]="opening" okText="Select" >
-      <ion-select-option *ngFor="let option of openingOptions" [value]="option">{{option}}</ion-select-option>
-    </ion-select>
-  </ion-item>
-  <ion-item>
-    <ion-label>Color</ion-label>
+    <ion-label>{{'color'| translate | async}}</ion-label>
     <ion-select [(ngModel)]="userColor" okText="Select" >
-      <ion-select-option value="w">White</ion-select-option>
-      <ion-select-option value="b">Black</ion-select-option>
+      <ion-select-option value="w">{{'white' | translate | async}}</ion-select-option>
+      <ion-select-option value="b">{{'black' | translate | async}}</ion-select-option>
     </ion-select>
   </ion-item>
   <div class="buttons-container">
-    <ion-button expand="full" [routerLink]="'/home'" (click)="cancel()" skipLocationChange routerDirection="root" class="close-modal-button" color="medium">cancel</ion-button>
-    <ion-button expand="full" (click)="closeModal()" class="close-modal-button" color="medium">start</ion-button>
+    <ion-button expand="full" [routerLink]="'/home'" (click)="cancel()" skipLocationChange routerDirection="root" class="close-modal-button" color="medium">{{'cancel' | translate | async}}</ion-button>
+    <ion-button expand="full" (click)="closeModal()" class="close-modal-button" color="medium">{{'start' | translate | async}}</ion-button>
   </div>
 </div>

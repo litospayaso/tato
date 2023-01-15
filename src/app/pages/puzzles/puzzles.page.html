@@ -6,16 +6,16 @@
     
     <div class="panel-element">
       <div class="level-bar">
-        Juegan: <div [ngClass]="userColor"></div> Elo: {{userRating}} | Theme: {{theme}}
+        Juegan: <div [ngClass]="userColor"></div> Elo: {{userRating}} | {{'theme' | translate | async}}: {{theme}}
       </div>    
       <ion-button class="button-control-element" color="medium" (click)="showSolution()">
-        Solution
+        {{'solution' | translate | async}}
       </ion-button>
       <ion-button class="button-control-element" color="medium" (click)="nextPuzzle()">
-        Next
+        {{'next' | translate | async}}
       </ion-button>
       <ion-button class="button-control-element" color="medium" (click)="openSettings()">
-        Settings
+        {{'settings' | translate | async}}
       </ion-button>
     </div>
   </div>

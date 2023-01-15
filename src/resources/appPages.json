@@ -1,0 +1,37 @@
+[
+  {
+    "title": "home",
+    "url": "/home",
+    "icon": "home"
+  },
+  {
+    "title": "analysis",
+    "url": "/analysis",
+    "icon": "create"
+  },
+  {
+    "title": "games",
+    "url": "/games",
+    "icon": "search-outline"
+  },
+  {
+    "title": "training",
+    "url": "/training",
+    "icon": "barbell-outline"
+  },
+  {
+    "title": "puzzles",
+    "url": "/puzzles",
+    "icon": "extension-puzzle-outline"
+  },
+  {
+    "title": "endings",
+    "url": "/endings",
+    "icon": "rocket-outline"
+  },
+  {
+    "title": "settings",
+    "url": "/settings",
+    "icon": "settings-outline"
+  }
+]

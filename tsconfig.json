@@ -25,6 +25,7 @@
       "@classes/*": ["./src/app/classes/*"],
       "@pipes/*": ["./src/app/pipes/*"],
       "@services/*": ["./src/app/services/*"],
+      "@shared/*": ["./src/app/shared/*"],
       "@resources/*": ["./src/resources/*"],
       "@assets/*": ["./src/assets/*"],
       "@libs/*": ["./src/libs/*"],

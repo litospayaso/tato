@@ -1,4 +1,5 @@
 import { Component, AfterViewInit } from '@angular/core';
+import appPages from '@resources/appPages.json';
 
 @Component({
   selector: 'app-home',
@@ -7,43 +8,7 @@ import { Component, AfterViewInit } from '@angular/core';
 })
 export class HomePage implements AfterViewInit {
 
-  public appPages = [
-    {
-      title: 'home',
-      url: '/home',
-      icon: 'home'
-    },
-    {
-      title: 'Analysis',
-      url: '/analysis',
-      icon: 'create'
-    },
-    {
-      title: 'My games',
-      url: '/games',
-      icon: 'search-outline'
-    },
-    {
-      title: 'Opening',
-      url: '/training',
-      icon: 'barbell-outline'
-    },
-    {
-      title: 'Tactics',
-      url: '/puzzles',
-      icon: 'extension-puzzle-outline'
-    },
-    {
-      title: 'Endings',
-      url: '/endings',
-      icon: 'rocket-outline'
-    },
-    // {
-    //   title: 'Settings',
-    //   url: '/settings',
-    //   icon: 'settings-outline'
-    // },
-  ];
+  public appPages = appPages;
 
   ngAfterViewInit() {
   }
