@@ -1,7 +1,7 @@
 <ion-app>
   <ion-header>
-    <ion-toolbar>
-      <ion-title>
+    <ion-toolbar style="max-height: 45px;">
+      <ion-title style="position: relative; top:-6px;">
         <ion-icon *ngIf="!pageBack" (click)="toogleMenu()" class="menu-button" name="menu-outline" class="menu-icon"></ion-icon>
         <ion-icon *ngIf="pageBack" class="back-arrow" [routerLink]="[pageBack]" skipLocationChange routerDirection="root" name="arrow-back-outline" class="menu-icon"></ion-icon>
         {{title | translate | async}}

@@ -1,6 +1,11 @@
 <div class="modal-container">
 
-  
+  <ion-item>
+    <ion-label>Opening</ion-label>
+    <ion-select [(ngModel)]="opening" okText="Select" >
+      <ion-select-option *ngFor="let option of openingOptions" [value]="option">{{option}}</ion-select-option>
+    </ion-select>
+  </ion-item>  
   <ion-item>
     <ion-label>{{'color'| translate | async}}</ion-label>
     <ion-select [(ngModel)]="userColor" okText="Select" >
