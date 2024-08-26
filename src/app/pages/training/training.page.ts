@@ -2,6 +2,7 @@ import { Component, AfterViewInit } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
 import { ModalController } from '@ionic/angular';
 import { TrainingModalComponent } from '@components/training-modal/training-modal.component';
+import { ResultModalComponent } from '@components/result-modal/result-modal.component';
 import { ActivatedRoute } from '@angular/router';
 import { GamesService } from '@services/games.service';
 import { Stockfish } from '@classes/stockfish';
@@ -74,7 +75,6 @@ export class TrainingPage implements AfterViewInit {
       this.openingsBook = openingsJSON.filter(e => e.name.includes(data.data ? data.data.opening : 'Scandinavian Defense'));
       this.createNewGame();
     });
-    // this.createNewGame();
   }
 
   private createNewGame() {
@@ -153,11 +153,11 @@ export class TrainingPage implements AfterViewInit {
   }
 
   public onResign() {
-    this.endGame();
+    this.endGame(this.userColor === 'w' ? '0-1' : '1-0');
   }
 
-  public endGame() {
-    const gameResult = this.game.in_checkmate() ? (this.game.turn() === 'w' ? '0-1' : '1-0') : '1/2 - 1/2';
+  public async endGame(result?: string) {
+    const gameResult = result ? result : (this.game.in_checkmate() ? (this.game.turn() === 'w' ? '0-1' : '1-0') : '1/2 - 1/2');
     this.gamesService.addGame({
       id: uuid.v4(),
       date: new Date().toLocaleString(),
@@ -168,7 +168,25 @@ export class TrainingPage implements AfterViewInit {
       endingPosition: this.game.fen(),
       gameResult
     });
-    this.ngAfterViewInit();
+    const modal = await this.modalController.create({
+      component: ResultModalComponent,
+      componentProps: {
+        result: gameResult,
+        userColor: this.userColor
+      },
+    });
+    await modal.present();
+    await modal.onDidDismiss().then(({data}) => {
+      if (data) {
+        if(data.data === 'newGame') {
+          this.ngAfterViewInit();
+        }
+        if(data.data === 'retry') {
+          console.log('%c retry', 'background: #df03fc; color: #f8fc03');
+          this.createNewGame();
+        }
+      }
+    });
   }
 
   private makeMove(move: string) {

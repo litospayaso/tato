@@ -1,5 +1,8 @@
 <ion-content [fullscreen]="true">
-  <ion-select [(ngModel)]="language" okText="Select" >
-    <ion-select-option *ngFor="let lan of languages" [value]="option">{{option}}</ion-select-option>
-  </ion-select>
+  <ion-item>
+    <ion-label>{{'languages' | translate | async}}</ion-label>
+    <ion-select [(ngModel)]="language" (ionChange)="updateLanguage()" [okText]="'select' | translate | async" [cancelText]="'cancel' | translate | async">
+      <ion-select-option *ngFor="let lan of languages" [value]="lan.key">{{lan.value}}</ion-select-option>
+    </ion-select>
+  </ion-item>
 </ion-content>

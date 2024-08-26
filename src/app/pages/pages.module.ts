@@ -21,6 +21,7 @@ import { PromotionModalComponent } from '@components/promotion-modal/promotion-m
 import { LiboardComponent } from '@components/liboard/liboard.component';
 import { MovesTableComponent } from '@components/moves-table/moves-table.component';
 import { TrainingModalComponent } from '@components/training-modal/training-modal.component';
+import { ResultModalComponent } from '@components/result-modal/result-modal.component';
 import { PuzzlesModalComponent } from '@components/puzzles-modal/puzzles-modal.component';
 import { EndingsModalComponent } from '@components/endings-modal/endings-modal.component';
 
@@ -47,6 +48,7 @@ import { SharedModule } from '@shared/shared.module';
     PromotionModalComponent,
     LiboardComponent,
     TrainingModalComponent,
+    ResultModalComponent,
     PuzzlesModalComponent,
     EndingsModalComponent,
     MovesTableComponent

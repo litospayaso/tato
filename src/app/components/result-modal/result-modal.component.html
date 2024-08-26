@@ -1,0 +1,19 @@
+<div class="modal-container">
+  <ion-item>
+    <div *ngIf="gameResult === 'win'">
+      Congratulations! You won.
+    </div>
+    <div *ngIf="gameResult === 'draw'">
+      Draw
+    </div>
+    <div *ngIf="gameResult === 'lose'">
+      You lose.
+    </div>
+  </ion-item>
+  <div class="buttons-container">
+    <ion-button expand="full" [routerLink]="'/home'" (click)="cancel()" skipLocationChange routerDirection="root"
+      class="close-modal-button" color="medium">return home</ion-button>
+    <ion-button expand="full" (click)="closeModal('retry')" class="close-modal-button" color="medium">retry</ion-button>
+    <ion-button expand="full" (click)="closeModal('newGame')" class="close-modal-button" color="medium">new game</ion-button>
+  </div>
+</div>

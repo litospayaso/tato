@@ -19,7 +19,9 @@
     "endings":"Endings",
     "settings":"Settings",
     "start": "Start",
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "languages": "Languages",
+    "select": "Select"
   },
   "es":{
     "home":"Inicio",
@@ -41,6 +43,8 @@
     "endings":"Finales",
     "settings":"Configuración",
     "start": "Jugar",
-    "cancel": "Cancelar"
+    "cancel": "Cancelar",
+    "languages": "Idioma",
+    "select": "Seleccionar"
   }
 }

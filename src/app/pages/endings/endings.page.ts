@@ -68,10 +68,10 @@ export class EndingsPage implements AfterViewInit {
     await modal.onDidDismiss().then(data => {
       if (data.data) {
         this.gameService.setDefaultEndingValues(data.data);
+        this.theme = data.data.theme;
+        this.dificulty = data.data.dificulty;
+        this.setEndingData();
       }
-      this.theme = data.data.theme;
-      this.dificulty = data.data.dificulty;
-      this.setEndingData();
     });
   }
 
