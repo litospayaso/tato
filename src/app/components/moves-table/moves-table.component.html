@@ -1,18 +1,33 @@
 <div class="table-component-container">
   <ion-button *ngIf="resignButton" expand="full" (click)="resign()" color="medium">Resign</ion-button>
-  <div class="table-lines-container">
-    <div *ngFor="let line of lines;" class="line-element">
-      <div class="evaluation-element" [ngClass]="{'advance-w': (line.evaluation >= 0 ), 'advance-b': (line.evaluation < 0 )}">{{line.evaluation}}</div>
-      <div class="moves-line-element" *ngIf="line.algebraicMoves">
-        <div class="line-element">{{getCurrentMovementNumber()}}</div>
-        <div *ngFor="let move of line.algebraicMoves; let i = index" class="line-element">{{move}}</div>
-        <div class="line-element">...</div>
-      </div>
-    </div>
+  <div class="table-lines-container table-container" *ngIf="lines && lines.length > 0">
+    <div class="table-title">Stockfish</div> 
+    <table>
+      <tbody>
+        <tr *ngFor="let line of lines;" class="line-element">
+          <td class="evaluation-element" [ngClass]="{'advance-w': (line.evaluation >= 0 ), 'advance-b': (line.evaluation < 0 )}">{{line.evaluation}}</td>
+          <td class="moves-line-element" *ngIf="line.algebraicMoves">
+            <span class="line-element">{{getCurrentMovementNumber()}}</span>
+            <span *ngFor="let move of line.algebraicMoves; let i = index" class="line-element">{{move + ' '}}</span>
+            <span class="line-element">...</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-  <div class="table-moves-container">
-    <div *ngFor="let move of moves;" class="move-element">
-      <span>{{move}}</span>
-    </div>
+  <div class="table-container" *ngIf="moves && moves.length > 0">
+    <div class="table-title">Moves</div>  
+    <table>
+      <tbody>
+        <tr *ngFor="let move of moves; let i = index" class="move-element">
+          <td *ngIf="i % 2 === 0">
+            {{move}}
+          </td>
+          <td *ngIf="i % 2 === 0">
+            {{moves[i + 1] ? moves[i + 1] : ''}}
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>

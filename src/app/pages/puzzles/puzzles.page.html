@@ -1,4 +1,12 @@
 <ion-content [fullscreen]="true">
+  <div class="title-bar">
+    <div class="title-bar-text">Puzzle</div> 
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
   <div class="panel-container">
     <div class="board-container">
       <div [id]="boardId"></div>
@@ -8,15 +16,15 @@
       <div class="level-bar">
         Juegan: <div [ngClass]="userColor"></div> Elo: {{userRating}} | {{'theme' | translate | async}}: {{theme}}
       </div>    
-      <ion-button class="button-control-element" color="medium" (click)="showSolution()">
+      <button class="windows-button button-control-element" color="medium" (click)="showSolution()">
         {{'solution' | translate | async}}
-      </ion-button>
-      <ion-button class="button-control-element" color="medium" (click)="nextPuzzle()">
+      </button>
+      <button class="windows-button button-control-element" color="medium" (click)="nextPuzzle()">
         {{'next' | translate | async}}
-      </ion-button>
-      <ion-button class="button-control-element" color="medium" (click)="openSettings()">
+      </button>
+      <button class="windows-button button-control-element" color="medium" (click)="openSettings()">
         {{'settings' | translate | async}}
-      </ion-button>
+      </button>
     </div>
   </div>
 </ion-content>

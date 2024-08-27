@@ -5,49 +5,78 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    .line-element {
+    margin-bottom: 8px;
+    .evaluation-element {
       display: flex;
+      text-align: center;
       flex-direction: row;
-      padding-bottom: 8px;
-      .evaluation-element {
-        display: flex;
-        text-align: center;
-        flex-direction: row;
-        width: 48px;
-        height: 22px;
-        justify-content: center;
-        align-items: center;
-        border-radius: 6px;        
-        &.advance-w {
-          background-color: #f4f5f8;
-          color: black;
-        }
-        &.advance-b {
-          color: white;
-          background-color: #5d5d5d;
-        }
+      width: 48px;
+      justify-content: center;
+      align-items: center;
+      width: 50px !important;
+      &.advance-w {
+        background-color: #f4f5f8 !important;
+        color: black;
+      }
+      &.advance-b {
+        color: white;
+        background-color: #5d5d5d !important;
+      }
+      span.line-element {
+        white-space: nowrap;
+      }
+      span.line-element::after {
+        content: ','
       }
       .moves-line-element {
         display: flex;
         flex-direction: row;
+        width: 100% !important;
         .line-element {
           display: flex;
           flex-direction: row;
-          padding: 2px;      
+          padding: 2px;
         }
       }
     }
   }
-  .table-moves-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  .table-container {
     width: 100%;
-    .move-element {
-      width: 50%;
-      border: solid 1px white;
-      padding: 4px;
-      text-align: center;
+
+    border: 2px solid #dfdfdf;
+    border-top-color: #808080;
+    border-left-color: #808080;
+    background-color: #c0c0c0;
+
+    .table-title {
+      background-color: #000080;
+      color: white;
+      font-weight: bold;
+      padding: 2px 4px;
+      font-size: 12px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 1px;
+
+      tr:nth-child(even) td,
+      tr:nth-child(4n-7) td {
+        background-color: #f0f0f0;
+      }
+
+      th,
+      td {
+        background-color: #ffffff;
+        padding: 2px 4px;
+        font-size: 12px;
+        width: 50%;
+      }
+
+      td.moves-line-element {
+        width: 100%;
+      }
     }
   }
 }

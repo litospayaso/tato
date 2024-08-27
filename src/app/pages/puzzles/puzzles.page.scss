@@ -1,7 +1,54 @@
+.title-bar {
+  background: linear-gradient(90deg, #000080, #1084d0);
+  padding: 3px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 13px;
+  position: relative;
+  top: 5px;
+
+  .title-bar-text {
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    margin-right: 24px;
+  }
+
+  .title-bar-controls {
+    display: flex;
+    button {
+      width: 16px;
+      height: 14px;
+      border: none;
+      background-color: #c0c0c0;
+      margin-left: 2px;
+      position: relative;
+      box-shadow:
+        inset -1px -1px #0a0a0a,
+        inset 1px 1px #fff,
+        inset -2px -2px #808080,
+        inset 2px 2px #dfdfdf;
+    }
+  }
+}
 .panel-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  background-color: #c0c0c0;
+  border: 2px solid #dfdfdf;
+  border-bottom-color: #404040;
+  border-right-color: #404040;
+  box-shadow:
+    inset 1px 1px #dfdfdf,
+    1px 0 #000,
+    0 1px #000,
+    1px 1px #000;
+  margin: -24px 10px 10px 10px;
+  padding: 36px 10px 10px 10px;
+
   @media (max-width: 660px) {
     flex-direction: column;
   }
@@ -13,8 +60,8 @@
     margin: 10px;
 
     @media (max-width: 660px) {
-      width: 100vmin;
-      height: 100vmin;
+      width: calc(100vmin - 52px);
+      height: calc(100vmin - 52px);
       margin: 0 0 30px 0;
     }
   }
@@ -25,7 +72,7 @@
     // margin: 16px auto 85px auto;
   }
   .panel-element {
-    width: calc(100vw - 68vmin - 55px);
+    width: calc(100vw - 68vmin - 75px);
     margin: 20px auto;
     overflow-y: auto;
     max-height: calc(100vh - 135px);
@@ -49,7 +96,7 @@
       @media (min-width: 660px) {
         padding-top: 15px;
       }
-  
+
       div.white {
         position: relative;
         top: -20px;
@@ -70,7 +117,8 @@
       }
     }
     .button-control-element {
-      width: 32%;
+      margin: 4px;
+      width: 30%;
     }
   }
 }
