@@ -1,11 +1,21 @@
 <ion-content [fullscreen]="true" style="max-height: calc(100vh - 58px);">
+  <div class="title-bar">
+    <div class="title-bar-text">{{'training' | translate | async}}</div> 
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
   <div class="panel-container">
     <div class="board-container">
-      <div [id]="boardId"></div>
+      <div class="board-container-element">
+        <div [id]="boardId"></div>
+      </div>
       <div class="control-buttons-container">
-        <ion-button class="button-control-element" color="medium" (click)="onResign()">
+        <button class="windows-button button-control-element" color="medium" (click)="onResign()">
           Resign
-        </ion-button>
+        </button>
       </div>
     </div>
 

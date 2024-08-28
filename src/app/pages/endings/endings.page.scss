@@ -1,10 +1,65 @@
+.title-bar {
+  background: linear-gradient(90deg, #000080, #1084d0);
+  padding: 3px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  top: 5px;
+  width: calc(65vmin - 6px);
+  
+  @media (max-width: 660px) {
+    width: unset;
+    margin: 0 13px;
+  }
+
+  .title-bar-text {
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    margin-right: 24px;
+  }
+
+  .title-bar-controls {
+    display: flex;
+    button {
+      width: 16px;
+      height: 14px;
+      border: none;
+      background-color: #c0c0c0;
+      margin-left: 2px;
+      position: relative;
+      box-shadow:
+        inset -1px -1px #0a0a0a,
+        inset 1px 1px #fff,
+        inset -2px -2px #808080,
+        inset 2px 2px #dfdfdf;
+    }
+  }
+}
 
 .panel-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  background-color: #c0c0c0;
+  border: 2px solid #dfdfdf;
+  border-bottom-color: #404040;
+  border-right-color: #404040;
+  width: 65vmin;
+  box-shadow:
+    inset 1px 1px #dfdfdf,
+    1px 0 #000,
+    0 1px #000,
+    1px 1px #000;
+  margin: -24px auto 10px;
+  padding: 36px 25px 0px;
   @media (max-width: 660px) {
+    width: unset;
     flex-direction: column;
+    margin: -24px 10px 10px 10px;
+    padding: 36px 18px 10px 10px;
   }
   .board-container {
     display: flex;
@@ -14,8 +69,8 @@
     margin: 10px;
 
     @media (max-width: 660px) {
-      width: 100vmin;
-      height: 100vmin;
+      width: calc(100vmin - 50px);
+      height: calc(100vmin - 50px);
       margin: 0 0 85px 0;
     }
   }

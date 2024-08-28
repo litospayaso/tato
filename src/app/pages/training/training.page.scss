@@ -26,21 +26,65 @@
   text-decoration: none;
 }
 
+.title-bar {
+  background: linear-gradient(90deg, #000080, #1084d0);
+  padding: 3px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 13px;
+  position: relative;
+  top: 5px;
 
+  .title-bar-text {
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    margin-right: 24px;
+  }
+
+  .title-bar-controls {
+    display: flex;
+    button {
+      width: 16px;
+      height: 14px;
+      border: none;
+      background-color: #c0c0c0;
+      margin-left: 2px;
+      position: relative;
+      box-shadow:
+        inset -1px -1px #0a0a0a,
+        inset 1px 1px #fff,
+        inset -2px -2px #808080,
+        inset 2px 2px #dfdfdf;
+    }
+  }
+}
 
 
 .panel-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  background-color: #c0c0c0;
+  border: 2px solid #dfdfdf;
+  border-bottom-color: #404040;
+  border-right-color: #404040;
+  box-shadow:
+    inset 1px 1px #dfdfdf,
+    1px 0 #000,
+    0 1px #000,
+    1px 1px #000;
+  margin: -24px 10px 10px 10px;
+  padding: 36px 10px 10px 10px;
+
   @media (max-width: 660px) {
     flex-direction: column;
   }
   .board-container {
     display: flex;
     flex-direction: column;
-    width: 65vmin;
-    height: 65vmin;
     margin: 10px;
 
     @media (max-width: 660px) {
@@ -53,23 +97,25 @@
   .board-container-element {
       width: 55vmin;
       height: 55vmin;
-      // margin: 16px auto 85px auto;
+
+      @media (max-width: 660px) {
+        width: calc(100vmin - 52px);
+        height: calc(100vmin - 52px);
+        margin: 0 0 30px 0;
+      }
   }
   .panel-element {
-      width: calc(100vw - 68vmin - 55px);
-      margin: 20px auto;
+      width: calc(100vw - 55vmin - 140px);
+      margin: 20px 0 0 20px;
       overflow-y: auto;
       max-height: calc(100vh - 135px);
-      // max-width: 100%;
-      // margin: 60px auto;
-      // min-width: 100%;
-      // min-width: 480px;
 
       @media (max-width: 660px) {
         width: 100%;
-        padding: 0 5px;
-        max-height: calc(100vh - 100vmin - 185px);
+        padding: 0 10px;
+        max-height: calc(100vh - 100vmin - 205px);
         overflow-y: auto;
+        margin: unset;
       }
   }
 }
@@ -129,5 +175,8 @@
   flex-direction: row;
   .button-control-element {
     width: 100%;
+  }
+  @media (max-width: 660px) {
+    width: calc(100vmin - 50px);
   }
 }

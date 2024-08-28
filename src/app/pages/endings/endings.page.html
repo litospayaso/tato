@@ -1,4 +1,12 @@
 <ion-content [fullscreen]="true">
+  <div class="title-bar">
+    <div class="title-bar-text">{{'endings' | translate | async}}</div> 
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
   <div class="panel-container">
     <div class="board-container">
       <div [id]="boardId"></div>
