@@ -31,7 +31,8 @@
 
 @font-face {
   font-family: 'W95FA';
-  src: url('./assets/fonts/w-95.woff2') format('woff2');
+  src: url('./assets/fonts/MicrosoftSansSerif.woff2') format('woff2'),
+  url('./assets/fonts/MicrosoftSansSerif.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

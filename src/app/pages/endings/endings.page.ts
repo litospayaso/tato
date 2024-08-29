@@ -217,18 +217,6 @@ export class EndingsPage implements AfterViewInit {
   }
 
   public endGame() {
-    // const gameResult = this.game.in_checkmate() ? (this.game.turn() === 'w' ? '0-1' : '1-0') : '1/2 - 1/2';
-    // this.gameService.addGame({
-    //   id: uuid.v4(),
-    //   date: new Date().toLocaleString(),
-    //   pgn: this.game.pgn(),
-    //   initPosition: this.currentEnding.fen,
-    //   movesVerbose: this.moves,
-    //   userColor: this.userColor,
-    //   endingPosition: this.game.fen(),
-    //   theme: this.currentEnding.theme,
-    //   gameResult
-    // });
     this.currentEnding = this.allEndings.splice(Math.floor(Math.random() * this.allEndings.length), 1)[0];
     this.initPosition();
   }

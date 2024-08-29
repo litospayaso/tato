@@ -17,11 +17,11 @@ import { OpeningInterface } from '@app/interfaces/opening.interface';
 declare const Chessground: ChessgroundConstructor;
 declare const Chess: any;
 
-@Component( {
+@Component({
   selector: 'app-training',
   templateUrl: 'training.page.html',
   styleUrls: ['training.page.scss'],
-} )
+})
 export class TrainingPage implements AfterViewInit {
 
   public board: ChessgroundInterface;
@@ -130,7 +130,7 @@ export class TrainingPage implements AfterViewInit {
       const moves = this.boardMovesPointer ? this.getCurrentListMoves().slice(0, this.boardMovesPointer).join(' ').concat(` ${move}`) : this.moves.concat(` ${move}`);
       this.boardMovesPointer = undefined;
       this.game.move(move, { sloppy: true });
-      this.moves = this.game.history({verbose: true}).map(e => `${e.from}${e.to}${e.promotion ? e.promotion : ''}`).join(' ');
+      this.moves = this.game.history({ verbose: true }).map(e => `${e.from}${e.to}${e.promotion ? e.promotion : ''}`).join(' ');
       this.turn = this.game.turn();
       this.stockfish.evalPosition(moves);
       this.algebraicMoves = this.game.history();
@@ -176,12 +176,12 @@ export class TrainingPage implements AfterViewInit {
       },
     });
     await modal.present();
-    await modal.onDidDismiss().then(({data}) => {
+    await modal.onDidDismiss().then(({ data }) => {
       if (data) {
-        if(data.data === 'newGame') {
+        if (data.data === 'newGame') {
           this.ngAfterViewInit();
         }
-        if(data.data === 'retry') {
+        if (data.data === 'retry') {
           console.log('%c retry', 'background: #df03fc; color: #f8fc03');
           this.createNewGame();
         }
@@ -191,7 +191,7 @@ export class TrainingPage implements AfterViewInit {
 
   private makeMove(move: string) {
     this.game.move(move, { sloppy: true });
-    this.moves = this.game.history({verbose: true}).map(e => `${e.from}${e.to}${e.promotion ? e.promotion : ''}`).join(' ');
+    this.moves = this.game.history({ verbose: true }).map(e => `${e.from}${e.to}${e.promotion ? e.promotion : ''}`).join(' ');
     this.turn = this.game.turn();
     this.algebraicMoves = this.game.history();
 
@@ -240,8 +240,8 @@ export class TrainingPage implements AfterViewInit {
   private makeStockfishMovement() {
     this.makeMove(
       Math.random() < 0.9 ?
-      this.stockfish.bestmove :
-      this.stockfish.lines[Math.floor(Math.random() * this.stockfish.lines.length)].moves[0]
+        this.stockfish.bestmove :
+        this.stockfish.lines[Math.floor(Math.random() * this.stockfish.lines.length)].moves[0]
     );
   }
 

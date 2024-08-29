@@ -11,20 +11,10 @@
     <div class="board-container">
       <div [id]="boardId"></div>
     </div>
-    
-    <!-- <div class="panel-element">
-      <div class="level-bar">
-        Juegan: <div [ngClass]="userColor"></div> Elo: {{userRating}} | Theme: {{theme}}
-      </div>    
-      <ion-button class="button-control-element" color="medium" (click)="showSolution()">
-        Solution
-      </ion-button>
-      <ion-button class="button-control-element" color="medium" (click)="nextPuzzle()">
-        Next
-      </ion-button>
-      <ion-button class="button-control-element" color="medium" (click)="openSettings()">
-        Settings
-      </ion-button>
-    </div> -->
+    <div class="control-buttons-container">
+      <button class="windows-button button-control-element" color="medium" (click)="endGame()">
+        Resign
+      </button>
+    </div>
   </div>
 </ion-content>

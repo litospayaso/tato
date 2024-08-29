@@ -65,8 +65,8 @@ export class AppComponent {
     });
   }
 
-  public toogleMenu() {
-    this.widthMenu = this.widthMenu === '0' ? '100vw' : '0';
+  public updateFocus() {
+    document.getElementById('appbar')?.focus();
   }
 
 }

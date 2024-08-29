@@ -1,35 +1,53 @@
 <ion-app>
   <ion-header>
-    <ion-toolbar style="max-height: 45px;">
-      <ion-title style="position: relative; top:-6px;">
-        <ion-icon *ngIf="!pageBack" (click)="toogleMenu()" class="menu-button" name="menu-outline" class="menu-icon"></ion-icon>
-        <ion-icon *ngIf="pageBack" class="back-arrow" [routerLink]="[pageBack]" skipLocationChange routerDirection="root" name="arrow-back-outline" class="menu-icon"></ion-icon>
-        {{title | translate | async}}
-      </ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <div class="appbar" tabindex="0">
+      <div class="appbar-menu" id="appBar">
+        <button *ngIf="!pageBack" class="main-menu menu-button" (click)="updateFocus()">
+          <span class="icon">♟️Tato</span> 
+        </button>
+        <div class="lateral-panel-container" (click)="updateFocus()">
+          <div *ngFor="let page of appPages">
+            <div [routerLink]="[page.url]"  class="lateral-panel-button-container" skipLocationChange routerDirection="root" [ngClass]="title === page.title ? 'selected' : ''">
+              <ion-icon aria-hidden="false" [name]="page.icon" class="icon-list-element"></ion-icon>
+              {{page.title | translate | async}}
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <div id="mySidepanel" class="lateral-panel" [ngStyle]="{'width': widthMenu}" (click)="toogleMenu()">
-    <div class="lateral-panel-container">
-      <ion-list *ngFor="let page of appPages">
-        <ion-item [routerLink]="[page.url]" skipLocationChange routerDirection="root" [ngClass]="title === page.title ? 'selected' : ''">
-          <ion-icon aria-hidden="false" [name]="page.icon" class="icon-list-element"></ion-icon>
-          {{page.title | translate | async}}
-        </ion-item>
-      </ion-list>
+      <ion-icon *ngIf="pageBack" class="back-arrow" [routerLink]="[pageBack]" skipLocationChange routerDirection="root" name="arrow-back-outline" class="menu-icon"></ion-icon>
+
+      <div class="desktop-container" routerLink="/home" skipLocationChange routerDirection="root">
+        <img src="../assets/icon/desktop-0.png">
+      </div>
+
+      <div class="settings-appbar">
+        <div class="settings" routerLink="/settings" skipLocationChange routerDirection="root" >
+          <img src="../assets/icon/options-3.png">
+        </div>
+        <div class="clock">14:15</div>
+      </div>
     </div>
-  </div>
+    <!-- <ion-toolbar style="max-height: 45px;">
+      <ion-title style="position: relative; top:-6px; padding-left: 8px;">
+        <button *ngIf="!pageBack" class="menu-button">
+          <span class="icon">♟️Tato</span> 
+        </button>
+        <ion-icon *ngIf="pageBack" class="back-arrow" [routerLink]="[pageBack]" skipLocationChange routerDirection="root" name="arrow-back-outline" class="menu-icon"></ion-icon>
+        <div class="lateral-panel-container">
+          <div *ngFor="let page of appPages" class="latera-panel-button-container">
+            <div [routerLink]="[page.url]" skipLocationChange routerDirection="root" [ngClass]="title === page.title ? 'selected' : ''">
+              <ion-icon aria-hidden="false" [name]="page.icon" class="icon-list-element"></ion-icon>
+              {{page.title | translate | async}}
+            </div>
+          </div>
+        </div>
+      </ion-title>
+    </ion-toolbar> -->
+  </ion-header>
 
   
   <div class="container"> 
-    <!-- <div class="lateral-menu">
-      <ion-list *ngFor="let page of appPages">
-        <ion-item [routerLink]="[page.url]" skipLocationChange routerDirection="root" [ngClass]="title === page.title ? 'selected' : ''">
-          <ion-icon aria-hidden="false" [name]="page.icon"></ion-icon>
-          {{page.title}}
-        </ion-item>
-      </ion-list>
-    </div> -->
     <div class="outlet-container" [ngClass]="title">
       <ion-router-outlet class="outlet-elem"></ion-router-outlet>
     </div>
