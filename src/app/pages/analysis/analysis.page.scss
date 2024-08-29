@@ -143,9 +143,11 @@
     color: white;
     position: absolute;
     left: 38px;
+    top: 51px;
     
     @media (max-width: 660px) {
       left: 28px;
+      top: 42px;
     }
   }
 }

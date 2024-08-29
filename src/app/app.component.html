@@ -8,7 +8,8 @@
         <div class="lateral-panel-container" (click)="updateFocus()">
           <div *ngFor="let page of appPages">
             <div [routerLink]="[page.url]"  class="lateral-panel-button-container" skipLocationChange routerDirection="root" [ngClass]="title === page.title ? 'selected' : ''">
-              <ion-icon aria-hidden="false" [name]="page.icon" class="icon-list-element"></ion-icon>
+              <img width="24" height="24" [src]="'../assets/icon/' + page.icon">
+              <!-- <ion-icon aria-hidden="false" [name]="page.icon" class="icon-list-element"></ion-icon> -->
               {{page.title | translate | async}}
             </div>
           </div>

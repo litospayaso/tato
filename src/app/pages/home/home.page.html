@@ -1,16 +1,12 @@
 <ion-content [fullscreen]="true">
 
   <div class="games-container">
-    <div *ngFor="let page of appPages; let i = index" class="game-element" skipLocationChange routerDirection="root" [routerLink]="[page.url]">
-      <div class="game-fen" [id]="i">
-        <ion-icon aria-hidden="false" [name]="page.icon" class="icon-list-element"></ion-icon>
-      </div>
-      <div class="game-description">
-        <div class="game-title">
-          {{page.title | translate | async}}
-        </div>
-      </div>
-    </div>
+    <div class="ui-icon" *ngFor="let page of appPages; let i = index"  skipLocationChange routerDirection="root" [routerLink]="[page.url]">
+			<div class="ui-icon-container">
+				<img width="48" height="48" [src]="'../assets/icon/' + page.icon">
+				<span>{{page.title | translate | async}}</span>
+			</div>
+		</div>
   </div>
 
 </ion-content>

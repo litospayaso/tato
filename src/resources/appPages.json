@@ -2,26 +2,26 @@
   {
     "title": "analysis",
     "url": "/analysis",
-    "icon": "create"
+    "icon": "desktop_w95-0.png"
   },
   {
     "title": "games",
     "url": "/games",
-    "icon": "search-outline"
+    "icon": "floppy_drive_3_5-3.png"
   },
   {
     "title": "training",
     "url": "/training",
-    "icon": "barbell-outline"
+    "icon": "globe_map-0.png"
   },
   {
     "title": "puzzles",
     "url": "/puzzles",
-    "icon": "extension-puzzle-outline"
+    "icon": "write_file-1.png"
   },
   {
     "title": "endings",
     "url": "/endings",
-    "icon": "rocket-outline"
+    "icon": "monitor_moon.png"
   }
 ]

@@ -172,6 +172,10 @@ $screen-lg-min: 992px;
       color: rgb(10, 10, 10);
       font-weight: normal;
       cursor: pointer;
+
+      img {
+        margin-right: 16px;
+      }
     }
     .lateral-panel-button-container:hover {
       color: rgb(254, 254, 254);
