@@ -44,6 +44,11 @@
   border-right-color: #404040 !important;
   box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000 !important;
   margin: 20px auto !important;
+
+  @media (min-width: 400px) {
+    min-width: 350px !important;
+  }
+
   .alert-head {
     background: linear-gradient(90deg, #000080, #1084d0);
     padding: 18px 9px !important;
@@ -71,6 +76,7 @@
 .alert-radio-group {
   .alert-radio-label {
     color: black !important;
+    white-space: normal;
   }
   .alert-radio-icon,
   [aria-checked=true].sc-ion-alert-md .alert-radio-icon {
@@ -131,4 +137,33 @@
   left: 0px;
   height: 100%;
   width: 100%;
+}
+
+.modal-container {
+  background-color: #c0c0c0 !important;
+  border: 2px solid #dfdfdf !important;
+  border-bottom-color: #404040 !important;
+  border-right-color: #404040 !important;
+  padding: 16px;;
+}
+.modal-container::before {
+  content: "";
+  height: 28px;
+  width: calc(100% + 29px);
+  background: linear-gradient(90deg, #000080, #1084d0);;
+  position: relative;
+  top: -16px;
+  left: -15px;
+}
+.modal-container::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border: none;
+  background-color: #c0c0c0;
+  margin-left: 2px;
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;
 }

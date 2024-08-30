@@ -73,6 +73,7 @@ export class TrainingPage implements AfterViewInit {
       }
       this.userColor = data.data ? data.data.userColor : 'w';
       this.openingsBook = openingsJSON.filter(e => e.name.includes(data.data ? data.data.opening : 'Scandinavian Defense'));
+      console.log('%c this.openingsBook', 'background: #df03fc; color: #f8fc03', this.openingsBook);
       this.createNewGame();
     });
   }
