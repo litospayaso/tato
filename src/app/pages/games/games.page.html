@@ -1,4 +1,12 @@
 <ion-content [fullscreen]="true">
+  <div class="title-bar">
+    <div class="title-bar-text">{{'games' | translate | async}}</div> 
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
   <div class="games-container">
     <div *ngFor="let game of allGames; let i = index" class="game-element" skipLocationChange routerDirection="root" [routerLink]="'/analysis/' + game.id">
       <div class="game-fen" [id]="'game-fen-' + i"></div>

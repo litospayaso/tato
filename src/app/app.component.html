@@ -16,7 +16,7 @@
         </div>
       </div>
 
-      <ion-icon *ngIf="pageBack" class="back-arrow" [routerLink]="[pageBack]" skipLocationChange routerDirection="root" name="arrow-back-outline" class="menu-icon"></ion-icon>
+      <img *ngIf="pageBack" src="../assets/icon/back.png" class="back-arrow" [routerLink]="[pageBack]" skipLocationChange routerDirection="root" name="arrow-back-outline" class="menu-icon"/>
 
       <div class="desktop-container" routerLink="/home" skipLocationChange routerDirection="root">
         <img src="../assets/icon/desktop-0.png">
