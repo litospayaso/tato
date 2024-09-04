@@ -4,7 +4,7 @@ const readline = require('readline');
 async function processLineByLine() {
   const fileStream = fs.createReadStream('endingsClasified.csv');
   const puzzleArray = [];
-  const themes = ['pawnEnding', 'queenEnding', 'rookEnding', 'minorPiecesEnding', 'bishopvsknigth', 'bishopvsbishop', 'bishopvspawns', 'knightvspawns', 'queenvsrook', 'queenvsminorPieces', 'rookvsminorPieces', 'middlegameEnding', 'draw', 'veryHard', 'Hard', 'Medium', 'Easy', 'veryEasy'];
+  const themes = ['pawnEnding', 'queenEnding', 'rookEnding', 'minorPiecesEnding', 'bishopvsknight', 'bishopvsbishop', 'bishopvspawns', 'knightvspawns', 'queenvsrook', 'queenvsminorPieces', 'rookvsminorPieces', 'middlegameEnding', 'draw', 'veryHard', 'Hard', 'Medium', 'Easy', 'veryEasy'];
   const rating = {};
   const rl = readline.createInterface({
     input: fileStream,

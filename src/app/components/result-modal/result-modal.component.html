@@ -1,19 +1,19 @@
 <div class="modal-container">
   <ion-item>
-    <div *ngIf="gameResult === 'win'">
-      Congratulations! You won.
+    <div *ngIf="result === '1-0'">
+      {{'whiteWin' | translate | async}}
     </div>
-    <div *ngIf="gameResult === 'draw'">
-      Draw
+    <div *ngIf="result === '0-1'">
+      {{'blackWin' | translate | async}}
     </div>
-    <div *ngIf="gameResult === 'lose'">
-      You lose.
+    <div *ngIf="result === '1/2 - 1/2'">
+      {{'draw' | translate | async}}
     </div>
   </ion-item>
   <div class="buttons-container">
-    <ion-button expand="full" [routerLink]="'/home'" (click)="cancel()" skipLocationChange routerDirection="root"
-      class="close-modal-button" color="medium">return home</ion-button>
-    <ion-button expand="full" (click)="closeModal('retry')" class="close-modal-button" color="medium">retry</ion-button>
-    <ion-button expand="full" (click)="closeModal('newGame')" class="close-modal-button" color="medium">new game</ion-button>
+    <button expand="full" [routerLink]="'/home'" (click)="cancel()" skipLocationChange routerDirection="root"
+      class="windows-button" color="medium">{{'returnHome' | translate | async}}</button>
+    <button expand="full" (click)="closeModal('retry')" class="windows-button" color="medium">{{'retry' | translate | async}}</button>
+    <button expand="full" (click)="closeModal('newGame')" class="windows-button" color="medium">{{'newGame' | translate | async}}</button>
   </div>
 </div>

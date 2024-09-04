@@ -14,7 +14,7 @@
     
     <div class="panel-element">
       <div class="level-bar">
-        Juegan: <div [ngClass]="userColor"></div> Elo: {{userRating}} | {{'theme' | translate | async}}: {{theme}}
+        {{'turn' | translate | async}}: <div [ngClass]="userColor"></div> Elo: {{userRating}} | {{'theme' | translate | async}}: {{theme}}
       </div>    
       <button class="windows-button button-control-element" color="medium" (click)="showSolution()">
         {{'solution' | translate | async}}

@@ -5685,7 +5685,7 @@
   },
   {
     "fen": "8/4B3/1p4p1/p1nPkp1p/P1P5/2P2P2/2BK2P1/8 b - - 2 47",
-    "theme": "minorPiecesEnding bishopvsknigth advantage Easy"
+    "theme": "minorPiecesEnding bishopvsknight advantage Easy"
   },
   {
     "fen": "3Q3k/7p/p3p3/1p1pPp2/3P4/2PB2qP/PP4P1/6K1 b - - 2 30",
@@ -5857,7 +5857,7 @@
   },
   {
     "fen": "5b2/p7/1pk2N2/8/6Np/5P2/PP2K1P1/8 b - - 1 42",
-    "theme": "minorPiecesEnding bishopvsknigth advantage Easy"
+    "theme": "minorPiecesEnding bishopvsknight advantage Easy"
   },
   {
     "fen": "r5k1/5p2/3q3p/p1Rn2p1/8/5PPN/P6P/2R4K w - - 2 33",
@@ -7121,7 +7121,7 @@
   },
   {
     "fen": "8/8/pB6/4K3/2P1P1k1/3P4/1Pn5/8 b - - 0 50",
-    "theme": "minorPiecesEnding bishopvsknigth advantage Easy"
+    "theme": "minorPiecesEnding bishopvsknight advantage Easy"
   },
   {
     "fen": "2r3k1/5p1p/3p2p1/p7/3QP3/P4r2/5PKP/R7 b - - 1 28",
@@ -13029,7 +13029,7 @@
   },
   {
     "fen": "6k1/8/p3p3/P3P3/2KP1P2/1n4P1/5P2/2B5 b - - 0 56",
-    "theme": "minorPiecesEnding bishopvsknigth advantage veryEasy"
+    "theme": "minorPiecesEnding bishopvsknight advantage veryEasy"
   },
   {
     "fen": "r1b3r1/p5k1/2pN4/3p1p2/8/3B2PP/PPP4K/4RR2 b - - 0 24",
@@ -15409,7 +15409,7 @@
   },
   {
     "fen": "8/4k3/2p1n3/1p1n1Bpp/p2p4/P1P4P/1P3PP1/6K1 w - - 2 38",
-    "theme": "minorPiecesEnding bishopvsknigth advantage Easy"
+    "theme": "minorPiecesEnding bishopvsknight advantage Easy"
   },
   {
     "fen": "8/5k1p/p1Q3p1/1p6/1P6/3r2PP/5P1K/8 b - - 0 36",
@@ -16617,7 +16617,7 @@
   },
   {
     "fen": "8/1b3p2/p4pkp/7N/6P1/b6P/5P2/5K2 w - - 2 40",
-    "theme": "minorPiecesEnding bishopvsknigth advantage Easy"
+    "theme": "minorPiecesEnding bishopvsknight advantage Easy"
   },
   {
     "fen": "5r2/1p4k1/p2b2p1/2p2Rpp/5P1P/P7/1P3PP1/6K1 w - - 0 27",
@@ -17045,7 +17045,7 @@
   },
   {
     "fen": "8/1p3k2/p2p4/3pnP1B/P6B/2P5/1P6/2K5 b - - 2 35",
-    "theme": "minorPiecesEnding bishopvsknigth advantage Easy"
+    "theme": "minorPiecesEnding bishopvsknight advantage Easy"
   },
   {
     "fen": "3k1b1r/6pp/4p3/4N3/8/2P5/PP2p1PP/RN1q1QK1 w - - 0 21",
@@ -23437,7 +23437,7 @@
   },
   {
     "fen": "3nK3/8/p7/1p6/1B4k1/1P6/P6p/8 w - - 0 57",
-    "theme": "minorPiecesEnding bishopvsknigth advantage veryEasy"
+    "theme": "minorPiecesEnding bishopvsknight advantage veryEasy"
   },
   {
     "fen": "8/7R/n1p1kp2/P6p/2N5/8/6PP/6K1 b - - 1 43",

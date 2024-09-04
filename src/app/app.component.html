@@ -5,6 +5,7 @@
         <button *ngIf="!pageBack" class="main-menu menu-button" (click)="updateFocus()">
           <span class="icon">♟️Tato</span> 
         </button>
+
         <div class="lateral-panel-container" (click)="updateFocus()">
           <div *ngFor="let page of appPages">
             <div [routerLink]="[page.url]"  class="lateral-panel-button-container" skipLocationChange routerDirection="root" [ngClass]="title === page.title ? 'selected' : ''">
@@ -22,11 +23,16 @@
         <img src="../assets/icon/desktop-0.png">
       </div>
 
+      <div *ngFor="let page of appPages" class="task-button" [routerLink]="[page.url]" skipLocationChange routerDirection="root" [ngClass]="title === page.title ? 'selected' : ''">
+        <img width="24" height="24" [src]="'../assets/icon/' + page.icon">
+        {{page.title | translate | async}}
+      </div>
+
       <div class="settings-appbar">
-        <div class="settings" routerLink="/settings" skipLocationChange routerDirection="root" >
+        <div class="settings" (click)="openSettings()" >
           <img src="../assets/icon/options-3.png">
         </div>
-        <div class="clock">14:15</div>
+        <div class="clock">{{currentTime}}</div>
       </div>
     </div>
     <!-- <ion-toolbar style="max-height: 45px;">

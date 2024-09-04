@@ -70,7 +70,7 @@ const parseEveryEnd = () => {
         themes = themes.concat(' minorPiecesEnding');
         if ((pos.b && !pos.B && !pos.n && pos.N) || 
             (!pos.b && pos.B && pos.n && !pos.N) ) {
-          themes = themes.concat(' bishopvsknigth');
+          themes = themes.concat(' bishopvsknight');
         }
         if ((pos.b && pos.B && !pos.n && !pos.N) || 
             (!pos.b && !pos.B && pos.n && pos.N) ) {

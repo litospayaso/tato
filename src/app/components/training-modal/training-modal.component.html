@@ -9,15 +9,15 @@
     </ion-select>
   </ion-item>
   <ion-item>
-    <ion-label>Opening</ion-label>
+    <ion-label>{{'opening' | translate | async}}</ion-label>
     <ion-select [(ngModel)]="opening" okText="Select">
       <ion-select-option *ngFor="let option of openingOptions" [value]="option">{{option}}</ion-select-option>
     </ion-select>
   </ion-item>
   <div class="buttons-container">
-    <ion-button expand="full" [routerLink]="'/home'" (click)="cancel()" skipLocationChange routerDirection="root"
-      class="close-modal-button" color="medium">{{'cancel' | translate | async}}</ion-button>
-    <ion-button expand="full" (click)="closeModal()" class="close-modal-button" color="medium">{{'start' | translate |
-      async}}</ion-button>
+    <button expand="full" [routerLink]="'/home'" (click)="cancel()" skipLocationChange routerDirection="root"
+      class="windows-button" color="medium">{{'cancel' | translate | async}}</button>
+    <button expand="full" (click)="closeModal()" class="windows-button" color="medium">{{'start' | translate |
+      async}}</button>
   </div>
 </div>

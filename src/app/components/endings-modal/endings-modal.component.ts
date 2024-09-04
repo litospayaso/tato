@@ -11,7 +11,7 @@ import { DefaultEndingsValuesInterface } from '@interfaces/game.interface';
 export class EndingsModalComponent implements OnInit {
 
   // public opening = `Bishop's Opening`;
-  public themes = ['all', 'pawnEnding', 'queenEnding', 'rookEnding', 'minorPiecesEnding', 'bishopvsknigth', 'bishopvsbishop', 'bishopvspawns', 'knightvspawns', 'queenvsrook', 'queenvsminorPieces', 'rookvsminorPieces', 'middlegameEnding', 'draw'];
+  public themes = ['all', 'pawnEnding', 'queenEnding', 'rookEnding', 'minorPiecesEnding', 'bishopvsknight', 'bishopvsbishop', 'bishopvspawns', 'knightvspawns', 'queenvsrook', 'queenvsminorPieces', 'rookvsminorPieces', 'middlegameEnding', 'draw'];
   public theme = `all`;
   public dificultyValue = 3;
   public dificultyValues = [

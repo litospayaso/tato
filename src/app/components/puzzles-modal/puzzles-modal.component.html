@@ -1,10 +1,12 @@
 <div class="modal-container">
   <ion-item>
-    <ion-label>themes</ion-label>
+    <ion-label>{{'theme' | translate | async}}</ion-label>
     <ion-select [(ngModel)]="theme" okText="Select" >
       <ion-select-option *ngFor="let elem of themes" [value]="elem">{{elem}}</ion-select-option>
     </ion-select>
   </ion-item>
 
-  <ion-button expand="full" (click)="closeModal()" class="close-modal-button" color="medium">Save settings</ion-button>
+  <div class="buttons-container">
+    <button expand="full" (click)="closeModal()" class="windows-button" color="medium{{'saveSettings' | translate | async}}">Save settings</button>
+  </div>
 </div>

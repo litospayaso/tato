@@ -2,10 +2,13 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-}
-.close-modal-button {
-  margin-top: auto;
-}
-.buttons-container {
-  margin-top: auto;
+
+  button {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .buttons-container {
+    margin-top: auto;
+  }
 }

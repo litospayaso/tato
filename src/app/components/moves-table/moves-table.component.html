@@ -1,5 +1,5 @@
 <div class="table-component-container">
-  <ion-button *ngIf="resignButton" expand="full" (click)="resign()" color="medium">Resign</ion-button>
+  <ion-button *ngIf="resignButton" expand="full" (click)="resign()" color="medium">{{'resign' | translate | async}}</ion-button>
   <div class="table-lines-container table-container" *ngIf="lines && lines.length > 0">
     <div class="table-title">Stockfish</div> 
     <table>
@@ -16,7 +16,7 @@
     </table>
   </div>
   <div class="table-container" *ngIf="moves && moves.length > 0">
-    <div class="table-title">Moves</div>  
+    <div class="table-title">{{'moves' | translate | async}}</div>  
     <table>
       <tbody>
         <tr *ngFor="let move of moves; let i = index" class="move-element">

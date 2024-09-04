@@ -73,13 +73,13 @@ export class TrainingPage implements AfterViewInit {
       }
       this.userColor = data.data ? data.data.userColor : 'w';
       this.openingsBook = openingsJSON.filter(e => e.name.includes(data.data ? data.data.opening : 'Scandinavian Defense'));
-      console.log('%c this.openingsBook', 'background: #df03fc; color: #f8fc03', this.openingsBook);
       this.createNewGame();
     });
   }
 
   private createNewGame() {
     this.moves = '';
+    this.algebraicMoves = [];
     this.game = new Chess();
     this.board = Chessground(document.getElementById(this.boardId), {
       orientation: this.userColor === 'w' ? 'white' : 'black',
@@ -183,7 +183,6 @@ export class TrainingPage implements AfterViewInit {
           this.ngAfterViewInit();
         }
         if (data.data === 'retry') {
-          console.log('%c retry', 'background: #df03fc; color: #f8fc03');
           this.createNewGame();
         }
       }

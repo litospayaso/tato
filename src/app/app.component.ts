@@ -5,9 +5,12 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { Router, ResolveEnd } from '@angular/router';
 import { Storage } from '@ionic/storage';
+import { ModalController } from '@ionic/angular';
 
 import { filter, last } from 'rxjs/operators';
 import { GamesService } from './services/games.service';
+
+import {SettingsPage} from '@pages/settings/settings.page';
 
 import appPages from '@resources/appPages.json';
 
@@ -21,12 +24,14 @@ export class AppComponent {
   public pageBack = '';
   public widthMenu = '0';
   public appPages = appPages;
+  public currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: "2-digit", hour12: false });
   constructor(
     private platform: Platform,
     private router: Router,
     private splashScreen: SplashScreen,
     private gamesService: GamesService,
     private statusBar: StatusBar,
+    public modalController: ModalController,
     private storage: Storage
   ) {
     this.gamesService.reloadData();
@@ -54,6 +59,9 @@ export class AppComponent {
           break;
       }
       this.title = routerName;
+      setTimeout(() => {
+        this.currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: "2-digit", hour12: false });
+      }, 15000);
     });
     this.initializeApp();
   }
@@ -67,6 +75,14 @@ export class AppComponent {
 
   public updateFocus() {
     document.getElementById('appbar')?.focus();
+  }
+
+  public async openSettings() {
+    const modal = await this.modalController.create({
+      component: SettingsPage,
+    });
+    await modal.present();
+
   }
 
 }
