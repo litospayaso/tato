@@ -3,7 +3,7 @@
   <div class="games-container">
     <div class="ui-icon" *ngFor="let page of appPages; let i = index"  skipLocationChange routerDirection="root" [routerLink]="[page.url]">
 			<div class="ui-icon-container">
-				<img width="48" height="48" [src]="'../assets/icon/' + page.icon">
+				<img width="48" height="48" [src]="'assets/icon/' + page.icon">
 				<span>{{page.title | translate | async}}</span>
 			</div>
 		</div>
