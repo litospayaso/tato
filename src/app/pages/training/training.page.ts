@@ -159,16 +159,18 @@ export class TrainingPage implements AfterViewInit {
 
   public async endGame(result?: string) {
     const gameResult = result ? result : (this.game.in_checkmate() ? (this.game.turn() === 'w' ? '0-1' : '1-0') : '1/2 - 1/2');
-    this.gamesService.addGame({
-      id: uuid.v4(),
-      date: new Date().toLocaleString(),
-      pgn: this.game.pgn(),
-      opening: this.opening?.name,
-      movesVerbose: this.moves,
-      userColor: this.userColor,
-      endingPosition: this.game.fen(),
-      gameResult
-    });
+    if (this.moves.split(' ').length > 3 ) {
+      this.gamesService.addGame({
+        id: uuid.v4(),
+        date: new Date().toLocaleString(),
+        pgn: this.game.pgn(),
+        opening: this.opening?.name,
+        movesVerbose: this.moves,
+        userColor: this.userColor,
+        endingPosition: this.game.fen(),
+        gameResult
+      });
+    }
     const modal = await this.modalController.create({
       component: ResultModalComponent,
       componentProps: {
