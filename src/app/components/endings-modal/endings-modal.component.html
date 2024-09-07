@@ -5,7 +5,7 @@
   </ion-item>
   <ion-item>
     <ion-label>{{'theme' | translate | async}}</ion-label>
-    <ion-select [(ngModel)]="theme" okText="Select" >
+    <ion-select [(ngModel)]="theme" [okText]="'select' | translate | async" [cancelText]="'cancel' | translate | async" >
       <ion-select-option *ngFor="let option of themes" [value]="option">{{option | translate | async}}</ion-select-option>
     </ion-select>
   </ion-item>

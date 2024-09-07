@@ -3,14 +3,14 @@
 
   <ion-item>
     <ion-label>{{'color'| translate | async}}</ion-label>
-    <ion-select [(ngModel)]="userColor" okText="Select">
+    <ion-select [(ngModel)]="userColor" [okText]="'okText' | translate | async" [cancelText]="'cancelText' | translate | async">
       <ion-select-option value="w">{{'white' | translate | async}}</ion-select-option>
       <ion-select-option value="b">{{'black' | translate | async}}</ion-select-option>
     </ion-select>
   </ion-item>
   <ion-item>
     <ion-label>{{'opening' | translate | async}}</ion-label>
-    <ion-select [(ngModel)]="opening" okText="Select">
+    <ion-select [(ngModel)]="opening" [okText]="'select' | translate | async" [cancelText]="'cancel' | translate | async">
       <ion-select-option *ngFor="let option of openingOptions" [value]="option">{{option}}</ion-select-option>
     </ion-select>
   </ion-item>

@@ -10,36 +10,41 @@ import { PromotionModalComponent } from '@components/promotion-modal/promotion-m
 import { ToastController } from '@ionic/angular';
 import * as uuid from 'uuid';
 import { ChessInstance } from '@libs/chess.js/chessInterface';
+import { TranslatePipe } from '@pipes/translate.pipe';
 declare const Chessground: ChessgroundConstructor;
 declare const Chess: any;
 
-@Component( {
+@Component({
   selector: 'app-analysis',
   templateUrl: 'analysis.page.html',
   styleUrls: ['analysis.page.scss'],
-} )
+})
 export class AnalysisPage implements AfterViewInit {
 
   public board: ChessgroundInterface;
   public game: ChessInstance;
   public moves: string;
   public algebraicMoves: string[] = [];
-  public stockfish: Stockfish = new Stockfish(20, 6, 3);
+  public stockfish: Stockfish = new Stockfish(20, 9, 3);
   public userColor = 'w';
   public turn = 'w';
   public boardMovesPointer: number = undefined;
   public savedGame: GameInterface;
   public gameId: string | number;
   public boardId: string;
+  public successMessage: string;
 
   constructor(
     private route: ActivatedRoute,
     private gamesService: GamesService,
     private popoverController: PopoverController,
     public toastController: ToastController,
-    private storage: Storage
+    private storage: Storage,
+    private translate: TranslatePipe
   ) {
     this.boardId = uuid.v4();
+
+    this.translate.transform('copied').then((successMessage) => this.successMessage = successMessage);
 
     this.game = new Chess();
     this.moves = '';
@@ -61,7 +66,7 @@ export class AnalysisPage implements AfterViewInit {
           }
         }
       }
-   });
+    });
   }
 
   ngAfterViewInit() {
@@ -118,7 +123,7 @@ export class AnalysisPage implements AfterViewInit {
       const moves = this.boardMovesPointer ? this.getCurrentListMoves().slice(0, this.boardMovesPointer).join(' ').concat(` ${move}`) : this.moves.concat(` ${move}`);
       this.boardMovesPointer = undefined;
       this.game.move(move, { sloppy: true });
-      this.moves = this.game.history({verbose: true}).map(e => `${e.from}${e.to}${e.promotion ? e.promotion : ''}`).join(' ');
+      this.moves = this.game.history({ verbose: true }).map(e => `${e.from}${e.to}${e.promotion ? e.promotion : ''}`).join(' ');
       this.turn = this.game.turn();
       this.stockfish.evalPosition(moves);
       this.algebraicMoves = this.game.history();
@@ -151,18 +156,23 @@ export class AnalysisPage implements AfterViewInit {
         break;
     }
   }
+
   private stockfishEmmiter(event: string) {
-    if (event === 'bestmove') {
-      if (this.stockfish.bestmove) {
-        const match = this.stockfish.bestmove.match(/^([a-h][1-8])([a-h][1-8])/);
-        this.board.set({
-          drawable: { shapes: [] }
-        });
-        this.board.set({
-          drawable: { shapes: [{ orig: match[1], dest: match[2], brush: 'blue' }] }
-        });
-      }
+    if (event === 'multipv') {
+      if (this.stockfish.lines[0] && this.stockfish.lines[0].moves)
+        this.drawLine(this.stockfish.lines[0].moves[0]);
     }
+  }
+
+  private drawLine(line: string) {
+    const match = line.match(/^([a-h][1-8])([a-h][1-8])/);
+    this.board.set({
+      drawable: { shapes: [] }
+    });
+    this.board.set({
+      drawable: { shapes: [{ orig: match[1], dest: match[2], brush: 'blue' }] }
+    });
+
   }
 
   getCurrentListMoves(): string[] {
@@ -196,7 +206,7 @@ export class AnalysisPage implements AfterViewInit {
         color: this.toColor(),
         dests: this.toDests()
       }
-  });
+    });
   }
 
   public async getPgn() {
@@ -207,7 +217,7 @@ export class AnalysisPage implements AfterViewInit {
     document.execCommand('copy');
     document.body.removeChild(dummy);
     const toast = await this.toastController.create({
-      header: 'Copied!',
+      header: this.successMessage,
       duration: 1000,
     });
     await toast.present();

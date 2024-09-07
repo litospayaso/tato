@@ -1,6 +1,6 @@
 <ion-content [fullscreen]="true">
   <div class="title-bar">
-    <div class="title-bar-text">Analysis</div>
+    <div class="title-bar-text">{{'analysis' | translate | async}}</div>
     <div class="title-bar-controls">
       <button aria-label="Minimize"></button>
       <button aria-label="Maximize"></button>
@@ -23,8 +23,7 @@
         </button>
         <!-- <button class="windows-button button-control-element" color="medium">Reset</button>
       <button class="windows-button button-control-element" color="medium">Flip</button> -->
-        <button class="windows-button button-control-element" color="medium" (click)="getPgn()" *ngIf="savedGame"> get
-          PGN</button>
+        <button class="windows-button button-control-element" color="medium" (click)="getPgn()" *ngIf="savedGame">{{'getPng' | translate | async}}</button>
         <button class="windows-button button-control-element" color="medium" (click)="moveForward()">
           <ion-icon name="chevron-forward-outline"></ion-icon>
         </button>

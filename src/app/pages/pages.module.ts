@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { IonicStorageModule } from '@ionic/storage';
 
-import { AppModule } from '@app/app.module';
+import { TranslatePipe } from '@pipes/translate.pipe';
 
 import { PercentagePipe } from '@pipes/percentage.pipe';
 
@@ -35,6 +35,9 @@ import { SharedModule } from '@shared/shared.module';
     IonicModule,
     SharedModule,
     IonicStorageModule.forRoot(),
+  ],
+  providers: [
+    TranslatePipe
   ],
   declarations: [
     PercentagePipe,

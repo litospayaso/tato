@@ -105,7 +105,9 @@
     "anastasiaMate": "Anastasia mate",
     "dovetailMate": "Dovetail mate",
     "bodenMate": "Boden mate",
-    "underPromotion": "Under promotion"
+    "underPromotion": "Under promotion",
+    "copied": "PNG copied!",
+    "getPng": "Get PNG"
   },
   "es": {
     "home": "Inicio",
@@ -213,6 +215,8 @@
     "anastasiaMate": "Mate de Anastasia",
     "dovetailMate": "Mate cola de golondrina",
     "bodenMate": "Mate de Boden",
-    "underPromotion": "Subpromoción"
+    "underPromotion": "Subpromoción",
+    "copied": "¡PNG copiado!",
+    "getPng": "Copiar PNG"
   }
 }
