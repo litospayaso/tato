@@ -159,8 +159,9 @@ export class AnalysisPage implements AfterViewInit {
 
   private stockfishEmmiter(event: string) {
     if (event === 'multipv') {
-      if (this.stockfish.lines[0] && this.stockfish.lines[0].moves)
+      if (this.stockfish.lines[0] && this.stockfish.lines[0].moves) {
         this.drawLine(this.stockfish.lines[0].moves[0]);
+      }
     }
   }
 

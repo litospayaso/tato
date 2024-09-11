@@ -10,7 +10,7 @@ import { ModalController } from '@ionic/angular';
 import { filter, last } from 'rxjs/operators';
 import { GamesService } from './services/games.service';
 
-import {SettingsPage} from '@pages/settings/settings.page';
+import { SettingsPage } from '@pages/settings/settings.page';
 
 import appPages from '@resources/appPages.json';
 
@@ -24,7 +24,7 @@ export class AppComponent {
   public pageBack = '';
   public widthMenu = '0';
   public appPages = appPages;
-  public currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: "2-digit", hour12: false });
+  public currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false });
   constructor(
     private platform: Platform,
     private router: Router,
@@ -37,7 +37,7 @@ export class AppComponent {
     this.gamesService.reloadData();
     storage.get('lastRoute').then(lastRoute => {
       if (lastRoute && lastRoute !== '/' && router.url === '/') {
-        this.router.navigate(lastRoute.split('/').filter(e => e.length > 0), {skipLocationChange: true });
+        this.router.navigate(lastRoute.split('/').filter(e => e.length > 0), { skipLocationChange: true });
       }
     });
     this.router.events.pipe(filter(event => event instanceof ResolveEnd)).subscribe(event => {
@@ -60,7 +60,7 @@ export class AppComponent {
       }
       this.title = routerName;
       setTimeout(() => {
-        this.currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: "2-digit", hour12: false });
+        this.currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false });
       }, 15000);
     });
     this.initializeApp();
