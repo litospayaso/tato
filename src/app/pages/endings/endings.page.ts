@@ -210,7 +210,9 @@ export class EndingsPage implements AfterViewInit {
       if (this.stockfish.bestmove || this.moves === '') {
         const turn = this.game.turn() === 'w' ? 'white' : 'black';
         if (turn !== this.userColor) {
-          this.makeMove(this.stockfish.bestmove);
+          setTimeout(() => {
+            this.makeMove(this.stockfish.lines[0].moves[0]);
+          }, 300);
         }
       }
     }
