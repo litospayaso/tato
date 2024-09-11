@@ -37,3 +37,27 @@ nvm use 20.17.0
 npx ng update @angular/core@18 @angular/cli@18 --force
 
 ```
+
+- Añadir aquí un angular.json que funcione de angular 18.
+
+``` bash
+
+npm install --save @ionic-native/splash-screen --force
+npm install --save @ionic-native/status-bar --force
+npm install --save @ionic/storage --force
+
+```
+- reemplazar el storage:
+
+``` typescript
+
+  constructor(private store: Storage) {
+    this.createDatabase();
+  }
+  
+  public async createDatabase() {
+    this.storage = new Storage();
+    await this.storage.create();
+  }
+
+```

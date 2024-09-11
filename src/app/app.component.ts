@@ -4,7 +4,7 @@ import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { Router, ResolveEnd } from '@angular/router';
-import { Storage } from '@ionic/storage';
+import { Storage } from '@ionic/storage-angular';
 import { ModalController } from '@ionic/angular';
 
 import { filter, last } from 'rxjs/operators';
@@ -25,6 +25,7 @@ export class AppComponent {
   public widthMenu = '0';
   public appPages = appPages;
   public currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false });
+  public storage;
   constructor(
     private platform: Platform,
     private router: Router,
@@ -32,18 +33,28 @@ export class AppComponent {
     private gamesService: GamesService,
     private statusBar: StatusBar,
     public modalController: ModalController,
-    private storage: Storage
+    private store: Storage
   ) {
     this.gamesService.reloadData();
-    storage.get('lastRoute').then(lastRoute => {
-      if (lastRoute && lastRoute !== '/' && router.url === '/') {
+    this.createDatabase();
+    setTimeout(() => {
+      this.currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false });
+    }, 15000);
+    this.initializeApp();
+  }
+
+  async createDatabase() {
+    this.storage = new Storage();
+    await this.storage.create();
+    this.storage.get('lastRoute').then(lastRoute => {
+      if (lastRoute && lastRoute !== '/' && this.router.url === '/') {
         this.router.navigate(lastRoute.split('/').filter(e => e.length > 0), { skipLocationChange: true });
       }
     });
     this.router.events.pipe(filter(event => event instanceof ResolveEnd)).subscribe(event => {
       const root: ResolveEnd = event as ResolveEnd;
       const rootToSave = root.urlAfterRedirects === '/settings' || root.urlAfterRedirects === '/about' ? '/home' : root.urlAfterRedirects;
-      storage.set('lastRoute', rootToSave);
+      this.storage.set('lastRoute', rootToSave);
       const routerName = root.url.split('/')[1];
       switch (routerName) {
         case 'analysis':
@@ -59,11 +70,8 @@ export class AppComponent {
           break;
       }
       this.title = routerName;
-      setTimeout(() => {
-        this.currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false });
-      }, 15000);
     });
-    this.initializeApp();
+
   }
 
   initializeApp() {

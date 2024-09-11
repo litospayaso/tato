@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Storage } from '@ionic/storage';
+import { Storage } from '@ionic/storage-angular';
 import { DefaultValuesInterface, DefaultEndingsValuesInterface, GameInterface } from '@interfaces/game.interface';
 
 @Injectable({
@@ -10,8 +10,15 @@ export class GamesService {
   private defaultOpeningValues: DefaultValuesInterface = {} as DefaultValuesInterface;
   private defaultEndingsValues: DefaultEndingsValuesInterface = {} as DefaultEndingsValuesInterface;
   private userRating = 1300;
+  private storage;
 
-  constructor(private storage: Storage) {
+  constructor(private store: Storage) {
+    this.createDatabase();
+  }
+  
+  public async createDatabase() {
+    this.storage = new Storage();
+    await this.storage.create();
     this.reloadData();
   }
 

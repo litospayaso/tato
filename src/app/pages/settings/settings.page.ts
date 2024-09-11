@@ -1,5 +1,5 @@
 import { Component, AfterViewInit } from '@angular/core';
-import { Storage } from '@ionic/storage';
+import { Storage } from '@ionic/storage-angular';
 import { ModalController } from '@ionic/angular';
 
 @Component({
@@ -11,14 +11,17 @@ export class SettingsPage implements AfterViewInit {
 
   public languages = [{key: 'en', value: 'English'}, {key: 'es', value: 'Español'}];
   public language = 'en';
+  public storage: Storage;
 
   constructor(
-    private storage: Storage,
+    private store: Storage,
     public modalController: ModalController
   ) {
   }
 
-  ngAfterViewInit() {
+  async ngAfterViewInit() {
+    this.storage = new Storage();
+    await this.storage.create();
   }
 
   updateLanguage(){

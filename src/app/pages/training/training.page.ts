@@ -7,7 +7,6 @@ import { ActivatedRoute } from '@angular/router';
 import { GamesService } from '@services/games.service';
 import { Stockfish } from '@classes/stockfish';
 import { GameInterface } from '@app/interfaces/game.interface';
-import { Storage } from '@ionic/storage';
 import { ChessgroundConstructor, Key, Color, ChessgroundInterface } from 'src/libs/chessground/types/chessground';
 import { PromotionModalComponent } from '@components/promotion-modal/promotion-modal.component';
 import * as uuid from 'uuid';
@@ -44,7 +43,6 @@ export class TrainingPage implements AfterViewInit {
     private gamesService: GamesService,
     public modalController: ModalController,
     private popoverController: PopoverController,
-    private storage: Storage
   ) {
     this.boardId = uuid.v4();
     this.game = new Chess();
