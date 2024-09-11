@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
 import { MovesTableComponent } from './moves-table.component';
@@ -7,7 +7,7 @@ describe('MovesTableComponent', () => {
   let component: MovesTableComponent;
   let fixture: ComponentFixture<MovesTableComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ MovesTableComponent ],
       imports: [IonicModule.forRoot()]

@@ -48,35 +48,44 @@
             ],
             "styles": [
               {
-                "input": "src/theme/variables.scss"
+                "input": "src/theme/variables.scss",
+                "inject": true
               },
               {
-                "input": "src/libs/chessground/chessground.css"
+                "input": "src/libs/chessground/chessground.css",
+                "inject": true
               },
               {
-                "input": "src/libs/chessground/theme.css"
+                "input": "src/libs/chessground/theme.css",
+                "inject": true
               },
               {
-                "input": "src/libs/chessground/3d.css"
+                "input": "src/libs/chessground/3d.css",
+                "inject": true
               },
               {
-                "input": "src/global.scss"
+                "input": "src/global.scss",
+                "inject": true
               }
             ],
             "scripts": [
               {
-                "input": "./node_modules/jquery/dist/jquery.js"
+                "input": "./node_modules/jquery/dist/jquery.js",
+                "inject": true
               },
               {
-                "input": "./node_modules/stockfish/src/stockfish.js"
+                "input": "./node_modules/stockfish/src/stockfish.js",
+                "inject": true
               },
               {
-                "input": "./node_modules/chess.js/chess.js"
+                "input": "./node_modules/chess.js/chess.js",
+                "inject": true
               },
               {
-                "input": "src/libs/chessground/chessground.js"
+                "input": "src/libs/chessground/chessground.js",
+                "inject": true
               }
-          ]
+            ]
           },
           "configurations": {
             "production": {
@@ -89,7 +98,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
