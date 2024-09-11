@@ -47,6 +47,7 @@ npm install --save @ionic-native/status-bar --force
 npm install --save @ionic/storage --force
 
 ```
+
 - reemplazar el storage:
 
 ``` typescript

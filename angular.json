@@ -43,7 +43,7 @@
             ],
             "styles": ["src/theme/variables.scss", "src/libs/chessground/chessground.css", "src/libs/chessground/theme.css", "src/libs/chessground/3d.css", "src/global.scss"
             ],
-            "scripts": ["./node_modules/jquery/dist/jquery.js", "./node_modules/stockfish/src/stockfish.js", "./node_modules/chess.js/chess.js", "src/libs/chessground/chessground.js"]
+            "scripts": ["./node_modules/jquery/dist/jquery.js", "./node_modules/chess.js/chess.js", "src/libs/chessground/chessground.js"]
           },
           "configurations": {
             "production": {
