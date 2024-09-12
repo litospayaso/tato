@@ -4,7 +4,6 @@ import { ActivatedRoute } from '@angular/router';
 import { GamesService } from '@services/games.service';
 import { Stockfish } from '@classes/stockfish';
 import { GameInterface } from '@app/interfaces/game.interface';
-import { Storage } from '@ionic/storage';
 import { ChessgroundConstructor, Key, Color, ChessgroundInterface } from 'src/libs/chessground/types/chessground';
 import { PromotionModalComponent } from '@components/promotion-modal/promotion-modal.component';
 import { ToastController } from '@ionic/angular';
@@ -39,7 +38,6 @@ export class AnalysisPage implements AfterViewInit {
     private gamesService: GamesService,
     private popoverController: PopoverController,
     public toastController: ToastController,
-    private storage: Storage,
     private translate: TranslatePipe
   ) {
     this.boardId = uuid.v4();
@@ -159,8 +157,9 @@ export class AnalysisPage implements AfterViewInit {
 
   private stockfishEmmiter(event: string) {
     if (event === 'multipv') {
-      if (this.stockfish.lines[0] && this.stockfish.lines[0].moves)
+      if (this.stockfish.lines[0] && this.stockfish.lines[0].moves) {
         this.drawLine(this.stockfish.lines[0].moves[0]);
+      }
     }
   }
 

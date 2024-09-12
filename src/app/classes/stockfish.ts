@@ -1,6 +1,5 @@
 import { LineInterface } from '@interfaces/line.interface';
 declare const STOCKFISH: any;
-
 export class Stockfish {
   private stockfish: any;
   public bestmove: string;
@@ -16,8 +15,10 @@ export class Stockfish {
     this.level = level;
     this.multiline = multiline;
     this.depth = depth;
-    this.stockfish = new STOCKFISH();
-    this.stockfish.onmessage = this.onMessage.bind(this);
+    this.stockfish = new Worker('assets/libs/stockfish.js');;
+    this.stockfish.addEventListener('message', (event) => {
+      this.onMessage(event.data)
+    });
     this.initStockfish();
   }
 

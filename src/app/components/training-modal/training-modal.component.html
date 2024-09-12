@@ -3,7 +3,7 @@
 
   <ion-item>
     <ion-label>{{'color'| translate | async}}</ion-label>
-    <ion-select [(ngModel)]="userColor" [okText]="'okText' | translate | async" [cancelText]="'cancelText' | translate | async">
+    <ion-select [(ngModel)]="userColor" [okText]="'select' | translate | async" [cancelText]="'cancel' | translate | async">
       <ion-select-option value="w">{{'white' | translate | async}}</ion-select-option>
       <ion-select-option value="b">{{'black' | translate | async}}</ion-select-option>
     </ion-select>
