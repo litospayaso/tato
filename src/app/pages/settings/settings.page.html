@@ -1,11 +1,25 @@
 <div class="modal-container">
   <ion-item>
     <ion-label>{{'languages' | translate | async}}</ion-label>
-    <ion-select [(ngModel)]="language" (ionChange)="updateLanguage()" [okText]="'select' | translate | async" [cancelText]="'cancel' | translate | async">
+    <ion-select [(ngModel)]="language" (ionChange)="updateLanguage()" [okText]="'select' | translate | async"
+      [cancelText]="'cancel' | translate | async">
       <ion-select-option *ngFor="let lan of languages" [value]="lan.key">{{lan.value}}</ion-select-option>
     </ion-select>
   </ion-item>
+  <ion-item>
+    About:
+  </ion-item>
+  <div class="terminal">
+    <pre>cd ~
+  mkdir Projects
+  git clone https://github.com/zrebec/JavaLearning/ThisIsVeryVeryVeryLongURLPathToDestination/DesignPatterns.git
+  /zeroscratch.sh init</pre>
+  </div>
+
+
+
   <div class="buttons-container">
-    <button expand="full" (click)="closeModal()" class="windows-button" color="medium">{{'accept' | translate | async}}</button>
+    <button expand="full" (click)="closeModal()" class="windows-button" color="medium">{{'accept' | translate |
+      async}}</button>
   </div>
 </div>
