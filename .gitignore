@@ -33,3 +33,4 @@ npm-debug.log*
 /database/*.csv
 
 .angular
+android

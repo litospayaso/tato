@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
 
-import { Platform } from '@ionic/angular';
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { Router, ResolveEnd } from '@angular/router';
 import { Storage } from '@ionic/storage-angular';
 import { ModalController } from '@ionic/angular';
@@ -27,13 +24,9 @@ export class AppComponent {
   public currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false });
   public storage;
   constructor(
-    private platform: Platform,
     private router: Router,
-    private splashScreen: SplashScreen,
     private gamesService: GamesService,
-    private statusBar: StatusBar,
     public modalController: ModalController,
-    private store: Storage
   ) {
     this.gamesService.reloadData();
     this.createDatabase();
@@ -75,10 +68,6 @@ export class AppComponent {
   }
 
   initializeApp() {
-    this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
-    });
   }
 
   public updateFocus() {
