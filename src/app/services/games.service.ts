@@ -15,7 +15,7 @@ export class GamesService {
   constructor(private store: Storage) {
     this.createDatabase();
   }
-  
+
   public async createDatabase() {
     this.storage = new Storage();
     await this.storage.create();

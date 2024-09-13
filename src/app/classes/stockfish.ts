@@ -17,7 +17,7 @@ export class Stockfish {
     this.depth = depth;
     this.stockfish = new Worker('assets/libs/stockfish.js');;
     this.stockfish.addEventListener('message', (event) => {
-      this.onMessage(event.data)
+      this.onMessage(event.data);
     });
     this.initStockfish();
   }

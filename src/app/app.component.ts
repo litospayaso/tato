@@ -4,7 +4,7 @@ import { Router, ResolveEnd } from '@angular/router';
 import { Storage } from '@ionic/storage-angular';
 import { ModalController } from '@ionic/angular';
 
-import { filter, last } from 'rxjs/operators';
+import { filter } from 'rxjs/operators';
 import { GamesService } from './services/games.service';
 
 import { SettingsPage } from '@pages/settings/settings.page';

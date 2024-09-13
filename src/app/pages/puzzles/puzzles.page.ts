@@ -1,5 +1,4 @@
-import { Component, AfterViewInit, Type } from '@angular/core';
-import { PopoverController } from '@ionic/angular';
+import { Component, AfterViewInit } from '@angular/core';
 import { PuzzleInterface } from '@app/interfaces/game.interface';
 import { ChessgroundConstructor, Key, Color, ChessgroundInterface } from 'src/libs/chessground/types/chessground';
 import { GamesService } from '@services/games.service';
@@ -33,7 +32,6 @@ export class PuzzlesPage implements AfterViewInit {
   public theme = 'all';
 
   constructor(
-    private popoverController: PopoverController,
     private requestService: RequestService,
     public modalController: ModalController,
     private gameService: GamesService
@@ -93,17 +91,15 @@ export class PuzzlesPage implements AfterViewInit {
       let move = `${orig}${dest}`;
       const origPiece = this.game.get(orig);
       if (origPiece.type === 'p' && ((origPiece.color === 'w' && dest.includes('8')) || (origPiece.color === 'b' && dest.includes('1')))) {
-        const popover = await this.popoverController.create({
+        const popover = await this.modalController.create({
           component: PromotionModalComponent,
           componentProps: {
             color: `modal-color-${origPiece.color}`
-          },
-          translucent: false
+          }
         });
         await popover.present();
         const promotion = await popover.onDidDismiss();
-        await popover.present();
-        move = move.concat(promotion.data);
+        move = move.concat(promotion.data ? promotion.data : 'q');
       }
 
       if (move === this.currentPuzzle.movesArray[this.currentPuzzlePointer]) {

@@ -1,6 +1,5 @@
 import { Component, AfterViewInit, Type } from '@angular/core';
 import { EndingsModalComponent } from '@components/endings-modal/endings-modal.component';
-import { PopoverController } from '@ionic/angular';
 import { EndingInterface } from '@app/interfaces/ending.interface';
 import { ChessgroundConstructor, Key, Color, ChessgroundInterface } from 'src/libs/chessground/types/chessground';
 import { GamesService } from '@services/games.service';
@@ -39,7 +38,6 @@ export class EndingsPage implements AfterViewInit {
   public stockfish: Stockfish = new Stockfish(20, 12, 3);
 
   constructor(
-    private popoverController: PopoverController,
     private requestService: RequestService,
     public modalController: ModalController,
     private gameService: GamesService
@@ -123,17 +121,15 @@ export class EndingsPage implements AfterViewInit {
       let move = `${orig}${dest}`;
       const origPiece = this.game.get(orig);
       if (origPiece.type === 'p' && ((origPiece.color === 'w' && dest.includes('8')) || (origPiece.color === 'b' && dest.includes('1')))) {
-        const popover = await this.popoverController.create({
+        const popover = await this.modalController.create({
           component: PromotionModalComponent,
           componentProps: {
             color: `modal-color-${origPiece.color}`
-          },
-          translucent: false
+          }
         });
         await popover.present();
         const promotion = await popover.onDidDismiss();
-        await popover.present();
-        move = move.concat(promotion.data);
+        move = move.concat(promotion.data ? promotion.data : 'q');
       }
       const moves = this.moves.concat(` ${move}`);
       this.moves = moves;

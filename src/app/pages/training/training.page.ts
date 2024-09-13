@@ -1,5 +1,4 @@
 import { Component, AfterViewInit } from '@angular/core';
-import { PopoverController } from '@ionic/angular';
 import { ModalController } from '@ionic/angular';
 import { TrainingModalComponent } from '@components/training-modal/training-modal.component';
 import { ResultModalComponent } from '@components/result-modal/result-modal.component';
@@ -42,7 +41,6 @@ export class TrainingPage implements AfterViewInit {
     private route: ActivatedRoute,
     private gamesService: GamesService,
     public modalController: ModalController,
-    private popoverController: PopoverController,
   ) {
     this.boardId = uuid.v4();
     this.game = new Chess();
@@ -113,17 +111,15 @@ export class TrainingPage implements AfterViewInit {
       let move = `${orig}${dest}`;
       const origPiece = this.game.get(orig);
       if (origPiece.type === 'p' && ((origPiece.color === 'w' && dest.includes('8')) || (origPiece.color === 'b' && dest.includes('1')))) {
-        const popover = await this.popoverController.create({
+        const popover = await this.modalController.create({
           component: PromotionModalComponent,
           componentProps: {
             color: `modal-color-${origPiece.color}`
-          },
-          translucent: false
+          }
         });
         await popover.present();
         const promotion = await popover.onDidDismiss();
-        await popover.present();
-        move = move.concat(promotion.data);
+        move = move.concat(promotion.data ? promotion.data : 'q');
       }
       // tslint:disable-next-line:max-line-length
       const moves = this.boardMovesPointer ? this.getCurrentListMoves().slice(0, this.boardMovesPointer).join(' ').concat(` ${move}`) : this.moves.concat(` ${move}`);

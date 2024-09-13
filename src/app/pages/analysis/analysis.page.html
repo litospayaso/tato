@@ -10,9 +10,9 @@
   <div class="panel-container">
     <div class="board-container">
       <div class="evaluation-bar">
-        <div class="evaluation-string" [style.color]="stockfish.evaluation < -3 ? 'white' : '#5d5d5d'">{{stockfish.evaluation}}</div>
-        <div class="evaluation-value" [style.width.%]="stockfish.evaluation | percentage"
-          [style.color]="stockfish.evaluation < -2 ? 'white' : '#5d5d5d'"></div>
+        <div class="evaluation-string" [style.color]="evaluation < -3 ? 'white' : '#5d5d5d'">{{evaluation}}</div>
+        <div class="evaluation-value" [style.width.%]="evaluation | percentage"
+          [style.color]="evaluation < -2 ? 'white' : '#5d5d5d'"></div>
       </div>
       <div class="board-container-element">
         <div [id]="boardId"></div>

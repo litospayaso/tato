@@ -1,5 +1,4 @@
 import { Component, AfterViewInit } from '@angular/core';
-import { PopoverController } from '@ionic/angular';
 import { ActivatedRoute } from '@angular/router';
 import { GamesService } from '@services/games.service';
 import { Stockfish } from '@classes/stockfish';
@@ -10,6 +9,8 @@ import { ToastController } from '@ionic/angular';
 import * as uuid from 'uuid';
 import { ChessInstance } from '@libs/chess.js/chessInterface';
 import { TranslatePipe } from '@pipes/translate.pipe';
+import { ModalController } from '@ionic/angular';
+
 declare const Chessground: ChessgroundConstructor;
 declare const Chess: any;
 
@@ -32,12 +33,13 @@ export class AnalysisPage implements AfterViewInit {
   public gameId: string | number;
   public boardId: string;
   public successMessage: string;
+  public evaluation = 0;
 
   constructor(
     private route: ActivatedRoute,
     private gamesService: GamesService,
-    private popoverController: PopoverController,
     public toastController: ToastController,
+    public modalController: ModalController,
     private translate: TranslatePipe
   ) {
     this.boardId = uuid.v4();
@@ -105,17 +107,16 @@ export class AnalysisPage implements AfterViewInit {
       let move = `${orig}${dest}`;
       const origPiece = this.game.get(orig);
       if (origPiece.type === 'p' && ((origPiece.color === 'w' && dest.includes('8')) || (origPiece.color === 'b' && dest.includes('1')))) {
-        const popover = await this.popoverController.create({
+        const popover = await this.modalController.create({
           component: PromotionModalComponent,
           componentProps: {
             color: `modal-color-${origPiece.color}`
-          },
-          translucent: false
+          }
         });
         await popover.present();
         const promotion = await popover.onDidDismiss();
-        await popover.present();
-        move = move.concat(promotion.data);
+        // await popover.present();
+        move = move.concat(promotion.data ? promotion.data : 'q');
       }
       // tslint:disable-next-line:max-line-length
       const moves = this.boardMovesPointer ? this.getCurrentListMoves().slice(0, this.boardMovesPointer).join(' ').concat(` ${move}`) : this.moves.concat(` ${move}`);
@@ -157,8 +158,16 @@ export class AnalysisPage implements AfterViewInit {
 
   private stockfishEmmiter(event: string) {
     if (event === 'multipv') {
+      if (this.game.turn() === 'b') {
+        this.stockfish.lines = this.stockfish.lines.sort((a, b) => a.evaluation - b.evaluation);
+      } else {
+        this.stockfish.lines = this.stockfish.lines.sort((a, b) => b.evaluation - a.evaluation);
+      }
       if (this.stockfish.lines[0] && this.stockfish.lines[0].moves) {
         this.drawLine(this.stockfish.lines[0].moves[0]);
+      }
+      if (this.stockfish.lines[0] && this.stockfish.lines[0].evaluation) {
+        this.evaluation = this.stockfish.lines[0].evaluation;
       }
     }
   }

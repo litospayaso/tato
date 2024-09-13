@@ -1,22 +1,23 @@
+.button-promotion-element {
+  height: 80px;
+  width: 90px;
+}
 .buttons-promotion-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-top: 5px;
+  height: 100%;
   width: 100%;
-  height: 200px;
-  .button-promotion-element {
-    width: 42%;
-    height: 40%;
+  span {
+    height: 70px;
+    width: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   &.modal-color-w {
     .button-promotion-element {
-      span {
-        height: 60px;
-        width: 60px;
-        background-size: contain;
-      }
       span.q {
         background-image: url('/assets/images/pieces/merida/wQ.svg'), url('/assets/images/pieces/merida/wQ.svg'); 
       }
@@ -33,11 +34,6 @@
   }
   &.modal-color-b {
     .button-promotion-element {
-      span {
-        height: 60px;
-        width: 60px;
-        background-size: contain;
-      }
       span.q {
         background-image: url('/assets/images/pieces/merida/bQ.svg'), url('/assets/images/pieces/merida/bQ.svg'); 
       }

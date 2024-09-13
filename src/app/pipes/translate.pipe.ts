@@ -17,7 +17,7 @@ export class TranslatePipe implements PipeTransform {
     this.storage = new Storage();
     await this.storage.create();
   }
-  
+
   transform(text: string): Promise<string> {
     return new Promise(resolve => {
       this.storage.get('language').then(lan => {

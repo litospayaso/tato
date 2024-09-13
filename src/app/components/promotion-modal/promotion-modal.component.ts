@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { PopoverController } from '@ionic/angular';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-promotion-modal',
@@ -11,14 +11,14 @@ export class PromotionModalComponent implements OnInit {
   @Input() color: string;
 
   constructor(
-    private popover: PopoverController
+    private modalController: ModalController
   ) { }
 
   ngOnInit() {
   }
 
   closeModal(piece: string) {
-    this.popover.dismiss(piece);
+    this.modalController.dismiss(piece);
   }
 
 }
