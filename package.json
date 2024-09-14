@@ -15,7 +15,7 @@
     "ionic-build": "ionic build --prod",
     "replace-base-href": "node ./scripts/replace.js",
     "deploy-ghpages": "npx angular-cli-ghpages --dir=www",
-    "apk": "npm run ionic-build && ionic capacitor copy android && cd android && .\\gradlew assembleDebug && cd ..",
+    "apk": "npm run ionic-build && ionic capacitor copy android && cd android && .\\gradlew assemble && cd ..",
     "display-release": "node ./scripts/console.js"
   },
   "private": true,
