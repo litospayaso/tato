@@ -3,21 +3,20 @@
     <div class="appbar" tabindex="0">
       <div class="appbar-menu" id="appBar">
         <button *ngIf="!pageBack" class="main-menu menu-button" (click)="updateFocus()">
-          <span class="icon">♟️Tato</span> 
+          <img width="24" height="24" src="assets/icon/favicon.png"><span class="icon" style="padding-left: 8px; position: relative; top: 2px;">Tato</span> 
         </button>
 
         <div class="lateral-panel-container" (click)="updateFocus()">
           <div *ngFor="let page of appPages">
             <div [routerLink]="[page.url]"  class="lateral-panel-button-container" skipLocationChange routerDirection="root" [ngClass]="{'selected': title === page.title}">
               <img width="24" height="24" [src]="'assets/icon/' + page.icon">
-              <!-- <ion-icon aria-hidden="false" [name]="page.icon" class="icon-list-element"></ion-icon> -->
               {{page.title | translate | async}}
             </div>
           </div>
         </div>
       </div>
 
-      <img *ngIf="pageBack" src="assets/icon/back.png" class="back-arrow" [routerLink]="[pageBack]" skipLocationChange routerDirection="root" name="arrow-back-outline" class="menu-icon"/>
+      <img *ngIf="pageBack" src="assets/icon/back.png" class="back-arrow" [routerLink]="[pageBack]" skipLocationChange routerDirection="root" name="arrow-back-outline" class="menu-icon" style="top: 0;"/>
 
       <div class="desktop-container" routerLink="/home" skipLocationChange routerDirection="root">
         <img src="assets/icon/desktop-0.png">

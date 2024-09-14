@@ -107,6 +107,7 @@
     "bodenMate": "Boden mate",
     "underPromotion": "Under promotion",
     "copied": "PNG copied!",
+    "about": "About",
     "getPng": "Get PNG"
   },
   "es": {
@@ -217,6 +218,7 @@
     "bodenMate": "Mate de Boden",
     "underPromotion": "Subpromoción",
     "copied": "¡PNG copiado!",
+    "about": "Acerca de",
     "getPng": "Copiar PNG"
   }
 }

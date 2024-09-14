@@ -5,7 +5,7 @@
     <table>
       <tbody>
         <tr *ngFor="let line of lines;" class="line-element">
-          <td class="evaluation-element" [ngClass]="{'advance-w': (line.evaluation >= 0 ), 'advance-b': (line.evaluation < 0 )}">{{line.evaluation}}</td>
+          <td class="evaluation-element" [ngClass]="{'advance-w': (line?.evaluation >= 0 ), 'advance-b': (line?.evaluation < 0 )}">{{line?.evaluation}}</td>
           <td class="moves-line-element" *ngIf="line.algebraicMoves">
             <span class="line-element">{{getCurrentMovementNumber()}}</span>
             <span *ngFor="let move of line.algebraicMoves; let i = index" class="line-element">{{move + ' '}}</span>

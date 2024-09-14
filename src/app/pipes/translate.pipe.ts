@@ -21,8 +21,9 @@ export class TranslatePipe implements PipeTransform {
   transform(text: string): Promise<string> {
     return new Promise(resolve => {
       this.storage.get('language').then(lan => {
-        if (translations && translations[lan] && translations[lan][text]) {
-          return resolve(translations[lan][text]);
+        const language = lan ? lan : 'es';
+        if (translations && translations[language] && translations[language][text]) {
+          return resolve(translations[language][text]);
         } else {
           return resolve(text);
         }

@@ -12,8 +12,10 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build-prod": "ionic build --prod -- --base-href=\"https://litospayaso.github.io/tato/\"",
+    "ionic-build": "ionic build --prod",
     "replace-base-href": "node ./scripts/replace.js",
     "deploy-ghpages": "npx angular-cli-ghpages --dir=www",
+    "apk": "npm run ionic-build && ionic capacitor copy android && cd android && .\\gradlew assembleDebug && cd ..",
     "display-release": "node ./scripts/console.js"
   },
   "private": true,
@@ -54,6 +56,7 @@
     "@angular/cli": "^18.0.0",
     "@angular/compiler-cli": "^18.0.0",
     "@angular/language-service": "^18.0.0",
+    "@capacitor/assets": "^3.0.5",
     "@capacitor/cli": "6.1.2",
     "@ionic/angular-toolkit": "^11.0.1",
     "@types/jasmine": "~5.1.0",

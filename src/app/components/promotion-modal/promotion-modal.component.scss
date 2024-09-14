@@ -1,15 +1,29 @@
-.button-promotion-element {
-  height: 80px;
-  width: 90px;
-}
 .buttons-promotion-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding-top: 5px;
   height: 100%;
   width: 100%;
+  background-color: #c0c0c0 !important;
+  border: 2px solid #dfdfdf !important;
+  border-bottom-color: #404040 !important;
+  border-right-color: #404040 !important;
+  padding: 200px 16px;
+  gap: 24px;
+
+  .button-promotion-element {
+    height: 20%;
+    width: calc(50% - 24px);
+  }
+
+  @media (min-width: 767px) {
+    .button-promotion-element {
+      height: 100px;
+      width: calc(50% - 24px);
+    }
+  }
+
   span {
     height: 70px;
     width: 70px;
@@ -19,33 +33,58 @@
   &.modal-color-w {
     .button-promotion-element {
       span.q {
-        background-image: url('/assets/images/pieces/merida/wQ.svg'), url('/assets/images/pieces/merida/wQ.svg'); 
+        background-image: url("/assets/images/pieces/merida/wQ.svg"), url("/assets/images/pieces/merida/wQ.svg");
       }
       span.r {
-        background-image: url('/assets/images/pieces/merida/wR.svg'), url('/assets/images/pieces/merida/wR.svg'); 
+        background-image: url("/assets/images/pieces/merida/wR.svg"), url("/assets/images/pieces/merida/wR.svg");
       }
       span.b {
-        background-image: url('/assets/images/pieces/merida/wB.svg'), url('/assets/images/pieces/merida/wB.svg'); 
+        background-image: url("/assets/images/pieces/merida/wB.svg"), url("/assets/images/pieces/merida/wB.svg");
       }
       span.n {
-        background-image: url('/assets/images/pieces/merida/wN.svg'), url('/assets/images/pieces/merida/wN.svg'); 
+        background-image: url("/assets/images/pieces/merida/wN.svg"), url("/assets/images/pieces/merida/wN.svg");
       }
     }
   }
   &.modal-color-b {
     .button-promotion-element {
       span.q {
-        background-image: url('/assets/images/pieces/merida/bQ.svg'), url('/assets/images/pieces/merida/bQ.svg'); 
+        background-image: url("/assets/images/pieces/merida/bQ.svg"), url("/assets/images/pieces/merida/bQ.svg");
       }
       span.r {
-        background-image: url('/assets/images/pieces/merida/bR.svg'), url('/assets/images/pieces/merida/bR.svg'); 
+        background-image: url("/assets/images/pieces/merida/bR.svg"), url("/assets/images/pieces/merida/bR.svg");
       }
       span.b {
-        background-image: url('/assets/images/pieces/merida/bB.svg'), url('/assets/images/pieces/merida/bB.svg'); 
+        background-image: url("/assets/images/pieces/merida/bB.svg"), url("/assets/images/pieces/merida/bB.svg");
       }
       span.n {
-        background-image: url('/assets/images/pieces/merida/bN.svg'), url('/assets/images/pieces/merida/bN.svg'); 
+        background-image: url("/assets/images/pieces/merida/bN.svg"), url("/assets/images/pieces/merida/bN.svg");
       }
-    }    
+    }
   }
+}
+.buttons-promotion-container::before {
+  content: "";
+  height: 31px;
+  width: calc(100% + 78px);
+  background: linear-gradient(90deg, #000080, #1084d0);
+  top: 0px;
+  left: -15px;
+  position: fixed;
+}
+.buttons-promotion-container::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border: none;
+  background-color: #c0c0c0;
+  margin-left: 2px;
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  box-shadow:
+    inset -1px -1px #0a0a0a,
+    inset 1px 1px #fff,
+    inset -2px -2px #808080,
+    inset 2px 2px #dfdfdf;
 }
