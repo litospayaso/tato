@@ -157,8 +157,12 @@ export class AnalysisPage implements AfterViewInit {
   }
 
   private stockfishEmmiter(event: string) {
-    if (event === 'multipv') {
+    if (event === 'bestmove') {
       if (this.game.turn() === 'b') {
+        this.stockfish.lines = this.stockfish.lines.map(line => {
+          line.evaluation = line.evaluation * -1;
+          return line;
+        });
         this.stockfish.lines = this.stockfish.lines.sort((a, b) => a.evaluation - b.evaluation);
       } else {
         this.stockfish.lines = this.stockfish.lines.sort((a, b) => b.evaluation - a.evaluation);

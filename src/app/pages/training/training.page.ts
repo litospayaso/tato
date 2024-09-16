@@ -234,13 +234,9 @@ export class TrainingPage implements AfterViewInit {
   }
 
   private makeStockfishMovement() {
-    setTimeout(() => {
-      this.makeMove(
-        Math.random() < 0.9 ?
-        this.stockfish.lines[0].moves[0] :
-          this.stockfish.lines[1].moves[0]
-      );
-    }, 300);
+    this.makeMove(
+      this.stockfish.lines[0].moves[0]
+    );
   }
 
   getCurrentListMoves(): string[] {
