@@ -33,4 +33,5 @@ npm-debug.log*
 /database/*.csv
 
 .angular
+.sign
 android
