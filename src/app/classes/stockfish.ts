@@ -15,7 +15,7 @@ export class Stockfish {
     this.level = level;
     this.multiline = multiline;
     this.depth = depth;
-    this.stockfish = new Worker('assets/libs/stockfish.js');;
+    this.stockfish = new Worker('assets/libs/stockfish.js');
     this.stockfish.addEventListener('message', (event) => {
       this.onMessage(event.data);
     });
