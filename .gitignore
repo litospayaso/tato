@@ -35,3 +35,4 @@ npm-debug.log*
 .angular
 .sign
 android
+*.aab
