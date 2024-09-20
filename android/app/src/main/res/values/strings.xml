@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">tato</string>
+    <string name="title_activity_main">tato</string>
+    <string name="package_name">angelitapp.tato</string>
+    <string name="custom_url_scheme">angelitapp.tato</string>
+</resources>

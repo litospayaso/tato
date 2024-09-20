@@ -16,7 +16,8 @@
     "replace-base-href": "node ./scripts/replace.js",
     "deploy-ghpages": "npx angular-cli-ghpages --dir=www",
     "apk": "npm run ionic-build && ionic capacitor copy android && cd android && .\\gradlew assembleDebug && cd ..",
-    "apk-assemble": "npm run ionic-build && ionic capacitor copy android && cd android && .\\gradlew bundleRelease && cd ..",
+    "sign": ".sign\\sign.bat",
+    "apk-assemble": "npm run ionic-build && ionic capacitor copy android && cd android && .\\gradlew bundleRelease && cd .. && npm run sign",
     "generate-assets": "capacitor-assets generate",
     "display-release": "node ./scripts/console.js"
   },
