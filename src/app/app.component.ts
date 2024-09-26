@@ -30,7 +30,7 @@ export class AppComponent {
   ) {
     this.gamesService.reloadData();
     this.createDatabase();
-    setTimeout(() => {
+    setInterval(() => {
       this.currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false });
     }, 15000);
     this.initializeApp();

@@ -9,7 +9,7 @@ import { ModalController } from '@ionic/angular';
 })
 export class SettingsPage implements AfterViewInit {
 
-  public languages = [{key: 'es', value: 'Español'}, {key: 'en', value: 'English'}];
+  public languages = [{key: 'es', value: 'Español'}, {key: 'en', value: 'English'}, {key: 'eus', value: 'Euskera'}];
   public language = 'es';
   public storage: Storage;
 
