@@ -22,6 +22,7 @@ export class SettingsPage implements AfterViewInit {
   async ngAfterViewInit() {
     this.storage = new Storage();
     await this.storage.create();
+    this.language = await this.storage.get('language');
   }
 
   updateLanguage(){

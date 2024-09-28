@@ -34,7 +34,7 @@ export class Stockfish {
         this.emmiter('bestmove');
       }
       if (event.includes('info ') && event.includes('multipv')) {
-        const lines = event.match(/pv (([a-h][1-8][a-h][1-8][qrbk]? )+)/);
+        const lines = event.match(/pv (([a-h][1-8][a-h][1-8][qrbk]?)+)/);
         const thread = event.match(/multipv ([1-9])/);
         const evaluation = event.match(/score (cp|mate) (-?[0-9]+)/);
         if (lines && thread && evaluation) {

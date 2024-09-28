@@ -12,10 +12,17 @@
     <div class="table-title">
       {{'about' | translate | async}}
     </div>
-<pre>
+<pre *ngIf="language === 'en'">
+C:\Tato> ./about
+C:\Tato> An opening trainer 
+  for people who lose ELO 
+  points before the game starts.
+  Free & open source<span class="blink">_</span>
+</pre>
+<pre *ngIf="language === 'es'">
 C:\Tato> ./about
 C:\Tato> Un entrenador de aperturas 
-  para gente quepierde ELO 
+  para gente que pierde ELO 
   nada más empezar la partida.
   Gratis y de código abierto.
 
@@ -28,6 +35,11 @@ C:\Tato> Si quieres
  para que te ayude a 
  mejorar tu nivel<span class="blink">_</span>
 </pre>
+<pre *ngIf="language === 'eus'">
+  C:\Tato> ./about  
+  C:\Tato> Mila esker Ander Olegari 
+   itzulpenekin laguntzeagatik<span class="blink">_</span>
+  </pre>  
 </div>
 
 
